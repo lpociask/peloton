@@ -8,8 +8,10 @@ export const ciszaNapedu = {
   time: "13 min",
   description: "Mechanika dobrze ustawionego roweru.",
   hero: assetPath("peloton-contents-triptych.png"),
+  heroWebp: "peloton-contents-triptych.webp",
   heroPosition: "50% 50%",
   thumb: assetPath("peloton-contents-triptych.png"),
+  thumbWebp: "peloton-contents-triptych.webp",
   thumbMode: "triptych",
   thumbPosition: "50% 50%",
   lead:
@@ -20,12 +22,26 @@ export const ciszaNapedu = {
   quote:
     "Cichy napęd nie jest napędem zalanym smarem. Jest napędem czystym, ustawionym i nasmarowanym dokładnie tam, gdzie metal pracuje o metal.",
   quoteAfter: 3,
-  detailAfter: 5,
-  detailImage: assetPath("peloton-contents-triptych.png"),
-  detailAlt:
-    "Pomarańczowe koło zębate i czarny łańcuch pokazane w ilustracyjnym zbliżeniu.",
-  detailCaption:
-    "Najpierw czystość, później ustawienie. Smarowanie jest ostatnim, nie pierwszym krokiem.",
+  media: [
+    {
+      afterSection: 1,
+      src: "peloton-drivetrain-workshop.png",
+      webp: "peloton-drivetrain-workshop.webp",
+      layout: "wide",
+      alt: "Dłonie mechanika pracują przy monumentalnym łańcuchu i kasecie rowerowej.",
+      caption: "Diagnoza zaczyna się od słuchania. Klucz pojawia się dopiero wtedy, gdy dźwięk ma już adres.",
+      credit: "ILUSTRACJA — PAPER STUDIO",
+    },
+    {
+      afterSection: 5,
+      src: "peloton-contents-triptych.png",
+      webp: "peloton-contents-triptych.webp",
+      layout: "standard",
+      alt: "Pomarańczowe koło zębate i czarny łańcuch pokazane w ilustracyjnym zbliżeniu.",
+      caption: "Najpierw czystość, później ustawienie. Smarowanie jest ostatnim, nie pierwszym krokiem.",
+      credit: "ILUSTRACJA — PAPER STUDIO",
+    },
+  ],
   sections: [
     {
       label: "01 — WARSZTAT",

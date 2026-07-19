@@ -2,6 +2,7 @@ import { przedSwitem } from "./przed-switem.js";
 import { ciszaNapedu } from "./cisza-napedu.js";
 import { kiedyZnikaAsfalt } from "./kiedy-znika-asfalt.js";
 import { michalKwiatkowski } from "./michal-kwiatkowski.js";
+import { drugiWyscig } from "./drugi-wyscig.js";
 
 export const issue = {
   number: "01",
@@ -10,7 +11,7 @@ export const issue = {
   portraitStoryId: "michal-kwiatkowski",
 };
 
-export const stories = [przedSwitem, ciszaNapedu, kiedyZnikaAsfalt, michalKwiatkowski];
+export const stories = [przedSwitem, ciszaNapedu, kiedyZnikaAsfalt, michalKwiatkowski, drugiWyscig];
 
 export const totalReadingMinutes = stories.reduce(
   (total, story) => total + Number.parseInt(story.time, 10),

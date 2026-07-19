@@ -15,8 +15,11 @@ When implementing from a selected generated mock, treat that image as the source
 - Peloton illustration language is flat editorial collage: faceless figures, monumental scale, black/taupe/off-white shapes, vivid orange accent, matte gouache, cut-paper geometry, and coarse screen-print grain.
 - The chosen first-issue cover concept uses an oversized bicycle wheel as an eclipse, an orange sun at the hub, a cyclist viewed from above, and cropped chain links.
 - Avoid photorealism, glossy 3D, gradients, neon, glassmorphism, generic cards, ads, badges, and feed-like layouts.
-- The issue table of contents is a physical editorial sheet: ruled story rows, a narrow right-side illustration rail, orange folio accents, and an orange bottom reading CTA. It must not become a feed of rounded cards; issue #01 contains four rows.
+- The issue table of contents is a physical editorial sheet: ruled story rows, a narrow right-side illustration rail, orange folio accents, and an orange bottom reading CTA. It must not become a feed of rounded cards; issue #01 contains five rows.
 - Article openings are composed like a first magazine spread: sticky reader toolbar, slim progress line, metadata, oversized two-line serif title, short olive rule, editorial lead/byline, then a full-width illustration deliberately cut by the viewport fold.
 - Use `/public/assets/peloton-contents-triptych.png` for issue-section vignettes and `/public/assets/peloton-story-dawn.png` as the dedicated opening illustration for “Przed świtem.”
 - Every issue contains one longform cyclist portrait. The first profile is Michał Kwiatkowski, with a dated editorial forecast clearly separated from verified facts.
 - Core articles target 10–15 minutes of calm reading and combine original reportage, reflective cycling culture, and technically checked practical detail.
+- Longform stories use several paced editorial interludes rather than one repeated decorative image. Inline art is lazy-loaded through WebP with PNG fallback and alternates between wide, standard, and portrait layouts.
+- Issue #01 includes a fifth, 13-minute profile of Szymon Gruchalski, framed as one of Poland's leading cycling photographers. It covers his own road riding and a photographic language in which the cyclist is not always the principal subject.
+- The Kwiatkowski profile includes verified, privacy-respecting sections on family, the Veloart project, the historic 2015 Warsaw–Kampinos ride, and Polish fan support. Warsaw is described as a social address, not an unverified permanent training base.

@@ -70,10 +70,13 @@ function CoverScreen({ onOpen, onMenu, reduceMotion, menuButtonRef }) {
         transition={{ duration: reduceMotion ? 0 : 0.58, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
         whileTap={reduceMotion ? undefined : { scale: 0.992 }}
       >
-        <img
-          src={assetPath("peloton-cover-art.png")}
-          alt="Kolarz widziany z góry na tle monumentalnego koła, pomarańczowego słońca i łańcucha."
-        />
+        <picture>
+          <source srcSet={assetPath("peloton-cover-art.webp")} type="image/webp" />
+          <img
+            src={assetPath("peloton-cover-art.png")}
+            alt="Kolarz widziany z góry na tle monumentalnego koła, pomarańczowego słońca i łańcucha."
+          />
+        </picture>
         <span className="issue-cover__number">#01</span>
         <span className="issue-cover__date">LIPIEC 2026</span>
       </motion.button>
@@ -184,11 +187,18 @@ function ContentsScreen({ onBack, onRead, reduceMotion }) {
                   className={`story-list__thumb story-list__thumb--${story.thumbMode ?? "triptych"}`}
                   aria-hidden="true"
                 >
-                  <img
-                    src={assetPath(story.thumb ?? "peloton-contents-triptych.png")}
-                    alt=""
-                    style={{ objectPosition: story.thumbPosition }}
-                  />
+                  <picture>
+                    {story.thumbWebp ? (
+                      <source srcSet={assetPath(story.thumbWebp)} type="image/webp" />
+                    ) : null}
+                    <img
+                      src={assetPath(story.thumb ?? "peloton-contents-triptych.png")}
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                      style={{ objectPosition: story.thumbPosition }}
+                    />
+                  </picture>
                 </span>
                 <ArrowRight className="story-list__arrow" size={18} aria-hidden="true" />
               </button>
@@ -415,13 +425,16 @@ function StoryScreen({ story, onBack, onNext, saved, onToggleSaved, reduceMotion
       </header>
 
       <figure className="article-hero">
-        <img
-          src={assetPath(story.hero)}
-          alt={story.alt}
-          decoding="async"
-          fetchPriority="high"
-          style={{ objectPosition: story.heroPosition }}
-        />
+        <picture>
+          {story.heroWebp ? <source srcSet={assetPath(story.heroWebp)} type="image/webp" /> : null}
+          <img
+            src={assetPath(story.hero)}
+            alt={story.alt}
+            decoding="async"
+            fetchPriority="high"
+            style={{ objectPosition: story.heroPosition }}
+          />
+        </picture>
         <figcaption>
           <span>{story.caption}</span>
           <small>ILUSTRACJA — PAPER STUDIO</small>

@@ -8,8 +8,10 @@ export const kiedyZnikaAsfalt = {
   time: "14 min",
   description: "Gravel po końcu znanej trasy.",
   hero: assetPath("peloton-contents-triptych.png"),
+  heroWebp: "peloton-contents-triptych.webp",
   heroPosition: "50% 100%",
   thumb: assetPath("peloton-contents-triptych.png"),
+  thumbWebp: "peloton-contents-triptych.webp",
   thumbMode: "triptych",
   thumbPosition: "50% 100%",
   lead:
@@ -21,12 +23,26 @@ export const kiedyZnikaAsfalt = {
   quote:
     "Asfalt mówi, dokąd prowadzi. Szuter pyta, czy naprawdę chcesz się tego dowiedzieć.",
   quoteAfter: 2,
-  detailAfter: 3,
-  detailImage: assetPath("peloton-contents-triptych.png"),
-  detailAlt:
-    "Jasna droga przecina ciemny górski krajobraz w redakcyjnej ilustracji numeru Peloton.",
-  detailCaption:
-    "Beskid Niski. Trasa prowadzi przez krajobraz, w którym droga jest również zapisem pamięci.",
+  media: [
+    {
+      afterSection: 2,
+      src: "peloton-gravel-valley.png",
+      webp: "peloton-gravel-valley.webp",
+      layout: "wide",
+      alt: "Mały kolarz jedzie szutrową serpentyną przez monumentalną dolinę pod deszczowymi chmurami.",
+      caption: "W dolinie skala się odwraca: człowiek jest punktem, a droga — długim zdaniem bez kropki.",
+      credit: "ILUSTRACJA — PAPER STUDIO",
+    },
+    {
+      afterSection: 4,
+      src: "peloton-contents-triptych.png",
+      webp: "peloton-contents-triptych.webp",
+      layout: "standard",
+      alt: "Jasna droga przecina ciemny górski krajobraz w redakcyjnej ilustracji numeru Peloton.",
+      caption: "Beskid Niski. Trasa prowadzi przez krajobraz, w którym droga jest również zapisem pamięci.",
+      credit: "ILUSTRACJA — PAPER STUDIO",
+    },
+  ],
   routeStats: ["84 KM", "1430 M W GÓRĘ", "OK. 60% POZA ASFALTEM"],
   sections: [
     {

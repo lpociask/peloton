@@ -8,8 +8,10 @@ export const drugiWyscig = {
     "Szymon Gruchalski fotografuje peleton od środka. O drodze z klubu kolarskiego na Tour de France, dwudziestu sekundach na zdjęcie i granicy, której nie wolno przekroczyć.",
   byline: "TEKST — REDAKCJA PELOTON",
   hero: "/assets/peloton-photographer-hero.png",
+  heroWebp: "peloton-photographer-hero.webp",
   heroPosition: "50% 46%",
   thumb: "/assets/peloton-photographer-hero.png",
+  thumbWebp: "peloton-photographer-hero.webp",
   thumbMode: "standalone",
   thumbPosition: "50% 42%",
   lead:
@@ -17,20 +19,22 @@ export const drugiWyscig = {
   caption:
     "Fotograf wyścigu widzi peleton z bliska, ale nie może ani na chwilę zapomnieć, że pozostaje jego gościem.",
   alt: "Fotograf na motocyklu jadący obok peletonu podczas górskiego wyścigu kolarskiego.",
-  quote: "Każde z moich zdjęć opowiada więcej o mnie, niż kolarstwie.",
+  quote: "Fotograf nie zatrzymuje peletonu. Musi znaleźć sekundę, w której wyścig sam układa się w opowieść.",
   quoteAfter: 5,
   media: [
     {
-      after: 3,
+      afterSection: 3,
       src: "/assets/peloton-photographer-motor.png",
+      webp: "peloton-photographer-motor.webp",
       layout: "wide",
       alt: "Fotograf pracujący z motocykla obok rozpędzonego peletonu.",
       caption: "Mapa, regulatorzy i zaufanie kierowcy motocykla tworzą niewidoczne zaplecze każdego kadru z wnętrza wyścigu.",
       credit: "ILUSTRACJA — PAPER STUDIO",
     },
     {
-      after: 7,
+      afterSection: 7,
       src: "/assets/peloton-photographer-after-race.png",
+      webp: "peloton-photographer-after-race.webp",
       layout: "portrait",
       alt: "Samotny fotograf przeglądający materiał po zakończeniu etapu kolarskiego.",
       caption: "Po mecie kończy się jazda, lecz trwa selekcja obrazów, ich opisanie i budowanie pamięci wyścigu.",
@@ -55,6 +59,7 @@ export const drugiWyscig = {
         "Kiedy jego zawodnicy ruszali na rundę wyścigu MTB, trener zostawał przy trasie. Podawał czasy, dopingował, a pomiędzy kolejnymi przejazdami próbował fotografować. Zdjęcia pozwalały pokazać działalność klubu lokalnej prasie, dać młodym zawodnikom pamiątkę i opowiedzieć o sporcie ludziom, którzy nie stali przy taśmie. Z czasem użytkowe fotografowanie zaczęło zamieniać się w świadome poszukiwanie.",
         "Najważniejsze pytanie nie brzmiało jeszcze: jaki aparat kupić? Bardziej interesujące było to, dlaczego jeden przypadkowy kadr działa, a drugi pozostaje obojętny. Jak ponownie osiągnąć efekt, który wcześniej pojawił się przez szczęśliwy zbieg światła, ruchu i ustawienia? W tym pytaniu widać trenera. Zamiast liczyć wyłącznie na talent, Gruchalski szukał reguły, ćwiczenia i sposobu powtarzania dobrego rezultatu.",
         "Znajomość kolarstwa stała się jego pierwszym obiektywem. Wie, kiedy grupa zaczyna się niepokoić, jak zachowuje się przed premią i gdzie wiatr może rozerwać peleton. Rozumie zmęczenie zawodników i nie musi dopiero uczyć się ich języka. Techniki fotograficznej można się nauczyć. Instynkt wypracowany przez lata spędzone w sporcie trudniej zastąpić.",
+        "Kiedy nie pracuje przy wyścigu, sam nadal lubi wsiąść na szosę. Jeździ amatorsko także na rowerze górskim i w skali roku zbiera kilka tysięcy kilometrów. Ta jazda nie jest dodatkiem do zawodowego wizerunku. Pozwala pamiętać, jak po godzinach w siodle zmienia się oddech, chwyt kierownicy i sposób patrzenia na następny zakręt. Fotografując zawodnika, Gruchalski zna więc drogę również z jego perspektywy — choć bez numeru przypiętego do pleców.",
       ],
     },
     {
@@ -109,9 +114,10 @@ export const drugiWyscig = {
     },
     {
       label: "Język obrazu",
-      heading: "Nie tylko żółta koszulka",
+      heading: "Kolarz nie zawsze jest najważniejszy",
       paragraphs: [
-        "Najłatwiej zapamiętać zwycięzcę na podium. Konfetti, uniesione ręce i rozpoznawalna koszulka dają fotografii gotową hierarchię. Znacznie trudniej opowiedzieć, dlaczego wyścig był ważny, czym różniło się jego tempo i co przeżywali ludzie, których nie pokazano w transmisji. Tu zaczyna się praca dokumentalisty.",
+        "Najłatwiej zapamiętać zwycięzcę na podium. Konfetti, uniesione ręce i rozpoznawalna koszulka dają fotografii gotową hierarchię. W kadrach Gruchalskiego najważniejszy nie zawsze jest jednak kolarz. Czasem peleton staje się małym znakiem w ogromnym krajobrazie, znika za zakrętem albo nie pojawia się w obrazie wcale. Bohaterem zostaje droga, światło, mechanik przy autobusie, twarz kibica lub cisza po finiszu.",
+        "Nie jest to odchodzenie od sportu. To próba pokazania warunków, dzięki którym wyścig w ogóle może zaistnieć: miejsca, pogody, pracy wielu niewidocznych ludzi i oczekiwania trwającego znacznie dłużej niż sam przejazd grupy. Zdjęcie lidera odpowiada na pytanie, kto wygrał. Obraz pustych barierek albo dziecka wypatrującego peletonu może opowiedzieć, dlaczego ten dzień był dla kogoś ważny.",
         "Kolarski obraz może opierać się na prędkości, lecz równie często działa przez ciszę. Puste krzesło przed startem, ręce zapinające numer, ślady błota na twarzy czy kibic składający flagę po przejeździe ostatniej grupy rozszerzają znaczenie wyniku. Pozwalają zobaczyć wyścig jako tymczasowy świat zbudowany na kilka godzin przez zawodników, organizatorów i mieszkańców.",
         "Gruchalski podkreśla na swojej stronie, że każde jego zdjęcie opowiada również o nim samym. Nie musi to oznaczać dominacji autora nad tematem. Fotograf wybiera przecież, czy skieruje aparat na cierpienie, krajobraz, tłum, sprzęt czy drobny gest. Z tysięcy możliwych klatek tworzy własny zapis tego, czym według niego jest kolarstwo.",
         "Dla polskiego odbiorcy jego obecność w największych wyścigach ma dodatkowe znaczenie. Międzynarodowy peleton nie jest oglądany wyłącznie z importowanej perspektywy. Człowiek wychowany w lokalnym klubie, trener młodzieży i nauczyciel z Jarocina buduje obrazy, które trafiają do światowych agencji. Nie fotografuje wyłącznie Polaków, ale wnosi do środka Touru doświadczenie polskiej kultury kolarskiej.",
@@ -132,6 +138,10 @@ export const drugiWyscig = {
     {
       label: "Szymon Gruchalski — oficjalna biografia",
       url: "https://gruchalski.cc/o-mnie/",
+    },
+    {
+      label: "Na Szosie — wywiad i kolarskie pasje Szymona Gruchalskiego",
+      url: "https://naszosie.pl/2022/03/29/wywiad-z-szymonem-gruchalskim-video/",
     },
     {
       label: "Tour de Pologne — jak wygląda praca fotografa na wyścigu kolarskim",

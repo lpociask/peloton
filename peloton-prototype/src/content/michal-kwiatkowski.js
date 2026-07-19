@@ -5,23 +5,72 @@ export const michalKwiatkowski = {
   number: "04",
   type: "Portret",
   title: "Michał Kwiatkowski",
-  time: "13 min",
-  description: "Tęczowa koszulka, klasyki i sztuka wykonywania najtrudniejszej pracy w peletonie.",
+  time: "15 min",
+  description: "Tęczowa koszulka, rodzina, Veloart i więź z polskimi kibicami.",
   byline: "TEKST — REDAKCJA PELOTON",
   hero: assetPath("peloton-kwiatkowski-portrait.png"),
+  heroWebp: "peloton-kwiatkowski-portrait.webp",
   heroPosition: "50% 32%",
   thumb: assetPath("peloton-kwiatkowski-portrait.png"),
+  thumbWebp: "peloton-kwiatkowski-portrait.webp",
   thumbMode: "standalone",
   thumbPosition: "50% 28%",
-  detailImage: assetPath("peloton-kwiatkowski-portrait.png"),
   lead: "Największe zwycięstwa Michała Kwiatkowskiego nie łączy jeden rodzaj trasy. Łączy je coś trudniejszego do zmierzenia: umiejętność rozpoznania chwili, w której wyścig przestaje być układanką, a staje się decyzją.",
   caption: "Michał Kwiatkowski należy do nielicznej grupy kolarzy, którzy potrafili wygrywać najważniejsze klasyki, a później całkowicie podporządkować swój talent pracy dla zespołu.",
   alt: "Redakcyjna ilustracja Michała Kwiatkowskiego na tle szosy i alpejskich serpentyn.",
   quote: "W karierze Kwiatkowskiego najważniejszy nie jest jeden typ wysiłku. Najważniejsza jest chwila, w której rozumie wyścig szybciej niż pozostali.",
   quoteAfter: 3,
-  detailAfter: 6,
-  detailCaption: "Od Ponferrady po Grand Colombier — za każdym razem zwycięstwo przychodziło po innym rodzaju wyścigu.",
-  detailAlt: "Michał Kwiatkowski w ciemnym stroju kolarskim na tle krętej drogi i górskiego krajobrazu.",
+  media: [
+    {
+      afterSection: 6,
+      src: "peloton-kwiatkowski-home.png",
+      webp: "peloton-kwiatkowski-home.webp",
+      alt: "Kolarskie buty przy drzwiach, rodzinny stół i dziecięcy rysunek roweru w ciepłym świetle.",
+      caption: "Dom nie jest przeciwieństwem kariery. To miejsce, z którego wielotygodniowe wyjazdy otrzymują sens.",
+      credit: "ILUSTRACJA — PAPER STUDIO",
+      layout: "portrait",
+    },
+    {
+      afterSection: 8,
+      src: "peloton-kwiatkowski-warsaw-veloart.png",
+      webp: "peloton-kwiatkowski-warsaw-veloart.webp",
+      alt: "Duża grupa amatorów jedzie za liderem z Warszawy w stronę Kampinosu.",
+      caption: "Maj 2015. Ponad pięciuset rowerzystów ruszyło z warszawskiego Veloartu w stronę Kampinosu.",
+      credit: "ILUSTRACJA — PAPER STUDIO",
+      layout: "standard",
+    },
+    {
+      afterSection: 9,
+      src: "peloton-kwiatkowski-polish-fans.png",
+      webp: "peloton-kwiatkowski-polish-fans.webp",
+      alt: "Kolarz przejeżdża pomiędzy polskimi kibicami na górskiej drodze.",
+      caption: "Kilka sekund przy barierce może zostać z zawodnikiem dłużej niż niejeden wynik.",
+      credit: "ILUSTRACJA — PAPER STUDIO",
+      layout: "wide",
+    },
+  ],
+  sources: [
+    {
+      label: "Polski Komitet Olimpijski — biogram Michała Kwiatkowskiego",
+      url: "https://olimpijski.pl/olimpijczycy/michal-kwiatkowski/",
+    },
+    {
+      label: "Veloart — zespół i rodzinny projekt",
+      url: "https://veloart.cc/o-nas/",
+    },
+    {
+      label: "Na Szosie — przejazd Warszawa–Kampinos w 2015 roku",
+      url: "https://naszosie.pl/2015/05/03/trening-z-michalem-kwiatkowskim-za-nami-foto/",
+    },
+    {
+      label: "Sport.pl — rozmowa o rodzinie podczas Tour de Pologne 2023",
+      url: "https://www.sport.pl/kolarstwo/7,64993,30021393,kwiatkowski-dopiero-sie-rozpedza-tour-de-pologne-moze-byc-jego.html",
+    },
+    {
+      label: "Tour de Pologne — historia wyścigu i zwycięstwo w 2018 roku",
+      url: "https://www.tourdepologne.pl/en/historia-2/",
+    },
+  ],
   sections: [
     {
       label: "Portret",
@@ -76,6 +125,38 @@ export const michalKwiatkowski = {
         "W klasykach Kwiatkowski przez wiele sezonów był naturalnym liderem. Jego obecność zmuszała rywali do pilnowania kilku scenariuszy naraz: późnego ataku, selekcji na podjeździe, małej grupy i ograniczonego sprintu. W wyścigach etapowych ta sama wielozadaniowość czyniła z niego pomocnika klasy premium. Mógł pracować przed górami, przeprowadzać lidera przez techniczny teren, kontrolować odjazdy albo czekać z nim w momencie kryzysu.",
         "Ta podwójność bywa źle rozumiana. Pomocnik nie jest kolarzem, któremu zabrakło ambicji, a lider nie jest zawodnikiem zwolnionym z pracy. W najlepszych zespołach role zmieniają się wraz z profilem etapu, stanem klasyfikacji i kondycją kolegów. Kwiatkowski potrafił przechodzić pomiędzy nimi bez utraty wiarygodności. Kiedy dostawał wolność, rywale wiedzieli, że odjazd może dojechać. Kiedy zostawał przy liderze, ten wiedział, że ma obok siebie człowieka, który sam rozumie presję wielkiego wyniku.",
         "Być może właśnie dlatego jego dorobek jest trudniejszy do opisania niż palmarès kolarza zbudowanego wokół jednej specjalności. Część najważniejszych dni nie zakończyła się jego uniesionymi rękami. Kończyła się wcześniej: po mocnej zmianie, zamknięciu luki albo dowiezieniu lidera do miejsca, w którym zaczynał się właściwy finał. Statystyka zapisuje wtedy odległą pozycję. Zespół zapamiętuje moment, bez którego późniejszy wynik nie byłby możliwy.",
+      ],
+    },
+    {
+      label: "Poza wyścigiem",
+      heading: "Dom, który jedzie razem z nim",
+      paragraphs: [
+        "Najpierw był starszy brat Radosław. To jego rower i kask obudziły w ośmioletnim Michale zazdrość, która szybko zmieniła się w ambicję. Rodzice wspierali sport całej czwórki dzieci, choć sami nie tworzyli zawodowego zaplecza. Kolarstwo Kwiatkowskiego zaczęło się więc w Działyniu nie od gotowego systemu, lecz od rodzinnej decyzji, by dziecięce zainteresowanie potraktować poważnie.",
+        "Dziś rodzina oznacza także żonę i córki. W publicznej rozmowie podczas Tour de Pologne w 2023 roku Kwiatkowski mówił o trudności łączenia ojcostwa z wielotygodniowymi wyjazdami oraz o radości, kiedy bliscy mogli przemieszczać się razem z wyścigiem. Nie przedstawiał domu jako przeciwieństwa kariery. Raczej jako punkt odniesienia, który zabiera ze sobą na trasę — cichy powód, dla którego kolejny trening i kolejny powrót mają znaczenie.",
+      ],
+    },
+    {
+      label: "Rodzinny projekt",
+      heading: "Veloart: adres pomiędzy światami",
+      paragraphs: [
+        "Veloart nie jest przypadkową marką dopisaną do nazwiska mistrza świata. Oficjalna strona firmy przedstawia Michała jako właściciela, a jego brata Radosława — byłego zawodnika ścigającego się między innymi we Włoszech i Hiszpanii — jako managing directora. Michał pojawia się w studiu pomiędzy wyścigami i po sezonie. Historia zatoczyła koło: brat, za którym ruszył na rowerze jako dziecko, współtworzy dziś z nim miejsce dla kolejnych rowerzystów.",
+        "Najciekawsze nie są jednak funkcje zapisane przy nazwiskach, lecz most pomiędzy hermetycznym World Tourem a codziennością amatora. Bikefitting, serwis, kawa i rozmowa o pierwszej setce kilometrów odbywają się w tym samym miejscu, do którego trafia sprzęt zawodowca. Profesjonalizm nie służy tu budowaniu dystansu. Ma być dostępny — przełożony z języka wyścigów na pozycję siodła, spokojniejszą głowę i rower, o którym podczas jazdy można zapomnieć.",
+      ],
+    },
+    {
+      label: "Warszawa · Kampinos",
+      heading: "Pięciuset ludzi na wspólnym kole",
+      paragraphs: [
+        "Najbardziej czytelnym obrazem tej idei pozostaje przejazd z maja 2015 roku. Z warszawskiego Veloartu w stronę Kampinosu wyruszył peleton liczący ponad pięćset osób. Aktualny mistrz świata jechał na jego czele, lecz nie był to pokaz mocy ani zamknięta jednostka z zawodowego planu. Tempo zostawiało miejsce na rozmowy i zdjęcia. Ludzie, którzy wcześniej widzieli tęczową koszulkę głównie na ekranie, przez kilka godzin jechali w tej samej grupie.",
+        "Trzeba zachować precyzję: publiczne źródła nie pozwalają nazywać Warszawy stałą bazą treningową Kwiatkowskiego. Stolica jest w tej historii czymś innym — społecznym adresem Veloartu i miejscem powrotu do lokalnego kolarstwa. Trasa do Kampinosu nie prowadziła ku testom wydolnościowym. Prowadziła od profesjonalnego peletonu do ludzi, dla których dwie godziny na rowerze są częścią zwykłego tygodnia.",
+      ],
+    },
+    {
+      label: "Relacja",
+      heading: "Biało-czerwone flagi nie mierzą watów",
+      paragraphs: [
+        "Kibic widzi kolarza przez kilka sekund. Kolarz potrafi zapamiętać kibica na długo. Po zwycięstwie w Tour de Pologne w 2018 roku Kwiatkowski podkreślał znaczenie okrzyków słyszanych na kolejnych kilometrach. Trzy lata wcześniej, przed warszawskim przejazdem, dziękował uczestnikom za obecność nie tylko przy największych sukcesach, lecz także w słabszych momentach sezonu. Te dwa obrazy — zwycięzca klasyfikacji generalnej i lider spokojnego coffee ride’u — opisują tę samą więź.",
+        "Wsparcie polskich kibiców nie jest patriotyczną dekoracją. Flaga nie zmniejszy nachylenia, nie poprawi progu mocy i nie zamknie luki w peletonie. Może jednak przypomnieć zawodnikowi, że jego wysiłek przekracza granice zespołu, kontraktu i tabeli wyników. Dlatego start w Polsce lub biało-czerwony szpaler na zagranicznym podjeździe ma inny ciężar emocjonalny niż kolejny punkt kalendarza.",
       ],
     },
     {
