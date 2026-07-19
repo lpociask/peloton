@@ -1,0 +1,115 @@
+import { assetPath } from "../assetPath";
+
+export const kiedyZnikaAsfalt = {
+  id: "kiedy-znika-asfalt",
+  number: "03",
+  type: "Droga",
+  title: "Kiedy znika asfalt",
+  time: "14 min",
+  description: "Gravel po końcu znanej trasy.",
+  hero: assetPath("peloton-contents-triptych.png"),
+  heroPosition: "50% 100%",
+  thumb: assetPath("peloton-contents-triptych.png"),
+  thumbMode: "triptych",
+  thumbPosition: "50% 100%",
+  lead:
+    "Za ostatnim równym odcinkiem zaczyna się podróż, której nie da się zapisać wyłącznie w planie treningowym.",
+  byline: "TEKST — REDAKCJA PELOTON",
+  caption:
+    "Droga bez numeru. Beskid Niski zaczyna się tam, gdzie nawierzchnia przestaje składać obietnice.",
+  alt: "Jasna szutrowa droga prowadzi pomiędzy ciemnymi górami pod pomarańczowym słońcem.",
+  quote:
+    "Asfalt mówi, dokąd prowadzi. Szuter pyta, czy naprawdę chcesz się tego dowiedzieć.",
+  quoteAfter: 2,
+  detailAfter: 3,
+  detailImage: assetPath("peloton-contents-triptych.png"),
+  detailAlt:
+    "Jasna droga przecina ciemny górski krajobraz w redakcyjnej ilustracji numeru Peloton.",
+  detailCaption:
+    "Beskid Niski. Trasa prowadzi przez krajobraz, w którym droga jest również zapisem pamięci.",
+  routeStats: ["84 KM", "1430 M W GÓRĘ", "OK. 60% POZA ASFALTEM"],
+  sections: [
+    {
+      label: "01 — GRANICA",
+      heading: "Ostatni równy kilometr",
+      paragraphs: [
+        "Gorlice budzą się bez pośpiechu. Jest kilka minut przed szóstą, kiedy przecinam rynek, mijając dostawczy samochód z otwartymi drzwiami i człowieka układającego skrzynki z pieczywem. Powietrze pachnie mokrym brukiem, drożdżami i paliwem. Światła uliczne jeszcze się palą, choć niebo nad dachami zdążyło już zszarzeć.",
+        "Przez pierwsze kilometry wszystko jest znajome. Równa nawierzchnia, biała linia przy krawędzi, rytmiczne kliknięcie zmienianych przełożeń. Rower toczy się lekko, a licznik pokazuje prędkość, którą można później wpisać do tabeli. Na podjeździe za Sękową mija mnie pierwszy samochód. Potem drugi. Trzeciego już nie ma.",
+        "Droga zwęża się pomiędzy domami, prowadzi obok ciemnego, drewnianego kościoła, a dalej wspina się ku zalesionym grzbietom. Asfalt jest tutaj łatany tak wiele razy, że trudno powiedzieć, która warstwa była pierwsza. Każdy kolejny kilometr wygląda trochę mniej oficjalnie. Znika linia. Pobocze zarasta trawą. Na środku jezdni pojawiają się drobne kamienie naniesione przez nocny deszcz.",
+        "Koniec przychodzi bez znaku ostrzegawczego. Czarna nawierzchnia jaśnieje, traci gładkość i po kilku obrotach korby staje się ubitą drogą z jasnego kruszywa. Nie ma szlabanu ani tablicy informującej, że właśnie zaczyna się inny rodzaj jazdy. Jest tylko nowy dźwięk: szelest opon, pojedyncze uderzenia kamieni o dolną rurę ramy i ciche brzęczenie rzeczy schowanych w torbie.",
+        "Prędkość spada z dwudziestu ośmiu do dziewiętnastu kilometrów na godzinę. Jednocześnie zwalnia coś jeszcze. Wzrok przestaje szukać końca prostej i przesuwa się kilka metrów przed przednie koło. Dłonie, dotąd oparte nieruchomo na klamkach, zaczynają pracować. Łokcie miękną. Rower delikatnie wybiera własny tor.",
+        "Na asfalcie droga składa obietnicę, że doprowadzi do konkretnego miejsca. Tutaj niczego nie obiecuje. Zakręt znika za ścianą buków, ślad po traktorze rozdziela trasę na dwie nierówne linie, a mapa w liczniku pokazuje jedynie cienką kreskę przecinającą zieloną przestrzeń.",
+        "Właśnie po ten moment tu przyjechałem.",
+      ],
+    },
+    {
+      label: "02 — PRZYGOTOWANIE",
+      heading: "Rower ma zniknąć",
+      paragraphs: [
+        "Przygotowania do takiej jazdy łatwo pomylić z zakupami. Większa opona, szersza kierownica, kolejna torba, lżejsza pompka. Branża potrafi przekonać, że przygoda zaczyna się dopiero po odebraniu przesyłki. Tymczasem najważniejsze rzeczy wydarzyły się poprzedniego wieczoru na podłodze niewielkiego pokoju.",
+        "Sprawdziłem klocki hamulcowe, dokręcenie osi i ilość mleka w oponach. Do małej torby pod górną rurą trafiły dwa sznury naprawcze do tubeless, zapasowa dętka, łyżka, pompka, spinka do łańcucha i niewielki multitool. W kieszeni koszulki schowałem cienką kurtkę przeciwdeszczową oraz folię ratunkową. Nie dlatego, że planowałem biwak. Dlatego, że w górach nawet jednodniowa wycieczka może nagle stać się dłuższa.",
+        "Rower stoi na oponach 700 × 42 mm. Z przodu mam około dwóch barów, z tyłu trochę więcej. To ustawienie dobrane do mojej masy, bagażu i tej konkretnej opony, nie gotowa recepta dla każdego. Zbyt wysokie ciśnienie powoduje, że koło odbija się od kamieni i traci kontakt z podłożem. Zbyt niskie zwiększa ryzyko dobicia obręczy. Różnicę pomiędzy dobrym a złym ustawieniem czuje się tutaj po kilkuset metrach, nie po analizie wykresu.",
+        "Napęd jest prosty: jedna tarcza z czterdziestoma zębami i kaseta 10–44. Na asfalcie brakuje czasem cięższego przełożenia, ale na stromym, kamienistym podjeździe ważniejsza okazuje się możliwość spokojnego obracania korbą. Hydrauliczne hamulce i tarcze 160 mm nie wyglądają efektownie na liście wyposażenia. Ich wartość pojawia się dopiero podczas długiego zjazdu, kiedy mokry pył przykleja się do roweru, a palce zaczynają tracić siłę.",
+        "Mam dwa bidony, trzy kanapki zawinięte w papier, banana i kilka miękkich żelków. Trasa jest zapisana w liczniku i telefonie, ale mapa działa również offline. Przed wyjazdem wysłałem jej przebieg bliskiej osobie. Zasięg w dolinach jest niepewny, a czerwona kreska na ekranie nie zastępuje informacji o tym, gdzie ktoś zamierzał być.",
+        "To wszystko ma jeden cel: sprawić, żeby podczas jazdy sprzęt przestał zajmować uwagę. Dobry rower terenowy nie powinien nieustannie przypominać o swojej cenie, materiale ramy ani liczbie przełożeń. Powinien zniknąć pomiędzy człowiekiem a drogą.",
+        "Po kilkunastu kilometrach szutru rzeczywiście znika. Nie myślę już o szerokości opon. Myślę o cieniu przesuwającym się pomiędzy drzewami, o wilgoci wiszącej nad potokiem i o następnym zakręcie.",
+      ],
+    },
+    {
+      label: "03 — RYZYKO",
+      heading: "Linia, której nie ma",
+      paragraphs: [
+        "Pierwszy szybki zjazd zaczyna się niewinnie. Droga jest szeroka, nachylenie łagodne, a jasny szuter wygląda na twardy i równy. Po chwili prędkość przekracza czterdzieści kilometrów na godzinę. Dopiero wtedy dostrzegam poprzeczne tarki wyżłobione przez koła samochodów.",
+        "Rower wpada w drgania. Kierownica próbuje wysunąć się z dłoni, bidon podskakuje w koszyku, a wzrok odruchowo zatrzymuje się na największym kamieniu. To najgorsze, co można zrobić. Tam, gdzie patrzę, tam jedzie przednie koło.",
+        "Przenoszę spojrzenie dalej, na spokojniejszy fragment drogi. Rozluźniam chwyt i lekko unoszę ciężar nad siodłem. Rower nadal tańczy, ale jego ruch przestaje wyglądać jak awaria. Nie walczę z każdym uślizgiem. Pozwalam oponom przesuwać się o kilka centymetrów, dopóki rama pozostaje ustawiona w kierunku wyjścia z zakrętu.",
+        "Na szutrze nie istnieje jedna idealna linia. Ta, która wygląda najlepiej z daleka, może kończyć się w głębokim piasku. Twardy środek drogi bywa szybszy, ale zbiera luźne kamienie. Koleina może prowadzić równo przez sto metrów, a potem gwałtownie skręcić w stronę rowu. Jazda staje się serią małych decyzji podejmowanych bez zatrzymywania ruchu.",
+        "Kilka kilometrów później jedna z nich okazuje się zła. Na kamienistym podjeździe wybieram zewnętrzną stronę łuku. Tył podskakuje, po czym słyszę krótkie syknięcie. Na bieżniku pojawia się jasna kropla uszczelniacza. Obracam koło przebiciem w dół, ale otwór jest zbyt duży, żeby mleko zamknęło go od razu.",
+        "Naprawa trwa jedenaście minut. Sznur wchodzi w przecięcie za drugim razem. Dopompowuję oponę, sprawdzam, czy powietrze nadal ucieka, i wycieram dłonie o kawałek papieru. Nie ma dramatu, tylko mała przerwa przy drodze, podczas której zaczynam słyszeć potok ukryty poniżej skarpy.",
+        "Ryzyko podczas gravelowej jazdy rzadko wygląda filmowo. Częściej jest sumą drobnych zaniedbań: zbyt dużej prędkości przed ślepym zakrętem, pustego bidonu, telefonu bez baterii albo decyzji, by kontynuować mimo pogarszającej się pogody. Odwaga nie polega tutaj na ignorowaniu tych sygnałów. Polega na zauważeniu ich odpowiednio wcześnie.",
+      ],
+    },
+    {
+      label: "04 — PAMIĘĆ",
+      heading: "Dolina pamięta",
+      paragraphs: [
+        "Droga do Radocyny prowadzi wzdłuż Wisłoki. Rzeka jest jeszcze młoda i wąska, miejscami znika pod gałęziami. Łąki rozszerzają się pomiędzy grzbietami, a las cofa na tyle, by wpuścić do doliny światło. Z daleka miejsce wygląda niemal pusto.",
+        "Dopiero gdy zwalniam, pustka zaczyna się rozpadać na szczegóły.",
+        "Przy drodze stoi kamienny krzyż. Kilkaset metrów dalej, za wysoką trawą, widać następny. Stara jabłoń rośnie bez wyraźnego powodu pośrodku łąki. Jej gałęzie są splątane, owoce małe i kwaśne. Obok znajduje się ledwie widoczne zagłębienie terenu, być może ślad po piwnicy albo fundamentach domu.",
+        "Radocyna, Długie, Czarne i Nieznajowa nie są nazwami wymyślonymi dla turystycznej mapy. To miejsca, w których żyli ludzie. Po dawnych łemkowskich wsiach pozostały drogi, cmentarze, cerkwiska, zdziczałe sady, kapliczki oraz krzyże. Ich mieszkańców dotknęły wojenne wysiedlenia, powojenne przesiedlenia i akcja Wisła. Krajobraz, który dzisiejszy rowerzysta może nazwać dzikim, jest również krajobrazem przerwanej obecności.",
+        "Zsiadam z roweru przy niewielkim cmentarzu. Nie opieram go o kamienny krzyż, nie przejeżdżam pomiędzy nagrobkami. Stawiam go w trawie i przez kilka minut idę pieszo. Po wielu kilometrach ruchu nieruchomość tego miejsca działa mocniej niż widok ze szczytu.",
+        "Turystyka rowerowa lubi język odkrywania. Odkrywamy trasę, przełęcz, zapomnianą dolinę. To wygodne słowa, ale łatwo stawiają przybysza w centrum opowieści. Tutaj niczego nie odkrywam. Przyjeżdżam na chwilę do miejsca, które miało własne życie długo przed moim pojawieniem się i zachowa pamięć po moim wyjeździe.",
+        "Na dalszym odcinku spotykam kilka osób. Dwóch turystów prowadzi rowery pod stromą rampę. Przy gospodarstwie kobieta napełnia poidło dla koni. Na lokalnym asfalcie mija mnie stary ciągnik, którego kierowca unosi rękę znad kierownicy. Ten gest trwa sekundę i wystarcza. Nie każde spotkanie potrzebuje rozmowy ani zdjęcia.",
+        "W małym sklepie kupuję kefir, drożdżówkę i wodę. Sprzedawczyni odkłada czytaną gazetę, podlicza zakupy i wraca do stolika przed wejściem. Siadam na niskim murku. Na metalowej barierce schną dwa dziecięce ręczniki, ktoś kosi trawę, z otwartego okna domu słychać radio.",
+        "Lokalność nie jest dekoracją ustawioną przy trasie. Trwa obok niej, zwyczajnie i bez potrzeby imponowania komukolwiek.",
+      ],
+    },
+    {
+      label: "05 — POGODA",
+      heading: "Deszcz bez zasięgu",
+      paragraphs: [
+        "Chmury zbierają się od południa, ale przez długi czas wyglądają niegroźnie. W górach łatwo uwierzyć, że ciemniejsze niebo znajduje się nad inną doliną. Pierwsze krople spadają na otwartym podjeździe, gdzie nie ma ani domu, ani wiaty.",
+        "Zakładam kurtkę i chowam telefon głębiej do torby. Po kilku minutach suchy szuter zmienia kolor na brunatny. Kamienie pozostają twarde, lecz gliniaste fragmenty drogi zaczynają oblepiać opony. Błoto wypełnia bieżnik, a tylne koło coraz częściej obraca się bez przesuwania roweru do przodu.",
+        "Na najbardziej stromym fragmencie schodzę z roweru. Buty ślizgają się niemal tak samo jak opony. Pchanie nie wygląda dobrze na nagraniu i nie daje żadnego wyniku sportowego, ale bywa najszybszą oraz najbezpieczniejszą metodą zdobycia kolejnych dwustu metrów drogi.",
+        "Na grzbiecie telefon nie pokazuje zasięgu. Nawigacja nadal działa, bo mapa została pobrana wcześniej. Kreska sugeruje skręt w drogę leśną, jednak przy wjeździe stoi świeża tablica informująca o pracach. Nie próbuję obchodzić zakazu ani sprawdzać, czy robotnicy rzeczywiście znajdują się w lesie. Wybieram objazd lokalnym asfaltem. Dodaje osiem kilometrów i odbiera możliwość przejechania zaplanowanego odcinka.",
+        "To również jest część podróży. Trasa nie jest umową zawartą z krajobrazem. Plik GPX nie daje prawa wjazdu wszędzie, gdzie poprowadzono kolorową linię. Drogi bywają zamknięte, mosty zerwane, lasy czasowo niedostępne, a pogoda szybsza od prognozy. Czasem najlepszą decyzją jest objazd. Czasem powrót.",
+        "Deszcz słabnie przed kolejnym zjazdem. Sprawdzam hamulce, zjadam ostatnią kanapkę i przez chwilę stoję bez ruchu. Z mokrego lasu unosi się para. Woda spływa po liściach i uderza o kaptur w nieregularnym rytmie. Nie ma zasięgu, powiadomień ani możliwości sprawdzenia, co wydarzyło się gdzieś indziej.",
+        "Jest tylko miejsce, w którym naprawdę jestem.",
+      ],
+    },
+    {
+      label: "06 — POWRÓT",
+      heading: "Powrót po śladzie",
+      paragraphs: [
+        "Asfalt wraca późnym popołudniem. Najpierw pojawia się krótki, popękany fragment przy kilku domach. Potem droga staje się ciemniejsza i równiejsza. Po kilkudziesięciu kilometrach szutru jej gładkość wydaje się niemal nienaturalna.",
+        "Opony cichną. Rower przyspiesza bez wysiłku, kierownica przestaje drżeć, a wzrok znów może przenieść się daleko przed przednie koło. Powinienem poczuć ulgę. Zamiast niej przez chwilę mam wrażenie, że czegoś brakuje.",
+        "Na pierwszym dłuższym zjeździe mijam samochód, potem drugi. Wracają znaki, skrzyżowania i wyraźne pierwszeństwo przejazdu. Krajobraz ponownie zostaje uporządkowany. Każda droga ma numer, każda miejscowość tablicę początku i końca, a telefon odzyskuje zasięg, zasypując ekran wiadomościami.",
+        "Przed Gorlicami zatrzymuję się przy stacji. Wąż z wodą przeznaczony do mycia samochodów zrzuca z ramy jasny pył i ciemne błoto. Dopiero teraz widzę drobne ślady dnia: rysę na klamce, zaschnięty uszczelniacz na tylnej oponie, kamyk zaklinowany przy korbie. Żaden z nich nie ma znaczenia. Ważniejsze rzeczy nie zostawiły śladu na rowerze.",
+        "Licznik zapisze dystans, przewyższenie, czas ruchu i średnią prędkość. Pokaże, w którym miejscu zatrzymałem się najdłużej oraz na którym podjeździe tętno było najwyższe. Nie zapisze zapachu mokrych buków, smaku kefiru wypitego na murku ani chwili, gdy zdziczała jabłoń zmieniła pustą łąkę w miejsce po czyimś domu.",
+        "Nie zapisze też krótkiego lęku na luźnym zjeździe. Ulgi, gdy naprawiona opona utrzymała ciśnienie. Wstydu, gdy zdałem sobie sprawę, jak łatwo nazwać pięknym krajobraz, nie pytając wcześniej, dlaczego stał się pusty.",
+        "Wieczorem rower stoi oparty o ścianę. Łańcuch wymaga czyszczenia, buty są nadal mokre, a na mapie pętla wygląda zaskakująco niewinnie. Cienka linia zamyka się dokładnie w miejscu startu, jakby nic po drodze nie mogło się wydarzyć.",
+        "Następnego dnia najbardziej pamiętam nie szczyt, widok ani najszybszy zjazd. Pamiętam granicę nawierzchni: kilka metrów, na których asfalt rozpadł się w jasny szuter. To tam przestałem realizować trasę i zacząłem przez nią przechodzić.",
+        "Koniec asfaltu nie był końcem znanej drogi. Był końcem jej oczywistości.",
+      ],
+    },
+  ],
+};
