@@ -1,4 +1,4 @@
-name: Deploy Peloton to GitHub Pages
+name: Deploy magazines to GitHub Pages
 
 on:
   push:
@@ -25,15 +25,30 @@ jobs:
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: peloton-prototype/package-lock.json
+          cache-dependency-path: |
+            peloton-prototype/package-lock.json
+            vinyl-prototype/package-lock.json
 
       - name: Install dependencies
         working-directory: peloton-prototype
         run: npm ci
 
+      - name: Install Rowki dependencies
+        working-directory: vinyl-prototype
+        run: npm ci
+
       - name: Build
         working-directory: peloton-prototype
         run: npm run build
+
+      - name: Build Rowki
+        working-directory: vinyl-prototype
+        run: npm run build
+
+      - name: Add Rowki to the Pages artifact
+        run: |
+          mkdir -p peloton-prototype/dist/rowki
+          cp -R vinyl-prototype/dist/. peloton-prototype/dist/rowki/
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v6

@@ -1,8 +1,11 @@
-# Peloton
+# Magazyny
 
-Cyfrowy magazyn kolarski — interaktywny prototyp pierwszego numeru „Przed świtem”.
+Dwa cyfrowe magazyny zbudowane jako interaktywne, responsywne wydania:
 
-Strona jest zbudowana w React i Vite. Wersja produkcyjna jest automatycznie publikowana przez GitHub Pages po każdym pushu do gałęzi `main`.
+- **Peloton** — magazyn kolarski, numer #01 „Przed świtem”.
+- **Rowki** — magazyn o winylach, hi-fi i muzyce, numer #01 „Igła wraca”.
+
+Strony są zbudowane w React i Vite. Wersje produkcyjne są automatycznie publikowane przez GitHub Pages po każdym pushu do gałęzi `main`.
 
 ## Uruchomienie lokalne
 
@@ -16,6 +19,12 @@ npm run dev
 
 ```bash
 cd peloton-prototype
+npm ci
+npm run build
+```
+
+```bash
+cd vinyl-prototype
 npm ci
 npm run build
 ```
