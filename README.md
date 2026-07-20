@@ -5,7 +5,12 @@ Dwa cyfrowe magazyny zbudowane jako interaktywne, responsywne wydania:
 - **Peloton** — magazyn kolarski, numer #01 „Przed świtem”.
 - **Rowki** — magazyn o winylach, hi-fi i muzyce, numer #01 „Igła wraca”.
 
-Strony są zbudowane w React i Vite. Wersje produkcyjne są automatycznie publikowane przez GitHub Pages po każdym pushu do gałęzi `main`.
+Strony są zbudowane w React i Vite, a ich źródła znajdują się w prywatnym repozytorium. Wersje produkcyjne są publikowane przez Cloudflare Pages:
+
+- [Peloton](https://www.lpociask.dev/peloton/)
+- [Rowki](https://www.lpociask.dev/peloton/rowki/)
+
+Po każdym pushu do `main` GitHub Actions buduje oba magazyny i zapisuje gotowy do publikacji artefakt `magazines-cloudflare`.
 
 ## Uruchomienie lokalne
 
