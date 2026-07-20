@@ -236,7 +236,10 @@ function ArticleMedia({ item, storyId, mediaIndex }) {
           decoding="async"
           width={item.width}
           height={item.height}
-          style={{ objectPosition: item.objectPosition }}
+          style={{
+            objectPosition: item.objectPosition,
+            "--media-aspect": item.width && item.height ? `${item.width} / ${item.height}` : undefined,
+          }}
         />
       </picture>
       <figcaption>
@@ -313,6 +316,8 @@ function StoryScreen({ story, onBack, onNext, saved, onToggleSaved, reduceMotion
     {
       afterSection: story.detailAfter ?? 3,
       src: story.detailImage ?? "rowki-cover.png",
+      width: 1086,
+      height: 1448,
       alt: story.detailAlt ?? "Detal ilustracyjny numeru Rowki.",
       caption: story.detailCaption ?? `Detal numeru #${issue.number}. Rytm drogi zapisany w obrazie.`,
       credit: "ILUSTRACJA — ROWKI STUDIO",
@@ -433,6 +438,8 @@ function StoryScreen({ story, onBack, onNext, saved, onToggleSaved, reduceMotion
             alt={story.alt}
             decoding="async"
             fetchPriority="high"
+            width={story.heroWidth ?? 1586}
+            height={story.heroHeight ?? 992}
             style={{ objectPosition: story.heroPosition }}
           />
         </picture>
