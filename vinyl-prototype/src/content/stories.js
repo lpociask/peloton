@@ -13,6 +13,14 @@ const technics = {
   heroPosition: "54% 50%",
   alt: "Kolaż przedstawiający rozłożony na warstwy gramofon z napędem bezpośrednim.",
   caption: "Napęd bezpośredni: talerz, wirnik i silnik jako jeden precyzyjny układ.",
+  detailAfter: 1,
+  detailImage: "rowki-detail-technics-motor.png",
+  detailAvif: "rowki-detail-technics-motor.avif",
+  detailWidth: 1586,
+  detailHeight: 992,
+  detailLayout: "wide",
+  detailAlt: "Techniczny przekrój silnika napędu bezpośredniego pod talerzem gramofonu.",
+  detailCaption: "To, co marketing nazywa charakterem napędu, pod talerzem okazuje się konkretem: łożyskiem, wirnikiem, magnesami i miedzianymi cewkami.",
   sections: [
     {
       label: "GENEZA / 1965–1972",
@@ -130,6 +138,14 @@ const powrotWinylu = {
   heroPosition: "50% 45%",
   alt: "Dwie osoby z różnych pokoleń wspólnie oglądają płytę w sklepie muzycznym.",
   caption: "Nowe pokolenie nie odziedziczyło winylu. Wybrało go na własnych zasadach — razem z jego rytuałem, kosztami i wadami.",
+  detailAfter: 2,
+  detailImage: "rowki-detail-vinyl-pressing.png",
+  detailAvif: "rowki-detail-vinyl-pressing.avif",
+  detailWidth: 1586,
+  detailHeight: 992,
+  detailLayout: "wide",
+  detailAlt: "Prasa winylowa ściskająca czerwony placek PVC pomiędzy dwiema metalowymi matrycami.",
+  detailCaption: "Winylowy rytuał zaczyna się przemysłowo: granulat, temperatura, nacisk, chłodzenie i kontrola, której nie zastąpi naklejka „180 g”.",
   sections: [
     {
       label: "LICZBY / 2025",
@@ -246,6 +262,14 @@ const prog = {
   heroPosition: "50% 50%",
   alt: "Abstrakcyjny kolaż, w którym pryzmat przechodzi w wielowymiarową siatkę i fale dźwiękowe.",
   caption: "Od szerokiego oddechu do precyzyjnego pulsu: progresja zmienia narzędzia, nie ambicję.",
+  detailAfter: 4,
+  detailImage: "rowki-detail-prog-tools.png",
+  detailAvif: "rowki-detail-prog-tools.avif",
+  detailWidth: 1586,
+  detailHeight: 992,
+  detailLayout: "wide",
+  detailAlt: "Taśma magnetofonowa łączy analogowy syntezator i magnetofon z gitarą oraz zestawem perkusyjnym ułożonym w polirytmiczne kręgi.",
+  detailCaption: "Progres nie mieszka w jednym brzmieniu. Wędruje od taśmy i syntezatora do gitary o rozszerzonym zakresie oraz rytmu, którego nie da się policzyć jednym oddechem.",
   sections: [
     {
       label: "FORMA / ZANIM PADNIE PIERWSZY DŹWIĘK",
@@ -368,6 +392,14 @@ const riverside = {
   heroPosition: "50% 50%",
   alt: "Sylwetki zespołu stoją nad rzeką złożoną z rowków płyty, a czerwona gitara oddala się ku horyzontowi.",
   caption: "Jedna wspólna historia dobiegła końca. O przyszłości szyldu nie rozstrzyga jednak metafora, tylko następna muzyka.",
+  detailAfter: 4,
+  detailImage: "rowki-detail-riverside-room.png",
+  detailAvif: "rowki-detail-riverside-room.avif",
+  detailWidth: 1586,
+  detailHeight: 992,
+  detailLayout: "wide",
+  detailAlt: "Pusta sala prób z mikrofonem, perkusją, zamkniętymi futerałami i czerwonym przewodem prowadzącym do otwartych drzwi.",
+  detailCaption: "Po ostatniej próbie sprzęt zostaje na miejscu, lecz organizm znika. Pusta sala potrafi powiedzieć o końcu więcej niż komunikat napisany przez prawnika.",
   sections: [
     {
       label: "FAKTY / KWIECIEŃ–CZERWIEC 2026",
@@ -502,6 +534,14 @@ const warszawa = {
   heroPosition: "50% 50%",
   alt: "Warszawska ulica z małym sklepem płytowym i wielką płytą przypominającą mapę miasta.",
   caption: "Warszawa najlepiej brzmi oglądana z poziomu skrzynek — pod warunkiem, że poza ceną ktoś jeszcze sprawdził stan płyty.",
+  detailAfter: 4,
+  detailImage: "rowki-detail-warsaw-crates.png",
+  detailAvif: "rowki-detail-warsaw-crates.avif",
+  detailWidth: 1586,
+  detailHeight: 992,
+  detailLayout: "wide",
+  detailAlt: "Dwie osoby przeglądają skrzynki z płytami pod lampą, obok przenośnego gramofonu odsłuchowego.",
+  detailCaption: "Najlepszy warszawski algorytm rekomendacji ma postać dwóch dłoni, lampy nad ladą i sprzedawcy, który pozwoli obejrzeć płytę bez teatralnego pośpiechu.",
   sections: [
     {
       label: "TRASA / ZAMIAST RANKINGU",

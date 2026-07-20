@@ -1,0 +1,658 @@
+const technics = {
+  id: "technics",
+  number: "01",
+  type: "EQUIPMENT / HISTORY",
+  title: "TECHNICS: THE PERFECT SPIN",
+  time: "11 MIN",
+  description: "From the SP-10 and the club-standard SL-1200 to the models opening the 2026 season.",
+  lead: "First they solved the problem of uneven rotation. Then, almost by accident, they built an instrument on which a new culture was made.",
+  byline: "WORDS — JAN URBANIAK / ROWKI EDITORIAL TEAM",
+  hero: "rowki-technics.png",
+  thumb: "rowki-technics.png",
+  thumbMode: "standalone",
+  heroPosition: "54% 50%",
+  alt: "A collage showing an exploded view of a direct-drive turntable.",
+  caption: "Direct drive: platter, rotor and motor operating as one precision system.",
+  detailAfter: 1,
+  detailImage: "rowki-detail-technics-motor.png",
+  detailAvif: "rowki-detail-technics-motor.avif",
+  detailWidth: 1586,
+  detailHeight: 992,
+  detailLayout: "wide",
+  detailAlt: "A technical cutaway of a direct-drive motor beneath a turntable platter.",
+  detailCaption: "What marketing calls drive character becomes something concrete beneath the platter: a bearing, rotor, magnets and copper coils.",
+  sections: [
+    {
+      label: "ORIGINS / 1965–1972",
+      heading: "The brand that wanted to spin evenly",
+      paragraphs: [
+        "Technics did not begin with a turntable. Established within Matsushita in 1965, its first product was the Technics 1 two-way loudspeaker. The name meant technique placed in the service of music, not cheap electronics wearing a new badge. That distinction matters because the SL-1200 later gave the company one vivid public face, although it also built amplifiers, tuners and components for demanding homes. The club was never the founding plan. It was the most important case of users breaking into the engineers’ plan.",
+        "The problem facing the turntable team sounded simple only on paper: the platter had to rotate at the correct speed without adding vibration of its own. A belt isolated the motor, but it aged, stretched and added another link to the transmission. An idler wheel supplied energetic drive, but also required mechanical contact. Technics removed the transmission and placed a low-speed motor directly beneath the platter. In 1970, the SP-10 became the first mass-produced direct-drive turntable. Designed for the domestic market, it also found its way into broadcast studios, where fast start-up, stability and resilience mattered.",
+        "A year later came the SL-1100, with its tonearm integrated into a cast body, followed in 1972 by the more compact SL-1200. It was heavy yet transportable; precise, but not fragile like a laboratory exhibit. According to Technics’ own history, the SL-1100 was part of Kool Herc’s setup when, at a Bronx party in 1973, he extended percussion breaks by switching between two copies of a record. That does not mean a Japanese company “invented hip-hop.” It invented a device that stayed out of the way while somebody else invented a new way of performing music.",
+      ],
+    },
+    {
+      label: "DRIVE / NO MAGIC",
+      heading: "Direct drive is not a “better sound” button",
+      paragraphs: [
+        "In a direct-drive system, the motor rotor and platter operate as one assembly, with no belt between them. The advantage is easy to understand: a start command turns into rotation quickly, while electronic feedback can monitor speed continuously. For the listener, the main benefit is more stable pitch. Piano and long synthesizer tones mercilessly expose speed drift that neither an expensive cartridge nor a cable as thick as a garden hose can repair. In a turntable, time is part of the signal. When time wanders, the music wanders with it.",
+        "No topology is problem-free. A motor directly beneath the record must be properly designed because vibration can reach the sensitive stylus-and-cartridge system. Early motors also faced cogging: minute irregularities caused as magnets and the stator core interact through successive rotor positions. A belt, meanwhile, is no mechanical sacrament. It wears, has its own elasticity and may react to changing load. Two weak designs do not become good because one has a belt and the other says “quartz.”",
+        "A winyl.net guide states the trade-offs without devotional smoke: a belt isolates the motor but needs replacement; direct drive offers stability and fewer wear parts, though a poor motor can mark the signal. This is community advice, not a laboratory standard, but its conclusion is sound: judge the specific model, condition and measured speed. A forum cannot settle physics by vote. It can remind owners that a logo does not set the arm, tracking force or anti-skate for them.",
+      ],
+    },
+    {
+      label: "ICON / 1979",
+      heading: "MK2: the engineers begin listening to DJs",
+      paragraphs: [
+        "Japanese engineers studying the American market found their domestic equipment in places the manual had hardly invited it to visit. In dark clubs, hands pulled platters backwards, needles dropped on chosen beats, and cabinets absorbed sound-system bass and hurried blows. Technics could have dismissed this as misuse. Instead it asked DJs what not to change. That answer mattered almost as much as the improvements: the gestures had already entered muscle memory.",
+        "The 1979 SL-1200MK2 was the series’ first version developed for disco work. A long vertical pitch fader replaced the rotary control, letting a finger travel while eyes stayed on the record. Quartz control guarded speed. A statically balanced S-arm enabled precise tracking force; a pop-up lamp lit the stylus; and a cast panel, rubber and large isolators resisted floor vibration. These were not styling fetishes. Every detail answered a situation in the booth.",
+        "The feel beneath the hand mattered most. The direct connection reduced delay between a performer’s movement and the sound. A DJ could stop the platter, pull a record to its entry point and release it in rhythm instead of waiting for a soft transmission to respond. The player became a performance interface. Electric guitar was not designed to feed back either, yet musicians made feedback a language. Technics met the same fate: “user error” became culture.",
+      ],
+    },
+    {
+      label: "STANDARD / 1980s–2000s",
+      heading: "Why every club wanted the same turntable",
+      paragraphs: [
+        "During the 1980s, DJs increasingly moved between clubs instead of belonging permanently to one venue. Booth standardisation became part of their working conditions. If pitch travel, start torque and platter behaviour differ every night, the first minutes of a set become an examination on somebody else’s equipment. The SL-1200 series offered predictability. The word does not sound very romantic, but predictable tools are precisely what make musical risk possible. A pianist does not want to guess where the manufacturer has hidden middle C at every concert.",
+        "Successive versions developed the formula sparingly. The MK3 improved resistance to vibration, the limited SL-1200LTD marked the sale of the two-millionth unit in the series, the MK3D gained a convenient pitch reset, and the anniversary MK5G showed that an analogue standard could endure alongside a growing digital market. According to Technics, the series sold in the millions and served disco, hip-hop, house, techno, reggae and pop without a radical change to its ergonomics. Its real patent was not a single component. It was consistency.",
+        "Audiophile disdain for a “DJ deck” is amusing. A machine that must hold speed while its platter is touched, survive transport and avoid turning club bass into an acoustic feedback loop is no less serious than a turntable resting on marble. A worn club example may have loose bearings and a tired fader, but an intense biography is not proof of a flawed design. Sometimes it is the design’s most brutal test.",
+      ],
+    },
+    {
+      label: "HIATUS / 2010–2019",
+      heading: "The ending that proved to be a pause",
+      paragraphs: [
+        "When the classic series ended in 2010, used examples became finite relics. It returned in 2016 as the 1,200-unit SL-1200GAE. The familiar exterior concealed a coreless direct-drive motor and digital control. Removing the stator’s iron core tackled cogging at its source instead of masking it with platter mass. Technics did not rebuild an MK2 in costlier aluminium; it used the old form for a new drive generation. The GAE sold out immediately, and a Grand Class family followed.",
+        "In 2019, the SL-1200MK7 and black SL-1210MK7 explicitly restored the MK2’s DJ feel. Modern “1200s” are not one turntable in different colours: G and GR serve domestic hi-fi, MK7 serves DJs, and the 1500 series drops pitch and cue lamp for the living room. The cult silhouette unifies the catalogue without erasing differences in construction or purpose. Buying on four digits alone is like choosing a car by its headlights.",
+      ],
+    },
+    {
+      label: "ROWKI THESIS",
+      heading: "Belts do not have a monopoly on audiophile status",
+      variant: "forecast",
+      paragraphs: [
+        "You can still hear that belt drive is inherently “musical,” while direct drive is club-oriented, nervous and brutal. It is a convenient myth because it lets people judge a turntable without listening, measuring or looking at its design. Worse, the claim carries a trace of equipment classism: a wooden plinth, separate motor and the ritual of moving a belt look audiophile, while start/stop and a pitch fader betray contact with people who actually touch records. Form is mistaken for quality, and austere operation for purity of sound.",
+        "A bad direct drive can transmit vibration from a cheap motor. A bad belt drive can waver, lose torque and demand a belt whose correct replacement disappeared years ago. A good design of either type has to solve the same problems: maintain speed, isolate the pickup from the energy of the motor and its surroundings, guide the arm without play and permit proper adjustment. A topology does not play music on its own. The implementation, condition, cartridge, geometry and supporting surface do.",
+        "A good SL-1200 therefore need not apologise for its club biography. More suspicious is a device marketed as “purely analogue” when its manufacturer supplies no speed-stability figures and justifies the price with the thickness of its plinth. We are not claiming that every Technics beats every belt drive. We are saying something far less convenient for marketing: compare machines, not religions. If the drive war loses heat after that sentence, perhaps it was never about music at all, but about tribal belonging.",
+      ],
+    },
+    {
+      label: "EVOLUTION / 2023–2026",
+      heading: "Digital control in defence of analogue",
+      paragraphs: [
+        "The latest stage of development is called ΔΣ-Drive. Technics first used the technique in the 2023 SL-1200GR2, then in the SL-1300G and subsequent models. The system employs signal-processing knowledge from the company’s digital amplifiers to feed the motor with the smoothest possible drive waveform and reduce microvibration. To an analogue purist, the word “digital” can sound an alarm, but the music in the groove is not being digitised here. Digital control regulates mechanical rotation. Nostalgia is not a method of speed control.",
+        "The anniversary SL-1200GME and black SL-1210GME combine ΔΣ-Drive with a coreless motor using two rotors and one stator, a four-layer chassis, a three-layer platter weighing 3.6 kilograms including its mat, and a magnesium tonearm. Each platter is balanced separately, and the power supply includes noise-reduction circuitry. It sounds like an engineering demonstration, and it is — but also a demonstration of scarcity. Technics announced only 1,200 silver and 1,210 black units at €5,499 each, because production of the existing G model is ending as a component from an external supplier becomes unavailable.",
+        "The Master Edition is both a turntable and an object of collectable desire. A gold arm, serial number and limited run do not improve rhythm. Engineering does that; gold improves the resale story. Technics has every right to celebrate the end of the G platform, and the customer has every right to ask how much of the price works for the stylus and how much for the display case.",
+      ],
+    },
+    {
+      label: "NEW / 2026",
+      heading: "SL-1500CS: a normal turntable for a normal living room",
+      paragraphs: [
+        "More interesting to most listeners is the SL-1500CS, announced on 23 February and available from March 2026 at a recommended price of €1,199. The successor to the SL-1500C drops the pitch control and DJ posturing, but includes a coreless motor with one rotor and one stator, ΔΣ-Drive control and a high-precision speed-detection circuit. Its two-layer body combines die-cast aluminium with glass-fibre-reinforced ABS, while spring-and-rubber feet are designed to reduce the influence of the supporting surface. Outside, it is a calm metallic-grey rectangle. Inside, the argument over microvibration continues.",
+        "The S-shaped aluminium arm is statically balanced and mounted in precision bearings. An Ortofon 2M Red cartridge is factory-fitted, while the built-in phono stage works with MM cartridges. The turntable can therefore connect to an ordinary line input, although a conventional phono output remains for listeners using their own equalisation stage. An automatic lift raises the arm when the stylus reaches the run-out groove. Forum purists may snort that a real music lover lifts the needle personally. A record earns no honour points for spending the night in the run-out groove.",
+        "The SL-1500CS shows contemporary Technics at its best: expensive technology moves down the range, while convenience is not treated as shameful. It also exposes the limits of “for beginners,” because €1,199 is serious money — entry-level for this catalogue, not for vinyl itself. A cheaper, properly adjustable turntable will suit a beginner. For someone buying once who wants a removable headshell, built-in phono stage and stable drive, the 1500CS is more honest than another anniversary decoration.",
+      ],
+    },
+    {
+      label: "SECOND-HAND MARKET / PRACTICE",
+      heading: "Do not buy a legend. Buy a working turntable",
+      paragraphs: [
+        "A used SL-1200 can be excellent, but reputation does not regenerate bearings. Check speed on the strobe, quartz lock, pitch action, arm play, cue lift, anti-skate, cables and feet. The platter should start decisively and run without wobble. Inspect screws, corners and the arm area: hard use need not disqualify it, but should alter the price and service plan. “Immortal” is a slogan. Grease, rubber and contacts still age.",
+        "Do not pay automatically for a cartridge with no history. A stylus is consumable, and incorrect tracking force leaves no certificate. At home, you may not need DJ prestige: the SL-1500C or CS removes stage functions; GR2 is a more ambitious hi-fi platform; MK7 makes sense when pitch, cueing and resilience are tools. The best Technics is not the longest forum thread, but the one matching your use.",
+        "After half a century, the SL-1200 remains familiar because it found a rare balance: precise at home, robust in clubs and clear enough to become an instrument. Its legacy proves no drive system superior. It shows that users can seize good engineering and give it meanings its maker never imagined. The platter was meant only to turn a record. It turned a culture — and Technics now knowingly tries to keep it turning.",
+      ],
+    },
+  ],
+  quoteAfter: 2,
+  quote: "Technics’ greatest invention was not a platter that turned evenly. It was a platter people began to turn in their own way.",
+  serviceBox: {
+    title: "Three Technics turntables, three needs",
+    items: [
+      "SL-1500CS — home listening, built-in MM phono stage, Ortofon 2M Red and automatic arm lift.",
+      "SL-1200MK7 / SL-1210MK7 — DJ work, pitch control, rapid response and a design made for intensive handling.",
+      "SL-1200GME / SL-1210GME — a limited Grand Class design with ΔΣ-Drive; the technical finale of the G platform and an expensive collectable.",
+    ],
+  },
+  sources: [
+    { label: "Technics — history of the SL-1200 series", url: "https://www.technics.com/global/home/60th-anniversary/technics-brand-story/history-of-the-sl-1200.html" },
+    { label: "Technics — the SP-10, SL-1100 and SL-1200 legacy", url: "https://www.technics.com/global/home/sl1200/heritage.html" },
+    { label: "Technics — the new SL-1500CS", url: "https://www.technics.com/de/presse/pressemeldung/33-fy2025-technics-sl-1500cs.html" },
+    { label: "Technics — SL-1200/1210G Master Edition", url: "https://www.technics.com/de/presse/pressemeldung/28-fy2025-technics-sl-1200gme.html" },
+    { label: "Technics — development of ΔΣ-Drive technology", url: "https://www.technics.com/nz/products/grand-class-learn/speakers/technics-delta-sigma-drive-technology.html" },
+    { label: "Winyl.net — turntable drive systems without mythology", url: "https://www.winyl.net/viewtopic.php?t=35" },
+  ],
+};
+
+const powrotWinylu = {
+  id: "powrot-winylu",
+  number: "02",
+  type: "PHENOMENON",
+  title: "VINYL IS BACK FOR GOOD",
+  time: "11 MIN",
+  description: "How vinyl defeated indifference rather than streaming — and why the format’s revival now needs quality control.",
+  lead: "Vinyl did not defeat streaming. It did something more interesting: it learned to live beside it and to sell focus, memory and an object that cannot be dismissed with a “skip” button.",
+  byline: "WORDS — MARTA SOBCZAK / ROWKI EDITORIAL TEAM",
+  hero: "rowki-powrot-winylu.png",
+  thumb: "rowki-powrot-winylu.png",
+  thumbMode: "standalone",
+  heroPosition: "50% 45%",
+  alt: "Two people from different generations look at a record together in a music shop.",
+  caption: "The new generation did not inherit vinyl. It chose the format on its own terms — together with its ritual, costs and faults.",
+  detailAfter: 2,
+  detailImage: "rowki-detail-vinyl-pressing.png",
+  detailAvif: "rowki-detail-vinyl-pressing.avif",
+  detailWidth: 1586,
+  detailHeight: 992,
+  detailLayout: "wide",
+  detailAlt: "A vinyl press compressing a red PVC puck between two metal stampers.",
+  detailCaption: "The vinyl ritual begins as industry: pellets, heat, pressure, cooling and quality control that no “180 g” sticker can replace.",
+  sections: [
+    {
+      label: "THE NUMBERS / 2025",
+      heading: "A nineteenth year of growth, but no analogue revolution",
+      paragraphs: [
+        "Let us begin with the numbers, because nostalgia has a habit of adding zeroes. According to the RIAA, 46.8 million vinyl albums were sold in the United States in 2025, up 7.9 percent year on year, compared with 29.5 million CD albums. Vinyl’s wholesale value reached $1.043 billion and its revenues were more than three times those of CD. It was the format’s nineteenth consecutive year of growth. That sounds like a triumphant return. It is one — just not the kind turntable manufacturers like to describe.",
+        "Streaming still accounted for 82 percent of US recorded-music revenue and $9.5 billion. Globally, IFPI says it produced 69.6 percent of 2025’s $31.7 billion market, with 837 million paid-subscription users. Vinyl grew by 13.7 percent worldwide, and all physical formats by 8 percent, yet paid streaming remained the engine. The record returned not as the default but as a choice. That distinction explains almost everything, including its price.",
+        "Britain’s 2025 chart shows the LP’s double life. Taylor Swift sold 147,000 copies of The Life of a Showgirl there, 125,000 in its first week. The top forty also contained Rumours, OK Computer, Grace, Nevermind and two Pink Floyd albums. This is neither merely a flea market nor a teenage gadget. The revival feeds on releases, anniversaries, catalogue and fandom: vinyl can be an album carrier, a souvenir or a numbered commodity its owner never plays.",
+      ],
+    },
+    {
+      label: "TWO MODES OF LISTENING",
+      heading: "Spotify is a map. A record can be an address",
+      paragraphs: [
+        "“Vinyl or streaming?” is about as useful as “library or tram?” Streaming lets you sample an album on the road, explore discographies and carry millions of tracks. A record asks for a decision: this album occupies space at home; this artist gets forty minutes without shuffle. Buyers move between both modes, discovering music algorithmically before buying its material centre of gravity. Digital did not kill vinyl; it became vinyl’s largest listening catalogue.",
+        "The coexistence is economic too. A subscription sells access to a library; an LP sells one relationship. A physical sale is worth more to a label than one stream, extends an artist’s visual world and brings a customer into a shop. Hence black, red, marbled, shop, tour and “deluxe” variants — not because six colours reproduce bass better, but because the industry monetises attachment with unprecedented precision.",
+        "Physical media also answer the fatigue of unlimited access. When everything is instant, every song competes with the next and the app offers an easy exit. An LP side lasts fifteen or twenty-something minutes, then ends in mechanical silence. You must rise, turn it and lower the stylus again. To interface design, that is friction. To attention, it is a threshold beyond which the album regains a beginning, middle and end.",
+      ],
+    },
+    {
+      label: "PRESSING PLANT / FROM FILE TO GROOVE",
+      heading: "A record is not born analogue. A record is manufactured",
+      paragraphs: [
+        "The romantic story says music is “transferred to vinyl.” Reality is more industrial. A cutting master guides a head that inscribes lacquer, or copper in the DMM process. Lacquer is silvered and nickel-plated; successive metal positives and negatives produce stampers. A heated PVC puck sits between two stampers and paper labels, then is pressed, cooled and trimmed. Only then does it resemble a hi-fi catalogue object.",
+        "Errors can enter anywhere. An off-centre hole makes the arm sway and pitch vary. Material that is too cool may not fill the groove, causing coarse “non-fill” noise. Bad cooling can warp a disc; a worn or dirty stamper repeats a flaw across a batch; paper can scratch it before first play. Test pressings exist to catch trouble, but deadlines and bills can be louder than the controller’s headphones.",
+        "Two records containing the same album are not necessarily the same product. Source, cutting choices, plant, metalwork, stamper age and batch control differ. A spine’s catalogue number can be too broad; run-out inscriptions identify the pressing. Nor does a first edition guarantee anything: a fine master may have endured decades of bad storage, while a digitally sourced reissue may be clean, centred and carefully cut. The carrier’s biography matters more than its birth certificate.",
+      ],
+    },
+    {
+      label: "MASTERING",
+      heading: "A digital source is not betrayal — unless it becomes an alibi",
+      paragraphs: [
+        "Ask whether a record came from analogue tape and a fight begins. Yet an all-analogue chain guarantees no craft, and a high-resolution file is not guilty by default. Vinyl has limits: deep bass consumes groove space, stereo bass complicates tracking, sibilance and dense treble demand care, and a longer side must be cut quieter and tighter. Good LP mastering addresses those realities instead of sending a platform master blindly to the plant.",
+        "Geometry matters too. Towards the centre, the groove passes beneath the stylus at lower linear speed, making complex high frequencies harder to reproduce cleanly. Track order and side length are therefore not just dramaturgy. An engineer may place a quiet finale near the label, lower the level or recommend two discs. “Mastered for vinyl” should describe such decisions; too often it is as specific as a photograph of tape in the booklet.",
+        "When comparing an LP with a file, levels must be matched honestly. The louder version generally seems fuller and more detailed straight away. A record may receive a less aggressive master than a streaming release and genuinely sound more open, but not because black plastic magically restored dynamics; it simply received different processing. It may equally receive the same compressed master, with surface noise, tracking distortion and cartridge-alignment errors added. “Analogue warmth” can be a desirable character. It can also be an elegant name for a problem nobody wanted to measure.",
+      ],
+    },
+    {
+      label: "ROWKI THESIS",
+      heading: "180 grams guarantees only 180 grams",
+      variant: "forecast",
+      paragraphs: [
+        "A heavy disc feels better in the hand, seems more robust and sounds wonderful in product copy. It tells you nothing certain about the mastering source, centring of the hole, surface noise, state of the stamper or care of the packaging. The same grooves can be pressed into lighter or heavier PVC. Extra grams cannot correct a mistake made earlier, just as thicker paper cannot save a badly printed book. When a seller foregrounds “180 g” but stays silent about the cut, plant and right to exchange a defective copy, it offers the easiest fact to weigh instead of the one that matters.",
+        "A thread about defects in contemporary pressings has run for years on winyl.net. One especially vivid post described 36 new records, of which 12 had no faults visible to the naked eye or only marginal ones. That is a private sample, not a representative market study, so it must not be turned into an industry-wide statistic. It is, however, an excellent detector of false logic: a high price, shrink-wrap and the word “audiophile” do not cancel inspection. Forum users document scratches, dirt, wobble, dishing, non-fill and noisy compounds. The most useful lesson is not “old good, new bad,” but “judge each copy as a copy.”",
+        "The vinyl revival can no longer charge a premium while hiding behind the medium’s temperamental nature. The gentle background of an old disc forms part of that particular object’s history. A loud pop on a new record that left the plant scratched is a defect. A shop should accept the return, a distributor should pressure the producer, and a label should stop treating quality control as a cost most easily transferred to the fan. A crackle in a recording may build atmosphere. A crackle from a dirty sleeve is an invoice for neglect.",
+      ],
+    },
+    {
+      label: "THE COLLECTABLE ECONOMY",
+      heading: "Limited until the next colour arrives",
+      paragraphs: [
+        "LP production has fixed costs: preparing the master, cutting, electroplating, stampers, test pressings, printing and setting up the press. It also has costs tied to quantity, packaging, transport, storage and returns. A small run spreads the initial work across fewer units, so it can be expensive without any conspiracy. A physical shop adds rent, labour, taxes, the risk of unsold stock and responsibility to the customer. A price of several dozen pounds is not always greed. The problem starts when the cost of production is concealed beneath artificially rationed scarcity.",
+        "Ten variants of one release turn choice into a loyalty test. One colour belongs to a chain, another to the official store, a third to the tour and a fourth to pre-order — the music remains the same, but the fan is made to feel that the missing shade means an incomplete relationship with the artist. “Limited” may be technically true even when the combined run across every version is enormous. Then comes another anniversary, a new marble effect and a refreshed countdown. An industry that talks about a material bond with music designs that bond surprisingly often like a series of microtransactions.",
+        "A sensible collector separates practical, emotional and market value. A record can mean a great deal to you and little on the market; it can be expensive at auction and dead on the platter. Shrink-wrap is not an investment policy, and an asking price is not a selling price. If you buy a variant because you love how it looks, excellent. If you buy a fifth copy for fear that it will “disappear” tomorrow, turn off the countdown for a moment. The most anti-consumerist gesture available in physical-media culture is simple: play what is already on the shelf.",
+      ],
+    },
+    {
+      label: "A NEW AUDIENCE",
+      heading: "A collection need not archive somebody else’s youth",
+      paragraphs: [
+        "Young buyers are not returning to a vinyl past they never had. They build a ritual from inherited and current elements: a turntable beside a network speaker, a Bandcamp code on the phone, a coloured LP in a frame or on the platter. Older collectors may call this superficial, but every generation had shortcuts. People once bought albums for one single; today artwork seen on a screen may be the entry. What matters is whether it leads towards whole albums, production and attentive listening.",
+        "The industry’s worst response is to sell beginners a turntable shaped like a suitcase, with a fixed cartridge, high permanent tracking force and speakers in the same lightweight body. Such a product exploits the fashion, then teaches people that vinyl sounds thin, skips and is merely decoration. Nobody needs to study tonearm geometry immediately, but a player should hold speed, apply a safe force appropriate to its cartridge and connect to decent speakers. The basic advice on winyl.net is admirably consistent: level the turntable, balance the arm, set tracking force to the manufacturer’s figure and only then judge the sound.",
+        "Elitism damages the revival too. You need not know plant codes to experience an album or spend half a salary on cable to hear bad cartridge alignment. Knowledge should reduce risk, not guard an entrance. Good shops and forums explain what comes first, what can wait and where marketing impersonates physics. Vinyl stays alive when a newcomer can ask what a phono stage does and receive an answer without passing customs at the hobby’s border.",
+      ],
+    },
+    {
+      label: "PRACTICE",
+      heading: "A first shelf without expensive mistakes",
+      paragraphs: [
+        "Begin with three to five albums you know from beginning to end. You will more quickly hear a channel problem, exaggerated sibilance, pitch change or excessive noise. Before buying a new record, check not only its colour and weight but its precise catalogue number, country, year and reviews of that pressing. Examine a used copy beneath strong, raking light. Hairlines will not always be audible, but a deep scratch following the groove may produce repeated clicks or a skip. If the shop offers playback, use it — especially for an expensive copy.",
+        "At home, place the turntable on a stable, level surface away from vibrating speakers. Identify the cartridge and the manufacturer’s recommended tracking-force range; do not set it by eye or from a random value found online. Check whether the amplifier has a phono input. A cartridge signal needs appropriate gain and equalisation, so an ordinary line input requires a separate preamplifier or one built into the turntable. A clean stylus, correct setup and a washed record will usually make a larger difference than an exotic cable bought before the fundamentals are solved.",
+        "A new record is worth washing too, because “straight from the shrink-wrap” does not mean “free from dust and manufacturing residue.” Hold the disc by its edge and label, store it vertically, replace a coarse paper sleeve if it leaves marks, and never enclose it while damp. When a copy is warped, off-centre or clearly noisy, report the defect instead of normalising it as analogue charm. The best collection is neither the largest nor the heaviest. It is cared for well enough that the music does not have to fight the owner’s and factory’s mistakes for attention.",
+      ],
+    },
+  ],
+  quoteAfter: 2,
+  quote: "Streaming gives access to almost everything. Vinyl forces an answer to the harder question: what among it do you truly want close to you?",
+  serviceBox: {
+    title: "Seven questions before buying an LP",
+    items: [
+      "Which exact edition is it: catalogue number, country, year and run-out inscriptions?",
+      "Is the source known, and who prepared the mastering or cut?",
+      "Do the reviews concern this pressing, rather than simply the album behind the same cover?",
+      "Does the shop grade the record and sleeve separately, and let you inspect or hear the copy?",
+      "Is the turntable stable and its tracking force correctly set for this particular cartridge?",
+      "Are you buying the album to hear it, or a variant under an artificially induced sense of urgency?",
+      "If it is defective, can you exchange or return the record without a fight?",
+    ],
+  },
+  sources: [
+    { label: "RIAA — 2025 US year-end revenue report", url: "https://www.riaa.com/wp-content/uploads/2026/03/RIAA-Year-End-Revenue-2025.pdf" },
+    { label: "RIAA — overview of the 2025 music market", url: "https://www.riaa.com/riaa-reports-us-recorded-music-annual-revenue-achieves-new-high-of-11-5-billion-in-2025/" },
+    { label: "IFPI — Global Music Report 2026", url: "https://www.ifpi.org/global-music-report-2026-global-recorded-music-revenues-grow-6-4-as-record-companies-drive-innovation/" },
+    { label: "Official Charts — the best-selling vinyl of 2025", url: "https://www.officialcharts.com/chart-news/the-official-best-selling-vinyl-albums-and-singles-of-2025/" },
+    { label: "United Record Pressing — stages of record production", url: "https://www.urpressing.com/processes/" },
+    { label: "Winyl.net — defects in contemporary pressings", url: "https://www.winyl.net/viewtopic.php?t=12309" },
+    { label: "Winyl.net — turntable installation and adjustment", url: "https://www.winyl.net/viewtopic.php?t=388" },
+    { label: "Winyl.net — vinyl versus CD without easy winners", url: "https://www.winyl.net/viewtopic.php?start=60&t=16047" },
+  ],
+};
+
+const prog = {
+  id: "pink-floyd-tesseract",
+  number: "03",
+  type: "LISTENING / PROG",
+  title: "FROM PINK FLOYD TO TESSERACT",
+  time: "12 MIN",
+  description: "Five decades of progression: from the drama of two LP sides to the rhythmic architecture of djent.",
+  lead: "Pink Floyd built a narrative from tape, silence and two sides of a record. TesseracT designs one from displaced accents, digital precision and controlled overload. What connects them is not genre, but an insistence that an album should be more than a delivery system for songs.",
+  byline: "WORDS — PAWEŁ RZEPECKI / ROWKI EDITORIAL TEAM",
+  hero: "rowki-prog.png",
+  thumb: "rowki-prog.png",
+  thumbMode: "standalone",
+  heroPosition: "50% 50%",
+  alt: "An abstract collage in which a prism becomes a multidimensional grid and sound waves.",
+  caption: "From expansive breath to precise pulse: progression changes its tools, not its ambition.",
+  detailAfter: 4,
+  detailImage: "rowki-detail-prog-tools.png",
+  detailAvif: "rowki-detail-prog-tools.avif",
+  detailWidth: 1586,
+  detailHeight: 992,
+  detailLayout: "wide",
+  detailAlt: "Magnetic tape links an analogue synthesizer and reel-to-reel machine with a guitar and a drum kit arranged in polyrhythmic circles.",
+  detailCaption: "Progress does not live in one sound. It travels from tape and synthesizer to extended-range guitar and a rhythm that cannot be counted in a single breath.",
+  sections: [
+    {
+      label: "FORM / BEFORE THE FIRST SOUND",
+      heading: "An album is not a long playlist",
+      paragraphs: [
+        "The easiest definition of progressive rock is also the least useful: long tracks, strange metres, lots of equipment and a musician who knows more chords than the audience. By that measure, a ten-minute mediocrity automatically defeats a three-minute revolution. Progression begins not with a stopwatch, however, but with the decision that form should guide the listener, change the meaning of a motif and justify every additional minute. Virtuosity can be a tool. On its own, it is merely a demonstration of qualifications. Restraining a hand, leaving an empty bar or returning to one note after an entire side can be just as progressive.",
+        "The classic LP imposed physical dramaturgy. Its two sides had limited duration, and the album’s centre meant silence, rising from the chair and turning the disc. Musicians could treat that break as a flaw or as a narrative hinge. The best records of the 1970s chose the latter: they arranged each side’s opening, climax and descent so the mechanical end of the groove made sense. Streaming imposes no such boundary, but does not free a composer from responsibility. Quite the opposite — the “next” button is always beneath a thumb, so sustaining attention demands even stronger architecture.",
+      ],
+    },
+    {
+      label: "PINK FLOYD / 1971",
+      heading: "“Echoes”: a laboratory on one side of vinyl",
+      paragraphs: [
+        "Before the textbook world of The Dark Side of the Moon, there was Meddle and “Echoes,” the piece occupying its entire second side. Pink Floyd’s official history recalls that the composition grew from fragments developed under working titles, and that after the more scattered sessions for earlier records the band was once again truly working together. That matters: “Echoes” is not a twenty-three-minute riff with solos attached. It is a process. A sonar-like pulse opens a space, voices and instruments gather into a song, the middle disintegrates almost into soundscape, and the theme’s return feels like recovering land after a long voyage.",
+        "The composition teaches that large form needs memory. A listener need not count bars, but should recognise a familiar colour returning beneath different light. David Gilmour’s guitar does not defeat Richard Wright’s organ; the two timbres make room for each other. The rhythm section can almost disappear for a while, then restore movement without a spectacular count-in. On an average system, “Echoes” still works as music. On a properly set-up one, something else emerges: the distance between a sound and its reverberation, and the way silence becomes a full member of the arrangement. Hi-fi does not add content — it reveals proportion.",
+      ],
+    },
+    {
+      label: "PINK FLOYD / 1972–1973",
+      heading: "First the audience, then the tape",
+      paragraphs: [
+        "The Dark Side of the Moon is often described as a triumph of the studio, yet the official chronology overturns the convenient myth of a masterpiece invented at the mixing desk. Pink Floyd performed an early version of the whole work in public as early as January 1972; recording sessions did not begin until late May. The material matured on stage before it was fixed on tape. The studio did not replace composition; it sharpened it. Seamless transitions, effects, voices and repetitions joined separate songs into one trajectory through time, money, anxiety, conflict and death — subjects ordinary enough not to age with the synthesisers.",
+        "The most radical element is not a clock, cash register or effect travelling between channels. It is discipline. “On the Run” transforms a short movement into escalating anxiety, “Time” makes us wait for the song proper to enter, and “Us and Them” builds scale through contrast rather than constant loudness. The album can be spectacular because it first consents to be quiet. Contemporary prog regularly ignores that lesson: if everything is a climax, there is no climax. Fifty tracks in a session create no depth when every one demands the foreground at once.",
+        "The two sides of the record also organise attention. “The Great Gig in the Sky” closes the first half not with an explanation but an emotional suspension. “Money” begins side two with a hard, instantly recognisable gesture. The physical break does not destroy the concept — it is the concept’s comma. On streaming, the transition occurs without lifting a stylus, but sequence still matters. Shuffling Dark Side is not heresy because it offends a collector. It is simply poorer editing.",
+      ],
+    },
+    {
+      label: "PINK FLOYD / 1975",
+      heading: "Absence has a sound of its own",
+      paragraphs: [
+        "Wish You Were Here progresses not by increasing its tally of time-signature changes, but by limiting its material. “Shine On You Crazy Diamond” opens and closes the record, while three shorter songs between them turn a personal absence into a story about an industry capable of processing people into product. The official presentation of the album emphasises this frame: the suite is divided between beginning and finale. Its returning theme is therefore not a reprise for fans. After everything that happened in between, it means something different.",
+        "This is an important album in the history of hi-fi, but a terrible religious picture for an audiophile shrine. Its value does not lie in every pressing automatically sounding noble and “analogue.” It lies in control of proportion: the long introduction must feel neither dead nor inflated; the synthesiser should create a horizon without covering small guitar gestures; the saxophone ought to grow without turning into a shrill exclamation mark. Good playback reveals the work of layers. A bad system attempts to impress with one element — usually bass or width — and strips the music of its gradual unveiling of perspective.",
+      ],
+    },
+    {
+      label: "RHYTHM / FROM MESHUGGAH TO DJENT",
+      heading: "The guitar takes over the drum machine’s job",
+      paragraphs: [
+        "In the 1990s and 2000s, progressive heaviness shifted its centre of gravity from expansive harmony towards rhythm. Meshuggah did not invent irregular metre, but built an exceptionally consistent language from overlapping cycles, displaced accents and riffs that seem to fight the underlying pulse. Scholars of rhythm point to the paradox: beneath the apparent chaos, a stable larger frame often remains. That is why the music can disorient the head and activate the body at once. It is not a random heap of “broken” bars, but a form of control over expectation.",
+        "The word “djent” began as an onomatopoeic term for the short, dry impact of a low-tuned, palm-muted guitar, then expanded into the label for a scene. It quickly became a caricature: seven or eight strings, a surgically trimmed low end, the editor grid and an obligatory video set in a warehouse. In that version, djent is as conservative as a band copying a Mellotron from 1973. Curiosity begins only when rhythmic precision stops being a display of mathematics and becomes a method of building tension, while digital production becomes an aesthetic rather than a corrective for incompetent playing.",
+        "Home studios and the internet also changed how music was made. A riff could originate as a rigorously programmed sketch, circulate among musicians and be refined before anybody entered an expensive studio. That need not imply dehumanisation. Tape was technology too, and Pink Floyd cut, looped and assembled sound rather than merely documenting four people in a room. The difference lies in the purpose. Editing can remove breath or design a new kind of breathing.",
+      ],
+    },
+    {
+      label: "TESSERACT / 2010–2013",
+      heading: "Weight that learned to breathe",
+      paragraphs: [
+        "TesseracT began as guitarist Acle Kahney’s studio project, and its early manifesto was the six-part Concealing Fate suite, released as an EP in 2010 and incorporated into the debut album One a year later. Its kinship with Meshuggah’s rhythmic school is audible, but equally important is what the band did not inherit: unbroken extremity. Low-tuned guitars can operate like another set of drums, then yield to clean vocals, the bass’s upper register and ambient emptiness. Weight is not a permanent condition. It is pressure that makes sense only because it is sometimes released.",
+        "Altered State in 2013 moved the band still further from a simple genre description. It is a roughly fifty-minute flow divided into four larger parts — Of Matter, Of Mind, Of Reality and Of Energy — with Ashe O’Hara’s vocals guiding the material without the extreme passages heard on the debut. The saxophone in selected sections is no progressive certificate. It changes the temperature and articulation of music dominated by a highly precise attack. The most interesting moments arrive when metre stops being a puzzle and becomes an emotion: a phrase returns one step “too early” or “too late,” embedding longing in the composition’s very movement.",
+        "This also reverses a stereotype about modern production. Separation does not mean sterility. In a good TesseracT mix, a guitar’s short attack can be almost dry while voice and synthesiser open enormous depth. The coexistence of those planes creates a space unlike Pink Floyd’s: less a landscape than a precision model through which light and mass move. Geometry truly breathes when it retains contrast.",
+      ],
+    },
+    {
+      label: "TESSERACT / 2015–2023",
+      heading: "The concept album after the death of LP monoculture",
+      paragraphs: [
+        "Daniel Tompkins’ return on Polaris in 2015 restored one of TesseracT’s most recognisable voices, but the band did not retreat to One. Polaris and the later Sonder shortened the perspective, condensed ideas and tested how much character could survive in a more compact form. This is an important stage: development need not always mean expansion. Sometimes it is the amputation of a passage the group can play but the song does not need. In a world overloaded with “epic” scale, restraint is a risk.",
+        "War of Being in 2023 expanded the scale again. Official Kscope materials describe nine tracks and a concept involving the characters Ex and El in the Strangeland; the narrative moved beyond sound into films, a making-of documentary and a PC and VR game developed by Tompkins. The album was recorded at Britain’s Middle Farm Studios, with Peter Miles and Katherine Marsh co-producing alongside the band, while Acle Kahney handled mixing and mastering. This is no incidental technical note: after years working in digital environments, the group took its precision into a studio where it could confront ensemble performance and greater dynamics.",
+        "Do a game and an elaborate mythology automatically make an album deeper? Of course not. Transmedia can be the costly equivalent of coloured vinyl: an add-on sold as content. War of Being holds up when its story grows from the music — in the eleven-minute title track, the tension of “Legion” and the closing “Sacrifice” — rather than when listeners need an instruction manual to feel the stakes. Pink Floyd also used cover art, film and stage spectacle, but the record needed no footnotes to work in a darkened room.",
+      ],
+    },
+    {
+      label: "ROWKI THESIS",
+      heading: "Retro-prog can be the least progressive music of all",
+      variant: "forecast",
+      paragraphs: [
+        "You can record a twenty-minute suite, put a prism on the cover, switch on an analogue synthesiser and fail to move music by a single inch. A prop does not inherit the courage of its original. Pink Floyd matters not because it used long introductions, but because it subordinated technology, performance, artwork and sequence to one dramaturgy. Copying the surface of that music is therefore the precise opposite of its method. It is conservative rock dressed in an explorer’s cape.",
+        "TesseracT can be closer to Pink Floyd’s spirit precisely when it sounds nothing like Pink Floyd. In place of blues guitar, there is a low-tuned, edited attack; instead of two sides of an LP, material distributed across streaming, double vinyl, image and game. The risk is different, but the question remains: can a band build a world the listener will want to enter for longer? Not every TesseracT answer is equally successful, and digital perfection can sometimes flatten human uncertainty. Yet repeating the mistakes of the present is more progressive than flawlessly reconstructing 1975.",
+      ],
+    },
+    {
+      label: "LISTENING / HI-FI WITHOUT VOODOO",
+      heading: "Do not test the speakers. Ask whether you hear the story",
+      paragraphs: [
+        "Begin by matching volume. A louder version almost always seems fuller and more detailed, so comparing stream, CD and vinyl without correcting levels is a contest between volume controls. On “Echoes,” check the stability of the opening pulse, the transition from emptiness to the full band, and whether the central soundscape has depth without artificially spilling across the room. On “Time,” hear the attack of the clocks, but more importantly ask whether the system can calm down with the song after that spectacular opening. On “Shine On,” observe the build: a good system does not reveal the finale in the first minute.",
+        "With TesseracT, reject the audiophile rule that more bass means better bass. In “Of Matter,” guitar, kick drum and Amos Williams’ instrument work close together, but should retain distinct envelopes: impact, mass and string texture. If everything turns into one rumble, first move the speakers away from the wall and inspect the listening position; only then look for a new amplifier. In “Legion,” Tompkins’ voice should travel from intimacy to enormous scale without hiss or a collapsing midrange. “War of Being” tests whether a system maintains order through dense climaxes, not whether it can make the most noise.",
+        "Vinyl is an interesting but not neutral choice here. A long classic suite may occupy one side perfectly; a modern album spread across two discs gains less crowded grooves but acquires three compulsory breaks. The official 2LP edition of War of Being divides nine tracks over four sides, so the turntable ritual changes the concept’s pace. That is neither betrayal nor automatic ennoblement. It is a different edit. The most honest test is this: on which medium do you hear the whole work more often and think about the equipment less? The system passes when you stop evaluating it after ten minutes.",
+      ],
+    },
+  ],
+  quoteAfter: 3,
+  quote: "Pink Floyd built space; TesseracT organises time. Progression begins when technique stops being the subject and becomes dramaturgy.",
+  serviceBox: {
+    title: "Six stages of one journey",
+    items: [
+      "Pink Floyd — Meddle: “Echoes” shows how a motif can remember an entire side of a record.",
+      "Pink Floyd — The Dark Side of the Moon: a concert-tested form transformed into precise studio editing.",
+      "Pink Floyd — Wish You Were Here: a lesson in absence, the return of a theme and controlled silence.",
+      "TesseracT — One: Concealing Fate as a bridge between rhythmic rigour and melody.",
+      "TesseracT — Altered State: continuous form, clean vocals and weight built without permanent aggression.",
+      "TesseracT — War of Being: a contemporary album-world worth testing digitally and across four sides of a 2LP.",
+    ],
+  },
+  sources: [
+    { label: "Pink Floyd — Meddle and the story of “Echoes”", url: "https://www.pinkfloyd.com/albums/meddle/" },
+    { label: "Pink Floyd — The Dark Side of the Moon", url: "https://www.pinkfloyd.com/albums/the-dark-side-of-the-moon/" },
+    { label: "Pink Floyd — Wish You Were Here", url: "https://www.pinkfloyd.com/albums/wish-you-were-here/" },
+    { label: "Library of Congress — essay on The Dark Side of the Moon", url: "https://lcweb2.loc.gov/static/programs/national-recording-preservation-board/documents/dark-side-of-the-moon.pdf" },
+    { label: "Kscope — official TesseracT profile and history", url: "https://kscopemusic.com/artists/tesseract/" },
+    { label: "Kscope — P O R T A L S and an overview of the discography", url: "https://kscopemusic.com/tesseract-release-portals/" },
+    { label: "Century Media — Altered State album structure", url: "https://centurymedia.bandcamp.com/album/altered-state-deluxe-edition" },
+    { label: "Kscope/Burning Shed — War of Being on 2LP", url: "https://burningshed.com/tesseract_war-of-being_yellow-vinyl" },
+    { label: "Music Theory Spectrum — analysis of Meshuggah’s rhythm", url: "https://academic.oup.com/mts/article-abstract/29/2/219/1168852" },
+    { label: "University of North Texas — analysis of the language of djent", url: "https://digital.library.unt.edu/ark:/67531/metadc1808378/" },
+  ],
+};
+
+const riverside = {
+  id: "koniec-riverside",
+  number: "04",
+  type: "ESSAY / POLAND",
+  title: "THE END OF RIVERSIDE",
+  time: "10 MIN",
+  description: "Duda and Meller have left; Kozieradzki and Łapaj want to carry on. What exactly ends when the name remains?",
+  lead: "On 23 April 2026, Mariusz Duda closed his chapter in Riverside. Seven weeks later, Piotr Kozieradzki announced an attempt to continue. This is not an obituary for a band, but an argument over whether a name can outlive its own voice, bass and compositional centre.",
+  byline: "WORDS — ANNA KRAWCZYK / ROWKI EDITORIAL TEAM",
+  hero: "rowki-riverside.png",
+  thumb: "rowki-riverside.png",
+  thumbMode: "standalone",
+  heroPosition: "50% 50%",
+  alt: "The silhouettes of a band stand over a river formed from record grooves as a red guitar recedes towards the horizon.",
+  caption: "One shared history has ended. The future of the name, however, will be decided not by metaphor but by the next music.",
+  detailAfter: 4,
+  detailImage: "rowki-detail-riverside-room.png",
+  detailAvif: "rowki-detail-riverside-room.avif",
+  detailWidth: 1586,
+  detailHeight: 992,
+  detailLayout: "wide",
+  detailAlt: "An empty rehearsal room with a microphone, drum kit, closed instrument cases and a red cable leading through an open door.",
+  detailCaption: "After the final rehearsal, the equipment remains but the organism disappears. An empty room can say more about an ending than a lawyered statement.",
+  sections: [
+    {
+      label: "THE FACTS / APRIL–JUNE 2026",
+      heading: "This is the end. This is not the dissolution of the band",
+      paragraphs: [
+        "On 23 April 2026, Mariusz Duda announced that his twenty-five-year path with Riverside was ending. He said the group’s internal situation prevented his central passion — creating new music — and that he was tired of maintaining a public image at odds with reality. He would focus on Lunatic Soul and other projects. This was no sabbatical or polite appeal to “artistic differences.” Duda left a relationship he no longer wished to continue in its existing form.",
+        "Maciej Meller followed on 29 April, saying he could not continue without Duda as leader and key figure. He revealed that an early-2026 proposal for a joint suspension statement had failed to win unanimous consent. Michał Łapaj separately described growing conflict and a lack of unanimity, while saying he was not party to the central dispute. None of this lets the public decide who was “at fault.” It establishes that the old formula had failed.",
+        "On 11 June, Piotr Kozieradzki told Polskie Radio Kierowców that he and Łapaj wanted to “keep Riverside going,” although they had approached nobody and had no candidates. The official site now lists them as members and Duda and Meller as former members. In July 2026, then, the band is not formally dissolved and two musicians seek continuity — but the organism behind eight studio albums has lost half its last line-up and its principal writer.",
+      ],
+    },
+    {
+      label: "THE BEGINNING / 2001–2005",
+      heading: "First came a shared rehearsal room, not the legend of a leader",
+      paragraphs: [
+        "Riverside began in late 2001 when guitarist Piotr Grudziński and drummer Piotr Kozieradzki discussed playing progressive music. Studio owner and keyboardist Jacek Melnicki joined rehearsals, as did Mariusz Duda — initially bassist, then vocalist and an increasing compositional force. Duda became the authorial centre, but this was no solo project built around his name. It joined Kozieradzki’s death-metal past, Grudziński’s melodic guitar, Melnicki’s studio resources and Duda’s songwriting instinct.",
+        "The independently released Out of Myself arrived in 2003 with its own nervous energy, not as proof that Poles could imitate Western prog. Bass carried themes, Duda’s voice moved from intimacy to eruption, and Grudziński chose a long, singing tone over cascades of notes. Michał Łapaj joined after Melnicki left. InsideOut provided international distribution for album two, but its logo did not create 2005’s Second Life Syndrome success. The material supplied the passport.",
+        "The title composition, longer than fifteen minutes, established Riverside’s grammar: a theme returns in different states, a heavy riff does not erase melancholy, and a solo should extend an emotion rather than halt the song for a skills display. Łapaj added piano, organ and synthesiser atmosphere; Kozieradzki held a changing form together without moving the drums into the foreground. In this band, progression was not constant complication. It was a fluid movement between fragility and mass.",
+      ],
+    },
+    {
+      label: "REALITY / 2003–2007",
+      heading: "An inward trilogy that opened the world",
+      paragraphs: [
+        "Out of Myself, Second Life Syndrome and Rapid Eye Movement became the Reality Dream Trilogy: three records about divided identity, anxiety, escape and return. Their unity is chiefly sonic. Duda’s bass asks questions in short figures; Grudziński answers in his faintly plaintive tone; Łapaj’s keyboards create the room; Kozieradzki’s drums decide when its walls move. Every instrument serves the drama.",
+        "Rapid Eye Movement closed the stage in 2007 with denser agitation. Riverside now had an audience for whole albums and tours beyond Poland — success that no single figure captures. It built its position concert by concert, while an English-language Warsaw band had to convince domestic listeners it was not a copy and foreign ones that origin was no warning about quality.",
+        "The trilogy’s most durable achievement is not export prestige, however. It is the intimacy preserved as the scale grew. “Conceiving You” can function as a straightforward song, while “Dance With the Shadow” stretches tension across more than ten minutes. One form is no less ambitious for the band than the other. That flexibility later allowed Riverside to change its sound without entirely shedding its accent.",
+      ],
+    },
+    {
+      label: "EVOLUTION / 2009–2015",
+      heading: "The band had no single safe sound",
+      paragraphs: [
+        "Anno Domini High Definition in 2009 compressed the programme into five faster, harder, rhythmically pressurised pieces — urban Riverside, melancholy on an anxious power supply. Shrine of New Generation Slaves in 2013 answered with economy: groove, Hammond, blues grit and a critique of productivity. Rather than escalating difficulty, the band shortened the distance between idea and chorus.",
+        "Love, Fear and the Time Machine in 2015 softened the metal edge into warmer melody. The official biography calls it the group’s best-selling album to that point, with strong positions abroad. Its success did not depend on repeating Second Life Syndrome. Riverside had learned that recognisability need not mean one fixed palette: Duda’s voice and bass pulse, the pacing of climaxes and Grudziński’s economical guitar kept the signature intact in gentler material.",
+      ],
+    },
+    {
+      label: "THE FRACTURE / 2016",
+      heading: "The first ending truly happened",
+      paragraphs: [
+        "Piotr Grudziński died on 21 February 2016: fans lost a distinctive guitarist, while the musicians lost a friend and co-founder. In September, Riverside chose to continue as a trio without a permanent replacement. “And then there were three” was no casting notice. It recognised that Grudziński’s tone could not be swapped like a component; new music had to grow from absence, not imitation.",
+        "Eye of the Soundscape in 2016 collected the band’s ambient, experimental side, including material recorded with Grudziński. The true answer was 2018’s Wasteland: stark, sometimes post-apocalyptic grief, leaving space where singing guitar once stood. Duda played some guitar; guests including Maciej Meller did not impersonate their late colleague. The band survived by sounding like a band after loss.",
+        "Supporters cite that precedent: if Riverside survived 2016, why not 2026? The analogy is incomplete. Then three musicians jointly chose a path; Duda remained singer, bassist, lyricist and chief composer; absence became a new album’s subject. Now Duda left voluntarily over internal relations, Meller resigned too, and only two members declare continuation. The losses need no hierarchy, but their structures differ.",
+      ],
+    },
+    {
+      label: "REBUILDING / 2017–2025",
+      heading: "Maciej Meller and a new identity that lasted too briefly",
+      paragraphs: [
+        "Maciej Meller supported Riverside live from 2017 and joined officially in 2020. First he performed the catalogue without symbolically taking Grudziński’s place; later he entered a quartet writing new music. ID.Entity, released on 20 January 2023, is that configuration’s only studio album. Credits show Duda composed most music, collaborated with Łapaj on three tracks and wrote every lyric. Meller brought his attack and stage energy, but the compositional centre did not disperse.",
+        "ID.Entity left Wasteland’s rust behind: synthesisers recalled the 1980s, colour replaced mournful monochrome, and lyrics addressed identity, technology and public masks. In January 2023, the band said it had finished mourning and might begin a new trilogy. The claim hurts now, but proves no contemporary lie. A group can sincerely believe in a future that later becomes impossible.",
+        "January 2025’s Live ID. documents twelve catalogue and current tracks recorded at Warsaw’s Torwar on 1 June 2024; the Blu-ray adds 5.1 sound. Sources do not justify calling it “the final concert,” but it is the quartet’s last official live release. It captures a powerful, cohesive band. Organisational crisis need not announce itself through artistic ruin.",
+      ],
+    },
+    {
+      label: "CONFLICT / NO TRIAL BY FANS",
+      heading: "Public statements are not backstage access",
+      paragraphs: [
+        "The internet instantly assigned roles after April: victim, culprit, mediator, redundant man. That is a substitute for knowledge. We have selected statements written after a relationship broke, not the years of conversations, agreements, compromise and ordinary labour preceding it. Duda described conditions blocking creation and a false public image. Łapaj said he was outside the main conflict and his stage emotions were sincere. Meller described tensions among all four and no route forward without the leader. These accounts may all be honest without forming one neat version, because lived perspectives do not owe fans a courtroom-ready plot.",
+        "Music writing should not dress gossip as psychology. We do not know who sent the last email, what was negotiated or who controls every operation. We know no suspension statement was agreed, Duda and Meller left, and Kozieradzki and Łapaj seek a future. Anything stronger needs unavailable sources. Judge an artistic decision without putting people on trial.",
+      ],
+    },
+    {
+      label: "THE NAME / WHAT CAN KEEP FLOWING",
+      heading: "Law, brand and band are three different things",
+      paragraphs: [
+        "“End” can mean dissolving an entity, stopping shows, losing a line-up, closing a catalogue or ending a creative chemistry. Media reports often collapse those events into one dramatic noun, but only the last is certain here. The ID.Entity configuration is gone and the community built since 2001 has fractured. Yet the site and shop operate, Kozieradzki and Łapaj remain listed and intend to continue. The name has not legally disappeared; legal survival and artistic continuity are simply not the same claim.",
+        "A future line-up has no guaranteed artistic success. Riverside without Duda needs more than a familiar voice and bass: it needs a new centre for music and lyrics, then a reason for the name beyond live repertoire. Łapaj has a compositional language; Kozieradzki has co-created the group since its first rehearsal. They justify the right to try, not an assumption of continuity.",
+        "The most honest path may be the riskiest: no Duda double, no Second Life Syndrome II, no “return to roots.” New Riverside music should sound different enough to stand without nostalgic camouflage and strong enough that the old name opens a question rather than closes one. It would become consent to a public test, not a promise that nothing changed. Fans may reject that test; the musicians retain the right to attempt it.",
+      ],
+    },
+    {
+      label: "ROWKI THESIS",
+      heading: "Do not save Riverside without Riverside",
+      variant: "forecast",
+      paragraphs: [
+        "The line is aimed not at Kozieradzki and Łapaj but at an instinct to protect every valuable name from silence: hire a singer, announce an anniversary, sell indestructibility. Silence is no catalogue malfunction. It can be the only honest interval between one band and another. Riverside needs no rescue operation after this rupture. It needs time and music able to justify the sign without holding memories hostage.",
+        "Judge any new line-up severely by sound, not merely its right to the name. If none appears, eight albums do not become failure. The worst outcome would imitate old Riverside so perfectly that it erases what made the band matter: change. A brave new organism under a controversial sign — or silence — beats a competent reconstruction of an absent voice.",
+      ],
+    },
+    {
+      label: "A FAREWELL LISTEN",
+      heading: "Do not make a ranking. Listen to the change",
+      paragraphs: [
+        "Instead of selecting the “best” record, hear a history of decisions. Out of Myself catches a language settling; Second Life Syndrome makes gentleness and weight confident; Anno Domini High Definition packs tension into five tracks. Shrine of New Generation Slaves foregrounds groove and organ; Love, Fear and the Time Machine removes metal armour. The changes matter because none is automatically more ambitious than another. These are not product variants or increasingly polished editions of one formula, but a relationship repeatedly changing its rules.",
+        "Wasteland is best heard not as a monument to Grudziński but as the music of people learning to function after an irreversible loss. ID.Entity need not serve as a testament; it was created as an announcement of the future, which is precisely why it makes such a bitter finale to the Duda era. Live ID. shows that the stage could sustain a community even as trouble grew beyond it. Knowledge of the ending changes how we listen, but should not falsify the past.",
+        "Vinyl suits this farewell not through nobility but through its side, pause and decision. When the stylus rises, you turn the record or leave silence. Riverside stands there now: two musicians want side B, two left the stage, and listeners cannot know whether this is the same album. No statement can answer. Only the first new sound — or its absence — will.",
+      ],
+    },
+  ],
+  quoteAfter: 4,
+  quote: "Riverside once learned how to play after loss. In 2026, however, it did not lose one voice in the arrangement — it lost the centre that wrote the questions.",
+  serviceBox: {
+    title: "Eight albums, eight changes of gear",
+    items: [
+      "Out of Myself (2003) — the birth of a language and the first part of the Reality Dream Trilogy.",
+      "Second Life Syndrome (2005) — the international breakthrough and a model balance between melody and weight.",
+      "Rapid Eye Movement (2007) — an anxious conclusion to the trilogy.",
+      "Anno Domini High Definition (2009) — five tracks, urban pressure and the greatest concentration of energy.",
+      "Shrine of New Generation Slaves (2013) — groove, Hammond organ and a critique of productivity culture.",
+      "Love, Fear and the Time Machine (2015) — a more melodic finale for the line-up with Piotr Grudziński.",
+      "Wasteland (2018) — the trio turns loss into a new architecture.",
+      "ID.Entity (2023) — the only album by the quartet with Maciej Meller and the final studio chapter with Duda.",
+    ],
+  },
+  sources: [
+    { label: "Riverside — official history and current line-up", url: "https://www.riversideband.pl/en/bio-band" },
+    { label: "Riverside — the decision to continue as a trio in 2016", url: "https://riversideband.pl/en/news/803-and-there-were-three-again" },
+    { label: "Riverside — the story of Wasteland", url: "https://riversideband.pl/en/news/1005-wasteland-story" },
+    { label: "Riverside — official ID.Entity album information", url: "https://riversideband.pl/en/music/albums/id-entity" },
+    { label: "Riverside — ID.Entity as a new chapter", url: "https://riversideband.pl/en/news/1494-the-third-riverside-single-is-out" },
+    { label: "Official Riverside shop — Live ID. and concert details", url: "https://store.riversideband.pl/product/riverside-live-id-2cd-blu-ray/" },
+    { label: "Polskie Radio — Mariusz Duda’s statement, 23 April 2026", url: "https://trojka.polskieradio.pl/artykul/3677699,jestem-zmeczony-udawaniem-mariusz-duda-zegna-sie-z-riverside" },
+    { label: "Teraz Muzyka — Michał Łapaj’s statement", url: "https://www.terazmuzyka.pl/co-dalej-z-riverside-michal-lapaj-wydal-oswiadczenie-po-odejsciu-mariusza-dudy/" },
+    { label: "Teraz Muzyka — Maciej Meller’s statement, 29 April 2026", url: "https://www.terazmuzyka.pl/maciej-meller-skonczyl-sie-i-moj-czas-w-zespole-riverside-oswiadczenie/" },
+    { label: "Polskie Radio Kierowców — Kozieradzki on plans to continue, 11 June 2026", url: "https://radiokierowcow.pl/artykul/3697323,miedzy-scena-a-droga-piotr-kozieradzki-o-riverside-pasjach-i-zyciowych-lekcjach" },
+  ],
+};
+
+const warszawa = {
+  id: "winylowa-warszawa",
+  number: "05",
+  type: "GUIDE / WARSAW",
+  title: "WARSAW ON VINYL",
+  time: "10 MIN",
+  description: "Four addresses, four temperaments and a walk after which Discogs stops being an oracle.",
+  lead: "The best record shop does not always have the most records. It has somebody who can say “do not buy this copy” — and point to a crate you never knew existed.",
+  byline: "WORDS — ROWKI EDITORIAL TEAM",
+  hero: "rowki-warszawa.png",
+  thumb: "rowki-warszawa.png",
+  thumbMode: "standalone",
+  heroPosition: "50% 50%",
+  alt: "A Warsaw street with a small record shop and a giant record resembling a city map.",
+  caption: "Warsaw sounds best from crate level — provided somebody has checked more than the price of the record.",
+  detailAfter: 4,
+  detailImage: "rowki-detail-warsaw-crates.png",
+  detailAvif: "rowki-detail-warsaw-crates.avif",
+  detailWidth: 1586,
+  detailHeight: 992,
+  detailLayout: "wide",
+  detailAlt: "Two people browse record crates beneath a lamp beside a portable listening turntable.",
+  detailCaption: "Warsaw’s best recommendation algorithm looks like two hands, a lamp above the counter and a seller who lets you inspect a record without theatrical haste.",
+  sections: [
+    {
+      label: "THE ROUTE / NOT A RANKING",
+      heading: "Four shops, not four places on a podium",
+      paragraphs: [
+        "This walk is not a ranking; those usually reveal more about their author’s collection than the shops. A jazz temple may lose a metal listener in three minutes. Instead, here are four temperaments: Vinyl Tamka, Chmielna 20, mixes new and used; Muzant, Warecka 4/6, carries the history of post-1989 music retail; Winyl Market, Piękna 3 unit 2, adds accessories and DJ culture; Antykwariat Tamka, Słupecka 8, specialises in used records and collections.",
+        "The first three form a central walk from Chmielna down Warecka towards Three Crosses Square and Piękna. Słupecka in Ochota is a second act by public transport or another day. Do not collect shelves like tourist sights. After an hour covers merge, VG+ starts looking like NM, and the budget loses its ability to form sentences.",
+        "We confirmed addresses and profiles on official sites in July 2026, but check hours on the day. Independent shops attend fairs, receive stock and follow an owner’s rhythm. Bring a bag or rigid backpack that holds LPs upright, set a budget and note wanted titles, while leaving room for one surprise. Otherwise the walk becomes a manual search engine.",
+      ],
+    },
+    {
+      label: "CHMIELNA 20",
+      heading: "Vinyl Tamka: begin with the wide shot",
+      paragraphs: [
+        "Chmielna’s noise makes a good contrast with browsing. Vinyl Tamka lists new and used rock, jazz, Polish Jazz, classical, metal, hip-hop, electronic, soul, funk, reggae and soundtracks. Bargain shelves share space with Japanese pressings and rarities worth thousands of złoty. You can compare a current Rumours reissue, Polish rap and the distance between a listening copy and a collectable.",
+        "Make two passes. First visit the intended section and reserve no more than three candidates; then try soundtracks, world music or Polish jazz. Because the shop buys collections, used stock is fluid: yesterday’s record vanishes while a morning box awaits description. That volatility beats a “most popular” filter. You enter for an item and leave with a listening hypothesis.",
+        "Breadth creates a trap: a collectable lies beside an ordinary reissue, their covers nearly identical. Ask not only the price but which edition it is and why this copy costs it. Variant, condition and sales history may justify rarity, but the answer should name year, country, label, catalogue number, matrix and inserts. “That is what it goes for on Discogs” begins a conversation; it does not end one.",
+      ],
+    },
+    {
+      label: "WARECKA 4/6 / STAIRCASE VIII",
+      heading: "Muzant: downstairs into the history of transformation",
+      paragraphs: [
+        "Muzant is more than another “charming little shop.” It opened in December 1989 at Rakowiecka and Wiśniowa, selling vinyl, tapes and early CDs; its history recalls Dżem signing records after its final Warsaw show with Ryszard Riedel. It later occupied the University of Technology and briefly the Palace of Culture. In 1999 it moved to a former laundry at Warecka 4/6, adding the next room in 2002.",
+        "Find staircase VIII from the Świętokrzyska side. Muzant survived late-communist cassette circulation, the CD boom, online auctions, physical decline and the LP return. It now sells in person and through its catalogue, Discogs, Allegro and eBay; a Katowice warehouse has fulfilled orders since 2023. An online title may not sit on Warecka, so arrange collection first.",
+        "Bring an archivist’s patience: compare editions and ask about pressings. A scuffed sleeve need not condemn its disc; glossy laminate guarantees no quiet playback. A seller can identify a club issue, missing insert, wrong variant or hidden wobble. Knowledge used only to raise a price is decoration. Knowledge that sometimes says “take the cheaper reissue” is a service.",
+      ],
+    },
+    {
+      label: "PIĘKNA 3 / UNIT 2",
+      heading: "Winyl Market: the record as part of the toolkit",
+      paragraphs: [
+        "From Warecka we head south. Winyl Market’s official details give Piękna 3, unit 2, and the shop carries not only records but cassettes, books and art books, adaptors, sleeves, care products, slipmats, bags and clothing. Its genre divisions say a great deal about the place: alongside pop and rock are funk, soul, Afro and Latin, classic hip-hop, electro, re-edits, Polish Jazz, reggae, library music and soundtracks. It is a good address for somebody who thinks of vinyl not solely as a relic for the shelf, but also as a tool for listening, performing and caring for a collection.",
+        "Piękna can serve as a technical stop. Instead of buying another album, ask whether you need a decent inner sleeve, antistatic brush or 45 adaptor. Accessories are as vulnerable to marketing as the records themselves, so ask about function. A brush should collect loose dust, not “rejuvenate the groove.” A fluid should suit the carrier and be used so dirt is removed rather than spread. A slipmat can alter record height and electrostatic behaviour, but it is not an automatic ticket to audiophile transcendence. A good seller explains the mechanism before showing the most expensive version.",
+        "A selected range also makes it easier to practise one of the most important skills: walking away. If you already own a good edition of an album, a new colour need not receive asylum. If a record costs more than planned, note the pressing details and return to the comparison later. A physical shop beats the internet through the chance to inspect a copy and talk, not through the impulse provoked by a red “last one” warning. The last copy of this run is often the first copy of the next reissue.",
+      ],
+    },
+    {
+      label: "OCHOTA / SŁUPECKA 8",
+      heading: "Antykwariat Tamka: the name stayed, the address moved on",
+      paragraphs: [
+        "The second act is Ochota. Antykwariat Tamka kept its name after nearly two decades on Tamka Street, but now officially occupies Słupecka 8. It advertises thousands of used titles, buys individual records and collections, and specialises in period editions and scarce pressings. Rock, jazz, blues, funk, soul, pop, classical and Polish song meet CDs, tapes, books and comics. Every delivery carries somebody’s choices, omissions and storage history.",
+        "An antiquarian shop needs another pace. Grade disc and cover separately: VG+/VG describes two conditions. Under light, inspect spindle marks, edge, surface and run-out matrices; check inserts, posters, booklets and the correct inner. Collectable “completeness” has parts, and one missing item may matter more than light sleeve scratches.",
+        "Ask for playback when a mark follows the groove or the music is costly and quiet. Fine marks may be silent; an innocent defect may repeat each revolution. Hear the side’s opening, a loud middle and the geometrically unforgiving end. A seller need not know the full biography, but should separate knowledge from guesswork. “I don’t know — let’s check” beats a legend attached to a price.",
+      ],
+    },
+    {
+      label: "GRADING / READING THE COPY",
+      heading: "VG+ is not a laboratory parameter",
+      paragraphs: [
+        "Discogs uses the Goldmine standard: from Mint through Near Mint, Very Good Plus and Very Good to poor conditions. It is a necessary shared language, but remains descriptive. Discogs itself recommends using the Mint grade sparingly. Two people may assess hairlines, noise between tracks or spine wear differently. The carrier must also be separated from its cover and extras. “VG+” without saying what it describes is an answer missing its noun.",
+        "In a physical shop, the standard should begin an inspection, not forbid one. Remove the record by its edge and label, hold it beneath angled light and turn it slowly. Look for scratches, dull scuffs, dirt, traces of improper washing, warping and discolouration. Check the catalogue number on the label and the matrix inscriptions, because covers and discs are sometimes switched. Not every mismatch indicates fraud — after decades in circulation, sets become naturally mixed — but the price of a particular pressing requires that particular pressing inside.",
+        "A playback test also needs interpretation. One pop may result from dirt; a cyclic sound on every revolution suggests a fixed mark; constant grinding in one channel can reveal groove wear or a playback problem. The shop’s turntable and cartridge are not identical to your system, so the test is not an absolute measurement, but it reduces risk. What matters most is whether promise and object agree. A record described as a listening copy may carry history on its sleeve. A disc priced as an archival treasure deserves inspection more exacting than a photograph of its front on an auction site.",
+      ],
+    },
+    {
+      label: "ROWKI THESIS",
+      heading: "Discogs should not set the price of a conversation",
+      variant: "forecast",
+      paragraphs: [
+        "Discogs publishes a median based on recent transactions for a given edition. That is a better guide than the highest active listing, but it is still not an appraiser standing over the record. Sales history includes different conditions, seller countries, currencies and moments of demand. A community database also contains mistakes: a copy can be attached to the wrong variant, or two database entries may describe the same pressing. In a winyl.net thread about valuation, forum users rightly argue over both faces of the tool: it gives a sense of worldwide prices, but “raw statistics” without condition and reliable identification can be a coin toss dressed as a table.",
+        "Especially contentious is the practice of pricing a Polish record on a Polish shelf according to the global market, as though it were already packed in Los Angeles. The forum discussion records sellers’ argument that one price for domestic and foreign customers is fairer. From the owner’s perspective, that is logical: why sell for less if an international buyer will pay more? Yet the customer is entitled to ask what exactly a local export price buys. If the shop removes shipping, the risk of a foreign transaction and uncertainty of description, it should demonstrate that value through playback, reliable grading, knowledge of the edition and responsibility for errors.",
+        "A physical shop has every right to be more expensive than a random listing. It pays rent, taxes and staff, ties capital up in unsold stock, selects deliveries and accepts returns. Price criticism that pretends those costs do not exist is as shallow as copying the highest online offer. Our thesis is different: the margin should buy trust. If all we receive is a record with a sticker calculated by somebody else’s database, the shop becomes an expensive interface to Discogs. Let us pay for knowledge, the possibility of checking and a willingness to tell the truth about a weaker copy — not merely the shelf’s geographical location.",
+      ],
+    },
+    {
+      label: "BUDGET / TACTICS",
+      heading: "How to return with music, not a collector’s hangover",
+      paragraphs: [
+        "Set three figures before leaving: the day’s total budget, the maximum for one record and a reserve for a find outside the list. A prepared list can include performer and album, but also acceptable editions. If you want music to hear, do not become attached to a first pressing. A good, honestly made reissue will often be more sensible than a tired original whose chief advantage is the year on its label. If you are hunting a specific variant, note the catalogue number and distinctive inscriptions before the visit. Memory becomes exceptionally creative beneath the pressure of a rare cover.",
+        "Do not automatically negotiate every price, but negotiate information. Ask for an explanation of the grade, a chance to inspect the disc, a playback test or a comparison between editions. With a larger group of purchases you can ask for a discount, but good trade does not humiliate either seller or customer. If the price makes no sense to you, put the record back without a theatrical lecture on capitalism. Photograph the edition details and check completed sales, delivery costs and the condition of comparable copies. The shop may have overreached. It is equally possible that your memory retained a 2018 price while the market completed several unpleasant revolutions.",
+        "Do not put purchases away immediately on returning home. Inspect them again, clean them by an appropriate method, hear them while there is still time to report a problem and keep the receipt. Record the variant in a catalogue if the collection is large. Most importantly, hear a whole side without simultaneously checking what the record is now “worth.” The collectables market can turn every album into a graph and a walk through Warsaw into a tour of investment warehouses. A record shop matters precisely because a conversation can occur between valuation and the exit. Without it, only e-commerce with heavier doors remains.",
+      ],
+    },
+  ],
+  quoteAfter: 2,
+  quote: "In an online shop, you search for a title. In a good record shop, somebody can still tell you why you should not buy this copy.",
+  serviceBox: {
+    title: "A Warsaw plan without collector fever",
+    items: [
+      "Day one: Chmielna 20 → Warecka 4/6, staircase VIII → Piękna 3, unit 2.",
+      "Day two, or a separate act: Antykwariat Tamka, Słupecka 8 in Ochota.",
+      "Check opening hours on the official website on the day of your visit; independent shops change rhythm.",
+      "Grade carrier and cover separately, and identify an expensive copy by its matrix, not its front.",
+      "Compare completed transactions for the same edition and condition, not the highest active listing.",
+      "Ask about playback, returns and the reason for a price — a shop’s margin should buy trust.",
+      "Keep some budget for a record outside the list, but never buy one solely because it is the “last copy.”",
+    ],
+  },
+  sources: [
+    { label: "Vinyl Tamka — official shop and address", url: "https://vinyltamka.pl/" },
+    { label: "Muzant — history, address and collection information", url: "https://muzant.pl/en/about-us/" },
+    { label: "Antykwariat Tamka — current location and profile", url: "https://antykwariattamka.pl/" },
+    { label: "Winyl Market — shop details for Piękna 3, unit 2", url: "https://winylmarket.com/regulamin/" },
+    { label: "Discogs — safe buying and the transaction median", url: "https://support.discogs.com/hc/en-us/articles/360001584674-Best-Practices-For-Buying-Safely-On-Discogs" },
+    { label: "Discogs — media condition grading standard", url: "https://support.discogs.com/hc/en-us/articles/360001566193-How-To-Grade-Items" },
+    { label: "Winyl.net — long-running thread about Polish shops", url: "https://www.winyl.net/viewtopic.php?t=16" },
+    { label: "Winyl.net — prices and collection valuation on Discogs", url: "https://www.winyl.net/viewtopic.php?t=5752" },
+  ],
+};
+
+export const issue = {
+  number: "01",
+  date: "JULY 2026",
+  title: "The needle returns",
+};
+
+export const stories = [technics, powrotWinylu, prog, riverside, warszawa];
+
+export const totalReadingMinutes = stories.reduce(
+  (total, story) => total + Number.parseInt(story.time, 10),
+  0,
+);

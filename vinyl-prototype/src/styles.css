@@ -86,6 +86,7 @@ button:focus-visible {
 
 .masthead__wordmark {
   width: 216px;
+  position: relative;
   padding-bottom: 9px;
   border-bottom: 1px solid var(--ink);
   font-family: "Newsreader", Georgia, serif;
@@ -104,6 +105,12 @@ button:focus-visible {
   font-weight: 600;
   line-height: 1;
   letter-spacing: 0.17em;
+}
+
+.masthead__actions {
+  display: flex;
+  align-items: flex-start;
+  gap: 3px;
 }
 
 .icon-button {
@@ -125,6 +132,35 @@ button:focus-visible {
 
 .icon-button:active {
   transform: scale(0.95);
+}
+
+.language-switch {
+  width: 44px;
+  height: 44px;
+  justify-self: end;
+  color: var(--ink);
+}
+
+.language-switch__code {
+  width: 38px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgb(23 23 19 / 0.72);
+  border-radius: 999px;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 9.5px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.11em;
+}
+
+.language-switch--cover {
+  margin-top: -5px;
+}
+
+.language-switch--story {
+  align-self: center;
 }
 
 .masthead__menu {
@@ -311,6 +347,9 @@ button:focus-visible {
 }
 
 .reader-bar__brand {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
   justify-self: center;
   font-family: "Newsreader", Georgia, serif;
   font-size: 22px;
@@ -818,15 +857,16 @@ button:focus-visible {
 
 .story-media img {
   width: 100%;
+  height: auto;
   display: block;
-  object-fit: cover;
-  aspect-ratio: 3 / 2;
+  object-fit: contain;
+  aspect-ratio: var(--media-aspect, 3 / 2);
   border-top: 1px solid var(--ink);
   border-bottom: 1px solid var(--ink);
 }
 
 .story-media--wide img {
-  aspect-ratio: 16 / 9;
+  aspect-ratio: var(--media-aspect, 16 / 9);
 }
 
 .story-media--portrait {
@@ -835,7 +875,7 @@ button:focus-visible {
 }
 
 .story-media--portrait img {
-  aspect-ratio: 4 / 5;
+  aspect-ratio: var(--media-aspect, 4 / 5);
   border: 1px solid var(--ink);
 }
 
@@ -1124,6 +1164,16 @@ button:focus-visible {
   color: rgb(244 237 223 / 0.42);
 }
 
+.menu-sheet nav .language-switch--menu {
+  width: 100%;
+  height: auto;
+  justify-self: stretch;
+  border: 0;
+  border-bottom: 1px solid rgb(244 237 223 / 0.25);
+  border-radius: 0;
+  color: inherit;
+}
+
 .menu-sheet > p {
   margin: auto 0 0;
   color: rgb(244 237 223 / 0.66);
@@ -1133,6 +1183,17 @@ button:focus-visible {
 }
 
 @media (max-width: 767px) {
+  .cover-screen > * {
+    min-width: 0;
+  }
+
+  .issue-heading h1 {
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+    text-wrap: balance;
+  }
+
   .contents-screen {
     display: flex;
     flex-direction: column;
@@ -1316,8 +1377,12 @@ button:focus-visible {
   }
 
   .masthead__wordmark {
-    width: 205px;
-    font-size: 43px;
+    width: 180px;
+    font-size: 41px;
+  }
+
+  .masthead__actions {
+    gap: 0;
   }
 
   .issue-heading h1 {
@@ -1723,12 +1788,19 @@ button:focus-visible {
 
   .article-hero > picture {
     height: 100%;
+    display: grid;
+    place-items: center;
+    padding: clamp(22px, 3vw, 48px);
   }
 
   .article-hero > picture > img {
-    height: 100%;
+    width: auto;
+    height: auto;
+    max-width: min(100%, 860px);
+    max-height: calc(100dvh - 224px);
     min-height: 0;
-    border-top: 0;
+    object-fit: contain;
+    border: 1px solid var(--ink);
   }
 
   .article-hero figcaption {
@@ -2042,8 +2114,8 @@ button:focus-visible {
   }
 
   .story-media--wide {
-    width: 100%;
-    margin-inline: 0;
+    width: min(100%, 960px);
+    margin-inline: auto;
   }
 
   .story-media--portrait {
