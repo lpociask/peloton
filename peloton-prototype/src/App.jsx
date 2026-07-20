@@ -3,6 +3,7 @@ import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import {
   ArrowLeft,
   ArrowRight,
+  ArrowUpRight,
   BookmarkSimple,
   Clock,
   Export,
@@ -10,6 +11,7 @@ import {
   X,
 } from "@phosphor-icons/react";
 import { assetPath } from "./assetPath";
+import { cyclingAppsByLocale } from "./content/cycling-apps.js";
 import {
   issue as polishIssue,
   upcomingIssue as polishUpcomingIssue,
@@ -146,6 +148,61 @@ function UpcomingIssueTeaser({ issue, copy, reduceMotion }) {
   );
 }
 
+function CyclingAppsColophon({ apps, copy }) {
+  const headingId = "cycling-apps-title";
+
+  return (
+    <aside className="publisher-apps" aria-labelledby={headingId}>
+      <header className="publisher-apps__header">
+        <div>
+          <p className="publisher-apps__kicker">{copy.appsKicker}</p>
+          <h2 id={headingId}>{copy.appsHeading}</h2>
+        </div>
+        <p className="publisher-apps__dek">{copy.appsDek}</p>
+      </header>
+
+      <ol className="publisher-apps__list">
+        {apps.map((app, index) => (
+          <li className="publisher-apps__item" key={app.id}>
+            <a
+              href={app.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${app.name} — ${copy.openInAppStore}; ${copy.opensNewTab}`}
+            >
+              <span className="publisher-apps__number" aria-hidden="true">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+              <img
+                src={assetPath(app.icon)}
+                alt=""
+                width="256"
+                height="256"
+                loading="lazy"
+                decoding="async"
+              />
+              <span className="publisher-apps__copy">
+                <small>{app.category}</small>
+                <strong>{app.name}</strong>
+                <span>{app.description}</span>
+              </span>
+              <span className="publisher-apps__store" aria-hidden="true">
+                {copy.appStore}
+                <ArrowUpRight size={15} weight="bold" />
+              </span>
+            </a>
+          </li>
+        ))}
+      </ol>
+
+      <footer className="publisher-apps__folio">
+        <span>PELOTON · PAPER</span>
+        <span>{copy.appsFolio}</span>
+      </footer>
+    </aside>
+  );
+}
+
 function CoverScreen({
   onOpen,
   onMenu,
@@ -156,6 +213,7 @@ function CoverScreen({
   copy,
   issue,
   upcomingIssue,
+  cyclingApps,
   stories,
   totalReadingMinutes,
 }) {
@@ -240,6 +298,7 @@ function CoverScreen({
       </div>
 
       <UpcomingIssueTeaser issue={upcomingIssue} copy={copy} reduceMotion={reduceMotion} />
+      <CyclingAppsColophon apps={cyclingApps} copy={copy} />
     </motion.section>
   );
 }
@@ -796,6 +855,7 @@ export function App() {
   const menuButtonRef = useRef(null);
   const copy = copyByLocale[locale];
   const { issue, upcomingIssue, stories, totalReadingMinutes } = editions[locale];
+  const cyclingApps = cyclingAppsByLocale[locale];
   const story = stories.find((item) => item.id === storyId) ?? stories[0];
 
   useEffect(() => {
@@ -853,6 +913,7 @@ export function App() {
               copy={copy}
               issue={issue}
               upcomingIssue={upcomingIssue}
+              cyclingApps={cyclingApps}
               stories={stories}
               totalReadingMinutes={totalReadingMinutes}
             />
