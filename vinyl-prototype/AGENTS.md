@@ -8,6 +8,7 @@
 - On phones, preserve the full composition of editorial illustrations instead of cropping them into fixed-height frames. A short viewport should scroll the contents naturally rather than compressing list rows below their readable height.
 - On desktop, treat article artwork as a framed editorial plate: preserve its intrinsic proportions and cap its display width so ultrawide browser windows do not inflate it into a billboard.
 - Every feature must have its own in-article illustration; never reuse the issue cover as generic story media.
+- House ads for Igła i Rowek should read like restrained editorial classifieds, appear only once per issue, and never interrupt article prose.
 - Give every issue a distinct artist-led cover language while keeping the ROWKI masthead and editorial shell recognizable across the series.
 - Polish remains the default language, while the complete interface and every article must have an English counterpart available through one persistent, accessible PL/EN switch.
 - Editorial illustration combines Polish poster-school economy, Japanese hi-fi catalog precision, matte gouache, cut paper, and coarse screen-print grain.

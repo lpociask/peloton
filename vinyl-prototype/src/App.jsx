@@ -33,6 +33,9 @@ const pageMotion = {
   exit: { opacity: 0, y: -7 },
 };
 
+const IGLA_I_ROWEK_APP_STORE_URL =
+  "https://apps.apple.com/pl/app/ig%C5%82a-i-rowek/id6782431440?uo=4";
+
 function IconButton({ label, children, onClick, pressed, className = "", buttonRef }) {
   return (
     <button
@@ -256,6 +259,40 @@ function ReaderBar({ issue, onBack, language, onLanguageChange, text }) {
   );
 }
 
+function MagazineHouseAd({ text }) {
+  return (
+    <aside className="house-ad" aria-labelledby="house-ad-label">
+      <a
+        className="house-ad__link"
+        href={IGLA_I_ROWEK_APP_STORE_URL}
+        target="_blank"
+        rel="noreferrer"
+        aria-label={text.houseAdAria}
+      >
+        <img
+          className="house-ad__icon"
+          src={assetPath("igla-i-rowek-app-icon.png")}
+          alt=""
+          width="256"
+          height="256"
+          loading="lazy"
+          decoding="async"
+        />
+        <span className="house-ad__copy">
+          <small id="house-ad-label">{text.houseAdEyebrow}</small>
+          <span className="house-ad__message">
+            <strong>{text.houseAdName}</strong> {text.houseAdBody}
+          </span>
+        </span>
+        <span className="house-ad__cta" aria-hidden="true">
+          <span>{text.houseAdCta}</span>
+          <ArrowRight size={16} />
+        </span>
+      </a>
+    </aside>
+  );
+}
+
 function ContentsScreen({
   issue,
   stories,
@@ -350,10 +387,13 @@ function ContentsScreen({
         </footer>
       </section>
 
-      <button className="primary-action contents-action" type="button" onClick={() => onRead(stories[0])}>
-        <span>{text.readFromBeginning}</span>
-        <ArrowRight size={25} aria-hidden="true" />
-      </button>
+      <div className="contents-footer">
+        <MagazineHouseAd text={text} />
+        <button className="primary-action contents-action" type="button" onClick={() => onRead(stories[0])}>
+          <span>{text.readFromBeginning}</span>
+          <ArrowRight size={25} aria-hidden="true" />
+        </button>
+      </div>
     </motion.section>
   );
 }
