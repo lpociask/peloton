@@ -70,10 +70,30 @@ button:focus-visible {
 }
 
 .cover-screen {
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-color: rgb(23 23 19 / 0.35) transparent;
+  scrollbar-width: thin;
+}
+
+.cover-screen__current {
+  width: 100%;
+  min-height: 100dvh;
   display: grid;
   grid-template-rows: auto minmax(0, 1fr) auto auto;
   gap: clamp(12px, 2.1dvh, 18px);
   padding: clamp(24px, 4.1dvh, 34px) 28px clamp(24px, 4dvh, 34px);
+}
+
+.cover-screen::-webkit-scrollbar {
+  width: 7px;
+}
+
+.cover-screen::-webkit-scrollbar-thumb {
+  border-radius: 99px;
+  background: rgb(23 23 19 / 0.28);
 }
 
 .masthead {
@@ -336,6 +356,136 @@ button:focus-visible {
 
 .primary-action:active {
   transform: translateY(1px);
+}
+
+.upcoming-issue {
+  width: 100%;
+  min-height: 100dvh;
+  display: grid;
+  align-content: center;
+  gap: 28px;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 52px 28px 64px;
+  border-top: 1px solid rgb(23 23 19 / 0.58);
+}
+
+.upcoming-issue__ghost {
+  position: absolute;
+  top: 10px;
+  right: -0.03em;
+  z-index: -1;
+  color: rgb(23 23 19 / 0.035);
+  font-family: "Newsreader", Georgia, serif;
+  font-size: clamp(190px, 66vw, 290px);
+  font-weight: 500;
+  line-height: 0.8;
+  letter-spacing: -0.09em;
+  pointer-events: none;
+}
+
+.upcoming-issue__copy,
+.upcoming-issue__figure {
+  min-width: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.upcoming-issue__topline,
+.upcoming-issue__folio,
+.upcoming-issue__figure figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 9px;
+  font-weight: 650;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.upcoming-issue__topline {
+  padding: 10px 0;
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid rgb(23 23 19 / 0.32);
+}
+
+.upcoming-issue__topline span:last-child {
+  color: var(--orange);
+}
+
+.upcoming-issue__folio {
+  margin: 26px 0 0;
+  color: var(--muted-ink);
+}
+
+.upcoming-issue h2 {
+  max-width: 9ch;
+  margin: 12px 0 0;
+  font-family: "Newsreader", Georgia, serif;
+  font-size: clamp(48px, 14vw, 62px);
+  font-weight: 500;
+  line-height: 0.86;
+  letter-spacing: -0.052em;
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+
+.upcoming-issue__rule {
+  width: 52px;
+  height: 2px;
+  display: block;
+  margin-top: 22px;
+  background: var(--orange);
+}
+
+.upcoming-issue__dek {
+  max-width: 34ch;
+  margin: 18px 0 0;
+  color: #302f2a;
+  font-family: "Newsreader", Georgia, serif;
+  font-size: 20px;
+  line-height: 1.32;
+}
+
+.upcoming-issue__artist {
+  margin: 22px 0 0;
+  color: var(--muted-ink);
+  font-size: 9px;
+  font-weight: 650;
+  letter-spacing: 0.11em;
+}
+
+.upcoming-issue__figure {
+  width: 100%;
+  margin: 0;
+}
+
+.upcoming-issue__cover {
+  width: 100%;
+  aspect-ratio: 1076 / 1461;
+  overflow: hidden;
+  border: 1.5px solid var(--ink);
+  border-radius: 3px;
+  background: #f4dfd8;
+  box-shadow: 0 18px 34px rgb(41 35 26 / 0.21);
+}
+
+.upcoming-issue__cover picture,
+.upcoming-issue__cover img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.upcoming-issue__cover img {
+  object-fit: contain;
+}
+
+.upcoming-issue__figure figcaption {
+  padding-top: 12px;
+  color: var(--muted-ink);
 }
 
 .reader-bar {
@@ -1183,7 +1333,7 @@ button:focus-visible {
 }
 
 @media (max-width: 767px) {
-  .cover-screen > * {
+  .cover-screen__current > * {
     min-width: 0;
   }
 
@@ -1271,7 +1421,7 @@ button:focus-visible {
 }
 
 @media (max-width: 767px) and (max-height: 760px) {
-  .cover-screen {
+  .cover-screen__current {
     gap: 10px;
     padding-top: 20px;
     padding-bottom: 18px;
@@ -1372,7 +1522,11 @@ button:focus-visible {
 }
 
 @media (max-width: 350px) {
-  .cover-screen {
+  .cover-screen__current {
+    padding-inline: 20px;
+  }
+
+  .upcoming-issue {
     padding-inline: 20px;
   }
 
@@ -1444,7 +1598,7 @@ button:focus-visible {
 
 /* Tablet — pełnoekranowa rozkładówka zamiast powiększonej ramy telefonu. */
 @media (min-width: 768px) {
-  .cover-screen {
+  .cover-screen__current {
     grid-template-columns: minmax(280px, 0.92fr) minmax(330px, 1.08fr);
     grid-template-rows: 64px auto minmax(0, 1fr) 58px;
     grid-template-areas:
@@ -1530,7 +1684,7 @@ button:focus-visible {
     line-height: 1.28;
   }
 
-  .cover-screen > .primary-action {
+  .cover-screen__current > .primary-action {
     grid-area: action;
     width: min(100%, 420px);
     min-height: 58px;
@@ -1622,6 +1776,37 @@ button:focus-visible {
     font-size: 9.5px;
     font-weight: 600;
     letter-spacing: 0.09em;
+  }
+
+  .upcoming-issue {
+    max-width: 1180px;
+    grid-template-columns: minmax(260px, 0.8fr) minmax(340px, 480px);
+    align-items: center;
+    align-content: center;
+    column-gap: clamp(44px, 7vw, 88px);
+    margin-inline: auto;
+    padding: 72px clamp(42px, 6vw, 76px);
+  }
+
+  .upcoming-issue__ghost {
+    top: 50%;
+    right: auto;
+    left: -0.08em;
+    font-size: clamp(280px, 39vw, 460px);
+    transform: translateY(-50%);
+  }
+
+  .upcoming-issue h2 {
+    font-size: clamp(68px, 8vw, 92px);
+  }
+
+  .upcoming-issue__dek {
+    font-size: clamp(21px, 2vw, 25px);
+  }
+
+  .upcoming-issue__figure {
+    width: min(100%, 460px);
+    justify-self: center;
   }
 
   .contents-screen {
@@ -1875,7 +2060,7 @@ button:focus-visible {
 
 /* Desktop — trzyczęściowa okładka i czytnik w formie otwartego magazynu. */
 @media (min-width: 1200px) {
-  .cover-screen {
+  .cover-screen__current {
     grid-template-columns: minmax(280px, 0.82fr) minmax(430px, 500px) minmax(300px, 0.82fr);
     grid-template-rows: 72px minmax(0, 1fr) 62px;
     grid-template-areas:
@@ -1940,9 +2125,25 @@ button:focus-visible {
     font-size: clamp(23px, 1.8vw, 29px);
   }
 
-  .cover-screen > .primary-action {
+  .cover-screen__current > .primary-action {
     width: 100%;
     min-height: 62px;
+  }
+
+  .upcoming-issue {
+    max-width: 1380px;
+    grid-template-columns: minmax(390px, 0.95fr) minmax(420px, 480px);
+    column-gap: clamp(80px, 9vw, 150px);
+    padding: 84px clamp(64px, 7vw, 104px);
+  }
+
+  .upcoming-issue h2 {
+    font-size: clamp(86px, 7vw, 112px);
+  }
+
+  .upcoming-issue__dek {
+    max-width: 38ch;
+    font-size: 26px;
   }
 
   .contents-screen {
@@ -2168,7 +2369,7 @@ button:focus-visible {
 
 /* Szeroki, niski viewport (telefon poziomo / małe okno laptopa). */
 @media (min-width: 768px) and (max-width: 1199px) and (max-height: 600px) {
-  .cover-screen {
+  .cover-screen__current {
     grid-template-rows: 48px minmax(0, 1fr) 50px;
     grid-template-areas:
       "masthead masthead"
@@ -2208,7 +2409,7 @@ button:focus-visible {
     display: none;
   }
 
-  .cover-screen > .primary-action {
+  .cover-screen__current > .primary-action {
     min-height: 50px;
   }
 

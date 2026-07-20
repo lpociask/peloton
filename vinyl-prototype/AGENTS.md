@@ -8,6 +8,7 @@
 - On phones, preserve the full composition of editorial illustrations instead of cropping them into fixed-height frames. A short viewport should scroll the contents naturally rather than compressing list rows below their readable height.
 - On desktop, treat article artwork as a framed editorial plate: preserve its intrinsic proportions and cap its display width so ultrawide browser windows do not inflate it into a billboard.
 - Every feature must have its own in-article illustration; never reuse the issue cover as generic story media.
+- Give every issue a distinct artist-led cover language while keeping the ROWKI masthead and editorial shell recognizable across the series.
 - Polish remains the default language, while the complete interface and every article must have an English counterpart available through one persistent, accessible PL/EN switch.
 - Editorial illustration combines Polish poster-school economy, Japanese hi-fi catalog precision, matte gouache, cut paper, and coarse screen-print grain.
 - Articles should be informed by primary sources and by recurring practical debates on the winyl.net community forum.

@@ -650,6 +650,18 @@ export const issue = {
   title: "The needle returns",
 };
 
+export const upcomingIssue = {
+  number: "02",
+  date: "AUGUST 2026",
+  dateTime: "2026-08",
+  title: "OLD HI-FI OR NEW?",
+  teaser: "Two turntables, two ideas of a good beginning. In August, we ask whether vinyl is best approached through second-hand classics or a trouble-free new system — and build a first setup without the audiophile theatre.",
+  cover: "rowki-cover-02-turntable-battle-diagonal.jpg",
+  coverWidth: 1076,
+  coverHeight: 1461,
+  coverAlt: "The Polish August cover of Rowki, showing a classic wooden turntable facing a modern transparent deck diagonally, with amplifiers and speakers in the background.",
+};
+
 export const stories = [technics, powrotWinylu, prog, riverside, warszawa];
 
 export const totalReadingMinutes = stories.reduce(

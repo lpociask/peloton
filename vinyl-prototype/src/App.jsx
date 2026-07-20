@@ -12,17 +12,19 @@ import {
 import { assetPath } from "./assetPath";
 import {
   issue as polishIssue,
+  upcomingIssue as polishUpcomingIssue,
   stories as polishStories,
 } from "./content/stories";
 import {
   issue as englishIssue,
+  upcomingIssue as englishUpcomingIssue,
   stories as englishStories,
 } from "./content/stories.en";
 import { readStoredLanguage, storeLanguage, translations } from "./i18n";
 
 const publications = {
-  pl: { issue: polishIssue, stories: polishStories },
-  en: { issue: englishIssue, stories: englishStories },
+  pl: { issue: polishIssue, upcomingIssue: polishUpcomingIssue, stories: polishStories },
+  en: { issue: englishIssue, upcomingIssue: englishUpcomingIssue, stories: englishStories },
 };
 
 const pageMotion = {
@@ -91,8 +93,62 @@ function Masthead({ onMenu, menuButtonRef, language, onLanguageChange, text }) {
   );
 }
 
+function UpcomingIssueTeaser({ issue, text, reduceMotion }) {
+  const headingId = `upcoming-issue-${issue.number}`;
+
+  return (
+    <motion.section
+      className="upcoming-issue"
+      aria-labelledby={headingId}
+      initial={reduceMotion ? false : { opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: reduceMotion ? 0 : 0.52, ease: [0.22, 1, 0.36, 1] }}
+    >
+      <span className="upcoming-issue__ghost" aria-hidden="true">
+        {issue.number}
+      </span>
+
+      <div className="upcoming-issue__copy">
+        <div className="upcoming-issue__topline">
+          <span>{text.nextIssue}</span>
+          <span>{text.comingSoon}</span>
+        </div>
+        <p className="upcoming-issue__folio">
+          <span>{text.issueNumber(issue.number)}</span>
+          <time dateTime={issue.dateTime}>{issue.date}</time>
+        </p>
+        <h2 id={headingId}>{issue.title}</h2>
+        <span className="upcoming-issue__rule" aria-hidden="true" />
+        <p className="upcoming-issue__dek">{issue.teaser}</p>
+        <p className="upcoming-issue__artist">{text.newIssueNewArtist}</p>
+      </div>
+
+      <figure className="upcoming-issue__figure">
+        <div className="upcoming-issue__cover">
+          <picture>
+            <img
+              src={assetPath(issue.cover)}
+              alt={issue.coverAlt}
+              width={issue.coverWidth}
+              height={issue.coverHeight}
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+        </div>
+        <figcaption>
+          <span>{text.coverPreview}</span>
+          <span>ROWKI · #{issue.number}</span>
+        </figcaption>
+      </figure>
+    </motion.section>
+  );
+}
+
 function CoverScreen({
   issue,
+  upcomingIssue,
   stories,
   totalReadingMinutes,
   language,
@@ -109,70 +165,74 @@ function CoverScreen({
       {...pageMotion}
       transition={{ duration: reduceMotion ? 0 : 0.42, ease: [0.22, 1, 0.36, 1] }}
     >
-      <Masthead
-        onMenu={onMenu}
-        menuButtonRef={menuButtonRef}
-        language={language}
-        onLanguageChange={onLanguageChange}
-        text={text}
-      />
+      <div className="cover-screen__current">
+        <Masthead
+          onMenu={onMenu}
+          menuButtonRef={menuButtonRef}
+          language={language}
+          onLanguageChange={onLanguageChange}
+          text={text}
+        />
 
-      <motion.button
-        className="issue-cover"
-        type="button"
-        aria-label={text.openIssueAria(issue.title)}
-        onClick={onOpen}
-        initial={reduceMotion ? false : { opacity: 0, scale: 0.985 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: reduceMotion ? 0 : 0.58, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
-        whileTap={reduceMotion ? undefined : { scale: 0.992 }}
-      >
-        <picture>
-          <img
-            src={assetPath("rowki-cover.png")}
-            alt={text.coverAlt}
-          />
-        </picture>
-        <span className="issue-cover__number">#01</span>
-        <span className="issue-cover__date">{issue.date}</span>
-      </motion.button>
+        <motion.button
+          className="issue-cover"
+          type="button"
+          aria-label={text.openIssueAria(issue.title)}
+          onClick={onOpen}
+          initial={reduceMotion ? false : { opacity: 0, scale: 0.985 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: reduceMotion ? 0 : 0.58, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
+          whileTap={reduceMotion ? undefined : { scale: 0.992 }}
+        >
+          <picture>
+            <img
+              src={assetPath("rowki-cover.png")}
+              alt={text.coverAlt}
+            />
+          </picture>
+          <span className="issue-cover__number">#01</span>
+          <span className="issue-cover__date">{issue.date}</span>
+        </motion.button>
 
-      <div className="issue-heading">
-        <p className="issue-heading__eyebrow">{text.issueEyebrow}</p>
-        <h1>{issue.title.toLocaleUpperCase(language)}</h1>
-        <span className="issue-heading__rule" aria-hidden="true" />
-        <p className="issue-heading__dek">
-          {text.issueDek}
-        </p>
+        <div className="issue-heading">
+          <p className="issue-heading__eyebrow">{text.issueEyebrow}</p>
+          <h1>{issue.title.toLocaleUpperCase(language)}</h1>
+          <span className="issue-heading__rule" aria-hidden="true" />
+          <p className="issue-heading__dek">
+            {text.issueDek}
+          </p>
+        </div>
+
+        <button className="primary-action" type="button" onClick={onOpen}>
+          <span>{text.openIssue}</span>
+          <ArrowRight size={27} weight="regular" aria-hidden="true" />
+        </button>
+
+        <aside className="cover-notes" aria-label={text.issuePreview}>
+          <div className="cover-notes__meta">
+            <span>ROWKI · #{issue.number}</span>
+            <time dateTime="2026-07">{issue.date}</time>
+          </div>
+          <p className="cover-notes__label">{text.inIssue}</p>
+          <ol>
+            {stories.map((story) => (
+              <li key={story.id}>
+                <span>{story.number}</span>
+                <span>
+                  <small>{story.type}</small>
+                  <strong>{story.title}</strong>
+                </span>
+                <span>{story.time}</span>
+              </li>
+            ))}
+          </ol>
+          <p className="cover-notes__footer">
+            {text.issueSummary(stories.length, totalReadingMinutes)}
+          </p>
+        </aside>
       </div>
 
-      <button className="primary-action" type="button" onClick={onOpen}>
-        <span>{text.openIssue}</span>
-        <ArrowRight size={27} weight="regular" aria-hidden="true" />
-      </button>
-
-      <aside className="cover-notes" aria-label={text.issuePreview}>
-        <div className="cover-notes__meta">
-          <span>ROWKI · #{issue.number}</span>
-          <time dateTime="2026-07">{issue.date}</time>
-        </div>
-        <p className="cover-notes__label">{text.inIssue}</p>
-        <ol>
-          {stories.map((story) => (
-            <li key={story.id}>
-              <span>{story.number}</span>
-              <span>
-                <small>{story.type}</small>
-                <strong>{story.title}</strong>
-              </span>
-              <span>{story.time}</span>
-            </li>
-          ))}
-        </ol>
-        <p className="cover-notes__footer">
-          {text.issueSummary(stories.length, totalReadingMinutes)}
-        </p>
-      </aside>
+      <UpcomingIssueTeaser issue={upcomingIssue} text={text} reduceMotion={reduceMotion} />
     </motion.section>
   );
 }
@@ -730,7 +790,7 @@ export function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [savedStories, setSavedStories] = useState(() => new Set());
   const menuButtonRef = useRef(null);
-  const { issue, stories } = publications[language];
+  const { issue, upcomingIssue, stories } = publications[language];
   const text = translations[language];
   const totalReadingMinutes = stories.reduce(
     (total, item) => total + Number.parseInt(item.time, 10),
@@ -784,6 +844,7 @@ export function App() {
             <CoverScreen
               key="cover"
               issue={issue}
+              upcomingIssue={upcomingIssue}
               stories={stories}
               totalReadingMinutes={totalReadingMinutes}
               language={language}

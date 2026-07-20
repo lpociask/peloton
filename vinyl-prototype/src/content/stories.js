@@ -649,6 +649,18 @@ export const issue = {
   title: "Igła wraca",
 };
 
+export const upcomingIssue = {
+  number: "02",
+  date: "SIERPIEŃ 2026",
+  dateTime: "2026-08",
+  title: "STARE HI-FI CZY NOWE?",
+  teaser: "Dwa gramofony, dwa pomysły na dobry początek. W sierpniu sprawdzamy, czy lepiej wejść w winyl przez klasykę z drugiej ręki, czy nowy zestaw bez niespodzianek — i składamy pierwszy system bez audiofilskiego teatru.",
+  cover: "rowki-cover-02-turntable-battle-diagonal.jpg",
+  coverWidth: 1076,
+  coverHeight: 1461,
+  coverAlt: "Okładka sierpniowych Rowków: klasyczny drewniany i nowoczesny przezroczysty gramofon ustawione po przekątnej, ze wzmacniaczami i kolumnami w tle.",
+};
+
 export const stories = [technics, powrotWinylu, prog, riverside, warszawa];
 
 export const totalReadingMinutes = stories.reduce(
