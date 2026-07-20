@@ -637,6 +637,7 @@ button:focus-visible {
 }
 
 .story-screen {
+  overflow-x: clip;
   overflow-y: auto;
   overscroll-behavior: contain;
   scrollbar-width: none;
@@ -732,6 +733,7 @@ button:focus-visible {
 }
 
 .article-opening {
+  min-width: 0;
   padding: 30px 24px 27px;
 }
 
@@ -748,6 +750,7 @@ button:focus-visible {
 }
 
 .article-opening h1 {
+  max-width: 100%;
   margin: 0;
   outline: none;
   font-family: "Newsreader", Georgia, serif;
@@ -1828,11 +1831,11 @@ button:focus-visible {
   }
 
   .article-opening h1 {
-    font-size: clamp(66px, 8vw, 94px);
+    font-size: clamp(54px, 6vw, 86px);
   }
 
   .article-opening--michal-kwiatkowski h1 {
-    font-size: 33px;
+    font-size: clamp(30px, 4vw, 33px);
     line-height: 0.9;
   }
 
@@ -2106,11 +2109,11 @@ button:focus-visible {
   }
 
   .article-opening h1 {
-    font-size: clamp(92px, 8vw, 118px);
+    font-size: clamp(72px, 6vw, 86px);
   }
 
   .article-opening--michal-kwiatkowski h1 {
-    font-size: 56px;
+    font-size: clamp(42px, 3.5vw, 50px);
     line-height: 0.9;
   }
 
@@ -2497,8 +2500,12 @@ button:focus-visible {
   line-height: 0.86;
 }
 
+.story-screen--en .article-opening--cisza-napedu h1 {
+  font-size: clamp(46px, 14.2vw, 56px);
+}
+
 .story-screen--en .article-opening--michal-kwiatkowski h1 {
-  font-size: 40px;
+  font-size: clamp(34px, 10.3vw, 40px);
 }
 
 @media (min-width: 768px) {
@@ -2510,8 +2517,12 @@ button:focus-visible {
     font-size: clamp(46px, 4.8vw, 68px);
   }
 
+  .story-screen--en .article-opening--cisza-napedu h1 {
+    font-size: clamp(40px, 4.5vw, 64px);
+  }
+
   .story-screen--en .article-opening--michal-kwiatkowski h1 {
-    font-size: clamp(33px, 4vw, 56px);
+    font-size: clamp(30px, 3.5vw, 50px);
   }
 }
 
