@@ -6,7 +6,7 @@ export const michalKwiatkowski = {
   type: "Portret",
   title: "Michał Kwiatkowski",
   time: "15 min",
-  description: "Tęczowa koszulka, rodzina, Veloart i więź z polskimi kibicami.",
+  description: "Mistrz świata, superpomocnik i pytanie: czy mógł wygrać więcej?",
   byline: "TEKST — REDAKCJA PELOTON",
   hero: assetPath("peloton-kwiatkowski-portrait.png"),
   heroWebp: "peloton-kwiatkowski-portrait.webp",
@@ -15,11 +15,29 @@ export const michalKwiatkowski = {
   thumbWebp: "peloton-kwiatkowski-portrait.webp",
   thumbMode: "standalone",
   thumbPosition: "50% 28%",
-  lead: "Największe zwycięstwa Michała Kwiatkowskiego nie łączy jeden rodzaj trasy. Łączy je coś trudniejszego do zmierzenia: umiejętność rozpoznania chwili, w której wyścig przestaje być układanką, a staje się decyzją.",
+  lead: "Polski kibic lubi jedno zdanie: Kwiatkowski mógł wygrać więcej. Być może. Tyle że zawodowe kolarstwo nie jest trybem kariery, w którym wystarczy przesunąć suwak z „pomocnik” na „lider”. Portretujemy mistrza pomiędzy własną ambicją, interesem zespołu i ceną bycia najlepszym człowiekiem do niemal każdej pracy.",
   caption: "Michał Kwiatkowski należy do nielicznej grupy kolarzy, którzy potrafili wygrywać najważniejsze klasyki, a później całkowicie podporządkować swój talent pracy dla zespołu.",
   alt: "Redakcyjna ilustracja Michała Kwiatkowskiego na tle szosy i alpejskich serpentyn.",
-  quote: "W karierze Kwiatkowskiego najważniejszy nie jest jeden typ wysiłku. Najważniejsza jest chwila, w której rozumie wyścig szybciej niż pozostali.",
+  quote: "Pytanie „ile mógł wygrać?” jest uczciwe tylko wtedy, gdy obok stawiamy drugie: ilu zwycięstw zespołu nie byłoby bez jego niewidocznej pracy?",
   quoteAfter: 3,
+  editorialDebate: {
+    afterSection: 5,
+    kicker: "SPÓR PELOTONU · KARIERA",
+    question: "Czy jako superpomocnik Kwiatkowski stracił szansę na większą karierę?",
+    positions: [
+      {
+        label: "TEZA",
+        title: "Tak — wolność była wydzielana zbyt rzadko",
+        text: "Mistrz świata, zwycięzca monumentu i dwóch Strade Bianche miał argumenty, by częściej budować sezon pod własne cele. Każdy świetny dzień zużyty przed finałem dla lidera był dniem, którego nie dało się odzyskać.",
+      },
+      {
+        label: "KONTRA",
+        title: "Nie — wszechstronność była jego wielkością",
+        text: "Rola kapitana i pomocnika nie jest degradacją, lecz fachowością na najwyższym poziomie. Stabilne miejsce w zespole, udział w zwycięskich Tourach i osobiste sukcesy po latach pracy pokazują karierę pełną, nie zmarnowaną.",
+      },
+    ],
+    verdict: "Nie znamy alternatywnej kariery, więc słowo „zmarnował” jest za łatwe. Cena roli była jednak realna. W Tourze 2026 spór wraca w miniaturze: wysłać Kwiatkowskiego po etap czy zatrzymać kapitana przy ludziach, których doświadczenie ma przeprowadzić przez Alpy?",
+  },
   media: [
     {
       afterSection: 6,
@@ -70,13 +88,25 @@ export const michalKwiatkowski = {
       label: "Tour de Pologne — historia wyścigu i zwycięstwo w 2018 roku",
       url: "https://www.tourdepologne.pl/en/historia-2/",
     },
+    {
+      label: "Netcompany Ineos — ofensywny skład na Tour de France 2026",
+      url: "https://netcompanyineos.com/news/netcompany-ineos-reveal-attacking-lineup-for-2026-tour-de-france/",
+    },
+    {
+      label: "Tour de France — oficjalne wyniki i profile etapów 2026",
+      url: "https://www.letour.fr/en/",
+    },
+    {
+      label: "Cyclingnews — rola kapitana i próba odjazdu na etapie 13",
+      url: "https://www.cyclingnews.com/pro-cycling/racing/tour-de-france-mauro-schmid-outduels-harold-tejada-in-two-rider-matchup-at-the-line-on-stage-13/",
+    },
   ],
   sections: [
     {
       label: "Portret",
-      heading: "Kolarz pomiędzy rolami",
+      heading: "Za dobry do jednej rubryki",
       paragraphs: [
-        "Łatwo byłoby opowiedzieć Michała Kwiatkowskiego za pomocą listy zwycięstw. Tęczowa koszulka mistrza świata, dwa triumfy w Strade Bianche, dwa w Amstel Gold Race, Mediolan–San Remo, dwa etapy Tour de France. Taka lista jest imponująca, ale mówi o nim mniej, niż mogłoby się wydawać. Nie tłumaczy, dlaczego ten sam zawodnik potrafił być liderem na jednym z najważniejszych klasyków świata, a kilka miesięcy później znikać z telewizyjnego kadru, pracując na zwycięstwo kogoś innego.",
+        "Kolarstwo lubi szuflady, bo łatwiej wtedy przewidzieć, kto ma zaatakować, a kto grzecznie odpaść. Kwiatkowski od lat te szuflady psuje. Tęczowa koszulka mistrza świata, dwa triumfy w Strade Bianche, dwa w Amstel Gold Race, Mediolan–San Remo, dwa etapy Tour de France — lista jest imponująca, lecz nie tłumaczy, dlaczego ten sam zawodnik potrafił prowadzić najważniejszy klasyk świata, a kilka miesięcy później znikać z kadru, pracując na zwycięstwo kogoś innego.",
         "Kwiatkowski zawsze wymykał się prostym kategoriom. Nie był klasycznym sprinterem, choć potrafił wygrać finisz z Peterem Saganem i Julianem Alaphilippe’em. Nie był czystym góralem, choć zwyciężył na Grand Colombier. Nie był wyłącznie specjalistą od jazdy na czas, ale przez lata właśnie zdolność utrzymywania wysokiej prędkości czyniła go jednym z najcenniejszych ludzi w składach budowanych na Tour de France. W jego najlepszych sezonach granica między liderem a pomocnikiem nie przebiegała przez możliwości fizyczne, lecz przez zadanie wyznaczone na dany dzień.",
         "Jego kolarstwo jest oparte na wszechstronności, lecz jeszcze bardziej na rozumieniu sytuacji. Kwiatkowski potrafi ocenić, kiedy należy przeczekać, kiedy oszczędzić ruch, a kiedy zaryzykować wszystko. Nie atakuje dlatego, że droga właśnie prowadzi pod górę. Atakuje wtedy, gdy układ grupy, zmęczenie rywali i charakter ostatnich kilometrów tworzą krótkie okno. Największą bronią nie jest więc pojedyncza liczba z pomiaru mocy. Jest nią wyczucie właściwego momentu.",
       ],
@@ -122,6 +152,7 @@ export const michalKwiatkowski = {
       label: "Rola",
       heading: "Lider, który potrafi zniknąć",
       paragraphs: [
+        "Wokół tej roli od lat krąży niewygodne pytanie: czy jeden z najbardziej utalentowanych polskich kolarzy nie poświęcił zbyt wielu własnych szans, wożąc bidony i zamykając luki dla liderów Ineosu? Kibic widzi mistrza świata kończącego etap daleko i czuje niedosyt. Dyrektor sportowy widzi człowieka, który wcześniej uratował pozycję zespołu. Oba obrazy mogą być prawdziwe, choć prowadzą do przeciwnych ocen.",
         "W klasykach Kwiatkowski przez wiele sezonów był naturalnym liderem. Jego obecność zmuszała rywali do pilnowania kilku scenariuszy naraz: późnego ataku, selekcji na podjeździe, małej grupy i ograniczonego sprintu. W wyścigach etapowych ta sama wielozadaniowość czyniła z niego pomocnika klasy premium. Mógł pracować przed górami, przeprowadzać lidera przez techniczny teren, kontrolować odjazdy albo czekać z nim w momencie kryzysu.",
         "Ta podwójność bywa źle rozumiana. Pomocnik nie jest kolarzem, któremu zabrakło ambicji, a lider nie jest zawodnikiem zwolnionym z pracy. W najlepszych zespołach role zmieniają się wraz z profilem etapu, stanem klasyfikacji i kondycją kolegów. Kwiatkowski potrafił przechodzić pomiędzy nimi bez utraty wiarygodności. Kiedy dostawał wolność, rywale wiedzieli, że odjazd może dojechać. Kiedy zostawał przy liderze, ten wiedział, że ma obok siebie człowieka, który sam rozumie presję wielkiego wyniku.",
         "Być może właśnie dlatego jego dorobek jest trudniejszy do opisania niż palmarès kolarza zbudowanego wokół jednej specjalności. Część najważniejszych dni nie zakończyła się jego uniesionymi rękami. Kończyła się wcześniej: po mocnej zmianie, zamknięciu luki albo dowiezieniu lidera do miejsca, w którym zaczynał się właściwy finał. Statystyka zapisuje wtedy odległą pozycję. Zespół zapamiętuje moment, bez którego późniejszy wynik nie byłby możliwy.",
@@ -129,18 +160,18 @@ export const michalKwiatkowski = {
     },
     {
       label: "Poza wyścigiem",
-      heading: "Dom, który jedzie razem z nim",
+      heading: "Dom nie ogląda skrótu etapu",
       paragraphs: [
         "Najpierw był starszy brat Radosław. To jego rower i kask obudziły w ośmioletnim Michale zazdrość, która szybko zmieniła się w ambicję. Rodzice wspierali sport całej czwórki dzieci, choć sami nie tworzyli zawodowego zaplecza. Kolarstwo Kwiatkowskiego zaczęło się więc w Działyniu nie od gotowego systemu, lecz od rodzinnej decyzji, by dziecięce zainteresowanie potraktować poważnie.",
-        "Dziś rodzina oznacza także żonę i córki. W publicznej rozmowie podczas Tour de Pologne w 2023 roku Kwiatkowski mówił o trudności łączenia ojcostwa z wielotygodniowymi wyjazdami oraz o radości, kiedy bliscy mogli przemieszczać się razem z wyścigiem. Nie przedstawiał domu jako przeciwieństwa kariery. Raczej jako punkt odniesienia, który zabiera ze sobą na trasę — cichy powód, dla którego kolejny trening i kolejny powrót mają znaczenie.",
+        "Dziś rodzina oznacza także żonę i córki. Telewizja zamyka etap w kilku minutach skrótu; bliscy żyją całą resztą — wielotygodniową nieobecnością, przesuwanymi planami i krótkim powrotem pomiędzy wyścigami. W publicznej rozmowie podczas Tour de Pologne w 2023 roku Kwiatkowski mówił o trudności łączenia ojcostwa z kalendarzem oraz o radości, kiedy rodzina mogła przemieszczać się razem z wyścigiem. Sukces nie usuwa ceny rozłąki. Sprawia tylko, że kamera rzadziej ją pokazuje.",
       ],
     },
     {
       label: "Rodzinny projekt",
-      heading: "Veloart: adres pomiędzy światami",
+      heading: "Veloart: most i biznes",
       paragraphs: [
         "Veloart nie jest przypadkową marką dopisaną do nazwiska mistrza świata. Oficjalna strona firmy przedstawia Michała jako właściciela, a jego brata Radosława — byłego zawodnika ścigającego się między innymi we Włoszech i Hiszpanii — jako managing directora. Michał pojawia się w studiu pomiędzy wyścigami i po sezonie. Historia zatoczyła koło: brat, za którym ruszył na rowerze jako dziecko, współtworzy dziś z nim miejsce dla kolejnych rowerzystów.",
-        "Najciekawsze nie są jednak funkcje zapisane przy nazwiskach, lecz most pomiędzy hermetycznym World Tourem a codziennością amatora. Bikefitting, serwis, kawa i rozmowa o pierwszej setce kilometrów odbywają się w tym samym miejscu, do którego trafia sprzęt zawodowca. Profesjonalizm nie służy tu budowaniu dystansu. Ma być dostępny — przełożony z języka wyścigów na pozycję siodła, spokojniejszą głowę i rower, o którym podczas jazdy można zapomnieć.",
+        "Nie ma powodu udawać, że jest to klub społeczny bez kasy fiskalnej. Veloart pozostaje komercyjnym studiem i marką premium, a nazwisko mistrza świata jest częścią jego wartości. Właśnie dlatego ciekawsze od folderu reklamowego jest pytanie, czy profesjonalizm da się przełożyć na codzienność amatora bez budowania kultu sprzętu. Bikefitting, serwis i rozmowa o pierwszej setce kilometrów mają sens dopiero wtedy, gdy kończą się spokojniejszą pozycją i rowerem, o którym podczas jazdy można zapomnieć — nie kolejnym produktem do pokazania.",
       ],
     },
     {
@@ -153,7 +184,7 @@ export const michalKwiatkowski = {
     },
     {
       label: "Relacja",
-      heading: "Biało-czerwone flagi nie mierzą watów",
+      heading: "Flaga nie zamknie luki",
       paragraphs: [
         "Kibic widzi kolarza przez kilka sekund. Kolarz potrafi zapamiętać kibica na długo. Po zwycięstwie w Tour de Pologne w 2018 roku Kwiatkowski podkreślał znaczenie okrzyków słyszanych na kolejnych kilometrach. Trzy lata wcześniej, przed warszawskim przejazdem, dziękował uczestnikom za obecność nie tylko przy największych sukcesach, lecz także w słabszych momentach sezonu. Te dwa obrazy — zwycięzca klasyfikacji generalnej i lider spokojnego coffee ride’u — opisują tę samą więź.",
         "Wsparcie polskich kibiców nie jest patriotyczną dekoracją. Flaga nie zmniejszy nachylenia, nie poprawi progu mocy i nie zamknie luki w peletonie. Może jednak przypomnieć zawodnikowi, że jego wysiłek przekracza granice zespołu, kontraktu i tabeli wyników. Dlatego start w Polsce lub biało-czerwony szpaler na zagranicznym podjeździe ma inny ciężar emocjonalny niż kolejny punkt kalendarza.",
@@ -161,15 +192,16 @@ export const michalKwiatkowski = {
     },
     {
       label: "Tour 2026 · fakty",
-      heading: "Stan wyścigu po piętnastym etapie",
+      heading: "Kapitan w dniu odpoczynku",
       paragraphs: [
-        "Poniższa część opisuje sytuację według stanu na wieczór 19 lipca 2026 roku. Kwiatkowski jedzie w Tour de France z numerem 86 w barwach Netcompany Ineos Cycling Team. Ukończył piętnasty etap z Champagnole na Plateau de Solaison na 130. miejscu, 34 minuty i 14 sekund za zwycięzcą. Sam ten wynik nie pozwala ocenić jego dyspozycji: zawodnik pracujący dla zespołu może kończyć górski etap daleko po wykorzystaniu swojej energii wcześniej. Potwierdza natomiast, że nie jedzie tego Touru jako kandydat do klasyfikacji generalnej.",
+        "Poniższa część opisuje sytuację według stanu na 20 lipca 2026 roku, dzień odpoczynku. Kwiatkowski jedzie w Tour de France z numerem 86 w barwach Netcompany Ineos Cycling Team. Ukończył piętnasty etap z Champagnole na Plateau de Solaison na 130. miejscu, 34 minuty i 14 sekund za zwycięzcą. Sam ten wynik nie pozwala ocenić jego dyspozycji: zawodnik pracujący dla zespołu może kończyć górski etap daleko po wykorzystaniu energii wcześniej. Potwierdza natomiast, że nie jedzie tego Touru jako kandydat do klasyfikacji generalnej.",
+        "Zespół zapowiadał skład jako ofensywny, a relacje przed startem wskazywały Kwiatkowskiego jako kapitana szosowego. Na trzynastym etapie Polak wszedł do pierwszego odjazdu, lecz grupa została skasowana po około 25 kilometrach. To nie jest dowód ani wielkiej formy, ani jej braku. Jest dowodem, że próba już była — i że telewizyjna plansza z wynikiem końcowym potrafi ukryć połowę dnia.",
         "Po dniu przerwy pozostaje sześć etapów. Szesnasty to pagórkowata, 26,1-kilometrowa jazda indywidualna na czas. Siedemnasty, z Chambéry do Voiron, został oznaczony jako płaski, ale zawiera 2200 metrów przewyższenia. Następnie wyścig wchodzi w góry: 3900 metrów przewyższenia do Orcières-Merlette, 3500 metrów na pierwszym etapie z metą na Alpe d’Huez i aż 5450 metrów kolejnego dnia, ponownie kończącego się na Alpe d’Huez. Finał w Paryżu ma trzy przejazdy przez kilometrowe wzniesienie Butte Montmartre.",
         "To są fakty dotyczące trasy i aktualnej sytuacji. Nie wiadomo publicznie, ile swobody Kwiatkowski otrzyma w poszczególnych dniach ani jakie dokładnie zadania przydzieli mu zespół. Każda próba wskazania jego szans musi więc pozostać prognozą, a nie zapowiedzią planu taktycznego.",
       ],
     },
     {
-      label: "Prognoza redakcyjna · 19.07.2026",
+      label: "Prognoza redakcyjna · 20.07.2026",
       heading: "Jedno okno przed Paryżem",
       variant: "forecast",
       paragraphs: [

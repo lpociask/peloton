@@ -6,19 +6,38 @@ export const przedSwitem = {
   type: "Rytuał",
   title: "Przed świtem",
   time: "12 min",
-  description: "Pierwsze kilometry, zanim miasto się obudzi.",
+  description: "Pobudka, sen i podejrzany kult wygrywania poranka.",
+  byline: "ESEJ REDAKCYJNY — PELOTON",
   hero: assetPath("peloton-story-dawn.png"),
   heroWebp: "peloton-story-dawn.webp",
   heroPosition: "50% 7%",
-  thumb: assetPath("peloton-contents-triptych.png"),
-  thumbWebp: "peloton-contents-triptych.webp",
-  thumbMode: "triptych",
-  thumbPosition: "50% 0%",
-  lead: "O pierwszych kilometrach, zanim miasto się obudzi i droga odzyska swój naturalny rytm.",
+  thumb: assetPath("peloton-story-dawn.png"),
+  thumbWebp: "peloton-story-dawn.webp",
+  thumbMode: "standalone",
+  thumbPosition: "50% 7%",
+  lead: "Pobudka o 4:42 może być wolnością. Może też być produktywnością przebraną w lycrę. Sprawdzamy, co zostaje z porannego rytuału, kiedy schowamy Stravę, ego i budzik ustawiony tylko po to, by móc o nim opowiedzieć.",
   caption: "5:18, Warszawa. Miasto jeszcze nie zaczęło dnia.",
   alt: "Kolarz w półmroku zapina buty; miniaturowa droga z pomarańczowym rowerem przecina jego kolana.",
-  quote: "Przed świtem nie wygrywa się dnia. Dostaje się tylko godzinę, w której niczego nie trzeba nikomu udowadniać.",
+  quote: "Pobudka nie jest medalem. Jeśli kradnie sen, cierpliwość i uwagę na drodze, poranny trening staje się bardzo elegancką formą złej decyzji.",
   quoteAfter: 2,
+  editorialDebate: {
+    afterSection: 4,
+    kicker: "SPÓR PELOTONU · RANO",
+    question: "Czy jazda o piątej rano jest wolnością — czy produktywnością w lycrze?",
+    positions: [
+      {
+        label: "TEZA",
+        title: "To jedyna godzina naprawdę własna",
+        text: "Puste drogi, mniej powiadomień i trening zrobiony przed obowiązkami dają regularność, której wieczorem często nie da się już odzyskać. Dla wielu osób to nie poza, tylko jedyne realne okno na rower.",
+      },
+      {
+        label: "KONTRA",
+        title: "Niewyspanie nie jest hartem ducha",
+        text: "Wczesny start nie uszlachetnia treningu. Jeżeli skraca sen, obniża koncentrację albo przerzuca koszt na rodzinę i resztę dnia, romantyczny rytuał zaczyna przypominać KPI z lampką na kierownicy.",
+      },
+    ],
+    verdict: "Jedź rano, jeśli poranek służy życiu, a nie odwrotnie. Spokojna jazda po przespanej nocy ma sens; interwały na kredycie snu i obowiązkowy zrzut ekranu o 6:03 — znacznie mniej.",
+  },
   media: [
     {
       afterSection: 1,
@@ -31,12 +50,25 @@ export const przedSwitem = {
     },
     {
       afterSection: 4,
-      src: "peloton-contents-triptych.png",
-      webp: "peloton-contents-triptych.webp",
+      src: "peloton-dawn-turnaround-v2.jpg",
       layout: "standard",
-      alt: "Pomarańczowe koło zębate, fragment łańcucha i droga prowadząca przez ciemny krajobraz.",
-      caption: "Przed wyjazdem każdy detal ma znaczenie. W trasie powinien przestać domagać się uwagi.",
+      alt: "Zmęczony kolarz siedzi o świcie na ławce pustego przystanku, a obok stoi jego szosowy rower.",
+      caption: "Nie każdy poranek trzeba wygrać. Czasem dojrzałą decyzją treningową jest zawrócić.",
       credit: "ILUSTRACJA — PAPER STUDIO",
+    },
+  ],
+  sources: [
+    {
+      label: "British Journal of Sports Medicine — konsensus o śnie sportowców",
+      url: "https://pubmed.ncbi.nlm.nih.gov/33144349/",
+    },
+    {
+      label: "British Cycling — spokojne treningi poranne i jazda na czczo",
+      url: "https://www.britishcycling.org.uk/knowledge/nutrition/article/izn20150818-All-Cycling-Fasted-Morning-Rides-0",
+    },
+    {
+      label: "Rozporządzenie Ministra Infrastruktury — obowiązkowe oświetlenie roweru",
+      url: "https://api.sejm.gov.pl/eli/acts/DU/2024/502/text.pdf",
     },
   ],
   sections: [
@@ -90,9 +122,10 @@ export const przedSwitem = {
     },
     {
       label: "01.5",
-      heading: "Mała liturgia",
+      heading: "Produktywność w lycrze",
       paragraphs: [
-        "Rytuały bywają podejrzane. Łatwo pomylić je z obowiązkiem, kolejną metodą zarządzania sobą. Wstań wcześniej, przejedź dystans, wrzuć aktywność, popraw produktywność. Poranek może zostać skolonizowany przez te same oczekiwania, od których próbowaliśmy na chwilę odjechać.",
+        "Rytuały bywają podejrzane. W kolarskim internecie pobudka o piątej potrafi wyglądać jak certyfikat charakteru, a człowiek śpiący do siódmej — jak projekt wymagający naprawy. Wstań wcześniej, przejedź dystans, wrzuć aktywność, popraw produktywność. Po chwili nawet cisza przed świtem ma tabelę wyników.",
+        "Rachunek przychodzi później i nie ma na nim segmentów: senność o czternastej, krótsza cierpliwość, gorsza koncentracja w ruchu i domownicy, którzy również słyszeli klamrę kasku. Poranna jazda nie jest darmową godziną wyjętą z doby. Ktoś — najczęściej ten sam kolarz kilka godzin później — za nią płaci.",
         "Dlatego moja mała liturgia zawiera zasadę, której nie zapisuję w aplikacji: można zawrócić.",
         "Można skrócić trasę, jeśli chłód przenika rękawiczki. Można zatrzymać się na moście, chociaż plan treningowy nie przewiduje postoju. Można przejechać czterdzieści kilometrów zamiast sześćdziesięciu, bo na wschodzie pojawiły się ciężkie chmury. Można zostać w domu, gdy jezdnia pokrywa się lodem, widoczność znika w mgle albo organizm wyraźnie prosi o sen. Konsekwencja nie polega na ignorowaniu warunków.",
         "Dobry poranny wyjazd jest prosty. Znana trasa, sprawny rower, właściwe światło, jedna dodatkowa warstwa, jedzenie dopasowane do czasu jazdy i zapas kilkunastu minut przed obowiązkami. Ten margines jest szczególnie ważny. Pośpiech w drodze powrotnej zamienia spokojną jazdę w serię ryzykownych decyzji: zbyt szybki zakręt, przejazd na późnym żółtym, brak czasu na śniadanie.",

@@ -135,15 +135,43 @@ button:focus-visible {
   background: #eee5d4;
   box-shadow: 0 13px 22px rgb(41 35 26 / 0.22);
   cursor: pointer;
+  transform-style: preserve-3d;
+  perspective: 1200px;
 }
 
+.issue-cover::before,
 .issue-cover::after {
   content: "";
   position: absolute;
+  pointer-events: none;
+}
+
+.issue-cover::before {
+  width: 52%;
+  height: 170%;
+  top: -35%;
+  left: -66%;
+  z-index: 2;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgb(255 249 233 / 0.02) 27%,
+    rgb(255 249 233 / 0.2) 50%,
+    rgb(255 249 233 / 0.03) 73%,
+    transparent 100%
+  );
+  filter: blur(1px);
+  mix-blend-mode: soft-light;
+  opacity: 0;
+  transform: translateX(0) rotate(10deg);
+  animation: cover-paper-sheen 12s ease-in-out 1.8s infinite;
+}
+
+.issue-cover::after {
   inset: 0;
+  z-index: 4;
   border: 1px solid rgb(255 255 255 / 0.18);
   border-radius: inherit;
-  pointer-events: none;
 }
 
 .issue-cover picture {
@@ -160,11 +188,51 @@ button:focus-visible {
   object-position: 50% 48%;
 }
 
+.issue-cover__art {
+  transform-origin: 54% 44%;
+  backface-visibility: hidden;
+  will-change: transform;
+  animation: cover-art-drift 14s ease-in-out infinite;
+}
+
+@keyframes cover-art-drift {
+  0%,
+  100% {
+    transform: scale(1.008) translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: scale(1.024) translate3d(-0.22%, -0.36%, 0);
+  }
+}
+
+@keyframes cover-paper-sheen {
+  0%,
+  28% {
+    transform: translate3d(0, 0, 0) rotate(10deg);
+    opacity: 0;
+  }
+
+  36% {
+    opacity: 0.42;
+  }
+
+  54% {
+    transform: translate3d(350%, 0, 0) rotate(10deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate3d(350%, 0, 0) rotate(10deg);
+    opacity: 0;
+  }
+}
+
 .issue-cover__number,
 .issue-cover__date {
   position: absolute;
   top: 21px;
-  z-index: 1;
+  z-index: 3;
   font-family: "Inter", sans-serif;
   font-size: 13px;
   font-weight: 600;
@@ -442,23 +510,23 @@ button:focus-visible {
   transform: none;
 }
 
-.story-list li:nth-child(2) .story-list__thumb img {
+.story-list li:nth-child(2) .story-list__thumb--triptych img {
   transform: translateY(-33.333%);
 }
 
-.story-list li:nth-child(3) .story-list__thumb img {
+.story-list li:nth-child(3) .story-list__thumb--triptych img {
   transform: translateY(-66.666%);
 }
 
-.story-list li:nth-child(1) button:hover .story-list__thumb img {
+.story-list li:nth-child(1) button:hover .story-list__thumb--triptych img {
   transform: scale(1.02);
 }
 
-.story-list li:nth-child(2) button:hover .story-list__thumb img {
+.story-list li:nth-child(2) button:hover .story-list__thumb--triptych img {
   transform: translateY(-33.333%) scale(1.02);
 }
 
-.story-list li:nth-child(3) button:hover .story-list__thumb img {
+.story-list li:nth-child(3) button:hover .story-list__thumb--triptych img {
   transform: translateY(-66.666%) scale(1.02);
 }
 
@@ -647,7 +715,7 @@ button:focus-visible {
 
 .article-hero > picture > img {
   width: 100%;
-  height: 610px;
+  height: min(610px, 156vw);
   display: block;
   object-fit: cover;
   border-top: 1px solid var(--ink);
@@ -731,11 +799,24 @@ button:focus-visible {
   line-height: 0.68;
 }
 
-.story-body blockquote {
+.story-thesis {
   margin: 38px -6px 36px;
   padding: 25px 6px 22px;
   border-top: 1px solid var(--ink);
   border-bottom: 1px solid var(--ink);
+}
+
+.story-thesis > span {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--orange);
+  font-size: 8.5px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+}
+
+.story-thesis p {
+  margin: 0;
   font-family: "Newsreader", Georgia, serif;
   font-size: 31px;
   font-weight: 500;
@@ -802,6 +883,95 @@ button:focus-visible {
   font-size: 8px;
   font-weight: 700;
   letter-spacing: 0.1em;
+}
+
+.editorial-debate {
+  margin: 46px -26px 54px;
+  padding: 27px 26px 31px;
+  border-top: 5px solid var(--orange);
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.editorial-debate__masthead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid rgb(244 237 223 / 0.35);
+  color: var(--orange);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.editorial-debate h2 {
+  max-width: 760px;
+  margin: 27px 0 31px;
+  font-family: "Newsreader", Georgia, serif;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+
+.editorial-debate__positions {
+  display: grid;
+  border-top: 1px solid rgb(244 237 223 / 0.35);
+}
+
+.editorial-debate__positions section {
+  padding: 22px 0 23px;
+  border-bottom: 1px solid rgb(244 237 223 / 0.35);
+}
+
+.editorial-debate__positions section > p {
+  margin: 0 0 10px;
+  color: var(--orange);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.editorial-debate__positions strong {
+  display: block;
+  margin-bottom: 9px;
+  font-family: "Newsreader", Georgia, serif;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 1.08;
+}
+
+.editorial-debate__positions section > span {
+  display: block;
+  color: rgb(244 237 223 / 0.78);
+  font-family: "Newsreader", Georgia, serif;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.editorial-debate__verdict {
+  margin-top: 28px;
+  padding-left: 17px;
+  border-left: 3px solid var(--orange);
+}
+
+.editorial-debate__verdict > span {
+  color: var(--orange);
+  font-size: 8.5px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.editorial-debate__verdict p {
+  margin: 8px 0 0;
+  font-family: "Newsreader", Georgia, serif;
+  font-size: 18px;
+  line-height: 1.4;
 }
 
 .source-notes {
@@ -1294,7 +1464,6 @@ button:focus-visible {
   }
 
   .issue-cover:hover {
-    transform: translateY(-3px);
     box-shadow: 0 23px 42px rgb(41 35 26 / 0.23);
   }
 
@@ -1634,9 +1803,12 @@ button:focus-visible {
     line-height: 1.62;
   }
 
-  .story-body blockquote {
+  .story-thesis {
     margin: 48px -30px 44px;
     padding: 32px 30px 28px;
+  }
+
+  .story-thesis p {
     font-size: 42px;
   }
 
@@ -1915,9 +2087,12 @@ button:focus-visible {
     font-size: 84px;
   }
 
-  .story-body blockquote {
+  .story-thesis {
     margin: 64px 0;
     padding: 40px 0 34px;
+  }
+
+  .story-thesis p {
     font-size: 54px;
   }
 
@@ -1937,6 +2112,48 @@ button:focus-visible {
 
   .story-media figcaption {
     padding: 10px 0 0;
+  }
+
+  .editorial-debate {
+    width: min(100%, 960px);
+    margin: 8px auto 86px;
+    padding: 42px 48px 45px;
+  }
+
+  .editorial-debate h2 {
+    margin-block: 34px 38px;
+    font-size: 49px;
+  }
+
+  .editorial-debate__positions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .editorial-debate__positions section {
+    padding: 28px 34px 29px 0;
+  }
+
+  .editorial-debate__positions section + section {
+    padding-right: 0;
+    padding-left: 34px;
+    border-left: 1px solid rgb(244 237 223 / 0.35);
+  }
+
+  .editorial-debate__positions strong {
+    font-size: 27px;
+  }
+
+  .editorial-debate__positions section > span {
+    font-size: 18px;
+  }
+
+  .editorial-debate__verdict {
+    max-width: 780px;
+    margin-top: 34px;
+  }
+
+  .editorial-debate__verdict p {
+    font-size: 21px;
   }
 
   .source-notes {

@@ -6,23 +6,39 @@ export const kiedyZnikaAsfalt = {
   type: "Droga",
   title: "Kiedy znika asfalt",
   time: "14 min",
-  description: "Gravel po końcu znanej trasy.",
-  hero: assetPath("peloton-contents-triptych.png"),
-  heroWebp: "peloton-contents-triptych.webp",
-  heroPosition: "50% 100%",
-  thumb: assetPath("peloton-contents-triptych.png"),
-  thumbWebp: "peloton-contents-triptych.webp",
-  thumbMode: "triptych",
-  thumbPosition: "50% 100%",
+  description: "Wolność, marketing i cudza historia pod kołami.",
+  hero: assetPath("peloton-gravel-threshold-hero-v2.jpg"),
+  heroPosition: "50% 50%",
+  thumb: assetPath("peloton-gravel-threshold-hero-v2.jpg"),
+  thumbMode: "standalone",
+  thumbPosition: "50% 50%",
   lead:
-    "Za ostatnim równym odcinkiem zaczyna się podróż, której nie da się zapisać wyłącznie w planie treningowym.",
-  byline: "TEKST — REDAKCJA PELOTON",
+    "Gravel obiecuje wolność, najlepiej na rowerze z osobną kategorią katalogową. Beskid Niski szybko weryfikuje tę opowieść: plik GPX nie daje prawa przejazdu, drogi nie są scenografią, a „dzika dolina” może być miejscem po czyimś domu.",
+  byline: "ESEJ REDAKCYJNY — PELOTON",
   caption:
     "Droga bez numeru. Beskid Niski zaczyna się tam, gdzie nawierzchnia przestaje składać obietnice.",
-  alt: "Jasna szutrowa droga prowadzi pomiędzy ciemnymi górami pod pomarańczowym słońcem.",
+  alt: "Kolarz zatrzymuje się w Beskidzie Niskim dokładnie tam, gdzie popękany asfalt przechodzi w szuter.",
   quote:
-    "Asfalt mówi, dokąd prowadzi. Szuter pyta, czy naprawdę chcesz się tego dowiedzieć.",
+    "Gravel nie zaczyna się od nowego roweru. Zaczyna się wtedy, gdy kończy się pewność — i gdy potrafisz uznać zakaz, pogodę albo własny błąd za część trasy.",
   quoteAfter: 2,
+  editorialDebate: {
+    afterSection: 1,
+    kicker: "SPÓR PELOTONU · GRAVEL",
+    question: "Czy gravel wyzwala — czy tylko sprzedaje drugi rower do tej samej drogi?",
+    positions: [
+      {
+        label: "TEZA",
+        title: "Jeden rower otwiera więcej mapy",
+        text: "Szersza opona, stabilna geometria i miejsce na bagaż realnie poszerzają wybór dróg. Gravel potrafi połączyć dojazd, szuter i lokalny asfalt bez całej logistyki wyprawy MTB.",
+      },
+      {
+        label: "KONTRA",
+        title: "Wolność dostała cennik",
+        text: "Branża zamieniła prostą potrzebę skręcenia z asfaltu w osobny zestaw sprzętu, ubrań i rytuałów. Łatwo kupić estetykę przygody, trudniej nauczyć się naprawy, nawigacji i szacunku do miejsca.",
+      },
+    ],
+    verdict: "Najpierw sprawdź trasę na rowerze, który już masz. Potem kupuj to, czego naprawdę zabrakło. I pamiętaj: kreska pobrana z internetu nie jest pozwoleniem na wjazd ani aktem własności krajobrazu.",
+  },
   media: [
     {
       afterSection: 2,
@@ -35,15 +51,28 @@ export const kiedyZnikaAsfalt = {
     },
     {
       afterSection: 4,
-      src: "peloton-contents-triptych.png",
-      webp: "peloton-contents-triptych.webp",
+      src: "peloton-beskid-memory-after-rain-v2.jpg",
       layout: "standard",
-      alt: "Jasna droga przecina ciemny górski krajobraz w redakcyjnej ilustracji numeru Peloton.",
-      caption: "Beskid Niski. Trasa prowadzi przez krajobraz, w którym droga jest również zapisem pamięci.",
+      alt: "Kolarz stoi przy mokrej beskidzkiej drodze obok starego sadu, kamiennych fundamentów i przydrożnego krzyża.",
+      caption: "Beskid Niski. To nie jest pusta dolina: sad, fundament i krzyż przechowują cudzą obecność.",
       credit: "ILUSTRACJA — PAPER STUDIO",
     },
   ],
   routeStats: ["84 KM", "1430 M W GÓRĘ", "OK. 60% POZA ASFALTEM"],
+  sources: [
+    {
+      label: "Portal Gov.pl — Łemkowie, Łemkowszczyzna i akcja „Wisła”",
+      url: "https://www.gov.pl/web/mniejszosci-narodowe-i-etniczne/lemkowie",
+    },
+    {
+      label: "Lasy Państwowe — Radocyna i historia Beskidu Niskiego",
+      url: "https://www.lasy.gov.pl/pl/informacje/wideo/telewizja-lasow-panstwowych/wideo/radocyna-dlaczego-beskid-niski",
+    },
+    {
+      label: "Rzecznik Praw Obywatelskich — pamięć akcji „Wisła” i głosy Łemków",
+      url: "https://bip.brpo.gov.pl/pl/content/akcja-%E2%80%9Ewis%C5%82a%E2%80%9D-%E2%80%93-%C5%82emkowie-1947-2017-obchody-organizowane-w-gorlicach-przez-komisj%C4%99",
+    },
+  ],
   sections: [
     {
       label: "01 — GRANICA",
@@ -60,9 +89,9 @@ export const kiedyZnikaAsfalt = {
     },
     {
       label: "02 — PRZYGOTOWANIE",
-      heading: "Rower ma zniknąć",
+      heading: "Przygoda nie przychodzi kurierem",
       paragraphs: [
-        "Przygotowania do takiej jazdy łatwo pomylić z zakupami. Większa opona, szersza kierownica, kolejna torba, lżejsza pompka. Branża potrafi przekonać, że przygoda zaczyna się dopiero po odebraniu przesyłki. Tymczasem najważniejsze rzeczy wydarzyły się poprzedniego wieczoru na podłodze niewielkiego pokoju.",
+        "Przygotowania do takiej jazdy łatwo pomylić z zakupami. Karton z nową torbą ma niezwykłą zdolność wyglądania jak początek wyprawy, nawet kiedy nadal stoi w przedpokoju. Większa opona, szersza kierownica, lżejsza pompka — branża potrafi przekonać, że przygoda zaczyna się dopiero po odebraniu przesyłki. Tymczasem najważniejsze rzeczy wydarzyły się poprzedniego wieczoru na podłodze niewielkiego pokoju.",
         "Sprawdziłem klocki hamulcowe, dokręcenie osi i ilość mleka w oponach. Do małej torby pod górną rurą trafiły dwa sznury naprawcze do tubeless, zapasowa dętka, łyżka, pompka, spinka do łańcucha i niewielki multitool. W kieszeni koszulki schowałem cienką kurtkę przeciwdeszczową oraz folię ratunkową. Nie dlatego, że planowałem biwak. Dlatego, że w górach nawet jednodniowa wycieczka może nagle stać się dłuższa.",
         "Rower stoi na oponach 700 × 42 mm. Z przodu mam około dwóch barów, z tyłu trochę więcej. To ustawienie dobrane do mojej masy, bagażu i tej konkretnej opony, nie gotowa recepta dla każdego. Zbyt wysokie ciśnienie powoduje, że koło odbija się od kamieni i traci kontakt z podłożem. Zbyt niskie zwiększa ryzyko dobicia obręczy. Różnicę pomiędzy dobrym a złym ustawieniem czuje się tutaj po kilkuset metrach, nie po analizie wykresu.",
         "Napęd jest prosty: jedna tarcza z czterdziestoma zębami i kaseta 10–44. Na asfalcie brakuje czasem cięższego przełożenia, ale na stromym, kamienistym podjeździe ważniejsza okazuje się możliwość spokojnego obracania korbą. Hydrauliczne hamulce i tarcze 160 mm nie wyglądają efektownie na liście wyposażenia. Ich wartość pojawia się dopiero podczas długiego zjazdu, kiedy mokry pył przykleja się do roweru, a palce zaczynają tracić siłę.",
@@ -86,7 +115,7 @@ export const kiedyZnikaAsfalt = {
     },
     {
       label: "04 — PAMIĘĆ",
-      heading: "Dolina pamięta",
+      heading: "To nie jest pusta dolina",
       paragraphs: [
         "Droga do Radocyny prowadzi wzdłuż Wisłoki. Rzeka jest jeszcze młoda i wąska, miejscami znika pod gałęziami. Łąki rozszerzają się pomiędzy grzbietami, a las cofa na tyle, by wpuścić do doliny światło. Z daleka miejsce wygląda niemal pusto.",
         "Dopiero gdy zwalniam, pustka zaczyna się rozpadać na szczegóły.",

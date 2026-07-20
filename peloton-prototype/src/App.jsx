@@ -65,14 +65,17 @@ function CoverScreen({ onOpen, onMenu, reduceMotion, menuButtonRef }) {
         type="button"
         aria-label="Otwórz numer pierwszy: Przed świtem"
         onClick={onOpen}
+        style={{ transformPerspective: 1200 }}
         initial={reduceMotion ? false : { opacity: 0, scale: 0.985 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: reduceMotion ? 0 : 0.58, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
-        whileTap={reduceMotion ? undefined : { scale: 0.992 }}
+        whileHover={reduceMotion ? undefined : { y: -4, rotateX: 0.45, rotateY: -0.45, scale: 1.003 }}
+        whileTap={reduceMotion ? undefined : { y: 0, rotateX: 0, rotateY: 0, scale: 0.992 }}
       >
         <picture>
           <source srcSet={assetPath("peloton-cover-art.webp")} type="image/webp" />
           <img
+            className="issue-cover__art"
             src={assetPath("peloton-cover-art.png")}
             alt="Kolarz widziany z góry na tle monumentalnego koła, pomarańczowego słońca i łańcucha."
           />
@@ -192,7 +195,7 @@ function ContentsScreen({ onBack, onRead, reduceMotion }) {
                       <source srcSet={assetPath(story.thumbWebp)} type="image/webp" />
                     ) : null}
                     <img
-                      src={assetPath(story.thumb ?? "peloton-contents-triptych.png")}
+                      src={assetPath(story.thumb ?? story.hero ?? "peloton-cover-art.png")}
                       alt=""
                       loading="lazy"
                       decoding="async"
@@ -270,6 +273,33 @@ function SourceNotes({ sources }) {
   );
 }
 
+function EditorialDebate({ debate }) {
+  if (!debate) return null;
+
+  return (
+    <aside className="editorial-debate" aria-label={`${debate.kicker}: ${debate.question}`}>
+      <div className="editorial-debate__masthead">
+        <span>{debate.kicker}</span>
+        <span>TEZA / KONTRA</span>
+      </div>
+      <h2>{debate.question}</h2>
+      <div className="editorial-debate__positions">
+        {debate.positions.map((position) => (
+          <section key={position.label}>
+            <p>{position.label}</p>
+            <strong>{position.title}</strong>
+            <span>{position.text}</span>
+          </section>
+        ))}
+      </div>
+      <div className="editorial-debate__verdict">
+        <span>WERDYKT REDAKCJI</span>
+        <p>{debate.verdict}</p>
+      </div>
+    </aside>
+  );
+}
+
 function StoryToolbar({ story, onBack, onShare, saved, onToggleSaved }) {
   return (
     <header className="story-toolbar">
@@ -308,16 +338,7 @@ function StoryScreen({ story, onBack, onNext, saved, onToggleSaved, reduceMotion
       paragraphs: story.paragraphs,
     },
   ];
-  const storyMedia = story.media ?? [
-    {
-      afterSection: story.detailAfter ?? 3,
-      src: story.detailImage ?? "peloton-contents-triptych.png",
-      alt: story.detailAlt ?? "Detal ilustracyjny numeru Peloton.",
-      caption: story.detailCaption ?? `Detal numeru #${issue.number}. Rytm drogi zapisany w obrazie.`,
-      credit: "ILUSTRACJA — PAPER STUDIO",
-      layout: "standard",
-    },
-  ];
+  const storyMedia = story.media ?? [];
 
   useEffect(() => {
     headingRef.current?.focus({ preventScroll: true });
@@ -460,7 +481,12 @@ function StoryScreen({ story, onBack, onNext, saved, onToggleSaved, reduceMotion
               ))}
             </section>
 
-            {sectionIndex === (story.quoteAfter ?? 1) ? <blockquote>{story.quote}</blockquote> : null}
+            {sectionIndex === (story.quoteAfter ?? 1) ? (
+              <aside className="story-thesis" aria-label="Teza redakcji">
+                <span>TEZA REDAKCJI</span>
+                <p>{story.quote}</p>
+              </aside>
+            ) : null}
 
             {storyMedia
               .filter((item) => item.afterSection === sectionIndex)
@@ -472,6 +498,10 @@ function StoryScreen({ story, onBack, onNext, saved, onToggleSaved, reduceMotion
                   key={`${item.src}-${mediaIndex}`}
                 />
               ))}
+
+            {sectionIndex === story.editorialDebate?.afterSection ? (
+              <EditorialDebate debate={story.editorialDebate} />
+            ) : null}
           </div>
         ))}
 

@@ -6,22 +6,38 @@ export const ciszaNapedu = {
   type: "Technika",
   title: "Cisza napędu",
   time: "13 min",
-  description: "Mechanika dobrze ustawionego roweru.",
-  hero: assetPath("peloton-contents-triptych.png"),
-  heroWebp: "peloton-contents-triptych.webp",
+  description: "Wosk, olej i wojna religijna o kilka watów.",
+  hero: assetPath("peloton-drivetrain-listening-hero-v2.jpg"),
   heroPosition: "50% 50%",
-  thumb: assetPath("peloton-contents-triptych.png"),
-  thumbWebp: "peloton-contents-triptych.webp",
-  thumbMode: "triptych",
+  thumb: assetPath("peloton-drivetrain-listening-hero-v2.jpg"),
+  thumbMode: "standalone",
   thumbPosition: "50% 50%",
   lead:
-    "Dobrze ustawiony rower nie domaga się uwagi. W warsztacie uczy się ciszy milimetr po milimetrze; na szosie oddaje ją w postaci rytmu.",
+    "O łańcuch można dbać albo odprawiać nad nim nabożeństwo. Pomiędzy kolejną butelką cudownego preparatu a garnkiem wosku ginie czasem rzecz podstawowa: diagnoza. Ten tekst jest o ciszy, ale także o kosztownej obsesji, by uciszyć każdy szmer.",
   caption:
-    "Łańcuch, zębatka, rytm. Najmniejsze korekty robią największą różnicę.",
-  alt: "Monumentalne pomarańczowe koło zębate i czarny łańcuch w redakcyjnym kolażu.",
+    "Najpierw słuchanie, później narzędzia. Dobry serwis zaczyna się od właściwego pytania.",
+  alt: "Mechanik w cichym warsztacie słucha napędu szosowego roweru zawieszonego na stojaku.",
   quote:
-    "Cichy napęd nie jest napędem zalanym smarem. Jest napędem czystym, ustawionym i nasmarowanym dokładnie tam, gdzie metal pracuje o metal.",
+    "Najdroższy środek smarny nie naprostuje haka przerzutki. Marketing lubi butelki; mechanika woli najpierw ustalić, co właściwie hałasuje.",
   quoteAfter: 3,
+  editorialDebate: {
+    afterSection: 3,
+    kicker: "SPÓR PELOTONU · WARSZTAT",
+    question: "Wosk czy olej: czy łańcuch naprawdę potrzebuje religii?",
+    positions: [
+      {
+        label: "TEZA",
+        title: "Wosk to czystość i konsekwencja",
+        text: "Dobrze przygotowany układ pozostaje czysty, ogranicza przyklejanie brudu i może zmniejszyć zużycie. Dla kolarza, który lubi procedurę i jeździ głównie na sucho, to logiczny system, nie internetowa moda.",
+      },
+      {
+        label: "KONTRA",
+        title: "Olej działa także poza laboratorium",
+        text: "Mokry środek bywa praktyczniejszy w deszczu, podczas podróży i dla człowieka, który nie chce urządzać kuchni dla łańcucha. Źle wykonane woskowanie jest tylko bardziej ceremonialną wersją złej konserwacji.",
+      },
+    ],
+    verdict: "Wygrywa nie plemię, lecz powtarzalny proces. Wybierz system pasujący do pogody i własnej cierpliwości, a później naprawdę go stosuj. Łańcuch nie czyta komentarzy pod filmami GCN.",
+  },
   media: [
     {
       afterSection: 1,
@@ -34,12 +50,21 @@ export const ciszaNapedu = {
     },
     {
       afterSection: 5,
-      src: "peloton-contents-triptych.png",
-      webp: "peloton-contents-triptych.webp",
+      src: "peloton-drivetrain-road-test-v2.jpg",
       layout: "standard",
-      alt: "Pomarańczowe koło zębate i czarny łańcuch pokazane w ilustracyjnym zbliżeniu.",
-      caption: "Najpierw czystość, później ustawienie. Smarowanie jest ostatnim, nie pierwszym krokiem.",
+      alt: "Kolarz sprawdza pracę napędu po mokrej jeździe, stojąc z rowerem w otwartych drzwiach warsztatu.",
+      caption: "Regulację potwierdza droga. Napęd ma być cichy także pod obciążeniem i po deszczu.",
       credit: "ILUSTRACJA — PAPER STUDIO",
+    },
+  ],
+  sources: [
+    {
+      label: "Shimano — czyszczenie oraz dobór suchego i mokrego smaru",
+      url: "https://bike.shimano.com/en-UK/stories/article/a-clean-chain.html",
+    },
+    {
+      label: "Cycling Weekly — korzyści i koszty woskowania łańcucha",
+      url: "https://www.cyclingweekly.com/products/should-i-be-waxing-my-chain",
     },
   ],
   sections: [
@@ -77,8 +102,9 @@ export const ciszaNapedu = {
     },
     {
       label: "04 — SMAROWANIE",
-      heading: "Smarowanie bez przesady",
+      heading: "Wosk nie zbawia",
       paragraphs: [
+        "Smarowanie łańcucha stało się jedną z tych dyskusji, w których po trzech zdaniach przestajemy rozmawiać o metalu, a zaczynamy bronić własnego charakteru. Zwolennik wosku patrzy na czarną łydkę jak na zaniedbanie moralne. Zwolennik oleju pyta, czy naprawdę trzeba kupować garnek dla części rowerowej. Obaj potrafią mieć rację — i obaj potrafią zajechać napęd, jeśli bardziej lubią stanowisko niż procedurę.",
         "Butelka ze środkiem smarnym ma cienką końcówkę nie bez powodu. Preparat powinien trafić do każdej rolki, najlepiej od wewnętrznej strony dolnego odcinka łańcucha. Korbę obraca się powoli, ogniwo po ogniwie. Później trzeba dać środkowi czas na penetrację lub wyschnięcie zgodnie z instrukcją produktu. Ostatnim etapem jest staranne wytarcie zewnętrznych powierzchni. Łańcuch po smarowaniu może być chroniony w środku i niemal suchy w dotyku na zewnątrz.",
         "Nadmiar nie zwiększa ochrony. Zbiera pył, przenosi go na kasetę i kółka przerzutki, a po kilku przejazdach tworzy czarne obrzeża wokół rolek. To dlatego rowery smarowane najczęściej bywają czasem najbardziej hałaśliwe. Problemem nie jest brak troski, tylko pominięcie połowy procesu: kolejna warstwa została położona na poprzedniej, razem z tym, co przyniosła droga.",
         "Olejowe środki do mokrych warunków potrafią pracować bardzo cicho i długo, lecz wymagają oszczędnej aplikacji oraz regularnego wycierania. Wosk pozostawia czystszy napęd, ale oczekuje znacznie dokładniejszego przygotowania. Nowy łańcuch przeznaczony do woskowania trzeba pozbawić fabrycznego zabezpieczenia zgodnie z procedurą producenta, a po mokrej jeździe nie wolno zostawić go na noc bez uwagi. Wybór ma odpowiadać pogodzie, kilometrażowi i temu, ile czasu naprawdę chcemy przeznaczyć na obsługę.",

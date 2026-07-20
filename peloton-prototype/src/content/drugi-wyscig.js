@@ -5,7 +5,7 @@ export const drugiWyscig = {
   title: "Drugi wyścig",
   time: "13 min",
   description:
-    "Szymon Gruchalski fotografuje peleton od środka. O drodze z klubu kolarskiego na Tour de France, dwudziestu sekundach na zdjęcie i granicy, której nie wolno przekroczyć.",
+    "Szymon Gruchalski, 20 sekund na publikację i granica między świadectwem a żerowaniem.",
   byline: "TEKST — REDAKCJA PELOTON",
   hero: "/assets/peloton-photographer-hero.png",
   heroWebp: "peloton-photographer-hero.webp",
@@ -15,12 +15,30 @@ export const drugiWyscig = {
   thumbMode: "standalone",
   thumbPosition: "50% 42%",
   lead:
-    "Na trasie zawodnicy walczą o sekundy. Kilka metrów obok trwa drugi wyścig: o właściwe miejsce, bezpieczny przejazd i obraz, który dotrze do świata, zanim peleton minie kolejny zakręt. Szymon Gruchalski nauczył się poruszać w tym rytmie, ponieważ kolarstwo znał wcześniej niż fotografię.",
+    "Na trasie zawodnicy walczą o sekundy. Fotograf ma około dwudziestu, by cudzy triumf, grymas albo upadek zamienić w plik lecący do świata. Szymon Gruchalski zna kolarstwo od siodła, ale aparat stawia mu trudniejsze pytanie: kiedy obraz informuje, a kiedy tylko dobrze sprzedaje cudzy ból?",
   caption:
     "Fotograf wyścigu widzi peleton z bliska, ale nie może ani na chwilę zapomnieć, że pozostaje jego gościem.",
   alt: "Fotograf na motocyklu jadący obok peletonu podczas górskiego wyścigu kolarskiego.",
-  quote: "Fotograf nie zatrzymuje peletonu. Musi znaleźć sekundę, w której wyścig sam układa się w opowieść.",
+  quote: "Akredytacja pozwala podejść bliżej. Nie daje immunitetu od odpowiedzialności ani prawa do każdej chwili słabości.",
   quoteAfter: 5,
+  editorialDebate: {
+    afterSection: 6,
+    kicker: "SPÓR PELOTONU · OBRAZ",
+    question: "Zdjęcie z kraksy: świadectwo czy żerowanie?",
+    positions: [
+      {
+        label: "TEZA",
+        title: "Bez trudnego obrazu relacja kłamie",
+        text: "Kraksa zmienia wynik, karierę i sens etapu. Fotograf, który z góry odwraca obiektyw od bólu, może stworzyć piękną, lecz fałszywą wersję sportu, w której konsekwencje znikają poza kadrem.",
+      },
+      {
+        label: "KONTRA",
+        title: "Fakt nie odbiera człowiekowi godności",
+        text: "Seria zbliżeń na bezradnego zawodnika nie staje się ważniejsza tylko dlatego, że wydarzyła się naprawdę. Algorytm nagradza szok; redakcja nadal odpowiada za wybór, kontekst i moment, w którym należy przestać fotografować.",
+      },
+    ],
+    verdict: "Pokaż zdarzenie, nie pastw się nad człowiekiem. Jedna potrzebna klatka z kontekstem może być świadectwem; dziesięć niemal identycznych zbliżeń opublikowanych dla zasięgu to już decyzja biznesowa przebrana za obowiązek informacyjny.",
+  },
   media: [
     {
       afterSection: 3,
@@ -44,9 +62,9 @@ export const drugiWyscig = {
   sections: [
     {
       label: "Portret",
-      heading: "Nie patrzy z chodnika",
+      heading: "Jedna próba, żadnych dubli",
       paragraphs: [
-        "Na zdjęciu z wyścigu wszystko wydaje się prostsze niż w rzeczywistości. Kolarz wychodzi z zakrętu, światło układa się na jego ramionach, a droga prowadzi wzrok dokładnie tam, gdzie powinna. W kadrze nie widać motocykla, zamkniętego skrzyżowania, przepychania plików przez słaby zasięg ani decyzji podjętej kilka kilometrów wcześniej. Nie widać także człowieka, który ma jedną próbę. Peleton nie zatrzyma się, żeby fotograf mógł poprawić kompozycję.",
+        "Dobre zdjęcie z wyścigu ma irytującą cechę: wygląda tak, jakby musiało powstać. Kolarz wychodzi z zakrętu, światło układa się na ramionach, droga prowadzi wzrok dokładnie tam, gdzie powinna. Nie widać motocykla, regulatorów, słabego zasięgu ani decyzji podjętej dziesięć kilometrów wcześniej. Peleton nie zawraca, ponieważ fotograf mrugnął. Nie ma dubla i uprzejmej prośby o jeszcze jeden przejazd.",
         "Szymon Gruchalski pracuje w miejscu, w którym fotografia sportowa przestaje być obserwowaniem wydarzenia z bezpiecznej odległości. Podczas wyścigu porusza się na motocyklu, zatrzymuje na trasie, czeka na grupę i ponownie próbuje ją wyprzedzić. Musi jednocześnie myśleć jak fotograf, czytać sytuację jak człowiek znający kolarstwo i zachowywać się jak odpowiedzialny uczestnik kolumny wyścigu.",
         "Eurosport przedstawił go w 2025 roku jako jedynego polskiego fotografa pracującego wewnątrz peletonu Tour de France. To ważne nie tylko ze względu na prestiż Wielkiej Pętli. Dostęp do środka wyścigu oznacza zaufanie organizatorów i znajomość reguł, których kibic zwykle nie dostrzega. Obraz powstaje blisko sportowców, lecz prawo do tej bliskości trzeba potwierdzać każdego dnia rozsądkiem.",
       ],
@@ -94,17 +112,17 @@ export const drugiWyscig = {
     },
     {
       label: "Technologia",
-      heading: "Drugi wyścig trwa dwadzieścia sekund",
+      heading: "Dwadzieścia sekund, potem archiwum",
       paragraphs: [
         "Po naciśnięciu spustu migawki praca dopiero się zaczyna. Współczesna fotografia wyścigowa funkcjonuje w tym samym tempie co transmisja na żywo. Redakcje, zespoły i agencje chcą otrzymać obraz natychmiast: po ataku, premii, kraksie albo przekroczeniu mety. Zdjęcie doskonałe, lecz dostarczone godzinę później, może przegrać z kadrem słabszym, który był pierwszy.",
         "Gruchalski opisuje router pracujący w kieszeni i pliki przesyłane bezpośrednio z aparatów, również podczas jazdy. W jednym z wywiadów mówił o około dwudziestu sekundach dostępnych na przekazanie wybranego zdjęcia z Tour de France. Między agencjami trwa niewidoczne współzawodnictwo, w którym mierzy się czas od wykonania klatki do pojawienia się jej na serwerze.",
         "Szybkość zmienia sposób patrzenia. Fotograf musi w ułamku chwili rozpoznać nie tylko najładniejszy kadr, ale również najważniejszą informację. Czy na zdjęciu wyraźnie widać zwycięzcę? Czy gest zawodnika tłumaczy sytuację? Czy tło nie prowadzi do pomyłki? Czy plik ma poprawne dane i trafi do właściwego odbiorcy? Selekcja, która dawniej odbywała się wieczorem przy komputerze, częściowo przeniosła się na motocykl.",
-        "Nie znaczy to, że fotografia została sprowadzona do szybkości. Raczej powstały dwa obiegi. Pierwszy obsługuje wiadomość i musi działać natychmiast. Drugi buduje opowieść, do której można wrócić po etapie: zawodnik siedzący samotnie za autobusem, dziecko czekające przy barierce, mechanik myjący rowery, droga pustoszejąca po przejeździe karawany. Dobry fotograf potrafi dostarczyć oba rodzaje obrazu bez pomylenia ich funkcji.",
+        "Nie znaczy to, że fotografia została sprowadzona do szybkości, choć rynek bardzo chętnie wystawiłby jej taki akt zgonu. Powstały dwa obiegi. Pierwszy obsługuje wiadomość i musi działać natychmiast. Drugi buduje opowieść, do której można wrócić po etapie: zawodnik siedzący samotnie za autobusem, dziecko czekające przy barierce, mechanik myjący rowery, droga pustoszejąca po przejeździe karawany. Dobry fotograf dostarcza oba rodzaje obrazu i nie udaje, że pierwszy plik na serwerze automatycznie jest najlepszym zdjęciem dnia.",
       ],
     },
     {
       label: "Etyka",
-      heading: "Bliskość nie daje wszystkich praw",
+      heading: "Akredytacja nie jest immunitetem",
       paragraphs: [
         "Wyścig dostarcza obrazów triumfu, ale także bólu. Kraksa jest wiadomością i fotograf nie może udawać, że jej nie było. Jednocześnie człowiek leżący na asfalcie nie staje się przez to rekwizytem. Gruchalski opowiadał, że fotografowie mogą celowo pozostawać z tyłu, gdy charakter trasy zwiększa prawdopodobieństwo upadku. Jeżeli do niego dojdzie, dokumentują sytuację, lecz nie powinni pastwić się nad poszkodowanym.",
         "Ta granica nie mieści się w instrukcji aparatu. Można wykonać poprawne technicznie zdjęcie, które odbiera komuś godność. Można również zrezygnować z obrazu tak istotnego, że bez niego opowieść stanie się nieprawdziwa. Odpowiedzialność polega na rozpoznaniu różnicy między świadectwem a eksploatacją. Znajomość sportu pomaga, ponieważ fotograf rozumie, co oznacza szok po upadku, samotność po porażce i moment, w którym zawodnik potrzebuje przestrzeni.",
@@ -121,6 +139,7 @@ export const drugiWyscig = {
         "Kolarski obraz może opierać się na prędkości, lecz równie często działa przez ciszę. Puste krzesło przed startem, ręce zapinające numer, ślady błota na twarzy czy kibic składający flagę po przejeździe ostatniej grupy rozszerzają znaczenie wyniku. Pozwalają zobaczyć wyścig jako tymczasowy świat zbudowany na kilka godzin przez zawodników, organizatorów i mieszkańców.",
         "Gruchalski podkreśla na swojej stronie, że każde jego zdjęcie opowiada również o nim samym. Nie musi to oznaczać dominacji autora nad tematem. Fotograf wybiera przecież, czy skieruje aparat na cierpienie, krajobraz, tłum, sprzęt czy drobny gest. Z tysięcy możliwych klatek tworzy własny zapis tego, czym według niego jest kolarstwo.",
         "Dla polskiego odbiorcy jego obecność w największych wyścigach ma dodatkowe znaczenie. Międzynarodowy peleton nie jest oglądany wyłącznie z importowanej perspektywy. Człowiek wychowany w lokalnym klubie, trener młodzieży i nauczyciel z Jarocina buduje obrazy, które trafiają do światowych agencji. Nie fotografuje wyłącznie Polaków, ale wnosi do środka Touru doświadczenie polskiej kultury kolarskiej.",
+        "W epoce obrazów generowanych rozróżnienie między fotografią a ilustracją przestaje być technicznym przypisem. Zdjęcie dokumentalne twierdzi: to wydarzyło się przed obiektywem. Ilustracja mówi: tak redakcja interpretuje temat. Grafiki w tym materiale są dlatego podpisane jako ilustracje — nie są zdjęciami Gruchalskiego ani dowodem konkretnego zdarzenia. Estetyka może być umowna; pochodzenie obrazu nie powinno.",
       ],
     },
     {
@@ -154,6 +173,14 @@ export const drugiWyscig = {
     {
       label: "Gazeta Jarocińska — na przesłanie zdjęcia z Tour de France mam 20 sekund",
       url: "https://jarocinska.pl/sport/szymon-gruchalski-na-przeslanie-zdjecia-z-tour-de-france-mam-20-sekund-podcast/X19HxskB9c9lUafSICwR",
+    },
+    {
+      label: "World Press Photo — zasady dotyczące obrazów generowanych przez AI",
+      url: "https://www.worldpressphoto.org/news/2023/could-an-ai-image-win-our-contest",
+    },
+    {
+      label: "UCI — procedury bezpieczeństwa pojazdów w kolumnie wyścigu od 2026 roku",
+      url: "https://www.uci.org/pressrelease/the-uci-takes-important-measures-to-protect-rider-safety-and-health-and/4hnxXGTJRFAAUBHKLtGFQc",
     },
   ],
 };
