@@ -6,7 +6,7 @@ const appLinks = {
 
 const appIcons = {
   lanc: "peloton-app-lanc.png",
-  spinOrStay: "peloton-app-spin-or-stay.png",
+  spinOrStay: "peloton-app-spin-or-stay-v1.png",
   roadToWorldTour: "peloton-app-road-to-world-tour.png",
 };
 
