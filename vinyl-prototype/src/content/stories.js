@@ -16,18 +16,46 @@ const technics = {
   sections: [
     {
       label: "GENEZA / 1965–1972",
-      heading: "Marka, która miała brzmieć inaczej",
+      heading: "Marka, która chciała obracać równo",
       paragraphs: [
-        "Technics narodził się w połowie lat sześćdziesiątych jako ambitna marka audio koncernu Matsushita. Jej prawdziwy mit zaczął się jednak w 1970 roku, kiedy SP-10 stał się pierwszym seryjnie produkowanym gramofonem z napędem bezpośrednim. Silnik obracał talerz bez paska i pośrednich rolek: szybciej startował, trzymał tempo i usuwał element, który z czasem potrafił się rozciągnąć albo wprowadzić drgania.",
-        "Dwa lata później pojawił się SL-1200 — kompaktowy, ciężki i odporny. Projektowano go dla wymagającego słuchacza domowego, lecz amerykańscy didżeje natychmiast rozpoznali w nim coś więcej. Stabilny start, mocny moment obrotowy i obudowa znosząca klubowe wibracje pozwalały traktować płytę nie tylko jako nośnik, ale jako materiał do grania. Inżynieria hi-fi została przechwycona przez kulturę."
+        "Technics nie zaczął od gramofonu. Marka powstała w 1965 roku w koncernie Matsushita, a jej pierwszym produktem był dwudrożny zestaw głośnikowy Technics 1. Nazwa miała oznaczać technikę używaną w służbie muzyki, nie tanią elektronikę użytkową z nową plakietką. To rozróżnienie jest ważne, bo późniejsza kariera SL-1200 przykleiła firmie jedną, bardzo wyrazistą twarz. Tymczasem od początku budowała także wzmacniacze, tunery i konstrukcje przeznaczone dla wymagającego domu. Klub nie był planem założycielskim. Klub był najważniejszym w historii marki włamaniem użytkowników do planu inżynierów.",
+        "Problem, z którym mierzył się zespół gramofonowy, był banalny tylko na papierze: talerz musi obracać się z właściwą prędkością i nie dodawać od siebie drgań. Pasek izolował silnik, ale starzał się, rozciągał i stanowił kolejne ogniwo transmisji. Kółko pośrednie dawało energiczny napęd, lecz również wymagało mechanicznego kontaktu. Technics usunął przekładnię i umieścił wolnoobrotowy silnik bezpośrednio pod talerzem. W 1970 roku SP-10 został pierwszym seryjnie produkowanym gramofonem direct drive. Konstrukcja przygotowana z myślą o rynku domowym trafiła także do rozgłośni, które ceniły szybki start, stabilność i odporność.",
+        "Rok później pojawił się SL-1100 z ramieniem zintegrowanym z odlewanym korpusem, a w 1972 — bardziej kompaktowy SL-1200. Był ciężki, lecz możliwy do przeniesienia; precyzyjny, ale nie delikatny jak laboratoryjny eksponat. Według firmowej historii Technicsa właśnie SL-1100 znalazł się w zestawie Kool Herca, gdy w 1973 roku na imprezie w Bronksie wydłużał perkusyjne fragmenty, przełączając się między dwiema kopiami nagrania. Nie znaczy to, że japońska firma „wynalazła hip-hop”. Wynalazła urządzenie, które nie przeszkadzało, kiedy ktoś inny wynajdywał nowy sposób grania muzyki.",
+      ],
+    },
+    {
+      label: "NAPĘD / BEZ MAGII",
+      heading: "Direct drive nie jest przyciskiem „lepszy dźwięk”",
+      paragraphs: [
+        "W napędzie bezpośrednim wirnik silnika i talerz pracują jako jeden układ, bez paska pomiędzy nimi. Korzyść jest czytelna: polecenie startu szybko zamienia się w obrót, a elektroniczne sprzężenie zwrotne może stale pilnować prędkości. Dla słuchacza oznacza to przede wszystkim stabilniejszą wysokość dźwięku. Fortepian i długi ton syntezatora bezlitośnie ujawniają kołysanie tempa, którego nie naprawi ani droga wkładka, ani przewód gruby jak wąż ogrodowy. W gramofonie czas jest częścią sygnału. Gdy czas pływa, muzyka pływa razem z nim.",
+        "Nie istnieje jednak topologia wolna od problemów. Silnik umieszczony tuż pod płytą musi być dobrze zaprojektowany, bo jego drgania mogą dotrzeć do niezwykle czułego układu igła–wkładka. We wczesnych silnikach wyzwaniem było też zjawisko coggingu: drobna nierównomierność wynikająca z oddziaływania magnesów i rdzenia podczas kolejnych położeń wirnika. Z drugiej strony pasek nie jest mechanicznym sakramentem. Zużywa się, ma własną sprężystość, a źle dobrany układ może reagować na zmianę obciążenia. Dwie słabe konstrukcje nie stają się dobre tylko dlatego, że jedna ma pasek, a druga kwarcowy napis.",
+        "Na winyl.net w przewodniku po podstawach gramofonu zalety i ryzyka opisano bez nabożnego dymu: pasek dobrze odsprzęga silnik, ale wymaga okresowej wymiany; direct drive daje stabilność oraz mniej elementów zużywalnych, lecz kiepski silnik może odcisnąć się na sygnale. To głos społeczności, nie norma laboratoryjna, ale prowadzi do rozsądnego wniosku. Trzeba oceniać konkretny model, jego stan i pomiar obrotów. Forum nie rozstrzyga fizyki głosowaniem. Przypomina za to, że logo na pokrywie nie zwalnia właściciela z ustawienia ramienia, nacisku i antyskatingu.",
       ],
     },
     {
       label: "IKONA / 1979",
-      heading: "MK2: urządzenie staje się instrumentem",
+      heading: "MK2: inżynierowie zaczynają słuchać didżejów",
       paragraphs: [
-        "SL-1200MK2 z 1979 roku był odpowiedzią na to, co inżynierowie zobaczyli w klubach. Pionowy suwak pitch, kwarcowa stabilizacja obrotów, wyważone ramię w kształcie litery S i wysuwana lampka igły nie były ozdobą. Każdy detal rozwiązywał realny problem osoby pracującej po ciemku, pod presją i przy głośnym systemie nagłośnienia.",
-        "To dlatego sylwetka 1200 przetrwała kolejne dekady niemal bez stylistycznej rewolucji. Zmieniały się materiały, sterowanie silnikiem i izolacja, lecz pamięć mięśniowa użytkownika pozostawała święta. Technics nauczył się trudnej sztuki: unowocześniać produkt bez odbierania mu gestów, które zdążyły wejść do języka muzyki."
+        "Kiedy japońscy inżynierowie pojechali badać amerykański rynek, zobaczyli swoje domowe urządzenia w miejscach, do których instrukcja obsługi raczej ich nie zapraszała. W ciemnych klubach talerze cofano dłonią, igłę opuszczano na wybrany takt, a obudowy przyjmowały bas z nagłośnienia i uderzenia ludzi pracujących w pośpiechu. Technics mógł potraktować to jako niewłaściwe użytkowanie. Zrobił rzecz mądrzejszą: pytał didżejów, czego nie zmieniać. Odpowiedź była niemal równie ważna jak lista ulepszeń — gesty zdążyły już wejść w pamięć mięśniową.",
+        "SL-1200MK2 z 1979 roku był pierwszą wersją serii rozwijaną specjalnie do pracy w dyskotece. Obrotowe pokrętło regulacji tempa zastąpił długi, pionowy suwak pitch, po którym można było prowadzić palec bez odrywania wzroku od płyty. Kwarcowa kontrola pilnowała prędkości. Statycznie wyważone ramię w kształcie litery S pozwalało precyzyjnie ustawić nacisk, wysuwana lampka oświetlała igłę w ciemności, a odlewany panel połączony z gumą i dużymi izolatorami bronił odczytu przed drganiami podłogi. To nie stylistyczne fetysze. Każdy detal odpowiadał na konkretną sytuację przy konsolecie.",
+        "Najważniejsze było odczucie pod dłonią. Połączenie silnika z talerzem ograniczało zwłokę między ruchem wykonawcy a reakcją dźwięku. Można było zatrzymać obrót, cofnąć płytę do punktu wejścia i puścić ją w rytmie, zamiast czekać, aż miękki układ transmisji zbierze się do pracy. Odtwarzacz stał się interfejsem wykonawczym. Gitara elektryczna też nie była projektowana po to, by sprzęgać się ze wzmacniaczem, a jednak muzycy uczynili ze sprzężenia język. Technics spotkało to samo: „błąd użytkownika” okazał się nową kulturą.",
+      ],
+    },
+    {
+      label: "STANDARD / LATA 80.–2000",
+      heading: "Dlaczego klub chciał zawsze tego samego gramofonu",
+      paragraphs: [
+        "W latach osiemdziesiątych didżeje coraz częściej przemieszczali się między klubami, zamiast na stałe należeć do jednego lokalu. Standaryzacja konsolety stała się częścią warunków pracy. Jeśli skok pitcha, moment startowy i zachowanie talerza za każdym razem są inne, pierwsze minuty setu zamieniają się w egzamin z cudzego sprzętu. Seria SL-1200 oferowała przewidywalność. To słowo brzmi mało romantycznie, ale właśnie przewidywalne narzędzia pozwalają ryzykować w muzyce. Pianista nie chce za każdym koncertem zgadywać, gdzie producent schował środkowe C.",
+        "Kolejne odmiany rozwijały formułę oszczędnie. MK3 poprawił ochronę przed drganiami, limitowany SL-1200LTD uczcił sprzedaż dwumilionowego egzemplarza serii, MK3D dostał wygodny reset pitcha, a rocznicowy MK5G pokazał, że analogowy standard potrafi trwać obok rosnącego rynku cyfrowego. Według Technicsa seria sprzedała się w milionach sztuk i bez radykalnej zmiany ergonomii obsłużyła disco, hip-hop, house, techno, reggae oraz pop. Jej prawdziwym patentem nie była więc jedna część. Była nim konsekwencja.",
+        "Audiofilskie lekceważenie „decka dla DJ-a” jest zabawne. Urządzenie, które musi utrzymać prędkość przy dotykaniu talerza, przeżyć transport i nie zamienić klubowego basu w akustyczną pętlę, nie jest mniej poważne od gramofonu stojącego na marmurze. Zużyty klubowy egzemplarz może mieć luźne łożyska i zmęczony suwak, lecz intensywna biografia nie dowodzi ułomności projektu. Bywa jego najbardziej brutalnym testem.",
+      ],
+    },
+    {
+      label: "PRZERWA / 2010–2019",
+      heading: "Koniec, który okazał się pauzą",
+      paragraphs: [
+        "Po zakończeniu produkcji klasycznej serii w 2010 roku używane egzemplarze stały się ograniczonym zasobem i relikwią. Powrót nastąpił w 2016 roku jako SL-1200GAE, limitowany do 1200 egzemplarzy. Z zewnątrz projekt nie urządzał rewolucji, lecz w środku pojawił się bezrdzeniowy silnik direct drive i cyfrowe sterowanie. Usunięcie żelaznego rdzenia statora miało ograniczyć cogging u źródła, zamiast maskować jego skutki ciężarem talerza. Technics nie odtworzył więc starego MK2 z droższego aluminium. Potraktował znajomą formę jako platformę dla nowej generacji napędu. GAE sprzedał się natychmiast, a potem rozwinęła się cała rodzina modeli Grand Class.",
+        "Dopiero w 2019 roku SL-1200MK7 i czarny SL-1210MK7 jawnie wróciły do didżejskiego odczucia znanego z MK2. To rozróżnienie warto zapamiętać: współczesne „1200” nie są jednym gramofonem w różnych kolorach. Linie G i GR mierzą w domowe hi-fi, MK7 w pracę DJ-ską, a seria 1500 usuwa pitch i lampkę, bo chce spokojnie stać w salonie. Kult sylwetki spaja katalog, ale nie unieważnia różnic konstrukcyjnych ani zastosowań. Kupowanie po samych czterech cyfrach jest jak wybór samochodu po kształcie reflektorów.",
       ],
     },
     {
@@ -35,83 +63,108 @@ const technics = {
       heading: "Pasek nie ma monopolu na audiofilskość",
       variant: "forecast",
       paragraphs: [
-        "Wciąż można usłyszeć, że napęd paskowy jest z natury „muzykalny”, a bezpośredni — klubowy i brutalny. To wygodny mit, bo pozwala ocenić gramofon bez słuchania i bez pomiaru. Słaby direct drive może przenosić pracę taniego silnika, ale słaby pasek może pływać, starzeć się i fałszować tempo. Topologia nie gra sama. Gra konkretna realizacja.",
-        "Na winyl.net ten spór wraca od lat i zwykle kończy się tam, gdzie powinien się zacząć: przy modelu, stanie technicznym oraz stabilności obrotów. Dobry SL-1200 nie potrzebuje przepraszać za klubową biografię. Być może to część audiofilów powinna przeprosić za mylenie prostego wyglądu z prostą inżynierią."
+        "Wciąż można usłyszeć, że napęd paskowy jest z natury „muzykalny”, a bezpośredni — klubowy, nerwowy i brutalny. To wygodny mit, bo pozwala ocenić gramofon bez słuchania, pomiaru i zaglądania do konstrukcji. Co gorsza, podszyty jest klasizmem sprzętowym: drewniana podstawa, osobny silnik i rytuał przekładania paska wyglądają na audiofilskie, natomiast start/stop oraz suwak pitch zdradzają kontakt z ludźmi, którzy naprawdę dotykają płyty. Forma zostaje pomylona z jakością, a ascetyczna obsługa z czystością dźwięku.",
+        "Słaby direct drive może przenosić drgania taniego silnika. Słaby belt drive może falować, tracić moment i wymagać paska, którego właściwy zamiennik dawno zniknął. Dobry projekt każdego typu musi rozwiązać ten sam zestaw problemów: utrzymać prędkość, odizolować odczyt od energii silnika i otoczenia, prowadzić ramię bez luzów oraz dać się prawidłowo ustawić. Topologia nie gra sama. Gra konkretna realizacja, stan egzemplarza, wkładka, geometria i miejsce, na którym postawiono urządzenie.",
+        "Dlatego dobry SL-1200 nie potrzebuje przepraszać za klubową biografię. Bardziej podejrzane jest urządzenie reklamowane jako „czysto analogowe”, gdy producent nie podaje danych o równomierności obrotu, a cenę uzasadnia grubością podstawy. Nie twierdzimy, że każdy Technics wygrywa z każdym paskiem. Twierdzimy coś znacznie mniej wygodnego dla marketingu: trzeba porównać egzemplarze, nie religie. Jeśli po takim zdaniu wojna napędów traci temperaturę, to może nigdy nie chodziło w niej o muzykę, lecz o przynależność do plemienia.",
       ],
     },
     {
-      label: "POWRÓT / 2016–2025",
-      heading: "Legenda wraca do salonu",
+      label: "EWOLUCJA / 2023–2026",
+      heading: "Cyfrowe sterowanie w obronie analogu",
       paragraphs: [
-        "Po przerwie produkcyjnej marka wróciła do gramofonów w 2016 roku modelem SL-1200GAE. Nowy bezrdzeniowy silnik miał ograniczać zjawisko coggingu, a cyfrowe sterowanie nie udawało nostalgii: było współczesną odpowiedzią na ten sam stary postulat — możliwie równy obrót. Rodzina rozrosła się od konstrukcji DJ-skich po audiofilskie Grand Class.",
-        "Na sześćdziesięciolecie marki Technics przygotował limitowane SL-1200GME i SL-1210GME Master Edition. To nie jubileuszowa kalkomania, lecz dopracowane zwieńczenie linii G z techniką ΔΣ-Drive, której zadaniem jest jeszcze precyzyjniejsze sterowanie silnikiem. Kolekcjonerski charakter ma znaczenie, ale ważniejszy jest sygnał: ikona wciąż jest platformą rozwoju."
+        "Najnowszy etap rozwoju nosi nazwę ΔΣ-Drive. Technics zastosował tę technikę najpierw w SL-1200GR2 z 2023 roku, później w SL-1300G, a następnie w kolejnych modelach. Układ wykorzystuje przetwarzanie sygnału znane z cyfrowych wzmacniaczy firmy, aby dostarczyć silnikowi możliwie równy przebieg sterujący i ograniczyć mikrowibracje. Dla analogowego purysty słowo „cyfrowe” bywa alarmem, lecz tu nie cyfryzujemy muzyki z rowka. Cyfrowo kontrolujemy obrót mechaniki. Nostalgia nie jest metodą regulacji prędkości.",
+        "Jubileuszowa SL-1200GME i czarna SL-1210GME łączą ΔΣ-Drive z bezrdzeniowym silnikiem o dwóch wirnikach i jednym statorze, czterowarstwowym chassis, trzywarstwowym talerzem ważącym wraz z matą 3,6 kilograma oraz magnezowym ramieniem. Talerze są osobno wyważane, a zasilacz otrzymał układ redukcji szumu. Brzmi jak demonstracja inżynierii i nią jest, ale także jak demonstracja niedoboru: Technics zapowiedział tylko 1200 srebrnych i 1210 czarnych sztuk, po 5499 euro, bo produkcja dotychczasowego modelu G kończy się z powodu niedostępności części od zewnętrznego dostawcy.",
+        "Master Edition jest zarazem gramofonem i przedmiotem kolekcjonerskiego pożądania. Złote ramię, numer i limitowany nakład nie poprawiają rytmu. Robi to technika; złoto poprawia opowieść przy odsprzedaży. Technics ma prawo świętować finał platformy G, a klient — zapytać, jaka część ceny pracuje dla igły, a jaka dla gabloty.",
       ],
     },
     {
-      label: "NOWOŚCI / 2026",
-      heading: "SL-1500CS i nowa codzienność",
+      label: "NOWOŚĆ / 2026",
+      heading: "SL-1500CS: normalny gramofon dla normalnego salonu",
       paragraphs: [
-        "W marcu 2026 do sprzedaży wszedł SL-1500CS — następca cenionego SL-1500C. Zachowuje domowy, spokojny charakter, ale otrzymuje sterowanie ΔΣ-Drive oraz wbudowany przedwzmacniacz gramofonowy. To model dla słuchacza, który nie potrzebuje klubowego pitcha, za to chce prostego wejścia w poważny analog bez budowania całej wieży urządzeń pierwszego dnia.",
-        "Obok niego Technics rozwija lżejszy wizualnie SL-40CBT i bezprzewodowe słuchawki EAH-AZ100 w jubileuszowych kolorach. Strategia jest czytelna: nie zamykać marki w muzeum SL-1200. Dziedzictwo ma pracować w systemie, w którym obok winylu są streaming, Bluetooth i odsłuch mobilny. Dziś wierność historii nie oznacza wierności jednemu gniazdu."
+        "Bardziej interesujący dla większości słuchaczy jest SL-1500CS, zapowiedziany 23 lutego i dostępny od marca 2026 roku za sugerowane 1199 euro. To następca SL-1500C: bez pitcha, bez didżejskiej pozy, za to z bezrdzeniowym silnikiem o jednym wirniku i jednym statorze, kontrolą ΔΣ-Drive oraz układem dokładnego wykrywania prędkości. Dwuwarstwowy korpus łączy odlew aluminiowy z tworzywem ABS wzmacnianym włóknem szklanym, a sprężynowo-gumowe stopy mają ograniczać wpływ podłoża. Z zewnątrz to spokojny, metalicznoszary prostokąt. W środku trwa dalszy ciąg sporu o mikrowibracje.",
+        "S-kształtne aluminiowe ramię jest statycznie wyważone i osadzone w precyzyjnych łożyskach. Fabrycznie zamontowano wkładkę Ortofon 2M Red, a wbudowany przedwzmacniacz współpracuje z wkładkami MM. Można więc podłączyć gramofon do zwykłego wejścia liniowego, ale pozostawiono również klasyczne wyjście phono dla osób używających własnego stopnia korekcyjnego. Po dojściu igły do rowka końcowego automatyczny lift unosi ramię. Forumowi puryści mogą prychnąć, że prawdziwy meloman sam podnosi igłę. Płyta nie otrzymuje punktów honoru za noc spędzoną w rowku końcowym.",
+        "SL-1500CS pokazuje najlepszą stronę współczesnego Technicsa: technologia z droższych modeli schodzi niżej, a wygoda nie jest przedstawiana jako wstydliwy kompromis. Pokazuje też granice hasła „dla początkującego”, bo 1199 euro pozostaje poważną kwotą. To wejście do katalogu marki, nie budżetowe wejście do winylu. Osobie zaczynającej wystarczy tańszy, poprawnie ustawialny gramofon. Osobie chcącej kupić raz, zachować wymienny headshell, ominąć zewnętrzne phono i dostać stabilny napęd — 1500CS przedstawia znacznie uczciwszą propozycję niż kolejna rocznicowa dekoracja.",
+      ],
+    },
+    {
+      label: "RYNEK WTÓRNY / PRAKTYKA",
+      heading: "Nie kupuj legendy. Kup sprawny gramofon",
+      paragraphs: [
+        "Używany SL-1200 może być znakomitym zakupem, ale jego reputacja nie regeneruje łożysk. Przed transakcją sprawdź stabilność obrotów na stroboskopie, działanie quartz lock i płynność pitcha, luz ramienia, windę, antyskating, przewody sygnałowe oraz stan nóżek. Talerz powinien startować pewnie i obracać się bez bicia. Obejrzyj śruby, narożniki i okolice ramienia: ślady intensywnej pracy nie dyskwalifikują urządzenia, lecz powinny zmienić cenę i zakres przeglądu. „Nieśmiertelny” jest sloganem. Smar, guma i styki nadal żyją w czasie.",
+        "Nie dopłacaj automatycznie za wkładkę, której historii nie znasz. Igła jest częścią eksploatacyjną, a zły nacisk poprzedniego właściciela nie zostawia certyfikatu. Jeśli gramofon ma grać w domu, nie musisz też płacić za didżejski prestiż, którego nie wykorzystasz. SL-1500C lub CS usuwa funkcje sceniczne; GR2 daje bardziej ambitną platformę hi-fi; MK7 jest logiczny, gdy pitch, cueing i odporność są narzędziami pracy. Najlepszy Technics nie jest tym, o którym forum napisze najdłuższy wątek. Jest tym, którego możliwości odpowiadają twojemu użyciu.",
+        "Po ponad półwieczu SL-1200 wciąż wygląda podobnie, ponieważ projekt trafił w rzadki punkt równowagi: był precyzyjny dla domu, odporny dla klubu i wystarczająco czytelny, by stać się instrumentem. Jego dziedzictwo nie polega na udowodnieniu wyższości jednego napędu. Polega na pokazaniu, że dobra inżynieria może zostać przejęta przez ludzi i zacząć znaczyć więcej, niż przewidział producent. Talerz miał tylko obracać płytę. Ostatecznie obrócił całą kulturę — a dziś, już świadomie, Technics próbuje obracać nią dalej.",
       ],
     },
   ],
-  quoteAfter: 1,
+  quoteAfter: 2,
   quote: "Największy wynalazek Technicsa nie polegał na tym, że talerz kręcił się równo. Polegał na tym, że ludzie zaczęli kręcić nim po swojemu.",
   serviceBox: {
     title: "Trzy Technicsy, trzy potrzeby",
     items: [
-      "SL-1500CS — domowy odsłuch, prosta konfiguracja i wbudowany przedwzmacniacz phono.",
-      "SL-1200MK7 / SL-1210MK7 — praca DJ-ska, regulacja tempa i odporność na intensywne użycie.",
-      "SL-1200GME / SL-1210GME — limitowana konstrukcja Grand Class dla kolekcjonera i wymagającego systemu.",
+      "SL-1500CS — domowy odsłuch, wbudowany przedwzmacniacz MM, Ortofon 2M Red i automatyczne podnoszenie ramienia.",
+      "SL-1200MK7 / SL-1210MK7 — praca DJ-ska, regulacja tempa, szybka reakcja i konstrukcja przewidziana do intensywnej obsługi.",
+      "SL-1200GME / SL-1210GME — limitowana konstrukcja Grand Class z ΔΣ-Drive; techniczny finał platformy G i kosztowny obiekt kolekcjonerski.",
     ],
   },
   sources: [
     { label: "Technics — historia serii SL-1200", url: "https://www.technics.com/global/home/60th-anniversary/technics-brand-story/history-of-the-sl-1200.html" },
+    { label: "Technics — dziedzictwo modeli SP-10, SL-1100 i SL-1200", url: "https://www.technics.com/global/home/sl1200/heritage.html" },
     { label: "Technics — nowy SL-1500CS", url: "https://www.technics.com/de/presse/pressemeldung/33-fy2025-technics-sl-1500cs.html" },
     { label: "Technics — SL-1200/1210G Master Edition", url: "https://www.technics.com/de/presse/pressemeldung/28-fy2025-technics-sl-1200gme.html" },
+    { label: "Technics — rozwój technologii ΔΣ-Drive", url: "https://www.technics.com/nz/products/grand-class-learn/speakers/technics-delta-sigma-drive-technology.html" },
     { label: "Winyl.net — napędy gramofonowe bez mitologii", url: "https://www.winyl.net/viewtopic.php?t=35" },
   ],
 };
-
 const powrotWinylu = {
   id: "powrot-winylu",
   number: "02",
   type: "ZJAWISKO",
   title: "PŁYTA WRÓCIŁA NA DOBRE",
-  time: "10 MIN",
-  description: "Dlaczego czarny krążek wygrał z wygodą i został fizycznym sercem streamingu.",
-  lead: "Winyl nie pokonał streamingu. Zrobił coś ciekawszego: nauczył się z nim współistnieć i sprzedawać rzeczy, których plik nie potrafi dać.",
+  time: "11 MIN",
+  description: "Jak winyl wygrał nie ze streamingiem, lecz z obojętnością — i dlaczego renesans formatu wymaga dziś kontroli jakości.",
+  lead: "Winyl nie pokonał streamingu. Zrobił coś ciekawszego: nauczył się żyć obok niego i sprzedawać skupienie, pamięć oraz przedmiot, którego nie da się zamknąć przyciskiem „pomiń”.",
   byline: "TEKST — MARTA SOBCZAK / REDAKCJA ROWKI",
   hero: "rowki-powrot-winylu.png",
   thumb: "rowki-powrot-winylu.png",
   thumbMode: "standalone",
   heroPosition: "50% 45%",
   alt: "Dwie osoby z różnych pokoleń wspólnie oglądają płytę w sklepie muzycznym.",
-  caption: "Nowe pokolenie nie odziedziczyło winylu. Wybrało go na własnych zasadach.",
+  caption: "Nowe pokolenie nie odziedziczyło winylu. Wybrało go na własnych zasadach — razem z jego rytuałem, kosztami i wadami.",
   sections: [
     {
       label: "LICZBY / 2025",
-      heading: "Dziewiętnasty rok wzrostu",
+      heading: "Dziewiętnasty rok wzrostu, ale żadnej analogowej rewolucji",
       paragraphs: [
-        "W Stanach Zjednoczonych przychody ze sprzedaży winyli przekroczyły w 2025 roku miliard dolarów po raz pierwszy od 1983 roku. RIAA policzyła dziewiętnasty z rzędu rok wzrostu formatu. Jednocześnie płatny streaming odpowiadał tam za wielokrotnie większą część rynku. To ważne zestawienie: płyta nie wróciła dlatego, że internet przegrał, tylko dlatego, że słuchacze zaczęli kupować muzykę w dwóch różnych trybach.",
-        "Globalny rynek nagrań osiągnął w 2025 roku 31,7 miliarda dolarów i rósł jedenasty rok z rzędu. W tej gospodarce winyl jest mniejszością, ale mniejszością o ogromnej sile symbolicznej. Daje wytwórni wyższą wartość pojedynczego zakupu, artyście większą powierzchnię dla obrazu, a słuchaczowi rzecz, którą można postawić na półce, podpisać i po latach przekazać dalej."
+        "Zacznijmy od liczb, bo nostalgia ma skłonność do dopisywania zer. Według RIAA w Stanach Zjednoczonych sprzedano w 2025 roku 46,8 miliona albumów winylowych, o 7,9 procent więcej niż rok wcześniej, wobec 29,5 miliona albumów CD. Wartość hurtowa winyli wyniosła 1,043 miliarda dolarów, a ich przychody były ponadtrzykrotnie większe niż z CD. Był to dziewiętnasty kolejny rok wzrostu formatu. Brzmi jak triumfalny powrót. Jest nim — tylko nie takim, jaki lubią opowiadać producenci gramofonów.",
+        "W tym samym raporcie streaming odpowiadał za 82 procent amerykańskich przychodów z nagrań i przyniósł 9,5 miliarda dolarów. Na świecie proporcje są podobnie bezlitosne dla opowieści o „końcu cyfry”: IFPI podaje, że w 2025 roku streaming wygenerował 69,6 procent z 31,7 miliarda dolarów globalnego rynku. Z płatnych subskrypcji korzystało 837 milionów użytkowników. Winyl urósł globalnie o imponujące 13,7 procent, a wszystkie nośniki fizyczne o 8 procent, lecz to nadal płatny streaming ciągnął rynek. Płyta wróciła nie jako format domyślny, tylko jako format wybrany. Ta różnica wyjaśnia niemal wszystko, łącznie z ceną.",
+        "Brytyjska lista 2025 roku jeszcze mocniej pokazuje podwójne życie LP. Taylor Swift sprzedała tam 147 tysięcy egzemplarzy The Life of a Showgirl, z czego 125 tysięcy w pierwszym tygodniu. Obok nowych gwiazd w pierwszej czterdziestce znalazły się Rumours, OK Computer, Grace, Nevermind i dwie płyty Pink Floyd. To nie jest ani wyłącznie targ staroci, ani gadżet dla nastolatków. Renesans żywi się równocześnie premierą, rocznicą, katalogiem i fandomem. Jednego dnia winyl jest nośnikiem albumu, drugiego pamiątką z epoki, trzeciego numerowanym towarem, którego właściciel może nigdy nie położyć na talerzu.",
       ],
     },
     {
-      label: "RYTUAŁ",
-      heading: "Dwadzieścia minut skupienia",
+      label: "DWA TRYBY SŁUCHANIA",
+      heading: "Spotify jest mapą. Płyta bywa adresem",
       paragraphs: [
-        "Strona płyty ma naturalny limit. Po kilkunastu lub dwudziestu kilku minutach trzeba wstać, odwrócić krążek i ponownie opuścić igłę. Z punktu widzenia wygody to wada. Z punktu widzenia uwagi — mechanizm, który wycina z dnia mały blok czasu. Album znowu ma początek, środek, przerwę i finał.",
-        "Ten rytuał nie gwarantuje lepszego dźwięku. Źle wytłoczona płyta na przypadkowym gramofonie może brzmieć gorzej niż dobry plik. Winyl oferuje raczej konkretny sposób słuchania: mniej przeskakiwania, mniej powiadomień, więcej relacji z okładką i kolejnością utworów. Jego przewaga jest kulturowa równie mocno jak techniczna."
+        "Pytanie „winyl czy streaming?” jest dziś równie trafne jak „biblioteka czy tramwaj?”. Służą innym momentom. Streaming pozwala sprawdzić album w drodze, odkryć dyskografię z polecenia, porównać interpretacje i nosić miliony utworów w kieszeni. Płyta prosi o decyzję: ten album zajmie miejsce w domu, ten artysta dostanie czterdzieści minut bez tasowania kolejności. Większość współczesnych nabywców swobodnie przełącza się między tymi trybami. Najpierw odkrywa muzykę algorytmicznie, później kupuje jej materialny punkt ciężkości. Cyfra nie zabiła winylu; stała się jego największym katalogiem odsłuchowym.",
+        "To współistnienie ma również wymiar ekonomiczny. Abonament sprzedaje dostęp do olbrzymiej biblioteki, a LP — pojedynczą relację. Dla wytwórni jedna transakcja fizyczna ma znacznie większą wartość niż pojedyncze odtworzenie, dla artysty jest okazją do rozszerzenia świata wizualnego, a dla sklepu powodem, by klient przyszedł, porozmawiał i wrócił. Właśnie dlatego premiera może mieć wersję czarną, czerwoną, marmurkową, sklepową, koncertową i „deluxe”. Nie dlatego, że sześć kolorów lepiej odtwarza bas. Dlatego, że przemysł nauczył się monetyzować przywiązanie dokładniej niż kiedykolwiek.",
+        "Format fizyczny odpowiada też na przesyt dostępu. Kiedy wszystko jest dostępne natychmiast, wybór przestaje być niewinny: każda piosenka konkuruje z następną, a aplikacja bez przerwy proponuje łatwiejsze wyjście. Strona LP trwa zwykle kilkanaście lub dwadzieścia kilka minut i kończy się mechaniczną ciszą. Trzeba wstać, odwrócić krążek, ponownie opuścić igłę. Z punktu widzenia inżyniera interfejsu to tarcie. Z punktu widzenia uwagi — ręcznie ustawiony próg, za którym album odzyskuje początek, środek i finał.",
       ],
     },
     {
-      label: "NOWA PUBLICZNOŚĆ",
-      heading: "Kolekcja zamiast archiwum",
+      label: "TŁOCZNIA / OD PLIKU DO ROWKA",
+      heading: "Płyta nie rodzi się analogowa. Płyta jest produkowana",
       paragraphs: [
-        "Dzisiejszy klient sklepu płytowego nie musi pamiętać czasów, kiedy LP był formatem domyślnym. Część młodych odbiorców najpierw poznaje artystę w telefonie, a dopiero potem kupuje jeden wybrany album jako obiekt. Stąd popularność kolorowych wariantów, numerowanych nakładów i bogatych wydań — płyta bywa materialnym znakiem przynależności do świata artysty.",
-        "Ta logika ma również ciemną stronę. Dziesięć wariantów tej samej premiery może zmieniać muzykę w mechanizm kolekcjonerskiej presji. Wysokie ceny i nierówna jakość tłoczeń utrudniają start. Zdrowy powrót winylu zaczyna się więc nie od kupowania wszystkiego, ale od kupowania płyt, do których naprawdę chce się wracać."
+        "Romantyczna wersja procesu mówi, że muzyka zostaje „przeniesiona na winyl”. Rzeczywistość jest bardziej przemysłowa i przez to ciekawsza. Najpierw przygotowuje się master przeznaczony do cięcia. Sygnał prowadzi głowicę nacinającą spiralny rowek w lakierze albo bezpośrednio w miedzianej płycie w procesie DMM. Lakier jest srebrzony i galwanicznie pokrywany niklem. Z kolejnych metalowych pozytywów i negatywów powstają matryce, które trafiają do prasy. Rozgrzany placek PVC ląduje pomiędzy dwiema matrycami i papierowymi etykietami, zostaje sprasowany, schłodzony, a jego nadmiar odcięty. Dopiero wtedy zaczyna wyglądać jak obiekt z okładki katalogu hi-fi.",
+        "Na każdym etapie może pojawić się błąd. Krzywo wycentrowany otwór sprawia, że ramię kołysze się w bok, a wysokość dźwięku okresowo pływa. Niedogrzany materiał nie wypełni całego rowka i powstanie charakterystyczny szorstki szum zwany non-fill. Zbyt szybkie chłodzenie lub niewłaściwe obchodzenie się z gorącym krążkiem może sprzyjać odkształceniom. Zużyta albo zabrudzona matryca powtarza wadę na całej partii. Papierowa koperta potrafi porysować świeżą płytę jeszcze przed pierwszym odsłuchem. Test pressing istnieje właśnie po to, aby ktoś wyłapał problem przed uruchomieniem nakładu — lecz termin premiery i rachunek produkcyjny potrafią być głośniejsze niż słuchawki kontrolera.",
+        "To dlatego dwie płyty z tym samym albumem mogą nie być tym samym produktem. Różnią je źródło, decyzje osoby tnącej, zakład, metalowe części, moment w życiu matrycy i kontrola konkretnej partii. Numer katalogowy na grzbiecie bywa zbyt ogólny; znaki w martwym polu przy etykiecie pomagają ustalić tłoczenie. Fetysz pierwszego wydania też nie daje gwarancji: egzemplarz z epoki może mieć świetny mastering i trzy dekady niewłaściwego przechowywania. Nowe wznowienie może być cyfrowe w genezie, ale czyste, centryczne i starannie nacięte. Biografia nośnika jest ważniejsza od jego metryki.",
+      ],
+    },
+    {
+      label: "MASTERING",
+      heading: "Cyfrowe źródło nie jest zdradą. Byle nie było alibi",
+      paragraphs: [
+        "Najłatwiejszym sposobem na rozpętanie awantury jest pytanie, czy płyta została przygotowana z taśmy analogowej. Tyle że łańcuch całkowicie analogowy nie jest automatycznym certyfikatem kunsztu, a plik wysokiej rozdzielczości nie jest automatycznie winny złego brzmienia. Winyl ma własne ograniczenia: bardzo niski bas zajmuje dużo miejsca w rowku, przesadna różnica między kanałami na dole pasma komplikuje śledzenie igły, ostre sybilanty i gęsta góra wymagają rozwagi, a im dłuższa strona, tym ciszej i ciaśniej trzeba ją naciąć. Dobry mastering dla LP uwzględnia te realia zamiast bezmyślnie wysłać do tłoczni plik z platformy.",
+        "Znaczenie ma też geometria. W miarę zbliżania się igły do środka płyty ta sama prędkość obrotowa oznacza mniejszą prędkość liniową rowka pod igłą. W wewnętrznej części strony trudniej zapisać i odtworzyć złożoną muzykę z dużą ilością wysokich częstotliwości bez zniekształceń. Dlatego kolejność utworów i długość stron nie są wyłącznie decyzją dramaturgiczną. Inżynier może przesunąć cichy finał bliżej etykiety, ograniczyć poziom albo zaproponować dwie płyty zamiast jednej. Hasło „mastered for vinyl” powinno opisywać te decyzje. Zbyt często jest dekoracją równie konkretną jak fotografia taśmy w książeczce.",
+        "Porównując LP z plikiem, trzeba uczciwie wyrównać głośność. Głośniejsza wersja zwykle wydaje się natychmiast pełniejsza i bardziej szczegółowa. Winyl może dostać mniej agresywny master niż streaming i rzeczywiście zabrzmieć swobodniej, ale nie dlatego, że czarny plastik magicznie odzyskał dynamikę; po prostu użyto innej obróbki. Może też dostać ten sam skompresowany master, do którego dojdą szum, zniekształcenia śledzenia i błędy ustawienia wkładki. „Analogowe ciepło” bywa pożądanym charakterem. Bywa również eleganckim określeniem problemu, którego nikt nie chciał zmierzyć.",
       ],
     },
     {
@@ -119,36 +172,61 @@ const powrotWinylu = {
       heading: "180 gramów gwarantuje tylko 180 gramów",
       variant: "forecast",
       paragraphs: [
-        "Gruby krążek wygląda poważnie i świetnie mieści się w opisie produktu. Nie mówi jednak nic pewnego o źródle masteringu, centryczności otworu, szumie powierzchni ani kontroli jakości. Na winyl.net od lat wracają relacje o nowych, „audiofilskich” płytach z rysami, brudem, niepełnym wypełnieniem rowka i biciem. Jedna z najbardziej drobiazgowych dyskusji zaczęła się od kolekcji 36 nowych krążków, z których tylko 12 nie miało widocznych skaz — to nie badanie rynku, ale mocne ostrzeżenie przed etykietą udającą certyfikat.",
-        "Najbardziej kontrowersyjna prawda renesansu brzmi więc tak: nowe nie znaczy lepsze, winyl nie znaczy analogowy mastering, a limitowany kolor nie znaczy dobry dźwięk. Jeśli branża chce pobierać cenę premium za fizyczny format, powinna przyjąć również fizyczną odpowiedzialność za wadliwy egzemplarz. Trzask z nagrania może być klimatem. Trzask z brudnej tłoczni jest reklamacją."
+        "Ciężki krążek lepiej leży w dłoni, wydaje się odporniejszy i pięknie brzmi w opisie produktu. Nie mówi jednak nic pewnego o źródle masteringu, centryczności otworu, szumie powierzchni, stanie matrycy ani staranności pakowania. Te same rowki można wytłoczyć w lżejszym i cięższym PVC. Dodatkowe gramy nie poprawią błędu wykonanego wcześniej, tak jak grubszy papier nie uratuje źle wydrukowanej książki. Gdy sprzedawca eksponuje „180 g”, lecz milczy o realizacji, tłoczni i prawie do wymiany wadliwego egzemplarza, podaje najłatwiejszą do zważenia informację zamiast najważniejszej.",
+        "Na winyl.net od lat ciągnie się wątek o defektach współczesnych tłoczeń. Szczególnie sugestywny wpis opisywał 36 nowych płyt, z których 12 nie miało wad widocznych gołym okiem albo miało jedynie wady marginalne. To prywatna próba, nie reprezentatywne badanie rynku, więc nie wolno robić z niej statystyki całej branży. Jest jednak doskonałym wykrywaczem fałszywej logiki: wysoka cena, folia i słowo „audiofilskie” nie unieważniają oględzin. Forumowicze dokumentują rysy, brud, bicie, wklęsłość, niepełne wypełnienie rowka i hałaśliwy materiał. Najcenniejsza lekcja nie brzmi „stare dobre, nowe złe”, lecz „egzemplarz trzeba ocenić jak egzemplarz”.",
+        "Renesans winylu nie może dłużej pobierać opłaty premium i jednocześnie zasłaniać się kapryśną naturą nośnika. Delikatne tło starej płyty jest częścią historii konkretnej rzeczy. Głośny trzask nowego krążka, który wyjechał z tłoczni porysowany, jest wadą. Sklep powinien przyjąć reklamację, dystrybutor nacisnąć na producenta, a wytwórnia przestać traktować kontrolę jakości jako koszt, który najłatwiej przerzucić na fana. Trzask z nagrania może budować atmosferę. Trzask z brudnej koperty jest fakturą za zaniedbanie.",
+      ],
+    },
+    {
+      label: "KOLEKCJONERSKA EKONOMIA",
+      heading: "Limitowane do chwili następnego koloru",
+      paragraphs: [
+        "Produkcja LP ma koszty stałe: przygotowanie masteru, cięcie, galwanizację, matryce, próbne tłoczenia, druk i ustawienie prasy. Ma też koszty zależne od liczby egzemplarzy, opakowania, transportu, magazynu oraz zwrotów. Mały nakład musi rozłożyć początkową pracę na mniej sztuk, więc może być drogi bez żadnego spisku. Sklep stacjonarny dolicza czynsz, pracę, podatki, ryzyko niesprzedanego zapasu i odpowiedzialność wobec klienta. Cena stu kilkudziesięciu złotych nie zawsze jest chciwością. Problem zaczyna się wtedy, kiedy koszt produkcji zostaje przykryty sztucznie dawkowaną rzadkością.",
+        "Dziesięć wariantów jednej premiery zmienia wybór w test lojalności. Kolor przypisany do sieci, drugi do oficjalnego sklepu, trzeci do koncertu, czwarty do przedsprzedaży — muzyka pozostaje ta sama, ale fan ma poczuć, że brakujący odcień oznacza niepełną relację z artystą. Słowo „limitowany” bywa technicznie prawdziwe, choć łączny nakład wszystkich wersji jest ogromny. Potem pojawia się kolejna rocznica, nowy marmurek i odnowiony licznik pilności. Branża, która mówi o materialnym związku z muzyką, zaskakująco często projektuje ten związek jak serię mikropłatności.",
+        "Rozsądny kolekcjoner oddziela wartość użytkową, emocjonalną i rynkową. Płyta może być warta wiele dla ciebie i niewiele na rynku; może być droga na aukcji i martwa na talerzu. Folia nie jest polisą inwestycyjną, a cena wystawienia nie jest ceną sprzedaży. Jeśli kupujesz wariant dlatego, że podoba ci się jego wygląd, świetnie. Jeśli kupujesz piąty egzemplarz w strachu, że jutro „zniknie”, warto na chwilę wyłączyć zegar odliczający. Najbardziej antykonsumpcyjny gest w kulturze fizycznego nośnika jest prosty: odtworzyć to, co już stoi na półce.",
+      ],
+    },
+    {
+      label: "NOWA PUBLICZNOŚĆ",
+      heading: "Kolekcja nie musi być archiwum cudzej młodości",
+      paragraphs: [
+        "Młodzi kupujący nie wracają do właszej przeszłości, bo często jej na winylu nie mieli. Budują nowy rytuał z elementów odziedziczonych i współczesnych: gramofon stoi obok głośnika sieciowego, kod z Bandcampu trafia do telefonu, a kolorowy LP do ramy albo na talerz. Starszy kolekcjoner może uznać to za powierzchowne, lecz każde pokolenie zaczynało od własnych skrótów. Kiedyś kupowało się płytę dla jednego singla, dziś czasem dla okładki znanej z ekranu. Pytanie nie brzmi, czy wejście było wystarczająco ortodoksyjne, tylko czy prowadzi dalej — do całych albumów, rozmowy o realizacji i świadomego słuchania.",
+        "Najgorszą odpowiedzią branży jest sprzedawanie początkującym gramofonu, który wygląda jak walizka, ma niewymienną wkładkę, duży stały nacisk i głośniki w tej samej lekkiej obudowie. Taki produkt wykorzystuje modę, a potem uczy, że winyl brzmi cienko, przeskakuje i jest dekoracją. Nie każdy musi od razu studiować geometrię ramienia, ale urządzenie powinno stabilnie trzymać obroty, mieć bezpieczny nacisk zgodny z wkładką i możliwość podłączenia sensownych głośników. Na winyl.net podstawowa rada wraca konsekwentnie: wypoziomować gramofon, wyważyć ramię, ustawić nacisk według producenta i dopiero potem oceniać dźwięk.",
+        "Elitaryzm też psuje ten powrót. Nie trzeba znać kodów tłoczni, aby przeżyć album, ani wydać połowy pensji na kabel, aby odróżnić dobrze ustawioną wkładkę od źle ustawionej. Wiedza ma zdejmować ryzyko, a nie budować bramkę wejściową. Dobry sklep i dobre forum mówią początkującemu, co zrobić najpierw, co może poczekać i gdzie marketing udaje fizykę. Winyl pozostanie żywy nie wtedy, gdy kolekcjonerzy wygrają spór z posiadaczami CD, lecz gdy nowa osoba bez wstydu zapyta, po co jest przedwzmacniacz phono — i dostanie odpowiedź bez odprawy celnej do hobby.",
       ],
     },
     {
       label: "PRAKTYKA",
-      heading: "Pierwsza półka bez błędów",
+      heading: "Pierwsza półka bez kosztownych błędów",
       paragraphs: [
-        "Na początek wystarczy kilka dobrze znanych albumów i gramofon, który pozwala prawidłowo ustawić nacisk igły. Warto sprawdzić, czy wzmacniacz ma wejście phono; jeśli nie, potrzebny będzie osobny przedwzmacniacz albo model wbudowany w gramofon. Największą poprawę przynosi zwykle poprawna konfiguracja, czysta igła i stabilne ustawienie, nie kolejny drogi kabel.",
-        "Używane płyty oglądaj pod światło, pytaj o możliwość odsłuchu i ucz się skali stanu nośnika. Nowe wydania sprawdzaj pod kątem źródła masteringu i opinii o konkretnym tłoczeniu. Określenie „180 gramów” mówi o masie krążka, nie o jakości dźwięku. Najlepsza kolekcja nie jest największa. Jest najczęściej słuchana."
+        "Zacznij od trzech do pięciu albumów, które znasz od początku do końca. Dzięki temu szybciej usłyszysz problem z kanałem, przesterowaną sybilantę, zmianę wysokości dźwięku albo przesadny szum. Przed zakupem nowej płyty sprawdź nie tylko kolor i gramaturę, ale konkretny numer katalogowy, kraj, rok oraz opinie o tym tłoczeniu. Używaną obejrzyj pod mocnym, ukośnym światłem. Włosowate ślady nie zawsze będą słyszalne, natomiast głęboka rysa biegnąca zgodnie z rowkiem może powodować powtarzające się trzaski lub przeskok. Jeżeli sklep oferuje odsłuch, skorzystaj szczególnie przy drogim egzemplarzu.",
+        "W domu postaw gramofon na stabilnej, wypoziomowanej powierzchni z dala od drgających głośników. Ustal model wkładki i zalecany przez producenta zakres siły nacisku; nie ustawiaj jej na oko ani według przypadkowej wartości z internetu. Sprawdź, czy wzmacniacz ma wejście phono. Sygnał z wkładki wymaga odpowiedniego wzmocnienia i korekcji, więc do zwykłego wejścia liniowego potrzebny jest osobny przedwzmacniacz albo przedwzmacniacz wbudowany w gramofon. Czysta igła, poprawne ustawienie i umyta płyta zwykle przynoszą większą różnicę niż egzotyczny kabel kupiony przed rozwiązaniem podstaw.",
+        "Nową płytę także warto umyć, bo „prosto z folii” nie znaczy „wolna od pyłu i pozostałości produkcyjnych”. Trzymaj krążek za krawędź i etykietę, przechowuj pionowo, wymień szorstką papierową kopertę, jeśli zostawia ślady, i nie zamykaj wilgotnej płyty. Gdy egzemplarz jest krzywy, niecentryczny albo wyraźnie hałaśliwy, zgłoś wadę zamiast normalizować ją jako urok analogu. Najlepsza kolekcja nie jest największa ani najcięższa. Jest wystarczająco zadbana, by muzyka nie musiała walczyć o uwagę z błędami właściciela i fabryki.",
       ],
     },
   ],
-  quoteAfter: 1,
-  quote: "Streaming daje dostęp do niemal wszystkiego. Winyl pozwala powiedzieć: to właśnie chcę mieć blisko siebie.",
+  quoteAfter: 2,
+  quote: "Streaming daje dostęp do niemal wszystkiego. Winyl zmusza do odpowiedzi na trudniejsze pytanie: co z tego naprawdę chcesz mieć blisko siebie?",
   serviceBox: {
-    title: "Start kolekcji w pięciu ruchach",
+    title: "Siedem pytań przed zakupem LP",
     items: [
-      "Kup trzy albumy, które znasz od początku do końca — łatwiej ocenisz brzmienie i stan.",
-      "Ustaw nacisk igły zgodnie z zaleceniem producenta wkładki, nie „na oko”.",
-      "Przechowuj płyty pionowo i trzymaj je za krawędzie oraz etykietę.",
-      "Używaj antystatycznej szczotki przed każdym odsłuchem.",
-      "W sklepie pytaj o tłoczenie, nie tylko o kolor i gramaturę winylu.",
+      "Które to dokładnie wydanie: numer katalogowy, kraj, rok i oznaczenia w martwym polu?",
+      "Czy wiadomo, z jakiego źródła i przez kogo przygotowano mastering lub nacięcie?",
+      "Czy opinie dotyczą tego tłoczenia, a nie po prostu albumu o tej samej okładce?",
+      "Czy sklep ocenia płytę i okładkę osobno oraz pozwala obejrzeć albo odsłuchać egzemplarz?",
+      "Czy gramofon ma poprawnie ustawiony nacisk dla konkretnej wkładki i stoi stabilnie?",
+      "Czy kupujesz album do słuchania, czy wariant pod wpływem sztucznego poczucia pilności?",
+      "Czy w razie wady możesz bez sporu wymienić płytę albo złożyć reklamację?",
     ],
   },
   sources: [
-    { label: "RIAA — podsumowanie rynku muzycznego 2025", url: "https://www.riaa.com/riaa-reports-us-recorded-music-annual-revenue-achieves-new-high-of-11-5-billion-in-2025/" },
+    { label: "RIAA — raport roczny rynku USA 2025", url: "https://www.riaa.com/wp-content/uploads/2026/03/RIAA-Year-End-Revenue-2025.pdf" },
+    { label: "RIAA — omówienie rynku muzycznego 2025", url: "https://www.riaa.com/riaa-reports-us-recorded-music-annual-revenue-achieves-new-high-of-11-5-billion-in-2025/" },
     { label: "IFPI — Global Music Report 2026", url: "https://www.ifpi.org/global-music-report-2026-global-recorded-music-revenues-grow-6-4-as-record-companies-drive-innovation/" },
     { label: "Official Charts — najlepiej sprzedające się winyle 2025", url: "https://www.officialcharts.com/chart-news/the-official-best-selling-vinyl-albums-and-singles-of-2025/" },
+    { label: "United Record Pressing — etapy produkcji płyty", url: "https://www.urpressing.com/processes/" },
     { label: "Winyl.net — defekty współczesnych tłoczeń", url: "https://www.winyl.net/viewtopic.php?t=12309" },
+    { label: "Winyl.net — instalacja i regulacja gramofonu", url: "https://www.winyl.net/viewtopic.php?t=388" },
     { label: "Winyl.net — winyl kontra CD bez prostych zwycięzców", url: "https://www.winyl.net/viewtopic.php?start=60&t=16047" },
   ],
 };
@@ -158,9 +236,9 @@ const prog = {
   number: "03",
   type: "SŁUCHANIE / PROG",
   title: "OD PINK FLOYD DO TESSERACT",
-  time: "12 MIN",
-  description: "Pięć dekad progresji: od przestrzeni albumu po precyzję djentu.",
-  lead: "Zmieniły się gitary, studia i sposób dystrybucji. Nie zmieniło się jedno: progresja zaczyna się tam, gdzie utwór przestaje mieścić się w prostym schemacie.",
+  time: "11 MIN",
+  description: "Pięć dekad progresji: od dramaturgii dwóch stron LP po rytmiczną architekturę djentu.",
+  lead: "Pink Floyd budował opowieść z taśmy, ciszy i dwóch stron płyty. TesseracT projektuje ją z przesuniętych akcentów, cyfrowej precyzji i kontrolowanego przeciążenia. Łączy ich nie gatunek, lecz upór, by album był czymś więcej niż dostawą piosenek.",
   byline: "TEKST — PAWEŁ RZEPECKI / REDAKCJA ROWKI",
   hero: "rowki-prog.png",
   thumb: "rowki-prog.png",
@@ -170,27 +248,63 @@ const prog = {
   caption: "Od szerokiego oddechu do precyzyjnego pulsu: progresja zmienia narzędzia, nie ambicję.",
   sections: [
     {
-      label: "ALBUM / LATA 70.",
-      heading: "Płyta jako zamknięty świat",
+      label: "FORMA / ZANIM PADNIE PIERWSZY DŹWIĘK",
+      heading: "Album nie jest długą playlistą",
       paragraphs: [
-        "Pink Floyd nie wynalazł albumu koncepcyjnego, ale pokazał masowej publiczności, jak spójny może być świat zamknięty między dwiema stronami winylu. The Dark Side of the Moon prowadzi słuchacza przez ciąg tematów i powracających dźwięków. Wish You Were Here otwiera i domyka długa suita, a jego środek buduje opowieść o nieobecności oraz przemyśle muzycznym.",
-        "Progresja tamtej epoki była sztuką przestrzeni. Długie wybrzmienia, syntezatorowe tła, nagrania terenowe i powolne wejścia dawały muzyce architekturę. Gramofon sprzyjał temu myśleniu: strona A i B były dwiema częściami projektu, a duża okładka — jego pierwszym pomieszczeniem."
+        "Najłatwiejsza definicja rocka progresywnego jest zarazem najmniej użyteczna: długie utwory, dziwne metra, dużo sprzętu i muzyk, który zna więcej akordów niż publiczność. Według tej miary dziesięciominutowy przeciętniak automatycznie wygrywa z trzyminutową rewolucją. Tymczasem progresja zaczyna się nie od stopera, lecz od decyzji, że forma ma prowadzić słuchacza, zmieniać znaczenie motywu i uzasadniać kolejne minuty. Wirtuozeria bywa narzędziem. Sama w sobie jest tylko pokazem kwalifikacji. Równie progresywne może być powstrzymanie ręki, pozostawienie pustego taktu albo powrót jednego dźwięku po całej stronie płyty.",
+        "Klasyczny LP narzucał dramaturgię fizyczną. Dwie strony miały ograniczony czas, środek albumu oznaczał ciszę, wstanie z fotela i odwrócenie krążka. Muzycy mogli potraktować tę przerwę jak wadę albo jak zawias opowieści. Najlepsze płyty lat siedemdziesiątych robiły to drugie: układały początek strony, punkt kulminacyjny i zejście tak, aby mechaniczny koniec rowka miał sens. Dziś streaming nie stawia takiej granicy, ale nie zwalnia kompozytora z odpowiedzialności. Przeciwnie — przycisk „dalej” jest zawsze pod kciukiem, więc utrzymanie uwagi wymaga jeszcze mocniejszej architektury.",
       ],
     },
     {
-      label: "CIĘŻAR / LATA 90.–2000",
-      heading: "Rytm przejmuje narrację",
+      label: "PINK FLOYD / 1971",
+      heading: "„Echoes”: laboratorium po jednej stronie winylu",
       paragraphs: [
-        "W kolejnych dekadach progresywny język spotkał metal. Zamiast pytać wyłącznie, jak długo można prowadzić temat, muzycy zaczęli pytać, jak daleko można przesunąć akcent. Meshuggah pokazała ciężar oparty na cyklicznych przesunięciach rytmu, a internetowe fora i domowe studia na początku XXI wieku pozwoliły gitarzystom wymieniać się pomysłami bez wspólnej sali prób.",
-        "Słowo „djent” było najpierw dźwiękonaśladowczą nazwą krótkiego, sprężystego uderzenia w nisko strojoną gitarę. Z czasem zaczęło opisywać scenę. Jej podstawowym narzędziem nie jest jednak sam przester, lecz kontrast: bardzo precyzyjny dół, przesunięte metra, otwarta przestrzeń i melodia, która unosi się nad mechanicznym pulsem."
+        "Zanim powstał podręcznikowy świat The Dark Side of the Moon, były album Meddle oraz zajmujący całą drugą stronę utwór „Echoes”. Oficjalna historia Pink Floyd przypomina, że kompozycja wyrosła z fragmentów rozwijanych pod roboczymi tytułami i że po bardziej rozproszonych sesjach wcześniejszych płyt zespół znów naprawdę pracował wspólnie. To istotne: „Echoes” nie jest dwudziestotrzyminutowym riffem z doklejonymi solówkami. Jest procesem. Sonarowy impuls otwiera przestrzeń, głosy i instrumenty zbierają się w piosenkę, środek rozpada się niemal do pejzażu dźwiękowego, a powrót tematu brzmi jak odzyskanie lądu po długiej podróży.",
+        "Ta kompozycja uczy, że duża forma potrzebuje pamięci. Słuchacz nie musi liczyć taktów, ale powinien rozpoznać, że znajomy kolor wraca w innym świetle. Gitara Davida Gilmoura nie wygrywa z organami Richarda Wrighta; obie barwy wzajemnie otwierają sobie miejsce. Sekcja rytmiczna potrafi przez chwilę niemal zniknąć, by później przywrócić ruch bez efektownego odliczania. Na przeciętnym systemie „Echoes” nadal działa jako utwór. Na dobrze ustawionym słychać coś więcej: odległość między dźwiękiem a pogłosem i to, jak cisza staje się pełnoprawną częścią aranżacji. Hi-fi nie dodaje treści — ujawnia proporcje.",
       ],
     },
     {
-      label: "TESSERACT",
-      heading: "Geometria, która oddycha",
+      label: "PINK FLOYD / 1972–1973",
+      heading: "Najpierw publiczność, potem taśma",
       paragraphs: [
-        "TesseracT wyrósł z tej internetowej wymiany, ale szybko uciekł od roli gatunkowego przykładu. Concealing Fate, a potem album One, połączyły polirytmiczny rygor z ambientową przestrzenią i emocjonalnym wokalem. Altered State pokazał, że ciężar może niemal zniknąć, a napięcie pozostaje w harmonii, pulsie i sposobie prowadzenia głosu.",
-        "War of Being z 2023 roku znów rozszerzył skalę: dziewięć utworów, ponad godzina muzyki i projekt rozwijany także przez film dokumentalny oraz grę. To bardzo współczesny odpowiednik ambicji dawnego koncept-albumu. Nie chodzi o kopiowanie brzmienia Pink Floyd, lecz o podobną wiarę, że album może być miejscem, a nie zbiorem singli."
+        "The Dark Side of the Moon często opisuje się jak triumf studia, lecz oficjalna chronologia odwraca wygodny mit o arcydziele wymyślonym przy konsolecie. Wczesną wersję całości Pink Floyd zagrał publicznie już w styczniu 1972 roku, a sesje nagraniowe ruszyły pod koniec maja. Materiał dojrzewał więc na scenie przed zamknięciem na taśmie. Studio nie zastąpiło kompozycji; pozwoliło ją wyostrzyć. Płynne przejścia, efekty, głosy i repetycje skleiły osobne utwory w jeden przebieg dotyczący czasu, pieniędzy, lęku, konfliktu i śmierci — tematów wystarczająco zwyczajnych, by nie zestarzały się wraz z syntezatorami.",
+        "Najbardziej radykalny nie jest tu zegar, kasa fiskalna ani przenoszący się między kanałami efekt. Radykalna jest dyscyplina. „On the Run” przetwarza krótki ruch w narastający niepokój, „Time” pozwala długo czekać na właściwe wejście piosenki, a „Us and Them” buduje skalę kontrastem, nie stałą głośnością. Album potrafi być spektakularny, bo wcześniej zgadza się być cichy. To lekcja regularnie ignorowana przez współczesny prog: jeśli wszystko jest kulminacją, kulminacji nie ma. Pięćdziesiąt ścieżek w sesji nie tworzy głębi, gdy każda jednocześnie domaga się pierwszego planu.",
+        "Dwie strony winylu porządkują także uwagę. „The Great Gig in the Sky” zamyka pierwszą połowę nie wyjaśnieniem, lecz emocjonalnym zawieszeniem. „Money” otwiera drugą stronę twardym, natychmiast rozpoznawalnym gestem. Fizyczna przerwa nie niszczy konceptu — jest jego przecinkiem. W streamingu przejście następuje bez podniesienia igły, ale kolejność nadal ma znaczenie. Losowe odtwarzanie Dark Side nie jest herezją dlatego, że obraża kolekcjonera. Jest po prostu gorszym montażem.",
+      ],
+    },
+    {
+      label: "PINK FLOYD / 1975",
+      heading: "Nieobecność ma własne brzmienie",
+      paragraphs: [
+        "Wish You Were Here idzie dalej nie przez zwiększenie liczby zmian metrum, lecz przez ograniczenie materiału. „Shine On You Crazy Diamond” otwiera i domyka płytę, a trzy krótsze utwory w środku zmieniają osobistą nieobecność w opowieść także o przemyśle, który potrafi przetwarzać ludzi na produkt. Oficjalna prezentacja albumu podkreśla tę ramę: suita jest podzielona między początek i finał. Dzięki temu powracający temat nie jest repryzą dla fanów. Po wszystkim, co wydarzyło się pomiędzy, znaczy już coś innego.",
+        "To album ważny dla historii hi-fi, ale fatalny jako religijny obrazek audiofila. Jego wartość nie polega na tym, że każde tłoczenie automatycznie brzmi „analogowo” i szlachetnie. Polega na kontroli proporcji: długie wejście nie może być ani martwe, ani napompowane, syntezator ma tworzyć horyzont bez zasłaniania drobnych gestów gitary, a saksofon powinien rosnąć bez przemiany w ostry wykrzyknik. Dobry odsłuch pokazuje pracę warstw. Zły system próbuje zaimponować jednym elementem — najczęściej basem albo szerokością — i odbiera muzyce powolne odsłanianie perspektywy.",
+      ],
+    },
+    {
+      label: "RYTM / OD MESHUGGAH DO DJENTU",
+      heading: "Gitara przejmuje pracę maszyny perkusyjnej",
+      paragraphs: [
+        "W latach dziewięćdziesiątych i dwutysięcznych progresywny ciężar przesunął środek grawitacji z rozległej harmonii ku rytmowi. Meshuggah nie wymyśliła nieregularnego metrum, lecz zbudowała niezwykle konsekwentny język z nakładających się cykli, przesunięć akcentu i riffów, które zdają się walczyć z podstawowym pulsem. Badacze rytmu zwracają przy tym uwagę na paradoks: pod powierzchnią pozornego chaosu często pozostaje stabilna, większa rama. To dlatego muzyka może jednocześnie dezorientować głowę i uruchamiać ciało. Nie jest losowym zbiorem „połamanych” taktów, tylko kontrolą oczekiwania.",
+        "Słowo „djent” zaczęło funkcjonować jako dźwiękonaśladowcze określenie krótkiego, suchego uderzenia nisko strojonej, tłumionej gitary, a potem rozrosło się do etykiety sceny. Etykieta szybko stała się karykaturą: siedem lub osiem strun, chirurgicznie przycięty dół, siatka edytora i obowiązkowy teledysk w magazynie. W tej wersji djent jest równie konserwatywny jak zespół kopiujący melotron z 1973 roku. Ciekawość zaczyna się dopiero wtedy, gdy rytmiczna precyzja nie jest pokazem matematyki, lecz sposobem budowania napięcia, a cyfrowa produkcja staje się estetyką, nie korektorem nieudolnego wykonania.",
+        "Domowe studia i internet zmieniły także model powstawania muzyki. Riff mógł narodzić się jako dokładnie zaprogramowany szkic, krążyć między muzykami i zostać dopracowany, zanim ktokolwiek wszedł do kosztownego studia. To nie musi oznaczać odczłowieczenia. Taśma również była technologią, a Pink Floyd ciął, zapętlał i montował dźwięk zamiast dokumentować wyłącznie czterech ludzi w pokoju. Różnica leży w celu. Edycja może usunąć oddech albo zaprojektować nowy rodzaj oddechu.",
+      ],
+    },
+    {
+      label: "TESSERACT / 2010–2013",
+      heading: "Ciężar, który nauczył się oddychać",
+      paragraphs: [
+        "TesseracT zaczynał jako studyjny projekt gitarzysty Acle’a Kahneya, a jego wczesnym manifestem stała się sześcioczęściowa suita Concealing Fate, wydana jako EP w 2010 roku i włączona do debiutanckiego One rok później. Słychać w niej pokrewieństwo z rytmiczną szkołą Meshuggah, ale równie ważne jest to, czego zespół nie przejął: jednostajnej ekstremalności. Nisko strojone gitary potrafią pracować jak dodatkowy zestaw bębnów, po czym ustępują czystemu wokalowi, wysokim rejestrom basu i ambientowej pustce. Ciężar nie jest stanem permanentnym. Jest ciśnieniem, które ma sens tylko dlatego, że bywa spuszczane.",
+        "Altered State z 2013 roku jeszcze mocniej odsunął zespół od prostego gatunkowego opisu. To około pięćdziesięciominutowy ciąg podzielony na cztery większe części — Of Matter, Of Mind, Of Reality i Of Energy — a wokal Ashe’a O’Hary prowadzi materiał bez ekstremalnych partii znanych z debiutu. Saksofon w wybranych fragmentach nie służy jako progresywny certyfikat. Zmienia temperaturę i artykulację w muzyce zdominowanej przez bardzo precyzyjny atak. Najciekawsze momenty pojawiają się wtedy, gdy metrum przestaje być zagadką, a zaczyna być emocją: fraza wraca o krok „za wcześnie” lub „za późno”, więc tęsknota zostaje wpisana w sam ruch kompozycji.",
+        "To także odwrócenie stereotypu o nowoczesnej produkcji. Selektywność nie oznacza sterylności. W dobrym miksie TesseracT krótki atak gitary może być niemal bezpogłosowy, podczas gdy wokal i syntezator otwierają ogromną głębię. Jednoczesne istnienie tych planów tworzy przestrzeń inną niż u Pink Floyd: mniej przypomina krajobraz, bardziej precyzyjny model, po którym poruszają się światło i masa. Geometria naprawdę oddycha, jeśli pozostawiono jej kontrast.",
+      ],
+    },
+    {
+      label: "TESSERACT / 2015–2023",
+      heading: "Koncept-album po śmierci monokultury LP",
+      paragraphs: [
+        "Powrót Daniela Tompkinsa na Polaris w 2015 roku przywrócił TesseracT jeden z najbardziej rozpoznawalnych głosów, lecz zespół nie cofnął się do One. Polaris i późniejszy Sonder skracały perspektywę, zagęszczały pomysły i sprawdzały, ile charakteru można zachować w bardziej zwartej formie. To ważny etap: rozwój nie musi zawsze oznaczać rozbudowę. Czasem polega na amputacji fragmentu, który grupa potrafi zagrać, ale którego utwór nie potrzebuje. W świecie przeładowanym „epickością” powściągliwość jest ryzykiem.",
+        "War of Being z 2023 roku ponownie rozszerzył skalę. Oficjalne materiały Kscope opisują dziewięć utworów i koncept z postaciami Ex oraz El w Strangelandzie; narracja wyszła poza dźwięk do filmów, dokumentu o powstawaniu płyty oraz gry na komputery i VR rozwijanej przez Tompkinsa. Album nagrano w brytyjskim Middle Farm Studios z Peterem Milesem i Katherine Marsh współprodukującymi z zespołem, a Acle Kahney odpowiadał za miks i mastering. To nie detal techniczny: po latach pracy w środowisku cyfrowym grupa zabrała swoją precyzję do studia, w którym mogła skonfrontować ją z zespołowym wykonaniem i większą dynamiką.",
+        "Czy gra i rozbudowana mitologia automatycznie czynią album głębszym? Oczywiście nie. Transmedialność może być drogim odpowiednikiem kolorowego winylu: dodatkiem sprzedawanym jako treść. War of Being broni się wtedy, gdy opowieść wynika z muzyki — w jedenastominutowym utworze tytułowym, w napięciu „Legion” i w finale „Sacrifice” — a nie wtedy, gdy słuchacz musi przeczytać instrukcję, aby poczuć stawkę. Pink Floyd także korzystał z okładki, filmu i scenicznego spektaklu, ale płyta nie potrzebowała przypisów, żeby działać w ciemnym pokoju.",
       ],
     },
     {
@@ -198,34 +312,44 @@ const prog = {
       heading: "Retro-prog bywa najmniej progresywny",
       variant: "forecast",
       paragraphs: [
-        "Można zagrać dwunastominutowy utwór na analogowym syntezatorze, wkleić melotron i nadal nie przesunąć muzyki ani o centymetr. Progresja nie jest zestawem rekwizytów z 1973 roku. Jest metodą: ryzykiem formy, produkcji i sposobu, w jaki słuchacz ma przejść przez materiał.",
-        "Dlatego TesseracT jest bliżej ducha Pink Floyd wtedy, gdy odrzuca jego powierzchnię. Zamiast kopiować kosmiczne pejzaże, buduje własną przestrzeń z polirytmii, cyfrowej produkcji i doświadczenia społeczności wychowanej na forach. Kto chce dziś brzmieć „jak klasyczny prog”, często uprawia konserwatywny rock w pelerynie."
+        "Można nagrać dwudziestominutową suitę, postawić na okładce pryzmat, włączyć analogowy syntezator i nie przesunąć muzyki ani o centymetr. Rekwizyt nie dziedziczy odwagi swojego pierwowzoru. Pink Floyd nie jest istotny dlatego, że stosował długie wstępy, lecz dlatego, że podporządkował technologię, koncert, okładkę i kolejność utworów jednej dramaturgii. Kopiowanie powierzchni tej muzyki jest więc dokładnym zaprzeczeniem jej metody. To konserwatywny rock przebrany w pelerynę odkrywcy.",
+        "TesseracT bywa bliżej ducha Pink Floyd właśnie wtedy, gdy w ogóle go nie przypomina. Zamiast bluesowej gitary ma nisko strojony, edytowany atak; zamiast dwóch stron LP — materiał rozpisany na streaming, podwójny winyl, obraz i grę. Ryzyko jest inne, ale pytanie to samo: czy da się zbudować świat, do którego słuchacz zechce wejść na dłużej? Nie każda odpowiedź TesseracT jest równie dobra, a cyfrowa perfekcja czasem spłaszcza ludzką niepewność. Jednak powtarzanie błędów współczesności jest bardziej progresywne niż bezbłędne odtwarzanie roku 1975.",
       ],
     },
     {
-      label: "TEST SYSTEMU",
-      heading: "Czego słuchać na hi-fi",
+      label: "ODSŁUCH / HI-FI BEZ VOODOO",
+      heading: "Nie testuj kolumn. Sprawdź, czy słyszysz opowieść",
       paragraphs: [
-        "Pink Floyd sprawdza ciągłość sceny dźwiękowej. Zwróć uwagę, czy efekty przemieszczają się bez nagłego skoku, czy głos ma własną głębię i czy cichy detal nie znika po wejściu basu. W dobrym systemie przestrzeń nie oznacza sztucznego rozciągnięcia wszystkiego na boki; każdy element ma pozycję, skalę i oddech.",
-        "TesseracT sprawdza kontrolę. Nisko strojona gitara, stopa i bas potrafią zajmować ten sam rejon pasma. Jeśli system jest źle ustawiony, dostaniemy jedną bryłę. Jeśli pracuje poprawnie, słychać osobny atak, fakturę struny i masę najniższego tonu. To ta sama progresywna przyjemność w dwóch epokach: odkrywać warstwę, której wcześniej nie zauważyliśmy."
+        "Zacznij od wyrównania głośności. Głośniejsza wersja niemal zawsze wydaje się pełniejsza i bardziej szczegółowa, więc porównywanie streamu, CD i winylu bez korekty poziomu jest konkursem potencjometrów. Na „Echoes” sprawdź stabilność początkowego impulsu, przejście od pustki do pełnego zespołu i to, czy środkowy pejzaż ma głębię bez sztucznego rozlewania się po całym pokoju. Na „Time” posłuchaj ataku zegarów, ale ważniejsze jest, czy po efektownym początku system potrafi uspokoić się wraz z utworem. Na „Shine On” obserwuj narastanie: dobry zestaw nie zdradza finału w pierwszej minucie.",
+        "Przy TesseracT odrzuć audiofilską zasadę, że dużo basu oznacza dobry bas. W „Of Matter” gitara, stopa i instrument Amosa Williamsa pracują blisko siebie, lecz powinny zachować różne obwiednie: uderzenie, masę i fakturę struny. Jeżeli wszystko zmienia się w jeden pomruk, najpierw odsuń kolumny od ściany i sprawdź miejsce odsłuchu, dopiero potem szukaj nowego wzmacniacza. W „Legion” głos Tompkinsa ma przechodzić od bliskości do ogromnej skali bez syczenia i bez zapadania się środka. „War of Being” sprawdza, czy system utrzymuje porządek podczas gęstych kulminacji, nie czy potrafi zrobić najwięcej hałasu.",
+        "Winyl jest tu ciekawym, ale nie neutralnym wyborem. Długa klasyczna suita może idealnie wykorzystać jedną stronę płyty; współczesny album rozłożony na dwa krążki zyskuje łagodniejsze upakowanie rowka, lecz dostaje trzy obowiązkowe przerwy. Oficjalne wydanie War of Being na 2LP dzieli dziewięć utworów na cztery strony, więc rytuał gramofonu zmienia tempo konceptu. Nie jest to ani zdrada, ani automatyczne uszlachetnienie. To inny montaż. Najuczciwszy test brzmi: na którym nośniku częściej słuchasz całości i mniej myślisz o sprzęcie? System zdał egzamin wtedy, gdy po dziesięciu minutach przestajesz go oceniać.",
       ],
     },
   ],
-  quoteAfter: 2,
-  quote: "Pink Floyd budował przestrzeń, TesseracT buduje czas. W obu przypadkach słuchacz wchodzi do środka konstrukcji.",
+  quoteAfter: 3,
+  quote: "Pink Floyd budował przestrzeń, TesseracT organizuje czas. Progresja zaczyna się wtedy, gdy technika przestaje być tematem, a staje się dramaturgią.",
   serviceBox: {
-    title: "Cztery płyty na drogę",
+    title: "Sześć etapów jednej podróży",
     items: [
-      "Pink Floyd — Meddle: moment, w którym eksperyment zaczyna przyjmować albumową formę.",
-      "Pink Floyd — Wish You Were Here: suita, temat nieobecności i mistrzowska praca przestrzenią.",
-      "TesseracT — Altered State: progresywny metal oparty na płynności, barwie i pulsie.",
-      "TesseracT — War of Being: współczesny album-świat, ciężki i niezwykle szczegółowy.",
+      "Pink Floyd — Meddle: „Echoes” pokazuje, jak motyw może pamiętać całą stronę płyty.",
+      "Pink Floyd — The Dark Side of the Moon: koncertowo sprawdzona forma zamieniona w precyzyjny montaż studyjny.",
+      "Pink Floyd — Wish You Were Here: lekcja nieobecności, powrotu tematu i kontrolowanej ciszy.",
+      "TesseracT — One: Concealing Fate jako pomost między rytmicznym rygorem a melodią.",
+      "TesseracT — Altered State: ciągła forma, czysty wokal i ciężar budowany bez stałej agresji.",
+      "TesseracT — War of Being: współczesny album-świat, który warto sprawdzić cyfrowo i na czterech stronach 2LP.",
     ],
   },
   sources: [
-    { label: "Pink Floyd — historia Wish You Were Here", url: "https://www.pinkfloyd.com/albums/wish-you-were-here/" },
-    { label: "Pink Floyd — oficjalna dyskografia", url: "https://www.pinkfloyd.com/music/" },
-    { label: "TesseracT — War of Being w Apple Music", url: "https://music.apple.com/us/album/war-of-being/1693539775" },
+    { label: "Pink Floyd — Meddle i historia „Echoes”", url: "https://www.pinkfloyd.com/albums/meddle/" },
+    { label: "Pink Floyd — The Dark Side of the Moon", url: "https://www.pinkfloyd.com/albums/the-dark-side-of-the-moon/" },
+    { label: "Pink Floyd — Wish You Were Here", url: "https://www.pinkfloyd.com/albums/wish-you-were-here/" },
+    { label: "Library of Congress — esej o The Dark Side of the Moon", url: "https://lcweb2.loc.gov/static/programs/national-recording-preservation-board/documents/dark-side-of-the-moon.pdf" },
+    { label: "Kscope — oficjalny profil i historia TesseracT", url: "https://kscopemusic.com/artists/tesseract/" },
+    { label: "Kscope — P O R T A L S i przekrój dyskografii", url: "https://kscopemusic.com/tesseract-release-portals/" },
+    { label: "Century Media — Altered State, układ albumu", url: "https://centurymedia.bandcamp.com/album/altered-state-deluxe-edition" },
+    { label: "Kscope/Burning Shed — War of Being na 2LP", url: "https://burningshed.com/tesseract_war-of-being_yellow-vinyl" },
+    { label: "Music Theory Spectrum — analiza rytmu Meshuggah", url: "https://academic.oup.com/mts/article-abstract/29/2/219/1168852" },
+    { label: "University of North Texas — analiza języka djentu", url: "https://digital.library.unt.edu/ark:/67531/metadc1808378/" },
   ],
 };
 
@@ -234,47 +358,85 @@ const riverside = {
   number: "04",
   type: "ESEJ / POLSKA",
   title: "KONIEC RIVERSIDE",
-  time: "13 MIN",
-  description: "Po 25 latach rzeka zmieniła bieg. Co naprawdę kończy odejście Mariusza Dudy?",
-  lead: "23 kwietnia 2026 roku Mariusz Duda zamknął swój rozdział w Riverside. To nie tylko zmiana składu, lecz utrata głosu, basu i centrum autorskiej grawitacji zespołu.",
+  time: "12 MIN",
+  description: "Duda i Meller odeszli, Kozieradzki z Łapajem chcą grać dalej. Co właściwie kończy się, gdy zostaje nazwa?",
+  lead: "23 kwietnia 2026 roku Mariusz Duda zamknął swój rozdział w Riverside. Siedem tygodni później Piotr Kozieradzki zapowiedział próbę kontynuacji. To nie nekrolog zespołu, lecz spór o to, czy nazwa może przeżyć własny głos, bas i centrum kompozytorskie.",
   byline: "TEKST — ANNA KRAWCZYK / REDAKCJA ROWKI",
   hero: "rowki-riverside.png",
   thumb: "rowki-riverside.png",
   thumbMode: "standalone",
   heroPosition: "50% 50%",
   alt: "Sylwetki zespołu stoją nad rzeką złożoną z rowków płyty, a czerwona gitara oddala się ku horyzontowi.",
-  caption: "Po dwudziestu pięciu latach wspólna opowieść dociera do brzegu.",
+  caption: "Jedna wspólna historia dobiegła końca. O przyszłości szyldu nie rozstrzyga jednak metafora, tylko następna muzyka.",
   sections: [
     {
-      label: "WIADOMOŚĆ / 23.04.2026",
-      heading: "Odejście, które brzmi jak finał",
+      label: "FAKTY / KWIECIEŃ–CZERWIEC 2026",
+      heading: "To jest koniec. To nie jest rozwiązanie zespołu",
       paragraphs: [
-        "Mariusz Duda ogłosił, że po dwudziestu pięciu latach kończy swoją obecność w Riverside. Wskazał na sytuację wewnątrz zespołu, która nie pozwalała mu dalej realizować najważniejszej pasji. Zapowiedział skupienie się na Lunatic Soul i kolejnych planach autorskich. Sposób sformułowania komunikatu nie zostawiał przestrzeni na zwykłą przerwę techniczną.",
-        "Formalny status nazwy jest czymś innym niż artystyczna ciągłość. Riverside mogłoby teoretycznie istnieć w innym składzie, ale bez głosu, basu, głównego kompozytora i autora tekstów byłoby innym organizmem. Dlatego mówienie o końcu nie jest sensacją dla nagłówka. Jest opisem tego, że konkretna wspólnota twórcza przestała działać."
+        "23 kwietnia 2026 roku Mariusz Duda ogłosił, że po dwudziestu pięciu latach jego droga z Riverside dobiega końca. Napisał, że sytuacja wewnątrz grupy nie pozwala mu realizować najważniejszej pasji — tworzenia nowej muzyki — i że jest zmęczony podtrzymywaniem publicznego obrazu niezgodnego z rzeczywistością. Zapowiedział skupienie na Lunatic Soul i innych projektach. To nie była informacja o urlopie ani komunikat napisany językiem „różnic artystycznych”. Duda wyszedł z zespołu i opisał relację, której w dotychczasowej postaci nie chce kontynuować.",
+        "29 kwietnia odejście ogłosił również Maciej Meller. Podkreślił, że nie widzi możliwości dalszego grania bez Dudy jako lidera i kluczowej osoby. Ujawnił też, że już na początku 2026 roku wewnątrz zespołu krążyła propozycja wspólnego komunikatu o zawieszeniu działalności, lecz nie uzyskała zgody wszystkich. Michał Łapaj w osobnym oświadczeniu pisał o narastającym konflikcie i braku jednomyślności, zaznaczając, że sam nie był stroną głównego sporu. Żaden z tych komunikatów nie daje publiczności podstaw do wydania wyroku, kto „zawinił”. Daje podstawę do prostszego wniosku: dotychczasowa formuła przestała działać.",
+        "Ale 11 czerwca Piotr Kozieradzki powiedział w Polskim Radiu Kierowców, że on i Łapaj ustalili, iż chcą Riverside „ciągnąć”. Dodał, że z nikim jeszcze nie rozmawiał i nie ma kandydatów, a drzwi pozostają otwarte. Oficjalna strona zespołu wymienia dziś Kozieradzkiego i Łapaja jako członków, zaś Dudę i Mellera przeniosła do sekcji byłego składu. Stan na lipiec 2026 jest więc precyzyjny, choć niewygodny dla nagłówków: zespół nie ogłosił formalnego rozwiązania, dwaj muzycy chcą kontynuacji, a artystyczny organizm znany z ośmiu albumów studyjnych definitywnie utracił połowę ostatniego składu i swojego głównego autora.",
       ],
     },
     {
-      label: "POCZĄTEK / 2001",
-      heading: "Polski zespół bez kompleksów",
+      label: "POCZĄTEK / 2001–2005",
+      heading: "Najpierw była wspólna sala, nie legenda lidera",
       paragraphs: [
-        "Riverside powstało w Warszawie w 2001 roku i szybko przekroczyło lokalną skalę. Out of Myself, Second Life Syndrome i Rapid Eye Movement zbudowały trylogię, która łączyła melancholię, psychodeliczną przestrzeń i metalową dynamikę. Zespół nie kopiował zachodniej progresji; rozwijał własny język, rozpoznawalny po pierwszych taktach basu i głosu.",
-        "Międzynarodowe trasy i kontrakt z Inside Out Music sprawiły, że Riverside stało się jednym z najważniejszych polskich eksportów rockowych. Sukces nie opierał się na pojedynczym przeboju. Rósł dzięki albumom słuchanym w całości, koncertom i publiczności, która traktowała kolejne rozdziały jak wspólną, długą podróż."
+        "Historia Riverside zaczęła się pod koniec 2001 roku od rozmowy gitarzysty Piotra Grudzińskiego z perkusistą Piotrem Kozieradzkim i pomysłu grania muzyki progresywnej. Do prób dołączyli właściciel studia i klawiszowiec Jacek Melnicki oraz Mariusz Duda, początkowo jako basista, który przejął również wokal i coraz większą część kompozycyjnej narracji. Ten szczegół ma dziś znaczenie. Duda stał się centrum autorskim Riverside, lecz zespół nie był solowym projektem wymyślonym wokół jego nazwiska. Powstał ze spotkania różnych doświadczeń: deathmetalowej przeszłości Kozieradzkiego, melodycznej gitary Grudzińskiego, studyjnego zaplecza Melnickiego i piosenkopisarskiego instynktu Dudy.",
+        "Out of Myself ukazało się niezależnie w 2003 roku. Album nie brzmiał jak demonstracja, że Polacy potrafią naśladować zachodni prog. Miał własną nerwowość: bas często prowadził temat zamiast jedynie podtrzymywać gitarę, głos Dudy poruszał się między intymnością i wybuchem, a gitara Grudzińskiego wybierała długi, śpiewny ton zamiast lawiny nut. Po odejściu Melnickiego dołączył Michał Łapaj. Kontrakt z InsideOut otworzył drogę do międzynarodowej dystrybucji drugiej płyty, lecz Second Life Syndrome z 2005 roku nie był sukcesem importowanym przez logo wytwórni. To materiał dał zespołowi paszport.",
+        "Tytułowa, ponad piętnastominutowa kompozycja ustaliła gramatykę Riverside: temat wraca w różnych stanach, ciężki riff nie kasuje melancholii, a partia solowa ma przedłużać emocję, nie zatrzymywać utwór na pokaz umiejętności. Łapaj dołożył fortepian, organy i syntezatorowe tło, Kozieradzki trzymał zmienną formę bez przestawiania perkusji na pierwszy plan. W tym zespole progresywność nie polegała na ciągłym komplikowaniu. Polegała na płynnym przechodzeniu między kruchością i masą.",
+      ],
+    },
+    {
+      label: "RZECZYWISTOŚĆ / 2003–2007",
+      heading: "Trylogia o wnętrzu, która otworzyła świat",
+      paragraphs: [
+        "Out of Myself, Second Life Syndrome i Rapid Eye Movement zaczęto traktować jako Reality Dream Trilogy — trzy albumy o rozszczepionej tożsamości, lęku, ucieczce i trudnej próbie powrotu do siebie. Można je czytać fabularnie, ale ich spójność jest przede wszystkim dźwiękowa. Bas Dudy nieustannie zadaje pytania krótkimi figurami, Grudziński odpowiada frazą o charakterystycznym, lekko zawodzącym tonie, klawisze Łapaja tworzą pomieszczenie, a bębny Kozieradzkiego decydują, kiedy ściany mają się przesunąć. Każdy instrument ma funkcję dramaturgiczną.",
+        "Rapid Eye Movement z 2007 roku domknęło ten etap bardziej nerwowo i gęsto. Zespół mógł już polegać na publiczności, która słucha albumów w całości, oraz na trasach przekraczających Polskę. Ten rodzaj sukcesu łatwo dziś przeoczyć, bo nie da się go streścić liczbą jednego singla. Riverside budowało pozycję koncert po koncercie i płytę po płycie, na rynku, na którym anglojęzyczny zespół z Warszawy musiał najpierw przekonać rodzimych słuchaczy, że nie jest kopią, a zagranicznych — że miejsce pochodzenia nie jest ostrzeżeniem o jakości.",
+        "Najbardziej trwałym osiągnięciem trylogii nie jest jednak eksportowy prestiż. Jest nim intymność zachowana przy rosnącej skali. „Conceiving You” potrafi funkcjonować jak prosta piosenka, podczas gdy „Dance With the Shadow” rozciąga napięcie na kilkanaście minut. Jedna forma nie jest dla zespołu mniej ambitna od drugiej. Ta elastyczność później pozwoliła Riverside zmieniać brzmienie bez całkowitego odcinania się od własnego akcentu.",
+      ],
+    },
+    {
+      label: "EWOLUCJA / 2009–2015",
+      heading: "Zespół nie miał jednego bezpiecznego brzmienia",
+      paragraphs: [
+        "Anno Domini High Definition z 2009 roku skróciło program do pięciu kompozycji i podkręciło tempo, agresję oraz rytmiczny nacisk. To Riverside bardziej miejskie, spięte i ostre, jakby melancholia została podłączona do nerwowego zasilania. Shrine of New Generation Slaves z 2013 roku odpowiedziało większą oszczędnością: mocniejsze znaczenie zyskały groove, organy Hammonda, bluesowy brud i krytyka życia mierzonego produktywnością. Zamiast eskalować techniczną trudność, zespół zaczął coraz lepiej skracać drogę między ideą a refrenem.",
+        "Love, Fear and the Time Machine z 2015 roku ponownie odsunęło metalową krawędź i otworzyło cieplejszą, bardziej melodyjną przestrzeń. Oficjalna biografia odnotowuje, że był to najlepiej sprzedający się album w dotychczasowej historii grupy, z wysokimi miejscami także poza Polską. Sukces nie wynikał z powrotu do Second Life Syndrome. Riverside nauczyło się, że rozpoznawalność nie musi oznaczać powtarzania konkretnego zestawu barw. Głos, puls basu, sposób budowania kulminacji i ekonomiczna gitara Grudzińskiego wystarczały, by nawet łagodniejszy materiał zachował podpis.",
       ],
     },
     {
       label: "PĘKNIĘCIE / 2016",
-      heading: "Zespół, który już raz przetrwał koniec",
+      heading: "Pierwszy koniec naprawdę się wydarzył",
       paragraphs: [
-        "Śmierć gitarzysty Piotra Grudzińskiego w 2016 roku mogła zakończyć historię. Pozostali muzycy zdecydowali się jednak płynąć dalej jako trio, zachowując pamięć o jego charakterystycznym, śpiewnym tonie. Wasteland nie próbował wymazać straty. Zrobił z niej temat i nową siłę ciężkości.",
-        "Późniejsze oficjalne dołączenie Macieja Mellera i album ID.Entity z 2023 roku przyniosły energię bardziej bezpośrednią, chwilami niemal nowofalową. Ten powrót do zespołowego impetu pokazuje, dlaczego finał 2026 roku jest tak bolesny. Riverside nie kończyło jako wypalony relikt. Jeszcze niedawno brzmiało jak grupa, która odnalazła kolejny język."
+        "21 lutego 2016 roku zmarł Piotr Grudziński. Dla fanów oznaczało to utratę charakterystycznego gitarzysty; dla pozostałych muzyków — przyjaciela i jednej z osób, od których w ogóle zaczęła się grupa. We wrześniu Riverside ogłosiło, że będzie kontynuować jako trio i nie szuka stałego zastępcy. Sformułowanie „and then there were three” nie było castingowym komunikatem. Uznawało, że tonu Grudzińskiego nie da się wymienić jak uszkodzonego elementu, a dalsza muzyka musi powstać z braku, nie z imitacji.",
+        "Eye of the Soundscape z 2016 roku zebrało bardziej ambientowe i eksperymentalne oblicze zespołu, w tym materiał nagrany jeszcze z Grudzińskim. Prawdziwą odpowiedzią stało się jednak Wasteland w 2018 roku. To album żałoby bez dekoracyjnego smutku: surowy, chwilami postapokaliptyczny, pozostawiający miejsce tam, gdzie wcześniej pojawiłaby się śpiewna gitara. Duda przejął część partii gitarowych, a zaproszeni muzycy — w tym Maciej Meller — nie udawali zmarłego kolegi. Zespół ocalał dlatego, że zgodził się brzmieć jak zespół po stracie.",
+        "Ten precedens jest dziś przywoływany przez zwolenników kolejnej kontynuacji: skoro Riverside przetrwało rok 2016, może przetrwać również 2026. Analogia jest kusząca i niepełna. Wtedy trzech muzyków wspólnie zdecydowało o dalszej drodze, Duda pozostawał głosem, basistą, autorem tekstów i głównym kompozytorem, a brak stał się tematem nowej płyty. Teraz Duda odszedł z własnej woli z powodu relacji wewnątrz grupy, Meller także zrezygnował, a deklaracja dalszego grania pochodzi od dwóch pozostałych osób. Nie wolno wartościować tych strat. Trzeba zauważyć, że mają inną strukturę.",
       ],
     },
     {
-      label: "PO FINALE",
-      heading: "Katalog będzie pracował dalej",
+      label: "ODBUDOWA / 2017–2025",
+      heading: "Maciej Meller i nowa tożsamość, która trwała zbyt krótko",
       paragraphs: [
-        "Koniec zespołu nie zamyka muzyki w przeszłości. Płyty Riverside mają konstrukcję odporną na zmianę mody: długie napięcia, tematy powracające po latach, brzmienie budowane między ciszą a ciężarem. Winylowe wznowienia i nagrania koncertowe będą wprowadzały do tej historii ludzi, którzy nie widzieli grupy na żywo.",
-        "Najuczciwszym pożegnaniem nie jest tworzenie rankingu ani szukanie winnego. Jest nim ponowny odsłuch — od pierwszego szumu Out of Myself po finał ID.Entity — i zgoda na to, że ważne zespoły nie zawsze kończą w chwili artystycznej ciszy. Czasem kończą wtedy, gdy dalsze wspólne granie przestaje być możliwe."
+        "Maciej Meller od 2017 roku wspierał Riverside na koncertach, a w 2020 został oficjalnym członkiem. To rozróżnienie było ważne. Najpierw pomagał wykonywać katalog, nie zajmując symbolicznie miejsca Grudzińskiego; dopiero z czasem wszedł do zespołu, który miał napisać nowy materiał jako kwartet. ID.Entity, wydane 20 stycznia 2023 roku, jest jedynym albumem studyjnym tej pełnej konfiguracji. Oficjalne dane płyty pokazują zarazem układ autorstwa: muzykę skomponował głównie Duda, przy trzech utworach współpracując z Łapajem, a wszystkie teksty napisał Duda. Meller wniósł własny atak i sceniczną energię, ale centrum kompozycyjne nie uległo demokratycznemu rozproszeniu.",
+        "ID.Entity świadomie odchodziło od rdzawego pejzażu Wasteland. Syntezatory przywoływały chwilami lata osiemdziesiąte, kolory okładki zastąpiły żałobną monochromię, a teksty zajęły się kryzysem tożsamości, technologią i publiczną maską. W styczniu 2023 zespół pisał oficjalnie, że ma dość żałoby i rozpoczyna nowy rozdział, być może nawet nową trylogię. Z dzisiejszej perspektywy te deklaracje bolą, ale nie należy ich czytać jako dowodu ówczesnego kłamstwa. Grupa mogła autentycznie wierzyć w przyszłość, która później stała się niemożliwa.",
+        "Live ID., wydane w styczniu 2025 roku, dokumentuje koncert zarejestrowany 1 czerwca 2024 na warszawskim Torwarze. Dwanaście utworów łączyło aktualny materiał z katalogiem, a wersja Blu-ray oferowała również dźwięk 5.1. To nie „ostatni koncert” — źródła nie pozwalają na taki skrót — lecz ostatnie oficjalne wydawnictwo koncertowe kwartetu Duda–Kozieradzki–Łapaj–Meller. Słychać na nim grupę zdolną do potężnego, zwartego występu. Kryzys organizacyjny nie zawsze uprzedza o sobie artystyczną ruiną.",
+      ],
+    },
+    {
+      label: "KONFLIKT / BEZ SĄDU FANÓW",
+      heading: "Publiczne oświadczenia nie są dostępem za kulisy",
+      paragraphs: [
+        "Po kwietniowych komunikatach internet natychmiast zaczął przydzielać role: ofiara, winny, mediator, człowiek zbędny. To tani substytut wiedzy. Publiczność zna wybrane oświadczenia napisane już po załamaniu relacji; nie zna lat rozmów, umów, kompromisów ani codziennej pracy. Duda opisał środowisko uniemożliwiające mu tworzenie i wizerunek, którego nie chce dłużej podtrzymywać. Łapaj zaznaczył, że sam nie był stroną głównego konfliktu i że jego sceniczne emocje były szczere. Meller pisał o napięciach w całej czwórce i braku możliwości dalszego grania bez lidera. Te perspektywy mogą być jednocześnie uczciwe, choć nie składają się w wygodną jedną wersję.",
+        "Najgorsze, co może zrobić tekst o muzyce, to przebrać plotkę za psychologię. Nie wiemy, kto do kogo napisał ostatni mail, jakie kwestie były negocjowane ani komu formalnie przysługuje kontrola nad konkretnymi elementami działalności. Wiemy natomiast, że wspólny komunikat o zawieszeniu nie został uzgodniony ani opublikowany, Duda i Meller odeszli, a Kozieradzki z Łapajem chcą szukać ciągu dalszego. Każde mocniejsze twierdzenie wymagałoby źródeł, których publicznie nie ma. Można oceniać decyzję artystyczną. Nie trzeba przy okazji urządzać procesu ludziom.",
+      ],
+    },
+    {
+      label: "NAZWA / CO MOŻE PŁYNĄĆ DALEJ",
+      heading: "Prawo, marka i zespół to trzy różne rzeczy",
+      paragraphs: [
+        "Słowo „koniec” opisuje kilka różnych zdarzeń, które media chętnie zlepiają. Może oznaczać rozwiązanie podmiotu, zaprzestanie koncertów, utratę składu, zamknięcie katalogu albo koniec konkretnej chemii twórczej. W Riverside tylko ostatnie z tych zdań jest dziś bezsporne. Konfiguracja odpowiedzialna za ID.Entity już nie istnieje, a wspólnota budowana od 2001 roku pękła. Jednocześnie oficjalna strona działa, sklep sprzedaje katalog, Kozieradzki i Łapaj figurują jako zespół oraz publicznie deklarują zamiar kontynuacji. Nie ma podstaw, by ogłaszać prawne zniknięcie nazwy.",
+        "Nie ma też podstaw, by z góry ogłaszać artystyczny sukces przyszłego składu. Riverside bez Dudy musiałoby znaleźć nie tylko rozpoznawalny głos i bas. Musiałoby zbudować nowe centrum pisania muzyki oraz tekstów, a następnie przekonać publiczność, że nazwa otwiera drzwi do czegoś potrzebnego, nie jedynie do repertuaru koncertowego. Łapaj ma doświadczenie kompozytorskie i własny język, Kozieradzki współtworzył grupę od pierwszej próby. To poważne argumenty za prawem do próby. Nie są gwarancją ciągłości.",
+        "Być może najuczciwszy scenariusz jest zarazem najbardziej ryzykowny: żadnego sobowtóra Dudy, żadnej płyty udającej Second Life Syndrome II, żadnego marketingu o „powrocie do korzeni”. Jeśli Riverside ma wydać nową muzykę, powinno zabrzmieć na tyle inaczej, by utrzymać się bez nostalgicznego kamuflażu. Wtedy nazwa nie będzie zapewnieniem, że nic się nie zmieniło, tylko publiczną zgodą na test. Fani mają prawo tego testu nie zaakceptować. Muzycy mają prawo go podjąć.",
       ],
     },
     {
@@ -282,27 +444,46 @@ const riverside = {
       heading: "Nie ratujcie Riverside bez Riverside",
       variant: "forecast",
       paragraphs: [
-        "Fani naturalnie chcą dopisać ciąg dalszy: nowy wokalista, jubileuszowa trasa, pojednanie za kilka lat. Ale nie każda ważna nazwa potrzebuje reaktywacji. Jeśli zespół stracił możliwość wspólnego tworzenia, mechaniczne podtrzymywanie szyldu może być mniej wierne jego historii niż cisza.",
-        "Riverside nauczyło publiczność, że stratę można przepracować, lecz nie każdą stratę należy zamienić w produkt. Zostawienie ośmiu albumów bez imitacji dziewiątego byłoby odważnym finałem. Dalsze pomysły muzyków zasługują na ocenę bez pytania, kiedy znów usłyszymy „stare Riverside”."
+        "Hasło brzmi brutalnie, ale jego adresatem nie są Kozieradzki i Łapaj. Jest nim odruch rynku i fanów, by każdą znaczącą nazwę natychmiast zabezpieczyć przed ciszą: znaleźć wokalistę, ogłosić jubileusz, sprzedać narrację o niezniszczalności. Cisza nie jest awarią katalogu. Czasem stanowi jedyny uczciwy odstęp między końcem jednego zespołu a ewentualnym początkiem drugiego. Po tak publicznym pęknięciu Riverside nie potrzebuje akcji ratunkowej. Potrzebuje czasu i muzyki zdolnej uzasadnić szyld bez szantażu wspomnieniami.",
+        "Jeśli nowy skład powstanie, oceniajmy go surowo, lecz po dźwiękach, nie po samym prawie do nazwy. Jeśli nie powstanie, osiem albumów nie zamieni się w porażkę. Najgorszy wariant to produkt, który naśladuje cechy dawnego Riverside tak dokładnie, że usuwa powód, dla którego ten zespół był ważny: umiejętność przemiany. Lepszy jest odważny nowy organizm pod kontrowersyjnym szyldem albo definitywne milczenie niż poprawna rekonstrukcja głosu, którego już tam nie ma.",
+      ],
+    },
+    {
+      label: "POŻEGNALNY ODSŁUCH",
+      heading: "Nie układaj rankingu. Posłuchaj zmiany",
+      paragraphs: [
+        "Zamiast wybierać „najlepszą” płytę, warto przejść przez katalog jak przez historię decyzji. Na Out of Myself usłyszeć moment, gdy język dopiero się stabilizuje. Na Second Life Syndrome — jak kontrast łagodności i ciężaru staje się pewnością. Na Anno Domini High Definition sprawdzić, ile napięcia mieści pięć utworów. Na Shrine of New Generation Slaves zwrócić uwagę na groove i organy, a na Love, Fear and the Time Machine — na rezygnację z części metalowej zbroi. To nie kolejne warianty jednego produktu. To zapis relacji, która zmieniała zasady.",
+        "Wasteland najlepiej słuchać nie jako pomnika Grudzińskiego, lecz jako muzyki ludzi uczących się funkcjonować po nieodwracalnej stracie. ID.Entity nie musi pełnić roli testamentu; powstało jako zapowiedź przyszłości i właśnie dlatego jest tak gorzkim finałem epoki Dudy. Live ID. pokazuje zaś, że scena potrafiła utrzymać wspólnotę nawet wtedy, gdy poza nią narastały problemy. Wiedza o końcu zmienia odbiór, ale nie powinna fałszować przeszłości.",
+        "Płyta winylowa pasuje do tego pożegnania nie dlatego, że jest bardziej szlachetna. Pasuje, bo wymusza stronę, przerwę i decyzję o ciągu dalszym. Po podniesieniu igły można odwrócić krążek albo zostawić ciszę. Riverside stoi dziś dokładnie w takim miejscu. Dwaj muzycy chcą zagrać stronę B, dwóch zeszło ze sceny, a słuchacze nie wiedzą jeszcze, czy trzymają w ręku ten sam album. Odpowiedzi nie da komunikat. Da ją dopiero pierwszy nowy dźwięk — albo jego brak.",
       ],
     },
   ],
-  quoteAfter: 2,
-  quote: "Riverside już raz udowodniło, że potrafi płynąć po stracie. Tym razem odszedł jednak sam nurt.",
+  quoteAfter: 4,
+  quote: "Riverside już raz nauczyło się grać po stracie. W 2026 roku nie straciło jednak jednego głosu w aranżacji — straciło centrum, które pisało pytania.",
   serviceBox: {
-    title: "Pożegnalny odsłuch w pięciu aktach",
+    title: "Osiem płyt, osiem zmian biegu",
     items: [
-      "Out of Myself — początek języka i pierwsza część Reality Dream Trilogy.",
-      "Second Life Syndrome — album, który otworzył zespołowi świat.",
-      "Shrine of New Generation Slaves — dojrzały balans melodii, ironii i ciężaru.",
-      "Wasteland — zapis żałoby, przetrwania i odbudowy po 2016 roku.",
-      "ID.Entity — ostatni studyjny rozdział z Mariuszem Dudą.",
+      "Out of Myself (2003) — narodziny języka i pierwsza część Reality Dream Trilogy.",
+      "Second Life Syndrome (2005) — międzynarodowy przełom i wzorcowa równowaga melodii z ciężarem.",
+      "Rapid Eye Movement (2007) — nerwowe domknięcie trylogii.",
+      "Anno Domini High Definition (2009) — pięć utworów, miejska presja i największa koncentracja energii.",
+      "Shrine of New Generation Slaves (2013) — groove, Hammond i krytyka kultury produktywności.",
+      "Love, Fear and the Time Machine (2015) — bardziej melodyjny finał składu z Piotrem Grudzińskim.",
+      "Wasteland (2018) — trio przetwarza stratę w nową architekturę.",
+      "ID.Entity (2023) — jedyny album kwartetu z Maciejem Mellerem i ostatni studyjny rozdział z Dudą.",
     ],
   },
   sources: [
-    { label: "Riverside — oficjalna historia zespołu", url: "https://www.riversideband.pl/en/bio-band" },
-    { label: "Riverside — decyzja o dalszej drodze po 2016 roku", url: "https://riversideband.pl/en/news/803-and-there-were-three-again" },
-    { label: "Rock Hard — komunikat o odejściu Mariusza Dudy", url: "https://www.rockhard.de/news/riverside-mariusz-duda-teilt-band-ende-mit" },
+    { label: "Riverside — oficjalna historia i aktualny skład", url: "https://www.riversideband.pl/en/bio-band" },
+    { label: "Riverside — decyzja o kontynuacji jako trio w 2016", url: "https://riversideband.pl/en/news/803-and-there-were-three-again" },
+    { label: "Riverside — historia albumu Wasteland", url: "https://riversideband.pl/en/news/1005-wasteland-story" },
+    { label: "Riverside — oficjalne dane albumu ID.Entity", url: "https://riversideband.pl/en/music/albums/id-entity" },
+    { label: "Riverside — ID.Entity jako nowy rozdział", url: "https://riversideband.pl/en/news/1494-the-third-riverside-single-is-out" },
+    { label: "Oficjalny sklep Riverside — Live ID. i dane koncertu", url: "https://store.riversideband.pl/product/riverside-live-id-2cd-blu-ray/" },
+    { label: "Polskie Radio — oświadczenie Mariusza Dudy, 23.04.2026", url: "https://trojka.polskieradio.pl/artykul/3677699,jestem-zmeczony-udawaniem-mariusz-duda-zegna-sie-z-riverside" },
+    { label: "Teraz Muzyka — oświadczenie Michała Łapaja", url: "https://www.terazmuzyka.pl/co-dalej-z-riverside-michal-lapaj-wydal-oswiadczenie-po-odejsciu-mariusza-dudy/" },
+    { label: "Teraz Muzyka — oświadczenie Macieja Mellera, 29.04.2026", url: "https://www.terazmuzyka.pl/maciej-meller-skonczyl-sie-i-moj-czas-w-zespole-riverside-oswiadczenie/" },
+    { label: "Polskie Radio Kierowców — Kozieradzki o planie kontynuacji, 11.06.2026", url: "https://radiokierowcow.pl/artykul/3697323,miedzy-scena-a-droga-piotr-kozieradzki-o-riverside-pasjach-i-zyciowych-lekcjach" },
   ],
 };
 
@@ -311,47 +492,69 @@ const warszawa = {
   number: "05",
   type: "PRZEWODNIK / WARSZAWA",
   title: "WINYLOWA WARSZAWA",
-  time: "9 MIN",
-  description: "Cztery adresy, cztery temperamenty i jedna trasa między półkami.",
-  lead: "Najlepszy sklep płytowy nie zawsze ma najwięcej płyt. Ma człowieka, który wie, w której skrzynce czeka album, o którego istnieniu jeszcze nie wiesz.",
+  time: "11 MIN",
+  description: "Cztery adresy, cztery temperamenty i spacer, po którym Discogs przestaje być wyrocznią.",
+  lead: "Najlepszy sklep płytowy nie zawsze ma najwięcej płyt. Ma człowieka, który potrafi powiedzieć „tego egzemplarza nie bierz” — i wskazać skrzynkę, o której istnieniu nie wiedziałeś.",
   byline: "TEKST — REDAKCJA ROWKI",
   hero: "rowki-warszawa.png",
   thumb: "rowki-warszawa.png",
   thumbMode: "standalone",
   heroPosition: "50% 50%",
   alt: "Warszawska ulica z małym sklepem płytowym i wielką płytą przypominającą mapę miasta.",
-  caption: "Warszawa najlepiej brzmi oglądana z poziomu skrzynek z używanymi płytami.",
+  caption: "Warszawa najlepiej brzmi oglądana z poziomu skrzynek — pod warunkiem, że poza ceną ktoś jeszcze sprawdził stan płyty.",
   sections: [
     {
-      label: "ŚRÓDMIEŚCIE / CHMIELNA 20",
-      heading: "Vinyl Tamka: pierwszy przystanek",
+      label: "TRASA / ZAMIAST RANKINGU",
+      heading: "Cztery sklepy, nie cztery miejsca na podium",
       paragraphs: [
-        "Vinyl Tamka działa dziś przy Chmielnej 20, kilka minut od Nowego Światu. Łączy nowe premiery z używanymi płytami i szerokim przekrojem gatunków — od rocka oraz jazzu po hip-hop, elektronikę i metal. To dobry adres na początek, kiedy chcesz porównać świeże wznowienie z egzemplarzem z epoki albo po prostu poprosić o rekomendację.",
-        "Sklep prowadzi również skup, więc część oferty zmienia się z dnia na dzień. Warto wejść bez zbyt precyzyjnej listy: najciekawsze zakupy często zaczynają się od działu, do którego normalnie byśmy nie zajrzeli."
+        "Ten spacer nie jest rankingiem. Ranking sklepów płytowych zwykle mówi więcej o kolekcji autora niż o sklepach: fan jazzu uzna za świątynię miejsce, z którego metalowiec wyjdzie po trzech minutach, a łowca polskich pierwszych tłoczeń minie obojętnie ścianę nowych hip-hopowych premier. Proponujemy trasę przez cztery punkty o wyraźnie różnych temperamentach. Vinyl Tamka przy Chmielnej 20 łączy nowości z używanym katalogiem. Muzant przy Wareckiej 4/6 jest fragmentem historii handlu muzyką po 1989 roku. Winyl Market przy Pięknej 3 lok. 2 rozszerza płytę o akcesoria i kulturę DJ-ską. Antykwariat Tamka przy Słupeckiej 8 stawia na używane egzemplarze i skup kolekcji.",
+        "Trzy pierwsze adresy układają się w śródmiejski spacer: od Chmielnej można zejść Warecką, potem ruszyć w stronę placu Trzech Krzyży i Pięknej. Słupecka leży na Ochocie, więc lepiej potraktować ją jako drugi akt, do którego dojeżdża się komunikacją albo odkłada na osobny dzień. Nie próbuj zaliczyć wszystkich półek jak atrakcji z przewodnika. Sklep płytowy karze pośpiech: po godzinie okładki zaczynają zlewać się w jeden wzór, stan VG+ magicznie wydaje się NM, a budżet traci zdolność mówienia pełnymi zdaniami.",
+        "Adresy i profile potwierdziliśmy na oficjalnych stronach sklepów w lipcu 2026 roku, ale godziny trzeba sprawdzić w dniu wyprawy. Niezależne punkty jeżdżą na giełdy, przyjmują dostawy, prowadzą skup i czasem działają rytmem właściciela, nie centrum handlowego. Weź bawełnianą torbę albo sztywny plecak mieszczący LP pionowo, zapisz budżet i kilka poszukiwanych tytułów, lecz zostaw miejsce na jeden zakup nieplanowany. Bez tej szczeliny spacer zamieni się w ręczną wersję wyszukiwarki internetowej.",
       ],
     },
     {
-      label: "ŚRÓDMIEŚCIE / WARECKA 4/6",
-      heading: "Muzant: schodami do archiwum",
+      label: "CHMIELNA 20",
+      heading: "Vinyl Tamka: najpierw szeroki kadr",
       paragraphs: [
-        "Muzant działa od 1989 roku. Dzisiejszy sklep mieści się w podwórku przy Wareckiej 4/6, w dawnym pomieszczeniu pralni; wejścia trzeba szukać między klatkami. Na półkach spotykają się winyle, CD, kasety i muzyczne pamiątki, a historia miejsca jest częścią zakupów równie mocno jak jego stan magazynowy.",
-        "To adres dla cierpliwych poszukiwaczy wydań katalogowych i używanych egzemplarzy. Zamiast szybkiego przeglądu nowości dostajemy rozmowę z archiwum muzyki popularnej. W przypadku tytułów znalezionych online warto wcześniej umówić odbiór, bo część magazynu działa poza sklepem."
+        "Chmielna jest dobrym początkiem, bo warszawski hałas natychmiast ustawia kontrast dla przeglądania płyt. Oficjalny katalog Vinyl Tamka obejmuje nowe i używane wydania, rock, jazz, Polish Jazz, klasykę, metal, hip-hop, elektronikę, soul, funk, reggae i muzykę filmową. Są półki z tanią ofertą, ale też japońskie pressy i rzadkie egzemplarze wyceniane w tysiącach złotych. To sklep szerokiego pola, w którym można jednocześnie sprawdzić aktualne wznowienie Rumours, szukać polskiego rapu i zobaczyć, jak daleko kolekcjonerski rynek odjechał od ceny zwykłej płyty do słuchania.",
+        "Najlepsza strategia to dwa przejścia. W pierwszym sprawdź dział, po który przyszedłeś, i odłóż najwyżej trzy kandydatki. W drugim zajrzyj tam, gdzie zwykle nie szukasz: do soundtracków, muzyki świata albo polskiego jazzu. Ponieważ sklep prowadzi skup, używana oferta nie jest stałym katalogiem bibliotecznym. Płyta widoczna wczoraj może zniknąć, a karton przyjęty rano może dopiero czekać na opisanie. Ta zmienność jest przewagą sklepu stacjonarnego nad filtrem „najpopularniejsze”. Przychodzisz po pozycję, wychodzisz z hipotezą do odsłuchania.",
+        "Szerokość oferty ma jednak cenową pułapkę: obok zwyczajnego wznowienia leży kolekcjonerskie wydanie, a podobna okładka usypia czujność. Nie pytaj tylko „ile kosztuje ten album?”, ale „które to wydanie i dlaczego ten egzemplarz kosztuje właśnie tyle?”. Cena rzadkiego pressu może być uzasadniona wariantem, stanem i historią sprzedaży, ale powinna dać się opowiedzieć konkretnie. Rok, kraj, wytwórnia, numer katalogowy, matryca, kompletność wkładek — to język odpowiedzi. „Bo tyle chodzi na Discogs” jest dopiero początkiem rozmowy, nie jej puentą.",
+      ],
+    },
+    {
+      label: "WARECKA 4/6 / KLATKA VIII",
+      heading: "Muzant: schodami do historii transformacji",
+      paragraphs: [
+        "Z Chmielnej idziemy ku Wareckiej. Muzant nie powinien być wygładzony w opowieści do kolejnego „klimatycznego sklepiku”. Firma rozpoczęła działalność w grudniu 1989 roku w małym pawilonie przy rogu Rakowieckiej i Wiśniowej. Sprzedawała winyle, kasety i wczesne CD; według własnej historii sklepu właśnie tam Dżem podpisywał płyty po ostatnim warszawskim koncercie z Ryszardem Riedlem. Później Muzant działał w gmachu Politechniki Warszawskiej i epizodycznie pod Pałacem Kultury. W 1999 roku przeniósł się do dawnej pralni przy Wareckiej 4/6, a od 2002 zajmuje również sąsiednie pomieszczenie.",
+        "Wejścia szuka się w klatce VIII; oficjalna strona podaje dojście od strony Świętokrzyskiej. To szczegół praktyczny, ale też trafna metafora tego miejsca: trzeba wiedzieć, gdzie skręcić. Muzant przeżył kasetowy obieg późnego PRL-u, eksplozję CD, aukcje internetowe, kryzys nośników i powrót LP. Dzisiejsza sprzedaż działa równolegle stacjonarnie oraz online przez własny katalog, Discogs, Allegro i eBay, a od 2023 roku firma ma także magazyn w Katowicach do obsługi zamówień. Nie wszystko widoczne w internecie musi więc fizycznie czekać przy Wareckiej; odbiór konkretnego tytułu warto wcześniej uzgodnić.",
+        "Tutaj najlepiej działa cierpliwość archiwisty. Szukaj wydań katalogowych, porównuj stare nośniki, pytaj o różnice między pressingami. Okładka z przetarciem nie dyskwalifikuje krążka, a lśniąca laminowana koperta nie gwarantuje cichego odsłuchu. Właśnie w takim miejscu sprzedawca może uratować kupującego przed drogim błędem: rozpoznać klubowe wydanie, brak wkładki, błędnie oznaczony wariant albo egzemplarz, który wizualnie wygląda dobrze, lecz ma kłopotliwe bicie. Jeśli wiedza sklepu działa tylko jako narzędzie podnoszenia ceny, jest dekoracją. Jeśli czasem prowadzi do zdania „weź tańsze wznowienie”, staje się usługą.",
+      ],
+    },
+    {
+      label: "PIĘKNA 3 / LOKAL 2",
+      heading: "Winyl Market: płyta jako część warsztatu",
+      paragraphs: [
+        "Z Wareckiej kierujemy się na południe. Oficjalne dane Winyl Market wskazują Piękną 3 lokal 2, a oferta sklepu obejmuje nie tylko płyty, lecz także kasety, książki i albumy, adaptery, koperty, środki do pielęgnacji, slipmaty, torby oraz odzież. Podział gatunkowy mówi sporo o charakterze miejsca: obok popu i rocka są funk, soul, afro i latin, klasyczny hip-hop, electro, re-edity, Polish Jazz, reggae, library music i soundtracki. To punkt dobry dla osoby, która myśli o winylu nie wyłącznie jak o półkowym relikcie, lecz także jak o narzędziu słuchania, grania i dbania o kolekcję.",
+        "Piękna może być przystankiem technicznym. Zamiast kupować kolejny album, sprawdź, czy nie potrzebujesz porządnej koperty wewnętrznej, szczotki antystatycznej albo adaptera do singli. Akcesoria to teren równie podatny na marketing jak same płyty, dlatego pytaj o funkcję. Szczotka ma zebrać luźny kurz, nie „odmłodzić rowek”. Płyn ma być odpowiedni do nośnika i użyty tak, by brud został usunięty, a nie rozprowadzony. Slipmata może zmienić wysokość płyty i zachowanie elektrostatyczne, ale nie jest automatycznym biletem do audiofilskiej transcendencji. Dobry sprzedawca wyjaśnia mechanizm przed pokazaniem najdroższej wersji.",
+        "Przy selekcyjnej ofercie łatwiej też przećwiczyć jedną z najważniejszych umiejętności: rezygnację. Jeżeli masz już dobre wydanie albumu, nowy kolor nie musi dostać azylu. Jeżeli płyta kosztuje więcej niż planowałeś, zapisz dane pressu i wróć do porównania. Sklep stacjonarny wygrywa z internetem możliwością obejrzenia egzemplarza i rozmową, nie impulsem wywołanym czerwonym komunikatem „ostatnia sztuka”. Ostatnia sztuka w tym nakładzie bywa pierwszą sztuką następnego wznowienia.",
       ],
     },
     {
       label: "OCHOTA / SŁUPECKA 8",
-      heading: "Antykwariat Tamka: druga historia",
+      heading: "Antykwariat Tamka: nazwa została, adres ruszył dalej",
       paragraphs: [
-        "Nazwa pamięta dawną lokalizację przy Tamce, ale sklep działa obecnie przy Słupeckiej 8. Specjalizuje się w używanych płytach, skupie kolekcji i klasycznych wydaniach. Rock, jazz, funk, soul, pop i klasyka tworzą repertuar, w którym łatwo zamienić planowany kwadrans w całe popołudnie.",
-        "To dobre miejsce, by uczyć się różnicy między pierwszym tłoczeniem, wznowieniem i wydaniem klubowym. Stan okładki nie zawsze mówi całą prawdę o krążku, dlatego oglądaj płytę w dobrym świetle i pytaj o historię egzemplarza. W antykwariacie informacja bywa częścią ceny."
+        "Drugi akt trasy prowadzi na Ochotę. Antykwariat Tamka zachował nazwę po niemal dwóch dekadach działalności przy ulicy Tamka, lecz dziś oficjalnym adresem jest Słupecka 8. Sklep deklaruje tysiące używanych tytułów, skup pojedynczych płyt i całych kolekcji, a także specjalizację w klasycznych wydaniach z epoki oraz rzadkich lub trudniej dostępnych tłoczeniach. Rock, jazz, blues, funk, soul, pop, klasyka i polska piosenka spotykają się tu z CD, kasetami, książkami oraz komiksami. To nie jest magazyn idealnie powtarzalnego towaru. Każda dostawa przynosi cudze wybory, braki i historię przechowywania.",
+        "Antykwariat wymaga innego tempa niż regał z nowościami. Najpierw oceń płytę i okładkę osobno. Przyjęty na rynku zapis typu VG+/VG oznacza dwie różne kondycje; zawsze upewnij się, która ocena dotyczy nośnika. Obejrzyj krążek pod światło, sprawdź, czy wokół środkowego otworu nie ma licznych śladów po trafianiu na trzpień, a rant i powierzchnia nie falują. Przeczytaj matryce w martwym polu. Zobacz, czy są wkładki, plakaty, książeczki i właściwa koperta. Kolekcjonerska „kompletność” bywa kilkuczęściowa, a brak jednego elementu może mieć większy wpływ na cenę niż kilka lekkich rysek na laminacie.",
+        "Pytaj o odsłuch, zwłaszcza gdy ślad biegnie wzdłuż rowka albo kupujesz drogą, cichą muzykę. Oględziny nie przewidzą wszystkiego: część drobnych śladów pozostanie niesłyszalna, a niewinnie wyglądające uszkodzenie może wracać co obrót. Słuchaj fragmentu początku strony, głośniejszego środka i końcówki, gdzie geometria odczytu jest najmniej wyrozumiała. Sprzedawca nie musi znać całej biografii płyty, ale powinien odróżniać wiedzę od przypuszczenia. „Nie wiem, sprawdźmy” jest znacznie uczciwszą odpowiedzią niż legenda dopisana do wysokiej ceny.",
       ],
     },
     {
-      label: "CENTRUM / PIĘKNA 3",
-      heading: "Winyl Market: selekcja i drobiazgi",
+      label: "GRADING / CZYTANIE EGZEMPLARZA",
+      heading: "VG+ nie jest parametrem laboratoryjnym",
       paragraphs: [
-        "Winyl Market przy Pięknej 3 łączy płyty z kolekcjonerskimi dodatkami i sprzedażą internetową. To inny temperament niż gęsty antykwariat: bardziej selekcyjny, dobry do sprawdzania konkretnych wydań i prezentów dla osoby, której kolekcji nie znamy od środka.",
-        "Cztery miejsca można rozłożyć na dwa spacery: Chmielna i Warecka jednego dnia, Piękna oraz Słupecka drugiego. Przed wyjściem sprawdź aktualne godziny na stronach sklepów — niezależne punkty żyją rytmem dostaw, wyjazdów na giełdy i właścicieli, a nie logiką galerii handlowej."
+        "Discogs używa standardu Goldmine: od Mint przez Near Mint, Very Good Plus i Very Good aż po stany słabe. To potrzebny wspólny język, lecz pozostaje językiem opisowym. Sam Discogs zaleca oszczędne używanie oceny Mint. Dwie osoby mogą inaczej ocenić włosowate ślady, szum między utworami albo zużycie grzbietu. Do tego dochodzi rozdział nośnika od okładki i wyposażenia. „VG+” bez informacji, czego dotyczy, jest odpowiedzią z brakującym rzeczownikiem.",
+        "W sklepie stacjonarnym standard powinien być początkiem kontroli, nie powodem jej zakazania. Wyjmij płytę, chwytając ją za krawędź i etykietę, ustaw ją pod ukośnym światłem, obróć powoli. Szukaj rys, matowych przetarć, zabrudzeń, śladów po niewłaściwym myciu, odkształcenia oraz zmian koloru. Sprawdź numer katalogowy na etykiecie i oznaczenia matrycy, bo okładki oraz płyty bywają przekładane. Nie każda różnica oznacza oszustwo — po dekadach obiegu zestawy mieszają się naturalnie — ale cena konkretnego pressu wymaga konkretnego pressu w środku.",
+        "Odsłuch też trzeba interpretować. Pojedynczy trzask może wynikać z brudu, cykliczny co obrót sugeruje stały ślad, a stałe chrobotanie w jednym kanale może ujawnić zużycie rowka albo problem odczytu. Sklepowy gramofon i wkładka nie są identyczne z twoim systemem, więc test nie jest absolutnym pomiarem, lecz zmniejsza ryzyko. Najważniejsza jest zgodność obietnicy z rzeczą. Płyta opisana jako egzemplarz do słuchania może mieć historię na okładce. Płyta wyceniona jak archiwalny skarb powinna przejść kontrolę ostrzejszą niż zdjęcie frontu w serwisie aukcyjnym.",
       ],
     },
     {
@@ -359,30 +562,44 @@ const warszawa = {
       heading: "Discogs nie powinien ustalać ceny rozmowy",
       variant: "forecast",
       paragraphs: [
-        "Globalna mediana z Discogs jest przydatną wskazówką, ale fatalnym substytutem oceny konkretnego egzemplarza. Na forum winyl.net od lat powraca zarzut, że polskie sklepy potrafią wyceniać polską płytę tak, jakby leżała już w Los Angeles — bez uwzględnienia lokalnego popytu, realnego stanu i kosztu ryzyka, który ponosi kupujący.",
-        "Sklep stacjonarny ma prawo być droższy od przypadkowej aukcji. W zamian powinien dawać odsłuch, uczciwy grading i wiedzę. Jeśli daje tylko cenę skopiowaną z najwyższej oferty online, nie buduje kultury kolekcjonowania; staje się drogim interfejsem do bazy danych. Płaćmy za selekcję i odpowiedzialność, nie za sam adres."
+        "Discogs publikuje medianę opartą na ostatnich transakcjach danego wydania. To lepsza wskazówka niż najwyższa aktywna oferta, ale nadal nie jest rzeczoznawcą stojącym nad płytą. W historii sprzedaży mieszczą się różne stany, kraje sprzedawcy, waluty i momenty popytu. Baza społecznościowa zawiera również pomyłki: egzemplarz może zostać podpięty pod niewłaściwy wariant albo dwa rekordy bazy mogą opisywać to samo tłoczenie. W wątku winyl.net o wycenie forumowicze trafnie spierają się o oba oblicza narzędzia: daje ono orientację w cenach światowych, ale „goła statystyka” bez stanu i pewnej identyfikacji bywa rzutem monetą ubranym w tabelę.",
+        "Szczególnie drażliwa jest praktyka wyceniania polskiej płyty na polskiej półce według globalnego rynku, jakby egzemplarz był już spakowany w Los Angeles. Forumowa dyskusja notuje argument sprzedawców, że jedna cena dla klienta z kraju i zagranicy jest uczciwsza. To logiczne z perspektywy właściciela towaru: dlaczego ma sprzedać taniej, jeśli światowy nabywca zapłaci więcej? Ale kupujący też ma prawo zapytać, co dokładnie dostaje za lokalną cenę eksportową. Jeśli sklep eliminuje wysyłkę, ryzyko zagranicznej transakcji i niepewność opisu, powinien tę wartość pokazać jako odsłuch, rzetelny grading, znajomość wydania i odpowiedzialność za błąd.",
+        "Sklep stacjonarny ma pełne prawo być droższy od przypadkowego ogłoszenia. Płaci czynsz, podatki, pracowników, utrzymuje kapitał w niesprzedanym katalogu, selekcjonuje dostawy i przyjmuje reklamacje. Krytyka cen, która udaje, że te koszty nie istnieją, jest równie płytka jak kopiowanie najwyższej oferty z sieci. Nasza teza jest inna: marża powinna kupować zaufanie. Jeżeli otrzymujemy tylko płytę z naklejką wyliczoną przez cudzą bazę, sklep staje się drogim interfejsem do Discogs. Płaćmy za wiedzę, możliwość sprawdzenia i gotowość powiedzenia prawdy o słabszym egzemplarzu — nie za samo geograficzne położenie półki.",
+      ],
+    },
+    {
+      label: "BUDŻET / TAKTYKA",
+      heading: "Jak wrócić z muzyką, a nie z kacem kolekcjonera",
+      paragraphs: [
+        "Ustal trzy liczby przed wyjściem: pełny budżet dnia, maksymalną cenę pojedynczej płyty i kwotę rezerwową na znalezisko spoza listy. Gotowa lista może zawierać wykonawcę i album, ale także akceptowane wydania. Jeśli szukasz muzyki do słuchania, nie przywiązuj się do pierwszego pressu. Dobre, uczciwie wykonane wznowienie często będzie rozsądniejsze niż zmęczony oryginał, którego główną zaletą jest rok na etykiecie. Jeśli polujesz na konkretny wariant, zapisz numer katalogowy i charakterystyczne oznaczenia przed wizytą. Pamięć pod presją rzadkiej okładki jest wyjątkowo twórcza.",
+        "Nie negocjuj automatycznie każdej ceny, ale negocjuj informację. Poproś o wyjaśnienie oceny, obejrzenie krążka, odsłuch albo porównanie dwóch wydań. Przy większym zestawie można zapytać o rabat, jednak dobry handel nie polega na upokarzaniu sprzedawcy ani klienta. Jeżeli cena nie ma dla ciebie sensu, odłóż płytę bez teatralnego wykładu o kapitalizmie. Zrób zdjęcie danych wydania, sprawdź zakończone transakcje, koszty dostawy i stan porównywanych kopii. Możliwe, że sklep przesadził. Możliwe również, że twoja pamięć zatrzymała cenę z 2018 roku, a rynek zdążył wykonać kilka nieprzyjemnych obrotów.",
+        "Po powrocie nie chowaj zakupów od razu. Obejrzyj je ponownie, umyj odpowiednią metodą, odsłuchaj w czasie pozwalającym zgłosić problem i zachowaj paragon. Zapisz wariant w katalogu, jeśli kolekcja jest duża. Najważniejsze: posłuchaj całej strony bez równoczesnego sprawdzania, ile płyta jest dziś „warta”. Rynek kolekcjonerski potrafi zamienić każdy album w wykres, a spacer po Warszawie w objazd magazynów inwestycyjnych. Sklep płytowy ma sens właśnie dlatego, że między wyceną a wyjściem może wydarzyć się rozmowa. Bez niej zostaje tylko e-commerce z cięższymi drzwiami.",
       ],
     },
   ],
-  quoteAfter: 1,
-  quote: "W sklepie internetowym szukasz tytułu. W dobrym sklepie płytowym tytuł znajduje ciebie.",
+  quoteAfter: 2,
+  quote: "W sklepie internetowym szukasz tytułu. W dobrym sklepie płytowym ktoś potrafi jeszcze powiedzieć, dlaczego nie powinieneś kupować tego egzemplarza.",
   serviceBox: {
-    title: "Zanim wyjdziesz z płytą",
+    title: "Warszawski plan bez kolekcjonerskiej gorączki",
     items: [
-      "Wyjmij krążek z koperty i obejrzyj obie strony pod światło.",
-      "Sprawdź numer matrycy — dokładniej identyfikuje wydanie niż sama okładka.",
-      "Zapytaj o odsłuch, zwłaszcza gdy rysa biegnie wzdłuż rowka.",
-      "Porównaj stan płyty i okładki osobno; ocena VG/VG+ może dotyczyć dwóch różnych rzeczy.",
-      "Aktualne godziny otwarcia potwierdź w dniu wizyty na stronie sklepu.",
+      "Dzień pierwszy: Chmielna 20 → Warecka 4/6, klatka VIII → Piękna 3 lok. 2.",
+      "Dzień drugi lub osobny akt: Antykwariat Tamka, Słupecka 8 na Ochocie.",
+      "Godziny otwarcia sprawdź na oficjalnej stronie w dniu wizyty; niezależne sklepy zmieniają rytm.",
+      "Oceniaj nośnik i okładkę osobno, a droższy egzemplarz identyfikuj po matrycy, nie po froncie.",
+      "Porównuj zakończone transakcje tego samego wydania i stanu, nie najwyższą aktywną ofertę.",
+      "Pytaj o odsłuch, politykę zwrotu i powód wyceny — marża sklepu powinna kupować zaufanie.",
+      "Zostaw część budżetu na płytę spoza listy, ale żadnej nie kupuj tylko dlatego, że jest „ostatnia”.",
     ],
   },
   sources: [
-    { label: "Vinyl Tamka — sklep i kontakt", url: "https://vinyltamka.pl/" },
-    { label: "Muzant — historia i adres", url: "https://muzant.pl/en/about-us/" },
-    { label: "Antykwariat Tamka — aktualna lokalizacja", url: "https://antykwariattamka.pl/" },
-    { label: "Winyl Market — dane sklepu", url: "https://winylmarket.com/regulamin/" },
+    { label: "Vinyl Tamka — oficjalny sklep i adres", url: "https://vinyltamka.pl/" },
+    { label: "Muzant — historia, adres i informacje o odbiorze", url: "https://muzant.pl/en/about-us/" },
+    { label: "Antykwariat Tamka — aktualna lokalizacja i profil", url: "https://antykwariattamka.pl/" },
+    { label: "Winyl Market — dane sklepu przy Pięknej 3 lok. 2", url: "https://winylmarket.com/regulamin/" },
+    { label: "Discogs — zasady bezpiecznego kupowania i mediana transakcji", url: "https://support.discogs.com/hc/en-us/articles/360001584674-Best-Practices-For-Buying-Safely-On-Discogs" },
+    { label: "Discogs — standard oceny stanu nośników", url: "https://support.discogs.com/hc/en-us/articles/360001566193-How-To-Grade-Items" },
     { label: "Winyl.net — wieloletni wątek o polskich sklepach", url: "https://www.winyl.net/viewtopic.php?t=16" },
-    { label: "Winyl.net — jak czytać ceny z Discogs", url: "https://www.winyl.net/viewtopic.php?t=5752" },
+    { label: "Winyl.net — ceny i wycena kolekcji na Discogs", url: "https://www.winyl.net/viewtopic.php?t=5752" },
   ],
 };
 

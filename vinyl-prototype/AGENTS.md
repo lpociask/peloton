@@ -6,6 +6,7 @@
 - Keep the adaptive editorial shell inherited from the Peloton prototype, but use Rowki's own identity: warm bone paper, carbon black, vermilion red, electric cobalt, and analog-modernist collage.
 - Editorial illustration combines Polish poster-school economy, Japanese hi-fi catalog precision, matte gouache, cut paper, and coarse screen-print grain.
 - Articles should be informed by primary sources and by recurring practical debates on the winyl.net community forum.
+- Feature articles should contain roughly 1,800–2,200 words of reader-facing prose (about 10–12 minutes at 185 words per minute). Reading-time labels must reflect the actual text; never reach the target by padding or repeating a thesis.
 - The editorial voice is pointed, opinionated, and willing to challenge audiophile mythology. Each feature should contain a clearly marked `TEZA ROWKÓW` section designed to provoke informed discussion.
 - Keep verified facts separate from editorial theses. A controversial angle may be sharp, but it must not turn inference, rumor, or forum anecdote into fact.
 - Issue #01 contains five features: Technics history and 2026 news, the vinyl revival, progressive music from Pink Floyd to TesseracT, the end of Riverside, and a guide to Warsaw record stores.
