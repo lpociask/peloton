@@ -1,0 +1,160 @@
+import { assetPath } from "../../assetPath";
+
+export const kiedyZnikaAsfaltEn = {
+  id: "kiedy-znika-asfalt",
+  number: "03",
+  type: "Road",
+  title: "Where the Tarmac Ends",
+  time: "14 min",
+  description: "Freedom, marketing and someone else's history beneath the wheels.",
+  hero: assetPath("peloton-gravel-threshold-hero-v2.jpg"),
+  heroPosition: "50% 50%",
+  thumb: assetPath("peloton-gravel-threshold-hero-v2.jpg"),
+  thumbMode: "standalone",
+  thumbPosition: "50% 50%",
+  lead:
+    "Gravel promises freedom, preferably aboard a bicycle with its own catalogue category. The Low Beskids quickly test that story: a GPX file grants no right of passage, roads are not scenery, and a ‘wild valley’ may stand where somebody once had a home.",
+  byline: "AN EDITORIAL ESSAY — PELOTON",
+  caption:
+    "A road without a number. The Low Beskids begin where the surface stops making promises.",
+  alt: "A cyclist stops in the Low Beskids exactly where cracked tarmac gives way to gravel.",
+  quote:
+    "Gravel does not begin with a new bicycle. It begins where certainty ends—and when you can accept a prohibition, the weather or your own mistake as part of the route.",
+  quoteAfter: 2,
+  editorialDebate: {
+    afterSection: 1,
+    kicker: "THE PELOTON DEBATE · GRAVEL",
+    question: "Does gravel set us free—or merely sell us a second bicycle for the same road?",
+    positions: [
+      {
+        label: "THE CASE FOR",
+        title: "One bicycle opens more of the map",
+        text: "A wider tyre, stable geometry and room for luggage genuinely broaden the choice of roads. A gravel bike can join the approach, unpaved tracks and local tarmac without all the logistics of a mountain-bike expedition.",
+      },
+      {
+        label: "THE CASE AGAINST",
+        title: "Freedom acquired a price list",
+        text: "The industry turned the simple desire to leave the tarmac into a separate collection of equipment, clothing and rituals. It is easy to buy the aesthetic of adventure; learning repairs, navigation and respect for a place is harder.",
+      },
+    ],
+    verdict: "Try the route first on the bicycle you already own. Then buy what you genuinely discovered was missing. And remember: a line downloaded from the internet is neither permission to enter nor a title deed to the landscape.",
+  },
+  media: [
+    {
+      afterSection: 2,
+      src: "peloton-gravel-valley.png",
+      webp: "peloton-gravel-valley.webp",
+      layout: "wide",
+      alt: "A small cyclist follows a winding gravel road through a monumental valley beneath rain clouds.",
+      caption: "In the valley, scale reverses: the human becomes a point and the road—a long sentence without a full stop.",
+      credit: "ILLUSTRATION — PAPER STUDIO",
+    },
+    {
+      afterSection: 4,
+      src: "peloton-beskid-memory-after-rain-v2.jpg",
+      layout: "standard",
+      alt: "A cyclist stands beside a wet Beskid road near an old orchard, stone foundations and a wayside cross.",
+      caption: "The Low Beskids. This is not an empty valley: an orchard, a foundation and a cross preserve somebody else's presence.",
+      credit: "ILLUSTRATION — PAPER STUDIO",
+    },
+  ],
+  routeStats: ["84 KM", "1,430 M ASCENT", "APPROX. 60% OFF-ROAD"],
+  sources: [
+    {
+      label: "Gov.pl — the Lemko people, Lemkivshchyna and Operation Vistula",
+      url: "https://www.gov.pl/web/mniejszosci-narodowe-i-etniczne/lemkowie",
+    },
+    {
+      label: "State Forests — Radocyna and the history of the Low Beskids",
+      url: "https://www.lasy.gov.pl/pl/informacje/wideo/telewizja-lasow-panstwowych/wideo/radocyna-dlaczego-beskid-niski",
+    },
+    {
+      label: "Polish Commissioner for Human Rights — remembering Operation Vistula and Lemko voices",
+      url: "https://bip.brpo.gov.pl/pl/content/akcja-%E2%80%9Ewis%C5%82a%E2%80%9D-%E2%80%93-%C5%82emkowie-1947-2017-obchody-organizowane-w-gorlicach-przez-komisj%C4%99",
+    },
+  ],
+  sections: [
+    {
+      label: "01 — THRESHOLD",
+      heading: "The Last Smooth Kilometre",
+      paragraphs: [
+        "Gorlice wakes without hurry. It is a few minutes before six when I cross the market square, passing a delivery van with its doors open and a man arranging crates of bread. The air smells of wet cobbles, yeast and fuel. The street lamps are still lit, although the sky above the roofs has already turned grey.",
+        "For the first few kilometres, everything is familiar. Smooth surface, a white line along the edge, the rhythmic click of shifting gears. The bicycle rolls easily and the computer displays a speed that can later be entered into a table. The first car passes me on the climb beyond Sękowa. Then a second. There is no third.",
+        "The road narrows between houses, passes a dark wooden church, then climbs towards forested ridges. The tarmac here has been patched so many times that it is difficult to say which layer came first. Every subsequent kilometre looks a little less official. The line disappears. Grass consumes the verge. Small stones carried by the night's rain appear in the middle of the road.",
+        "The end arrives without warning. The black surface pales, loses its smoothness and, after several turns of the cranks, becomes a compacted road of light-coloured aggregate. There is no barrier or sign announcing the start of a different kind of riding. Only a new sound: the whisper of tyres, individual stones striking the down tube and a quiet rattle from the things inside the bag.",
+        "Speed falls from twenty-eight to nineteen kilometres an hour. Something else slows with it. My gaze stops seeking the end of the straight and moves to a point several metres in front of the wheel. Hands that had rested motionless on the hoods begin to work. Elbows soften. The bicycle gently chooses its own line.",
+        "On tarmac, a road promises to lead somewhere specific. Here it promises nothing. A bend disappears behind a wall of beeches, a tractor track divides the route into two uneven lines, and the map on the computer shows only a thin stroke crossing green space.",
+        "This is the moment I came for.",
+      ],
+    },
+    {
+      label: "02 — PREPARATION",
+      heading: "Adventure Does Not Arrive by Courier",
+      paragraphs: [
+        "Preparation for a ride like this is easily confused with shopping. A cardboard box containing a new bag has a remarkable ability to resemble the beginning of an expedition even while it is still standing in the hall. A larger tyre, wider bars, a lighter pump—the industry can persuade you that adventure begins only after the parcel arrives. In truth, the most important work happened the previous evening on the floor of a small room.",
+        "I checked the brake pads, axle tension and the amount of sealant in the tyres. Into the small top-tube bag went two tubeless plugs, a spare tube, tyre lever, pump, quick link and a compact multi-tool. I put a thin rain jacket and emergency blanket in my jersey pocket. Not because I planned to camp, but because in the mountains even a day ride can suddenly become longer.",
+        "The bicycle runs 700 × 42 mm tyres. I have roughly two bar in the front and a little more in the rear. That setting is matched to my weight, luggage and this particular tyre; it is not a ready-made prescription for everyone. Too much pressure makes the wheel rebound from stones and lose contact with the ground. Too little increases the risk of striking the rim. Here, you feel the difference between a good and bad setting after several hundred metres, not after studying a graph.",
+        "The drivetrain is simple: a single forty-tooth chainring and a 10–44 cassette. At times I miss a taller gear on tarmac, but on a steep, rocky climb the ability to turn the cranks calmly matters more. Hydraulic brakes and 160 mm rotors do not look exciting on an equipment list. Their value becomes apparent only on a long descent, when wet dust clings to the bicycle and fingers begin to lose strength.",
+        "I carry two bottles, three sandwiches wrapped in paper, a banana and a few soft sweets. The route is saved on both computer and phone, and the map works offline. Before leaving, I sent the route to somebody close to me. Reception in the valleys is uncertain, and a red line on a screen is no substitute for somebody knowing where you intended to be.",
+        "All of it has one purpose: to make the equipment stop demanding attention during the ride. A good off-road bicycle should not keep reminding you of its price, frame material or number of gears. It should disappear between person and road.",
+        "After a dozen kilometres of gravel, it does. I no longer think about tyre width. I think about a shadow moving among the trees, dampness hanging above the stream and the next bend.",
+      ],
+    },
+    {
+      label: "03 — RISK",
+      heading: "The Line That Is Not There",
+      paragraphs: [
+        "The first fast descent begins innocently. The road is wide, the gradient gentle, and the pale gravel looks hard and even. Before long, speed exceeds forty kilometres an hour. Only then do I notice the washboard ridges carved across it by car tyres.",
+        "The bicycle begins to vibrate. The bars try to slip from my hands, a bottle jumps in its cage and my eyes instinctively settle on the largest stone. It is the worst possible response. The front wheel goes where I look.",
+        "I move my gaze farther ahead, towards a calmer section of road. I loosen my grip and lift my weight slightly above the saddle. The bicycle continues to dance, but its movement no longer resembles a failure. I do not fight every slide. I allow the tyres to move several centimetres as long as the frame continues to point towards the exit of the corner.",
+        "There is no single perfect line on gravel. The one that looks best from a distance may end in deep sand. The hard centre of the road can be faster, but collects loose stones. A rut may run evenly for a hundred metres, then turn abruptly towards the ditch. Riding becomes a series of small decisions made without stopping the motion.",
+        "Several kilometres later, one of those decisions proves wrong. On a rocky climb, I choose the outside of the bend. The rear wheel jumps and I hear a short hiss. A pale drop of sealant appears on the tread. I rotate the puncture to the bottom, but the hole is too large for the sealant to close immediately.",
+        "The repair takes eleven minutes. The plug enters the cut on the second attempt. I inflate the tyre, check whether air is still escaping and wipe my hands on a piece of paper. There is no drama, only a short roadside pause during which I begin to hear the stream hidden below the slope.",
+        "Risk on a gravel ride rarely looks cinematic. More often, it is the sum of small neglects: too much speed before a blind corner, an empty bottle, a flat phone battery or a decision to continue as the weather worsens. Courage here does not mean ignoring these signs. It means noticing them early enough.",
+      ],
+    },
+    {
+      label: "04 — MEMORY",
+      heading: "This Is Not an Empty Valley",
+      paragraphs: [
+        "The road to Radocyna follows the Wisłoka. The river is still young and narrow, disappearing beneath branches in places. Meadows widen between ridges, and the forest retreats just far enough to let light into the valley. From a distance, the place looks almost empty.",
+        "Only when I slow down does the emptiness begin to break into detail.",
+        "A stone cross stands beside the road. Several hundred metres farther on, another is visible beyond tall grass. An old apple tree grows for no apparent reason in the middle of a meadow. Its branches are tangled, its fruit small and sour. Beside it is a barely visible hollow in the ground, perhaps the trace of a cellar or the foundations of a house.",
+        "Radocyna, Długie, Czarne and Nieznajowa are not names invented for a tourist map. They are places where people lived. Roads, cemeteries, church sites, feral orchards, shrines and crosses remain from former Lemko villages. Their inhabitants endured wartime expulsions, post-war resettlement and Operation Vistula. The landscape a present-day cyclist may call wild is also a landscape of interrupted presence.",
+        "I dismount beside a small cemetery. I do not lean the bicycle against a stone cross or ride between the graves. I leave it in the grass and walk for several minutes. After so many kilometres in motion, the stillness of this place has more force than a summit view.",
+        "Cycling tourism enjoys the language of discovery. We discover a route, a pass, a forgotten valley. They are convenient words, but easily place the visitor at the centre of the story. I discover nothing here. I visit, briefly, a place that had a life of its own long before I arrived and will preserve its memory after I leave.",
+        "Farther on, I meet several people. Two walkers push bicycles up a steep ramp. Near a farm, a woman fills a trough for horses. On a stretch of local tarmac, an old tractor passes and its driver raises a hand from the wheel. The gesture lasts a second and is enough. Not every encounter needs a conversation or a photograph.",
+        "At a small shop I buy kefir, a sweet bun and water. The shopkeeper puts down her newspaper, totals the purchase and returns to a table outside the entrance. I sit on a low wall. Two children's towels dry on a metal railing, somebody cuts the grass, a radio can be heard through the open window of a house.",
+        "Local life is not scenery arranged beside the route. It continues next to it, ordinarily and with no need to impress anybody.",
+      ],
+    },
+    {
+      label: "05 — WEATHER",
+      heading: "Rain Without Reception",
+      paragraphs: [
+        "Clouds gather in the south, but for a long time they look harmless. In the mountains, it is easy to believe that the darker sky hangs over another valley. The first drops fall on an exposed climb with neither house nor shelter in sight.",
+        "I put on the jacket and push the phone deeper into the bag. Within minutes, dry gravel turns brown. The stones remain hard, but clay sections begin to cling to the tyres. Mud fills the tread and the rear wheel increasingly spins without moving the bicycle forwards.",
+        "On the steepest section, I get off. The shoes slide almost as much as the tyres. Pushing looks poor on film and produces no athletic result, but can be the fastest and safest way to gain the next two hundred metres of road.",
+        "On the ridge, the phone shows no signal. Navigation continues to work because I downloaded the map in advance. The line suggests turning onto a forest road, but a new sign at the entrance announces works in progress. I make no attempt to skirt the prohibition or see whether workers are actually in the forest. I take a detour on local tarmac. It adds eight kilometres and removes the possibility of riding the planned section.",
+        "This, too, belongs to the journey. A route is not a contract with the landscape. A GPX file grants no right to enter everywhere a coloured line has been drawn. Roads close, bridges wash away, forests become temporarily inaccessible and weather moves faster than a forecast. Sometimes a detour is the best decision. Sometimes turning back.",
+        "The rain weakens before the next descent. I check the brakes, eat my final sandwich and stand still for a moment. Steam rises from the wet forest. Water runs down leaves and strikes the hood in an irregular rhythm. There is no signal, no notification and no way of checking what has happened elsewhere.",
+        "There is only the place where I actually am.",
+      ],
+    },
+    {
+      label: "06 — RETURN",
+      heading: "Following the Track Home",
+      paragraphs: [
+        "Tarmac returns in the late afternoon. At first it is a short, cracked section beside several houses. Then the road becomes darker and more even. After dozens of kilometres on gravel, its smoothness feels almost unnatural.",
+        "The tyres fall silent. The bicycle accelerates without effort, the bars stop vibrating and my gaze can move far ahead of the front wheel once more. I should feel relief. Instead, for a moment, I have the sense that something is missing.",
+        "On the first longer descent I pass a car, then another. Signs, junctions and explicit rights of way return. The landscape is ordered once again. Every road has a number, every village a beginning and an end sign, and the phone regains reception, flooding the screen with messages.",
+        "Before Gorlice I stop at a service station. A hose intended for washing cars strips pale dust and dark mud from the frame. Only now do I see the day's small marks: a scratch on the lever, dried sealant on the rear tyre, a stone lodged beside the cranks. None of them matters. The more important things left no mark on the bicycle.",
+        "The computer will record distance, elevation, moving time and average speed. It will show where I stopped longest and on which climb my heart rate was highest. It will not record the smell of wet beeches, the taste of kefir drunk on a low wall or the moment a feral apple tree turned an empty meadow into the site of somebody's home.",
+        "Nor will it record the brief fear on a loose descent. The relief when the repaired tyre held its pressure. The shame when I realised how easy it is to call a landscape beautiful without first asking why it became empty.",
+        "In the evening, the bicycle leans against a wall. The chain needs cleaning, the shoes are still wet, and the loop on the map looks surprisingly innocent. A thin line closes exactly where it began, as though nothing could have happened along the way.",
+        "The next day, what I remember most is not the summit, the view or the fastest descent. I remember the boundary between surfaces: several metres in which tarmac crumbled into pale gravel. That was where I stopped executing a route and began passing through it.",
+        "The end of the tarmac was not the end of a known road. It was the end of the road's certainty.",
+      ],
+    },
+  ],
+};

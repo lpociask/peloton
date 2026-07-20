@@ -10,12 +10,35 @@ import {
   X,
 } from "@phosphor-icons/react";
 import { assetPath } from "./assetPath";
-import { issue, stories, totalReadingMinutes } from "./content/stories";
+import {
+  issue as polishIssue,
+  stories as polishStories,
+  totalReadingMinutes as polishReadingMinutes,
+} from "./content/stories";
+import {
+  issue as englishIssue,
+  stories as englishStories,
+  totalReadingMinutes as englishReadingMinutes,
+} from "./content/en/stories";
+import { copyByLocale, getInitialLocale } from "./i18n";
 
 const pageMotion = {
   initial: { opacity: 0, y: 10 },
   animate: { opacity: 1, y: 0 },
   exit: { opacity: 0, y: -7 },
+};
+
+const editions = {
+  pl: {
+    issue: polishIssue,
+    stories: polishStories,
+    totalReadingMinutes: polishReadingMinutes,
+  },
+  en: {
+    issue: englishIssue,
+    stories: englishStories,
+    totalReadingMinutes: englishReadingMinutes,
+  },
 };
 
 function IconButton({ label, children, onClick, pressed, className = "", buttonRef }) {
@@ -33,37 +56,76 @@ function IconButton({ label, children, onClick, pressed, className = "", buttonR
   );
 }
 
-function Masthead({ onMenu, menuButtonRef }) {
+function LanguageSwitch({ locale, onChange, copy, className = "" }) {
+  return (
+    <div className={`language-switch ${className}`} role="group" aria-label={copy.languageLabel}>
+      {["pl", "en"].map((language) => (
+        <button
+          key={language}
+          type="button"
+          aria-pressed={locale === language}
+          onClick={() => onChange(language)}
+        >
+          {language.toUpperCase()}
+        </button>
+      ))}
+    </div>
+  );
+}
+
+function Masthead({ onMenu, menuButtonRef, locale, onLocaleChange, copy }) {
   return (
     <header className="masthead">
       <div className="masthead__wordmark" aria-label="Peloton">
         PELOTON
       </div>
-      <IconButton
-        label="Otwórz menu"
-        onClick={onMenu}
-        className="masthead__menu"
-        buttonRef={menuButtonRef}
-      >
-        <List size={31} weight="regular" aria-hidden="true" />
-      </IconButton>
+      <div className="masthead__actions">
+        <LanguageSwitch locale={locale} onChange={onLocaleChange} copy={copy} />
+        <IconButton
+          label={copy.openMenu}
+          onClick={onMenu}
+          className="masthead__menu"
+          buttonRef={menuButtonRef}
+        >
+          <List size={31} weight="regular" aria-hidden="true" />
+        </IconButton>
+      </div>
     </header>
   );
 }
 
-function CoverScreen({ onOpen, onMenu, reduceMotion, menuButtonRef }) {
+function CoverScreen({
+  onOpen,
+  onMenu,
+  reduceMotion,
+  menuButtonRef,
+  locale,
+  onLocaleChange,
+  copy,
+  issue,
+  stories,
+  totalReadingMinutes,
+}) {
+  const leadStory = stories[0];
+
   return (
     <motion.section
       className="cover-screen"
       {...pageMotion}
       transition={{ duration: reduceMotion ? 0 : 0.42, ease: [0.22, 1, 0.36, 1] }}
     >
-      <Masthead onMenu={onMenu} menuButtonRef={menuButtonRef} />
+      <Masthead
+        onMenu={onMenu}
+        menuButtonRef={menuButtonRef}
+        locale={locale}
+        onLocaleChange={onLocaleChange}
+        copy={copy}
+      />
 
       <motion.button
         className="issue-cover"
         type="button"
-        aria-label="Otwórz numer pierwszy: Przed świtem"
+        aria-label={copy.openIssueAria}
         onClick={onOpen}
         style={{ transformPerspective: 1200 }}
         initial={reduceMotion ? false : { opacity: 0, scale: 0.985 }}
@@ -77,33 +139,34 @@ function CoverScreen({ onOpen, onMenu, reduceMotion, menuButtonRef }) {
           <img
             className="issue-cover__art"
             src={assetPath("peloton-cover-art.png")}
-            alt="Kolarz widziany z góry na tle monumentalnego koła, pomarańczowego słońca i łańcucha."
+            alt={copy.coverAlt}
           />
         </picture>
-        <span className="issue-cover__number">#01</span>
-        <span className="issue-cover__date">LIPIEC 2026</span>
+        <span className="issue-cover__title" aria-hidden="true">PELOTON</span>
+        <span className="issue-cover__number">#{issue.number}</span>
+        <span className="issue-cover__date">{issue.date}</span>
       </motion.button>
 
       <div className="issue-heading">
-        <p className="issue-heading__eyebrow">NUMER 01 · RYTUAŁ</p>
-        <h1>PRZED ŚWITEM</h1>
-        <span className="issue-heading__rule" aria-hidden="true" />
-        <p className="issue-heading__dek">
-          O pierwszych kilometrach, zanim miasto się obudzi i droga odzyska swój naturalny rytm.
+        <p className="issue-heading__eyebrow">
+          {copy.issueLabel} {issue.number} · {leadStory.type}
         </p>
+        <h1>{leadStory.title}</h1>
+        <span className="issue-heading__rule" aria-hidden="true" />
+        <p className="issue-heading__dek">{copy.coverDek}</p>
       </div>
 
       <button className="primary-action" type="button" onClick={onOpen}>
-        <span>OTWÓRZ NUMER</span>
+        <span>{copy.openIssue}</span>
         <ArrowRight size={27} weight="regular" aria-hidden="true" />
       </button>
 
-      <aside className="cover-notes" aria-label="Zapowiedź numeru">
+      <aside className="cover-notes" aria-label={copy.coverNotesLabel}>
         <div className="cover-notes__meta">
           <span>PELOTON · #{issue.number}</span>
           <time dateTime="2026-07">{issue.date}</time>
         </div>
-        <p className="cover-notes__label">W NUMERZE</p>
+        <p className="cover-notes__label">{copy.inThisIssue}</p>
         <ol>
           {stories.map((story) => (
             <li key={story.id}>
@@ -117,26 +180,44 @@ function CoverScreen({ onOpen, onMenu, reduceMotion, menuButtonRef }) {
           ))}
         </ol>
         <p className="cover-notes__footer">
-          {stories.length} MATERIAŁY · {totalReadingMinutes} MIN CZYTANIA
+          {stories.length} {copy.stories} · {totalReadingMinutes} {copy.minutesReading}
         </p>
       </aside>
     </motion.section>
   );
 }
 
-function ReaderBar({ onBack }) {
+function ReaderBar({ onBack, locale, onLocaleChange, copy, issue }) {
   return (
     <header className="reader-bar">
-      <IconButton label="Wróć do okładki" onClick={onBack}>
+      <IconButton label={copy.backToCover} onClick={onBack}>
         <ArrowLeft size={25} aria-hidden="true" />
       </IconButton>
       <span className="reader-bar__brand">PELOTON</span>
-      <span className="reader-bar__issue">#01</span>
+      <div className="reader-bar__tools">
+        <span className="reader-bar__issue">#{issue.number}</span>
+        <LanguageSwitch
+          locale={locale}
+          onChange={onLocaleChange}
+          copy={copy}
+          className="language-switch--compact"
+        />
+      </div>
     </header>
   );
 }
 
-function ContentsScreen({ onBack, onRead, reduceMotion }) {
+function ContentsScreen({
+  onBack,
+  onRead,
+  reduceMotion,
+  locale,
+  onLocaleChange,
+  copy,
+  issue,
+  stories,
+  totalReadingMinutes,
+}) {
   const headingRef = useRef(null);
 
   useEffect(() => {
@@ -149,7 +230,13 @@ function ContentsScreen({ onBack, onRead, reduceMotion }) {
       {...pageMotion}
       transition={{ duration: reduceMotion ? 0 : 0.34, ease: [0.22, 1, 0.36, 1] }}
     >
-      <ReaderBar onBack={onBack} />
+      <ReaderBar
+        onBack={onBack}
+        locale={locale}
+        onLocaleChange={onLocaleChange}
+        copy={copy}
+        issue={issue}
+      />
 
       <section className="contents-sheet" aria-labelledby="contents-title">
         <div className="contents-heading-block">
@@ -158,13 +245,10 @@ function ContentsScreen({ onBack, onRead, reduceMotion }) {
             <time dateTime="2026-07">{issue.date}</time>
           </div>
           <h1 id="contents-title" ref={headingRef} tabIndex="-1">
-            W NUMERZE
+            {copy.inThisIssue}
           </h1>
           <span className="contents-accent" aria-hidden="true" />
-          <p className="contents-heading-block__dek">
-            Pięć długich historii: poranny rytuał, cicha mechanika, droga po końcu asfaltu,
-            portret Michała Kwiatkowskiego i człowiek fotografujący peleton od środka.
-          </p>
+          <p className="contents-heading-block__dek">{copy.contentsDek}</p>
         </div>
 
         <ol className="story-list" style={{ "--story-count": stories.length }}>
@@ -183,7 +267,7 @@ function ContentsScreen({ onBack, onRead, reduceMotion }) {
                   <span className="story-list__description">{story.description}</span>
                   <span className="story-list__time">
                     <Clock size={13} weight="regular" aria-hidden="true" />
-                    {story.time} czytania
+                    {story.time} {copy.reading}
                   </span>
                 </span>
                 <span
@@ -210,13 +294,13 @@ function ContentsScreen({ onBack, onRead, reduceMotion }) {
         </ol>
 
         <footer className="contents-folio">
-          <span>{stories.length} MATERIAŁY · {totalReadingMinutes} MIN</span>
+          <span>{stories.length} {copy.stories} · {totalReadingMinutes} MIN</span>
           <span>02</span>
         </footer>
       </section>
 
       <button className="primary-action contents-action" type="button" onClick={() => onRead(stories[0])}>
-        <span>CZYTAJ OD POCZĄTKU</span>
+        <span>{copy.readFromStart}</span>
         <ArrowRight size={25} aria-hidden="true" />
       </button>
     </motion.section>
@@ -252,13 +336,13 @@ function ArticleMedia({ item, storyId, mediaIndex }) {
   );
 }
 
-function SourceNotes({ sources }) {
+function SourceNotes({ sources, copy }) {
   if (!sources?.length) return null;
 
   return (
     <aside className="source-notes" aria-labelledby="source-notes-title">
-      <p>WARSZTAT REDAKCJI</p>
-      <h2 id="source-notes-title">Źródła i dalsza lektura</h2>
+      <p>{copy.sourceKicker}</p>
+      <h2 id="source-notes-title">{copy.sourceTitle}</h2>
       <ol>
         {sources.map((source) => (
           <li key={source.url}>
@@ -273,14 +357,14 @@ function SourceNotes({ sources }) {
   );
 }
 
-function EditorialDebate({ debate }) {
+function EditorialDebate({ debate, copy }) {
   if (!debate) return null;
 
   return (
     <aside className="editorial-debate" aria-label={`${debate.kicker}: ${debate.question}`}>
       <div className="editorial-debate__masthead">
         <span>{debate.kicker}</span>
-        <span>TEZA / KONTRA</span>
+        <span>{copy.debateLabel}</span>
       </div>
       <h2>{debate.question}</h2>
       <div className="editorial-debate__positions">
@@ -293,29 +377,46 @@ function EditorialDebate({ debate }) {
         ))}
       </div>
       <div className="editorial-debate__verdict">
-        <span>WERDYKT REDAKCJI</span>
+        <span>{copy.verdictLabel}</span>
         <p>{debate.verdict}</p>
       </div>
     </aside>
   );
 }
 
-function StoryToolbar({ story, onBack, onShare, saved, onToggleSaved }) {
+function StoryToolbar({
+  story,
+  onBack,
+  onShare,
+  saved,
+  onToggleSaved,
+  locale,
+  onLocaleChange,
+  copy,
+  issue,
+  stories,
+}) {
   return (
     <header className="story-toolbar">
-      <IconButton label="Wróć do spisu treści" onClick={onBack}>
+      <IconButton label={copy.backToContents} onClick={onBack}>
         <ArrowLeft size={25} aria-hidden="true" />
       </IconButton>
       <div className="story-toolbar__identity">
         <span>PELOTON</span>
-        <small>NUMER 01 · {Number(story.number)}/{stories.length}</small>
+        <small>{copy.issueShort} {issue.number} · {Number(story.number)}/{stories.length}</small>
       </div>
       <div className="story-toolbar__actions">
-        <IconButton label="Udostępnij materiał" onClick={onShare}>
+        <LanguageSwitch
+          locale={locale}
+          onChange={onLocaleChange}
+          copy={copy}
+          className="language-switch--compact"
+        />
+        <IconButton label={copy.share} onClick={onShare}>
           <Export size={23} aria-hidden="true" />
         </IconButton>
         <IconButton
-          label={saved ? "Usuń z zapisanych" : "Zapisz materiał"}
+          label={saved ? copy.unsave : copy.save}
           pressed={saved}
           onClick={onToggleSaved}
         >
@@ -326,7 +427,19 @@ function StoryToolbar({ story, onBack, onShare, saved, onToggleSaved }) {
   );
 }
 
-function StoryScreen({ story, onBack, onNext, saved, onToggleSaved, reduceMotion }) {
+function StoryScreen({
+  story,
+  onBack,
+  onNext,
+  saved,
+  onToggleSaved,
+  reduceMotion,
+  locale,
+  onLocaleChange,
+  copy,
+  issue,
+  stories,
+}) {
   const [shareMessage, setShareMessage] = useState("");
   const [progress, setProgress] = useState(4);
   const scrollerRef = useRef(null);
@@ -334,7 +447,7 @@ function StoryScreen({ story, onBack, onNext, saved, onToggleSaved, reduceMotion
   const articleSections = story.sections ?? [
     {
       label: story.type,
-      heading: "W rytmie drogi",
+      heading: copy.defaultSection,
       paragraphs: story.paragraphs,
     },
   ];
@@ -376,22 +489,22 @@ function StoryScreen({ story, onBack, onNext, saved, onToggleSaved, reduceMotion
       const isStandalone = window.matchMedia?.("(display-mode: standalone)").matches;
       if (isStandalone && navigator.share && (!navigator.canShare || navigator.canShare(shareData))) {
         await navigator.share(shareData);
-        setShareMessage("Materiał udostępniony.");
+        setShareMessage(copy.shared);
       } else if (navigator.clipboard?.writeText) {
         await navigator.clipboard.writeText(window.location.href);
-        setShareMessage("Link skopiowany.");
+        setShareMessage(copy.copied);
       } else {
-        setShareMessage("Link jest gotowy do udostępnienia.");
+        setShareMessage(copy.shareReady);
       }
     } catch (error) {
-      if (error?.name !== "AbortError") setShareMessage("Link jest gotowy do udostępnienia.");
+      if (error?.name !== "AbortError") setShareMessage(copy.shareReady);
     }
   };
 
   return (
     <motion.article
       ref={scrollerRef}
-      className="story-screen"
+      className={`story-screen story-screen--${locale}`}
       {...pageMotion}
       transition={{ duration: reduceMotion ? 0 : 0.34, ease: [0.22, 1, 0.36, 1] }}
     >
@@ -401,12 +514,17 @@ function StoryScreen({ story, onBack, onNext, saved, onToggleSaved, reduceMotion
         onShare={shareStory}
         saved={saved}
         onToggleSaved={onToggleSaved}
+        locale={locale}
+        onLocaleChange={onLocaleChange}
+        copy={copy}
+        issue={issue}
+        stories={stories}
       />
 
       <div
         className="story-progress"
         role="progressbar"
-        aria-label="Postęp czytania"
+        aria-label={copy.readingProgress}
         aria-valuemin="0"
         aria-valuemax="100"
         aria-valuenow={Math.round(progress)}
@@ -433,7 +551,7 @@ function StoryScreen({ story, onBack, onNext, saved, onToggleSaved, reduceMotion
       <header className={`article-opening article-opening--${story.id}`}>
         <div className="article-opening__meta">
           <span>{story.type}</span>
-          <span>{story.time} czytania</span>
+          <span>{story.time} {copy.reading}</span>
         </div>
         <h1 ref={headingRef} tabIndex="-1">
           {story.title.split(" ").map((word) => (
@@ -442,7 +560,7 @@ function StoryScreen({ story, onBack, onNext, saved, onToggleSaved, reduceMotion
         </h1>
         <span className="article-opening__rule" aria-hidden="true" />
         <p className="article-opening__lead">{story.lead}</p>
-        <p className="article-opening__byline">{story.byline ?? "TEKST — REDAKCJA PELOTON"}</p>
+        <p className="article-opening__byline">{story.byline ?? copy.defaultByline}</p>
       </header>
 
       <figure className="article-hero">
@@ -458,7 +576,7 @@ function StoryScreen({ story, onBack, onNext, saved, onToggleSaved, reduceMotion
         </picture>
         <figcaption>
           <span>{story.caption}</span>
-          <small>ILUSTRACJA — PAPER STUDIO</small>
+          <small>{copy.illustrationCredit}</small>
         </figcaption>
       </figure>
 
@@ -482,8 +600,8 @@ function StoryScreen({ story, onBack, onNext, saved, onToggleSaved, reduceMotion
             </section>
 
             {sectionIndex === (story.quoteAfter ?? 1) ? (
-              <aside className="story-thesis" aria-label="Teza redakcji">
-                <span>TEZA REDAKCJI</span>
+              <aside className="story-thesis" aria-label={copy.thesisAria}>
+                <span>{copy.thesisLabel}</span>
                 <p>{story.quote}</p>
               </aside>
             ) : null}
@@ -500,14 +618,14 @@ function StoryScreen({ story, onBack, onNext, saved, onToggleSaved, reduceMotion
               ))}
 
             {sectionIndex === story.editorialDebate?.afterSection ? (
-              <EditorialDebate debate={story.editorialDebate} />
+              <EditorialDebate debate={story.editorialDebate} copy={copy} />
             ) : null}
           </div>
         ))}
 
         {story.serviceBox ? (
           <aside className="service-box" aria-label={story.serviceBox.title}>
-            <p>NOTATNIK PELOTONU</p>
+            <p>{copy.notebookLabel}</p>
             <h2>{story.serviceBox.title}</h2>
             <ol>
               {story.serviceBox.items.map((item) => <li key={item}>{item}</li>)}
@@ -515,17 +633,17 @@ function StoryScreen({ story, onBack, onNext, saved, onToggleSaved, reduceMotion
           </aside>
         ) : null}
 
-        <SourceNotes sources={story.sources} />
+        <SourceNotes sources={story.sources} copy={copy} />
 
         <footer className="article-endnote">
-          <span>PELOTON · NUMER {issue.number}</span>
-          <span>{story.time} CZYTANIA</span>
-          <p>Materiał powstał dla pierwszego numeru cyfrowego magazynu Peloton.</p>
+          <span>PELOTON · {copy.issueShort} {issue.number}</span>
+          <span>{story.time} {copy.reading.toUpperCase()}</span>
+          <p>{copy.endnote}</p>
         </footer>
 
         <button className="next-story" type="button" onClick={onNext}>
           <span>
-            <small>NASTĘPNY MATERIAŁ</small>
+            <small>{copy.nextStory}</small>
             <strong>{stories[(stories.findIndex((item) => item.id === story.id) + 1) % stories.length].title}</strong>
           </span>
           <ArrowRight size={27} aria-hidden="true" />
@@ -535,7 +653,7 @@ function StoryScreen({ story, onBack, onNext, saved, onToggleSaved, reduceMotion
   );
 }
 
-function MenuSheet({ open, onClose, onOpenIssue, reduceMotion }) {
+function MenuSheet({ open, onClose, onOpenIssue, reduceMotion, copy }) {
   const sheetRef = useRef(null);
   const closeRef = useRef(null);
 
@@ -575,7 +693,7 @@ function MenuSheet({ open, onClose, onOpenIssue, reduceMotion }) {
           <motion.button
             className="menu-backdrop"
             type="button"
-            aria-label="Zamknij menu"
+            aria-label={copy.closeMenu}
             onClick={onClose}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -586,7 +704,7 @@ function MenuSheet({ open, onClose, onOpenIssue, reduceMotion }) {
             className="menu-sheet"
             role="dialog"
             aria-modal="true"
-            aria-label="Menu Peloton"
+            aria-label={copy.menuLabel}
             initial={reduceMotion ? false : { x: "100%" }}
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
@@ -594,16 +712,16 @@ function MenuSheet({ open, onClose, onOpenIssue, reduceMotion }) {
           >
             <div className="menu-sheet__top">
               <span>PELOTON</span>
-              <IconButton label="Zamknij menu" onClick={onClose} buttonRef={closeRef}>
+              <IconButton label={copy.closeMenu} onClick={onClose} buttonRef={closeRef}>
                 <X size={28} aria-hidden="true" />
               </IconButton>
             </div>
-            <nav aria-label="Główna nawigacja">
-              <button type="button" onClick={onOpenIssue}>Aktualny numer</button>
-              <button type="button" disabled>Archiwum <small>Wkrótce</small></button>
-              <button type="button" disabled>O Pelotonie <small>Wkrótce</small></button>
+            <nav aria-label={copy.mainNavigation}>
+              <button type="button" onClick={onOpenIssue}>{copy.currentIssue}</button>
+              <button type="button" disabled>{copy.archive} <small>{copy.soon}</small></button>
+              <button type="button" disabled>{copy.about} <small>{copy.soon}</small></button>
             </nav>
-            <p>PAPER — cyfrowe wydawnictwo</p>
+            <p>{copy.publisher}</p>
           </motion.aside>
         </>
       ) : null}
@@ -613,11 +731,25 @@ function MenuSheet({ open, onClose, onOpenIssue, reduceMotion }) {
 
 export function App() {
   const reduceMotion = useReducedMotion();
+  const [locale, setLocale] = useState(getInitialLocale);
   const [screen, setScreen] = useState("cover");
-  const [story, setStory] = useState(stories[0]);
+  const [storyId, setStoryId] = useState(polishStories[0].id);
   const [menuOpen, setMenuOpen] = useState(false);
   const [savedStories, setSavedStories] = useState(() => new Set());
   const menuButtonRef = useRef(null);
+  const copy = copyByLocale[locale];
+  const { issue, stories, totalReadingMinutes } = editions[locale];
+  const story = stories.find((item) => item.id === storyId) ?? stories[0];
+
+  useEffect(() => {
+    document.documentElement.lang = copy.htmlLang;
+    document.title = `Peloton — ${copy.issueLabel} ${issue.number}`;
+    try {
+      window.localStorage.setItem("peloton-locale", locale);
+    } catch {
+      // The edition still works when storage is unavailable (for example in private browsing).
+    }
+  }, [copy.htmlLang, copy.issueLabel, issue.number, locale]);
 
   const openIssue = () => {
     setMenuOpen(false);
@@ -625,13 +757,13 @@ export function App() {
   };
 
   const openStory = (nextStory) => {
-    setStory(nextStory);
+    setStoryId(nextStory.id);
     setScreen("story");
   };
 
   const openNextStory = () => {
     const currentIndex = stories.findIndex((item) => item.id === story.id);
-    setStory(stories[(currentIndex + 1) % stories.length]);
+    setStoryId(stories[(currentIndex + 1) % stories.length].id);
   };
 
   const toggleSaved = () => {
@@ -659,6 +791,12 @@ export function App() {
               onMenu={() => setMenuOpen(true)}
               reduceMotion={reduceMotion}
               menuButtonRef={menuButtonRef}
+              locale={locale}
+              onLocaleChange={setLocale}
+              copy={copy}
+              issue={issue}
+              stories={stories}
+              totalReadingMinutes={totalReadingMinutes}
             />
           ) : null}
           {screen === "contents" ? (
@@ -667,6 +805,12 @@ export function App() {
               onBack={() => setScreen("cover")}
               onRead={openStory}
               reduceMotion={reduceMotion}
+              locale={locale}
+              onLocaleChange={setLocale}
+              copy={copy}
+              issue={issue}
+              stories={stories}
+              totalReadingMinutes={totalReadingMinutes}
             />
           ) : null}
           {screen === "story" ? (
@@ -678,6 +822,11 @@ export function App() {
               saved={savedStories.has(story.id)}
               onToggleSaved={toggleSaved}
               reduceMotion={reduceMotion}
+              locale={locale}
+              onLocaleChange={setLocale}
+              copy={copy}
+              issue={issue}
+              stories={stories}
             />
           ) : null}
         </AnimatePresence>
@@ -687,6 +836,7 @@ export function App() {
           onClose={closeMenu}
           onOpenIssue={openIssue}
           reduceMotion={reduceMotion}
+          copy={copy}
         />
       </div>
     </main>

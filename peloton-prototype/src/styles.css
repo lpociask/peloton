@@ -83,7 +83,7 @@ button:focus-visible {
 }
 
 .masthead__wordmark {
-  width: 216px;
+  width: min(216px, calc(100% - 112px));
   padding-bottom: 9px;
   border-bottom: 1px solid var(--ink);
   font-family: "Newsreader", Georgia, serif;
@@ -92,6 +92,59 @@ button:focus-visible {
   line-height: 0.94;
   letter-spacing: -0.055em;
   white-space: nowrap;
+}
+
+.masthead__actions {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.language-switch {
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 2px;
+  border: 1px solid rgb(23 23 19 / 0.62);
+  border-radius: 999px;
+  background: rgb(244 237 223 / 0.7);
+}
+
+.language-switch button {
+  min-width: 29px;
+  height: 28px;
+  padding: 0 7px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted-ink);
+  cursor: pointer;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+.language-switch button[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.language-switch button:hover:not([aria-pressed="true"]) {
+  background: rgb(23 23 19 / 0.07);
+  color: var(--ink);
+}
+
+.language-switch--compact {
+  height: 30px;
+}
+
+.language-switch--compact button {
+  min-width: 27px;
+  height: 24px;
+  padding-inline: 6px;
+  font-size: 8px;
 }
 
 .icon-button {
@@ -195,6 +248,23 @@ button:focus-visible {
   animation: cover-art-drift 14s ease-in-out infinite;
 }
 
+.issue-cover__title {
+  position: absolute;
+  top: 52px;
+  left: 50%;
+  z-index: 3;
+  transform: translateX(-50%);
+  color: var(--paper);
+  font-family: "Newsreader", Georgia, serif;
+  font-size: clamp(41px, 11vw, 54px);
+  font-weight: 600;
+  line-height: 0.82;
+  letter-spacing: -0.055em;
+  white-space: nowrap;
+  text-shadow: 0 2px 6px rgb(0 0 0 / 0.62);
+  pointer-events: none;
+}
+
 @keyframes cover-art-drift {
   0%,
   100% {
@@ -271,6 +341,7 @@ button:focus-visible {
   font-weight: 500;
   line-height: 0.95;
   letter-spacing: -0.045em;
+  text-transform: uppercase;
   white-space: nowrap;
 }
 
@@ -311,7 +382,7 @@ button:focus-visible {
 .reader-bar {
   height: 54px;
   display: grid;
-  grid-template-columns: 44px 1fr 44px;
+  grid-template-columns: 44px 1fr auto;
   align-items: center;
   border-bottom: 1px solid rgb(23 23 19 / 0.72);
 }
@@ -325,10 +396,16 @@ button:focus-visible {
 }
 
 .reader-bar__issue {
-  justify-self: center;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.08em;
+}
+
+.reader-bar__tools {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
 }
 
 .contents-screen {
@@ -606,6 +683,12 @@ button:focus-visible {
 
 .story-toolbar__actions {
   display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.story-toolbar__actions .language-switch {
+  margin-right: 3px;
 }
 
 .story-progress {
@@ -1372,8 +1455,8 @@ button:focus-visible {
   }
 
   .masthead__wordmark {
-    width: 205px;
-    font-size: 43px;
+    width: min(168px, calc(100% - 106px));
+    font-size: 38px;
   }
 
   .issue-heading h1 {
@@ -1461,6 +1544,11 @@ button:focus-visible {
     justify-self: center;
     box-shadow: 0 18px 34px rgb(41 35 26 / 0.2);
     transition: transform 220ms ease, box-shadow 220ms ease;
+  }
+
+  .issue-cover__title {
+    top: 58px;
+    font-size: clamp(52px, 6vw, 66px);
   }
 
   .issue-cover:hover {
@@ -1705,8 +1793,9 @@ button:focus-visible {
 
   .story-screen {
     display: grid;
-    grid-template-columns: minmax(320px, 0.82fr) minmax(420px, 1.18fr);
+    grid-template-columns: minmax(320px, 520px) minmax(448px, 800px);
     grid-template-rows: 70px 2px minmax(calc(100dvh - 72px), auto) auto;
+    justify-content: center;
     overflow-y: auto;
   }
 
@@ -1893,6 +1982,11 @@ button:focus-visible {
     right: 24px;
   }
 
+  .issue-cover__title {
+    top: 62px;
+    font-size: 68px;
+  }
+
   .issue-heading {
     align-self: center;
     gap: 16px;
@@ -1985,7 +2079,7 @@ button:focus-visible {
   }
 
   .story-screen {
-    grid-template-columns: minmax(440px, 0.76fr) minmax(600px, 1.24fr);
+    grid-template-columns: minmax(440px, 520px) minmax(600px, 800px);
     grid-template-rows: 72px 2px minmax(calc(100dvh - 74px), auto) auto;
   }
 
@@ -2321,7 +2415,8 @@ button:focus-visible {
   }
 
   .story-screen {
-    grid-template-columns: minmax(320px, 0.9fr) minmax(430px, 1.1fr);
+    grid-template-columns: minmax(320px, 520px) minmax(430px, 800px);
+    justify-content: center;
   }
 
   .article-opening h1 {
@@ -2394,6 +2489,29 @@ button:focus-visible {
   .contents-action {
     width: 400px;
     min-height: 56px;
+  }
+}
+
+.story-screen--en .article-opening h1 {
+  font-size: clamp(48px, 14.7vw, 60px);
+  line-height: 0.86;
+}
+
+.story-screen--en .article-opening--michal-kwiatkowski h1 {
+  font-size: 40px;
+}
+
+@media (min-width: 768px) {
+  .story-screen--en .article-opening {
+    padding-inline: clamp(34px, 4vw, 56px);
+  }
+
+  .story-screen--en .article-opening h1 {
+    font-size: clamp(46px, 4.8vw, 68px);
+  }
+
+  .story-screen--en .article-opening--michal-kwiatkowski h1 {
+    font-size: clamp(33px, 4vw, 56px);
   }
 }
 
