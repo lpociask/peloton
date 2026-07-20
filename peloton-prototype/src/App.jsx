@@ -12,11 +12,13 @@ import {
 import { assetPath } from "./assetPath";
 import {
   issue as polishIssue,
+  upcomingIssue as polishUpcomingIssue,
   stories as polishStories,
   totalReadingMinutes as polishReadingMinutes,
 } from "./content/stories";
 import {
   issue as englishIssue,
+  upcomingIssue as englishUpcomingIssue,
   stories as englishStories,
   totalReadingMinutes as englishReadingMinutes,
 } from "./content/en/stories";
@@ -31,11 +33,13 @@ const pageMotion = {
 const editions = {
   pl: {
     issue: polishIssue,
+    upcomingIssue: polishUpcomingIssue,
     stories: polishStories,
     totalReadingMinutes: polishReadingMinutes,
   },
   en: {
     issue: englishIssue,
+    upcomingIssue: englishUpcomingIssue,
     stories: englishStories,
     totalReadingMinutes: englishReadingMinutes,
   },
@@ -94,6 +98,54 @@ function Masthead({ onMenu, menuButtonRef, locale, onLocaleChange, copy }) {
   );
 }
 
+function UpcomingIssueTeaser({ issue, copy, reduceMotion }) {
+  const headingId = `upcoming-issue-${issue.number}`;
+
+  return (
+    <motion.section
+      className="upcoming-issue"
+      aria-labelledby={headingId}
+      initial={reduceMotion ? false : { opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: reduceMotion ? 0 : 0.52, ease: [0.22, 1, 0.36, 1] }}
+    >
+      <span className="upcoming-issue__ghost" aria-hidden="true">02</span>
+      <div className="upcoming-issue__copy">
+        <div className="upcoming-issue__topline">
+          <span>{copy.nextIssue}</span>
+          <span>{copy.comingSoon}</span>
+        </div>
+        <p className="upcoming-issue__folio">
+          <span>{copy.issueLabel} {issue.number}</span>
+          <time dateTime={issue.dateTime}>{issue.date}</time>
+        </p>
+        <h2 id={headingId}>{issue.title}</h2>
+        <span className="upcoming-issue__rule" aria-hidden="true" />
+        <p className="upcoming-issue__dek">{issue.teaser}</p>
+        <p className="upcoming-issue__artist">{copy.newIssueNewArtist}</p>
+      </div>
+
+      <figure className="upcoming-issue__figure">
+        <div className="upcoming-issue__cover">
+          <img
+            src={assetPath(issue.cover)}
+            alt={issue.coverAlt}
+            width="1086"
+            height="1448"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+        <figcaption>
+          <span>{copy.coverPreview}</span>
+          <span>PELOTON · #{issue.number}</span>
+        </figcaption>
+      </figure>
+    </motion.section>
+  );
+}
+
 function CoverScreen({
   onOpen,
   onMenu,
@@ -103,6 +155,7 @@ function CoverScreen({
   onLocaleChange,
   copy,
   issue,
+  upcomingIssue,
   stories,
   totalReadingMinutes,
 }) {
@@ -114,75 +167,79 @@ function CoverScreen({
       {...pageMotion}
       transition={{ duration: reduceMotion ? 0 : 0.42, ease: [0.22, 1, 0.36, 1] }}
     >
-      <Masthead
-        onMenu={onMenu}
-        menuButtonRef={menuButtonRef}
-        locale={locale}
-        onLocaleChange={onLocaleChange}
-        copy={copy}
-      />
+      <div className="cover-screen__current">
+        <Masthead
+          onMenu={onMenu}
+          menuButtonRef={menuButtonRef}
+          locale={locale}
+          onLocaleChange={onLocaleChange}
+          copy={copy}
+        />
 
-      <motion.button
-        className="issue-cover"
-        type="button"
-        aria-label={copy.openIssueAria}
-        onClick={onOpen}
-        style={{ transformPerspective: 1200 }}
-        initial={reduceMotion ? false : { opacity: 0, scale: 0.985 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: reduceMotion ? 0 : 0.58, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
-        whileHover={reduceMotion ? undefined : { y: -4, rotateX: 0.45, rotateY: -0.45, scale: 1.003 }}
-        whileTap={reduceMotion ? undefined : { y: 0, rotateX: 0, rotateY: 0, scale: 0.992 }}
-      >
-        <picture>
-          <source srcSet={assetPath("peloton-cover-art.webp")} type="image/webp" />
-          <img
-            className="issue-cover__art"
-            src={assetPath("peloton-cover-art.png")}
-            alt={copy.coverAlt}
-          />
-        </picture>
-        <span className="issue-cover__title" aria-hidden="true">PELOTON</span>
-        <span className="issue-cover__number">#{issue.number}</span>
-        <span className="issue-cover__date">{issue.date}</span>
-      </motion.button>
+        <motion.button
+          className="issue-cover"
+          type="button"
+          aria-label={copy.openIssueAria}
+          onClick={onOpen}
+          style={{ transformPerspective: 1200 }}
+          initial={reduceMotion ? false : { opacity: 0, scale: 0.985 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: reduceMotion ? 0 : 0.58, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
+          whileHover={reduceMotion ? undefined : { y: -4, rotateX: 0.45, rotateY: -0.45, scale: 1.003 }}
+          whileTap={reduceMotion ? undefined : { y: 0, rotateX: 0, rotateY: 0, scale: 0.992 }}
+        >
+          <picture>
+            <source srcSet={assetPath("peloton-cover-art.webp")} type="image/webp" />
+            <img
+              className="issue-cover__art"
+              src={assetPath("peloton-cover-art.png")}
+              alt={copy.coverAlt}
+            />
+          </picture>
+          <span className="issue-cover__title" aria-hidden="true">PELOTON</span>
+          <span className="issue-cover__number">#{issue.number}</span>
+          <span className="issue-cover__date">{issue.date}</span>
+        </motion.button>
 
-      <div className="issue-heading">
-        <p className="issue-heading__eyebrow">
-          {copy.issueLabel} {issue.number} · {leadStory.type}
-        </p>
-        <h1>{leadStory.title}</h1>
-        <span className="issue-heading__rule" aria-hidden="true" />
-        <p className="issue-heading__dek">{copy.coverDek}</p>
+        <div className="issue-heading">
+          <p className="issue-heading__eyebrow">
+            {copy.issueLabel} {issue.number} · {leadStory.type}
+          </p>
+          <h1>{leadStory.title}</h1>
+          <span className="issue-heading__rule" aria-hidden="true" />
+          <p className="issue-heading__dek">{copy.coverDek}</p>
+        </div>
+
+        <button className="primary-action" type="button" onClick={onOpen}>
+          <span>{copy.openIssue}</span>
+          <ArrowRight size={27} weight="regular" aria-hidden="true" />
+        </button>
+
+        <aside className="cover-notes" aria-label={copy.coverNotesLabel}>
+          <div className="cover-notes__meta">
+            <span>PELOTON · #{issue.number}</span>
+            <time dateTime="2026-07">{issue.date}</time>
+          </div>
+          <p className="cover-notes__label">{copy.inThisIssue}</p>
+          <ol>
+            {stories.map((story) => (
+              <li key={story.id}>
+                <span>{story.number}</span>
+                <span>
+                  <small>{story.type}</small>
+                  <strong>{story.title}</strong>
+                </span>
+                <span>{story.time}</span>
+              </li>
+            ))}
+          </ol>
+          <p className="cover-notes__footer">
+            {stories.length} {copy.stories} · {totalReadingMinutes} {copy.minutesReading}
+          </p>
+        </aside>
       </div>
 
-      <button className="primary-action" type="button" onClick={onOpen}>
-        <span>{copy.openIssue}</span>
-        <ArrowRight size={27} weight="regular" aria-hidden="true" />
-      </button>
-
-      <aside className="cover-notes" aria-label={copy.coverNotesLabel}>
-        <div className="cover-notes__meta">
-          <span>PELOTON · #{issue.number}</span>
-          <time dateTime="2026-07">{issue.date}</time>
-        </div>
-        <p className="cover-notes__label">{copy.inThisIssue}</p>
-        <ol>
-          {stories.map((story) => (
-            <li key={story.id}>
-              <span>{story.number}</span>
-              <span>
-                <small>{story.type}</small>
-                <strong>{story.title}</strong>
-              </span>
-              <span>{story.time}</span>
-            </li>
-          ))}
-        </ol>
-        <p className="cover-notes__footer">
-          {stories.length} {copy.stories} · {totalReadingMinutes} {copy.minutesReading}
-        </p>
-      </aside>
+      <UpcomingIssueTeaser issue={upcomingIssue} copy={copy} reduceMotion={reduceMotion} />
     </motion.section>
   );
 }
@@ -738,7 +795,7 @@ export function App() {
   const [savedStories, setSavedStories] = useState(() => new Set());
   const menuButtonRef = useRef(null);
   const copy = copyByLocale[locale];
-  const { issue, stories, totalReadingMinutes } = editions[locale];
+  const { issue, upcomingIssue, stories, totalReadingMinutes } = editions[locale];
   const story = stories.find((item) => item.id === storyId) ?? stories[0];
 
   useEffect(() => {
@@ -795,6 +852,7 @@ export function App() {
               onLocaleChange={setLocale}
               copy={copy}
               issue={issue}
+              upcomingIssue={upcomingIssue}
               stories={stories}
               totalReadingMinutes={totalReadingMinutes}
             />

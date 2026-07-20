@@ -11,6 +11,10 @@ export const copyByLocale = {
     issueLabel: "NUMER",
     openIssue: "OTWÓRZ NUMER",
     coverNotesLabel: "Zapowiedź numeru",
+    nextIssue: "NASTĘPNY NUMER",
+    comingSoon: "WKRÓTCE",
+    coverPreview: "ZAPOWIEDŹ OKŁADKI",
+    newIssueNewArtist: "NOWY NUMER · NOWY ARTYSTA",
     inThisIssue: "W NUMERZE",
     contentsDek:
       "Pięć długich historii: poranny rytuał, cicha mechanika, droga po końcu asfaltu, portret Michała Kwiatkowskiego i człowiek fotografujący peleton od środka.",
@@ -59,6 +63,10 @@ export const copyByLocale = {
     issueLabel: "ISSUE",
     openIssue: "OPEN ISSUE",
     coverNotesLabel: "Issue preview",
+    nextIssue: "NEXT ISSUE",
+    comingSoon: "COMING SOON",
+    coverPreview: "COVER PREVIEW",
+    newIssueNewArtist: "NEW ISSUE · NEW ARTIST",
     inThisIssue: "IN THIS ISSUE",
     contentsDek:
       "Five long reads: the ritual of riding early, the quiet mechanics of a bicycle, the road beyond asphalt, Michał Kwiatkowski and the man photographing the peloton from within.",

@@ -23,3 +23,5 @@ When implementing from a selected generated mock, treat that image as the source
 - Longform stories use several paced editorial interludes rather than one repeated decorative image. Inline art is lazy-loaded through WebP with PNG fallback and alternates between wide, standard, and portrait layouts.
 - Issue #01 includes a fifth, 13-minute profile of Szymon Gruchalski, framed as one of Poland's leading cycling photographers. It covers his own road riding and a photographic language in which the cyclist is not always the principal subject.
 - The Kwiatkowski profile includes verified, privacy-respecting sections on family, the Veloart project, the historic 2015 Warsaw–Kampinos ride, and Polish fan support. Warsaw is described as a social address, not an unverified permanent training base.
+- Issue #02 uses the selected third August-cover concept at `/public/assets/peloton-cover-02-po-tourze-option-3.jpg`: a surreal pearl-white helmet as a gateway for riders leaving the Tour behind.
+- Until issue #02 has content, show it below the current issue as a static “coming soon” preview. It must not be a button, link, disabled control, or route into issue #01.
