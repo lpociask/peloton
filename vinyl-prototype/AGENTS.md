@@ -21,4 +21,4 @@
 - Riverside coverage treats Mariusz Duda's April 2026 departure as the end of Riverside as an artistic organism while clearly distinguishing that assessment from the formal legal status of the name.
 - Warsaw store details are time-sensitive. Verify current addresses and advise readers to check opening hours before visiting.
 - The owner is editor-in-chief of both Rowki and Peloton and is the sole author of every editor’s letter. Five fictional specialist writing agents produce the five issue stories under the editor-in-chief’s direction; they never write an editor’s letter, imitate the editor-in-chief’s voice, or publish without approval.
-- Keep the “Redaktorzy” destination visible as a persistent text tab in the cover masthead; it must not be discoverable only through the slide-out menu.
+- Keep “Redaktorzy” as a persistent text tab directly beside the segmented PL/EN switch in the cover masthead. Do not add a hamburger or slide-out menu until it has real, non-duplicated destinations.

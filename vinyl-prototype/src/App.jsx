@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import {
   ArrowLeft,
@@ -7,8 +7,6 @@ import {
   BookmarkSimple,
   Clock,
   Export,
-  List,
-  X,
 } from "@phosphor-icons/react";
 import { assetPath } from "./assetPath";
 import { editorialTeamByLanguage } from "./content/editorial-team.js";
@@ -22,7 +20,7 @@ import {
   upcomingIssue as englishUpcomingIssue,
   stories as englishStories,
 } from "./content/stories.en";
-import { readStoredLanguage, storeLanguage, translations } from "./i18n";
+import { readStoredLanguage, storeLanguage, supportedLanguages, translations } from "./i18n";
 
 const publications = {
   pl: { issue: polishIssue, upcomingIssue: polishUpcomingIssue, stories: polishStories },
@@ -38,10 +36,9 @@ const pageMotion = {
 const IGLA_I_ROWEK_APP_STORE_URL =
   "https://apps.apple.com/pl/app/ig%C5%82a-i-rowek/id6782431440?uo=4";
 
-function IconButton({ label, children, onClick, pressed, className = "", buttonRef }) {
+function IconButton({ label, children, onClick, pressed, className = "" }) {
   return (
     <button
-      ref={buttonRef}
       className={`icon-button ${className}`}
       type="button"
       aria-label={label}
@@ -53,25 +50,24 @@ function IconButton({ label, children, onClick, pressed, className = "", buttonR
   );
 }
 
-function LanguageToggle({ language, onLanguageChange, placement, textClassName = "" }) {
-  const text = translations[language];
-  const nextLanguage = language === "pl" ? "en" : "pl";
-  const placementClass = placement ? ` language-switch--${placement}` : "";
-
+function LanguageSwitch({ language, onLanguageChange, text, className = "" }) {
   return (
-    <IconButton
-      label={text.switchLanguage}
-      className={`language-switch${placementClass}`}
-      onClick={() => onLanguageChange(nextLanguage)}
-    >
-      <span className={`language-switch__code ${textClassName}`} aria-hidden="true">
-        {text.targetLanguageCode}
-      </span>
-    </IconButton>
+    <div className={`language-switch ${className}`} role="group" aria-label={text.languageLabel}>
+      {supportedLanguages.map((nextLanguage) => (
+        <button
+          key={nextLanguage}
+          type="button"
+          aria-pressed={language === nextLanguage}
+          onClick={() => onLanguageChange(nextLanguage)}
+        >
+          {nextLanguage.toUpperCase()}
+        </button>
+      ))}
+    </div>
   );
 }
 
-function Masthead({ onMenu, onEditorial, menuButtonRef, language, onLanguageChange, text }) {
+function Masthead({ onEditorial, language, onLanguageChange, text }) {
   return (
     <header className="masthead">
       <div className="masthead__wordmark" aria-label={text.mastheadLabel}>
@@ -82,20 +78,11 @@ function Masthead({ onMenu, onEditorial, menuButtonRef, language, onLanguageChan
         <button className="masthead__editors" type="button" onClick={onEditorial}>
           {text.editorial}
         </button>
-        <LanguageToggle
+        <LanguageSwitch
           language={language}
           onLanguageChange={onLanguageChange}
-          placement="cover"
-          textClassName="reader-bar__issue"
+          text={text}
         />
-        <IconButton
-          label={text.menuOpen}
-          onClick={onMenu}
-          className="masthead__menu"
-          buttonRef={menuButtonRef}
-        >
-          <List size={31} weight="regular" aria-hidden="true" />
-        </IconButton>
       </div>
     </header>
   );
@@ -163,10 +150,8 @@ function CoverScreen({
   onLanguageChange,
   text,
   onOpen,
-  onMenu,
   onEditorial,
   reduceMotion,
-  menuButtonRef,
 }) {
   return (
     <motion.section
@@ -176,9 +161,7 @@ function CoverScreen({
     >
       <div className="cover-screen__current">
         <Masthead
-          onMenu={onMenu}
           onEditorial={onEditorial}
-          menuButtonRef={menuButtonRef}
           language={language}
           onLanguageChange={onLanguageChange}
           text={text}
@@ -257,11 +240,11 @@ function ReaderBar({ issue, onBack, language, onLanguageChange, text }) {
       <span className="reader-bar__brand">
         ROWKI <small className="reader-bar__issue">#{issue.number}</small>
       </span>
-      <LanguageToggle
+      <LanguageSwitch
         language={language}
         onLanguageChange={onLanguageChange}
-        placement="contents"
-        textClassName="reader-bar__issue"
+        text={text}
+        className="language-switch--compact"
       />
     </header>
   );
@@ -287,11 +270,11 @@ function EditorialScreen({ team, language, onLanguageChange, onBack, text, reduc
         <span className="editorial-bar__brand">
           ROWKI <small>{text.editorial}</small>
         </span>
-        <LanguageToggle
+        <LanguageSwitch
           language={language}
           onLanguageChange={onLanguageChange}
-          placement="contents"
-          textClassName="reader-bar__issue"
+          text={text}
+          className="language-switch--compact"
         />
       </header>
 
@@ -600,11 +583,11 @@ function StoryToolbar({
         <small>{text.issuePosition(issue.number, Number(story.number), stories.length)}</small>
       </div>
       <div className="story-toolbar__actions">
-        <LanguageToggle
+        <LanguageSwitch
           language={language}
           onLanguageChange={onLanguageChange}
-          placement="story"
-          textClassName="reader-bar__issue"
+          text={text}
+          className="language-switch--compact"
         />
         <IconButton label={text.shareStory} onClick={onShare}>
           <Export size={23} aria-hidden="true" />
@@ -858,107 +841,12 @@ function StoryScreen({
   );
 }
 
-function MenuSheet({
-  open,
-  language,
-  onLanguageChange,
-  text,
-  onClose,
-  onOpenIssue,
-  onOpenEditorial,
-  reduceMotion,
-}) {
-  const sheetRef = useRef(null);
-  const closeRef = useRef(null);
-
-  useEffect(() => {
-    if (!open) return undefined;
-    closeRef.current?.focus();
-
-    const onKeyDown = (event) => {
-      if (event.key === "Escape") {
-        onClose();
-        return;
-      }
-
-      if (event.key !== "Tab") return;
-      const controls = [...sheetRef.current.querySelectorAll("button:not([disabled])")];
-      if (!controls.length) return;
-      const first = controls[0];
-      const last = controls[controls.length - 1];
-
-      if (event.shiftKey && document.activeElement === first) {
-        event.preventDefault();
-        last.focus();
-      } else if (!event.shiftKey && document.activeElement === last) {
-        event.preventDefault();
-        first.focus();
-      }
-    };
-
-    window.addEventListener("keydown", onKeyDown);
-    return () => window.removeEventListener("keydown", onKeyDown);
-  }, [open, onClose]);
-
-  return (
-    <AnimatePresence>
-      {open ? (
-        <>
-          <motion.button
-            className="menu-backdrop"
-            type="button"
-            aria-label={text.menuClose}
-            onClick={onClose}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          />
-          <motion.aside
-            ref={sheetRef}
-            className="menu-sheet"
-            role="dialog"
-            aria-modal="true"
-            aria-label={text.menuLabel}
-            initial={reduceMotion ? false : { x: "100%" }}
-            animate={{ x: 0 }}
-            exit={{ x: "100%" }}
-            transition={{ duration: reduceMotion ? 0 : 0.32, ease: [0.22, 1, 0.36, 1] }}
-          >
-            <div className="menu-sheet__top">
-              <span>ROWKI</span>
-              <IconButton label={text.menuClose} onClick={onClose} buttonRef={closeRef}>
-                <X size={28} aria-hidden="true" />
-              </IconButton>
-            </div>
-            <nav aria-label={text.mainNavigation}>
-              <button type="button" onClick={onOpenIssue}>{text.currentIssue}</button>
-              <button type="button" onClick={onOpenEditorial}>{text.editorial}</button>
-              <button
-                className="language-switch language-switch--menu"
-                type="button"
-                onClick={() => onLanguageChange(language === "pl" ? "en" : "pl")}
-              >
-                {text.switchLanguage}
-              </button>
-              <button type="button" disabled>{text.archive} <small>{text.comingSoon}</small></button>
-              <button type="button" disabled>{text.about} <small>{text.comingSoon}</small></button>
-            </nav>
-            <p>{text.publisher}</p>
-          </motion.aside>
-        </>
-      ) : null}
-    </AnimatePresence>
-  );
-}
-
 export function App() {
   const reduceMotion = useReducedMotion();
   const [language, setLanguage] = useState(readStoredLanguage);
   const [screen, setScreen] = useState("cover");
   const [storyId, setStoryId] = useState(polishStories[0].id);
-  const [menuOpen, setMenuOpen] = useState(false);
   const [savedStories, setSavedStories] = useState(() => new Set());
-  const menuButtonRef = useRef(null);
   const { issue, upcomingIssue, stories } = publications[language];
   const text = translations[language];
   const editorialTeam = editorialTeamByLanguage[language];
@@ -978,12 +866,10 @@ export function App() {
   }, [issue.title, language, text]);
 
   const openIssue = () => {
-    setMenuOpen(false);
     setScreen("contents");
   };
 
   const openEditorial = () => {
-    setMenuOpen(false);
     setScreen("editorial");
   };
 
@@ -1006,11 +892,6 @@ export function App() {
     });
   };
 
-  const closeMenu = useCallback(() => {
-    setMenuOpen(false);
-    window.requestAnimationFrame(() => menuButtonRef.current?.focus());
-  }, []);
-
   return (
     <main className="prototype-stage" lang={language}>
       <div className="mobile-prototype publication-shell">
@@ -1026,10 +907,8 @@ export function App() {
               onLanguageChange={setLanguage}
               text={text}
               onOpen={openIssue}
-              onMenu={() => setMenuOpen(true)}
               onEditorial={openEditorial}
               reduceMotion={reduceMotion}
-              menuButtonRef={menuButtonRef}
             />
           ) : null}
           {screen === "contents" ? (
@@ -1074,17 +953,6 @@ export function App() {
             />
           ) : null}
         </AnimatePresence>
-
-        <MenuSheet
-          open={menuOpen}
-          language={language}
-          onLanguageChange={setLanguage}
-          text={text}
-          onClose={closeMenu}
-          onOpenIssue={openIssue}
-          onOpenEditorial={openEditorial}
-          reduceMotion={reduceMotion}
-        />
       </div>
     </main>
   );
