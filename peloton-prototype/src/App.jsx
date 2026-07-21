@@ -7,8 +7,6 @@ import {
   BookmarkSimple,
   Clock,
   Export,
-  List,
-  X,
 } from "@phosphor-icons/react";
 import { assetPath } from "./assetPath";
 import { cyclingAppsByLocale } from "./content/cycling-apps.js";
@@ -48,10 +46,9 @@ const editions = {
   },
 };
 
-function IconButton({ label, children, onClick, pressed, className = "", buttonRef }) {
+function IconButton({ label, children, onClick, pressed, className = "" }) {
   return (
     <button
-      ref={buttonRef}
       className={`icon-button ${className}`}
       type="button"
       aria-label={label}
@@ -80,7 +77,7 @@ function LanguageSwitch({ locale, onChange, copy, className = "" }) {
   );
 }
 
-function Masthead({ onMenu, onEditorial, menuButtonRef, locale, onLocaleChange, copy }) {
+function Masthead({ onEditorial, locale, onLocaleChange, copy }) {
   return (
     <header className="masthead">
       <div className="masthead__wordmark" aria-label="Peloton">
@@ -91,14 +88,6 @@ function Masthead({ onMenu, onEditorial, menuButtonRef, locale, onLocaleChange, 
           {copy.editorial}
         </button>
         <LanguageSwitch locale={locale} onChange={onLocaleChange} copy={copy} />
-        <IconButton
-          label={copy.openMenu}
-          onClick={onMenu}
-          className="masthead__menu"
-          buttonRef={menuButtonRef}
-        >
-          <List size={31} weight="regular" aria-hidden="true" />
-        </IconButton>
       </div>
     </header>
   );
@@ -209,10 +198,8 @@ function CyclingAppsColophon({ apps, copy }) {
 
 function CoverScreen({
   onOpen,
-  onMenu,
   onEditorial,
   reduceMotion,
-  menuButtonRef,
   locale,
   onLocaleChange,
   copy,
@@ -232,9 +219,7 @@ function CoverScreen({
     >
       <div className="cover-screen__current">
         <Masthead
-          onMenu={onMenu}
           onEditorial={onEditorial}
-          menuButtonRef={menuButtonRef}
           locale={locale}
           onLocaleChange={onLocaleChange}
           copy={copy}
@@ -878,91 +863,12 @@ function StoryScreen({
   );
 }
 
-function MenuSheet({ open, onClose, onOpenIssue, onOpenEditorial, reduceMotion, copy }) {
-  const sheetRef = useRef(null);
-  const closeRef = useRef(null);
-
-  useEffect(() => {
-    if (!open) return undefined;
-    closeRef.current?.focus();
-
-    const onKeyDown = (event) => {
-      if (event.key === "Escape") {
-        onClose();
-        return;
-      }
-
-      if (event.key !== "Tab") return;
-      const controls = [...sheetRef.current.querySelectorAll("button:not([disabled])")];
-      if (!controls.length) return;
-      const first = controls[0];
-      const last = controls[controls.length - 1];
-
-      if (event.shiftKey && document.activeElement === first) {
-        event.preventDefault();
-        last.focus();
-      } else if (!event.shiftKey && document.activeElement === last) {
-        event.preventDefault();
-        first.focus();
-      }
-    };
-
-    window.addEventListener("keydown", onKeyDown);
-    return () => window.removeEventListener("keydown", onKeyDown);
-  }, [open, onClose]);
-
-  return (
-    <AnimatePresence>
-      {open ? (
-        <>
-          <motion.button
-            className="menu-backdrop"
-            type="button"
-            aria-label={copy.closeMenu}
-            onClick={onClose}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          />
-          <motion.aside
-            ref={sheetRef}
-            className="menu-sheet"
-            role="dialog"
-            aria-modal="true"
-            aria-label={copy.menuLabel}
-            initial={reduceMotion ? false : { x: "100%" }}
-            animate={{ x: 0 }}
-            exit={{ x: "100%" }}
-            transition={{ duration: reduceMotion ? 0 : 0.32, ease: [0.22, 1, 0.36, 1] }}
-          >
-            <div className="menu-sheet__top">
-              <span>PELOTON</span>
-              <IconButton label={copy.closeMenu} onClick={onClose} buttonRef={closeRef}>
-                <X size={28} aria-hidden="true" />
-              </IconButton>
-            </div>
-            <nav aria-label={copy.mainNavigation}>
-              <button type="button" onClick={onOpenIssue}>{copy.currentIssue}</button>
-              <button type="button" onClick={onOpenEditorial}>{copy.editorial}</button>
-              <button type="button" disabled>{copy.archive} <small>{copy.soon}</small></button>
-              <button type="button" disabled>{copy.about} <small>{copy.soon}</small></button>
-            </nav>
-            <p>{copy.publisher}</p>
-          </motion.aside>
-        </>
-      ) : null}
-    </AnimatePresence>
-  );
-}
-
 export function App() {
   const reduceMotion = useReducedMotion();
   const [locale, setLocale] = useState(getInitialLocale);
   const [screen, setScreen] = useState("cover");
   const [storyId, setStoryId] = useState(polishStories[0].id);
-  const [menuOpen, setMenuOpen] = useState(false);
   const [savedStories, setSavedStories] = useState(() => new Set());
-  const menuButtonRef = useRef(null);
   const copy = copyByLocale[locale];
   const editorialTeam = editorialTeamByLocale[locale];
   const { issue, upcomingIssue, stories, totalReadingMinutes } = editions[locale];
@@ -980,12 +886,10 @@ export function App() {
   }, [copy.htmlLang, copy.issueLabel, issue.number, locale]);
 
   const openIssue = () => {
-    setMenuOpen(false);
     setScreen("contents");
   };
 
   const openEditorial = () => {
-    setMenuOpen(false);
     setScreen("editorial");
   };
 
@@ -1008,11 +912,6 @@ export function App() {
     });
   };
 
-  const closeMenu = () => {
-    setMenuOpen(false);
-    window.requestAnimationFrame(() => menuButtonRef.current?.focus());
-  };
-
   return (
     <main className="prototype-stage">
       <div className="mobile-prototype publication-shell">
@@ -1021,10 +920,8 @@ export function App() {
             <CoverScreen
               key="cover"
               onOpen={openIssue}
-              onMenu={() => setMenuOpen(true)}
               onEditorial={openEditorial}
               reduceMotion={reduceMotion}
-              menuButtonRef={menuButtonRef}
               locale={locale}
               onLocaleChange={setLocale}
               copy={copy}
@@ -1078,14 +975,6 @@ export function App() {
           ) : null}
         </AnimatePresence>
 
-        <MenuSheet
-          open={menuOpen}
-          onClose={closeMenu}
-          onOpenIssue={openIssue}
-          onOpenEditorial={openEditorial}
-          reduceMotion={reduceMotion}
-          copy={copy}
-        />
       </div>
     </main>
   );

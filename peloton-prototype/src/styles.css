@@ -97,18 +97,20 @@ button:focus-visible {
 
 .masthead {
   min-height: 79px;
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: flex-start;
-  justify-content: space-between;
+  column-gap: 8px;
   position: relative;
 }
 
 .masthead__wordmark {
-  width: min(216px, calc(100% - 112px));
+  width: min(216px, 100%);
+  min-width: 0;
   padding-bottom: 9px;
   border-bottom: 1px solid var(--ink);
   font-family: "Newsreader", Georgia, serif;
-  font-size: clamp(43px, 12.3vw, 48px);
+  font-size: clamp(29px, calc(12.85vw - 12.12px), 45px);
   font-weight: 500;
   line-height: 0.94;
   letter-spacing: -0.055em;
@@ -117,15 +119,17 @@ button:focus-visible {
 
 .masthead__actions {
   display: flex;
-  align-items: flex-start;
-  gap: 4px;
+  align-items: center;
+  gap: 7px;
+  flex: none;
 }
 
 .masthead__editors {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  padding: 4px 1px 3px;
+  min-height: 34px;
+  display: inline-flex;
+  align-items: center;
+  position: static;
+  padding: 0 1px;
   border: 0;
   border-bottom: 2px solid var(--orange);
   background: transparent;
@@ -209,11 +213,6 @@ button:focus-visible {
 
 .icon-button:active {
   transform: scale(0.95);
-}
-
-.masthead__menu {
-  margin-top: -5px;
-  margin-right: -7px;
 }
 
 .issue-cover {
@@ -1560,102 +1559,6 @@ button:focus-visible {
   transform: translateX(4px);
 }
 
-.menu-backdrop {
-  position: absolute;
-  inset: 0;
-  z-index: 9;
-  width: 100%;
-  border: 0;
-  background: rgb(23 23 19 / 0.48);
-  cursor: pointer;
-}
-
-.menu-sheet {
-  position: absolute;
-  inset: 0 0 0 auto;
-  z-index: 10;
-  width: min(86%, 335px);
-  display: flex;
-  flex-direction: column;
-  padding: 25px 24px 29px;
-  background: var(--ink);
-  color: var(--paper);
-  box-shadow: -14px 0 34px rgb(0 0 0 / 0.2);
-}
-
-.menu-sheet__top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 18px;
-  border-bottom: 1px solid rgb(244 237 223 / 0.45);
-}
-
-.menu-sheet__top > span {
-  font-family: "Newsreader", Georgia, serif;
-  font-size: 28px;
-  font-weight: 500;
-}
-
-.menu-sheet .icon-button {
-  color: var(--paper);
-}
-
-.menu-sheet .icon-button:hover {
-  background: rgb(244 237 223 / 0.1);
-}
-
-.menu-sheet nav {
-  display: grid;
-  margin-top: 42px;
-}
-
-.menu-sheet nav button {
-  min-height: 69px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 0;
-  border: 0;
-  border-bottom: 1px solid rgb(244 237 223 / 0.25);
-  background: transparent;
-  color: inherit;
-  font-family: "Newsreader", Georgia, serif;
-  font-size: 30px;
-  text-align: left;
-  cursor: pointer;
-}
-
-.menu-sheet nav button:hover {
-  color: #f28a36;
-}
-
-.menu-sheet nav button small {
-  font-family: "Inter", sans-serif;
-  font-size: 9px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.menu-sheet nav button:disabled {
-  color: rgb(244 237 223 / 0.42);
-  cursor: default;
-}
-
-.menu-sheet nav button:disabled:hover {
-  color: rgb(244 237 223 / 0.42);
-}
-
-.menu-sheet > p {
-  margin: auto 0 0;
-  color: rgb(244 237 223 / 0.66);
-  font-size: 11px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
 .editorial-screen {
   display: grid;
   grid-template-rows: 76px minmax(0, 1fr);
@@ -2135,10 +2038,6 @@ button:focus-visible {
     min-height: 68px;
   }
 
-  .masthead__wordmark {
-    font-size: 45px;
-  }
-
   .issue-heading h1 {
     font-size: 38px;
   }
@@ -2220,7 +2119,7 @@ button:focus-visible {
 
 @media (max-width: 350px) {
   .cover-screen__current {
-    padding-inline: 20px;
+    padding-inline: 14px;
   }
 
   .upcoming-issue {
@@ -2228,8 +2127,8 @@ button:focus-visible {
   }
 
   .masthead__wordmark {
-    width: min(168px, calc(100% - 106px));
-    font-size: 38px;
+    width: 100%;
+    font-size: clamp(29px, 9.1vw, 32px);
   }
 
   .issue-heading h1 {
@@ -2298,19 +2197,9 @@ button:focus-visible {
     min-height: 64px;
   }
 
-  .masthead__editors {
-    position: static;
-    margin: 8px 12px 0 0;
-  }
-
   .masthead__wordmark {
     width: 270px;
     font-size: 58px;
-  }
-
-  .masthead__menu {
-    margin-top: 1px;
-    margin-right: -4px;
   }
 
   .issue-cover {
@@ -2799,16 +2688,6 @@ button:focus-visible {
     font-size: 19px;
   }
 
-  .menu-sheet {
-    width: min(52vw, 420px);
-    overflow-y: auto;
-    padding: 34px 38px 38px;
-  }
-
-  .menu-sheet nav button {
-    min-height: 78px;
-    font-size: 36px;
-  }
 }
 
 /* Desktop — trzyczęściowa okładka i czytnik w formie otwartego magazynu. */
@@ -3202,15 +3081,6 @@ button:focus-visible {
     top: 88px;
   }
 
-  .menu-sheet {
-    width: min(38vw, 460px);
-    padding: 40px 48px;
-  }
-
-  .menu-sheet nav button {
-    min-height: 86px;
-    font-size: 42px;
-  }
 }
 
 /* Szeroki, niski viewport (telefon poziomo / małe okno laptopa). */
