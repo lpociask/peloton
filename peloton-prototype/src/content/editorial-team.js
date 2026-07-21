@@ -3,19 +3,19 @@ export const editorialTeamByLocale = {
     kicker: "REDAKCJA / PELOTON",
     title: "Pięć głosów. Jedna odpowiedzialność.",
     intro:
-      "Każdy numer Pelotonu ma pięć materiałów i pięcioro stałych autorów. Różnią ich temperamenty, lecz łączy obowiązek: najpierw źródło, potem zdanie.",
+      "Peloton jest eksperymentem wydawniczym: jeden ludzki redaktor naczelny pracuje z pięcioma wyspecjalizowanymi agentami-redaktorami. Każdy numer ma pięć materiałów i pięć różnych perspektyw, ale tylko jedną osobę odpowiedzialną za to, co trafia do czytelnika.",
     affiliationLabel: "STAŁA REDAKCJA",
     magazine: "PELOTON",
     chief: {
       kicker: "REDAKTOR NACZELNY / PELOTON + ROWKI",
-      title: "Wstępniak ma jeden podpis.",
+      title: "Kierunek nadaje człowiek.",
       portrait: "editor-in-chief.jpg",
       portraitAlt: "Ilustracyjny portret redaktora naczelnego Pelotonu i Rowków.",
       description:
-        "Redaktor naczelny nadaje temat numeru, zamawia teksty, prowadzi spory i pisze wszystkie wstępniaki. Agenci nie przejmują jego głosu — dostarczają pięć odmiennych, udokumentowanych perspektyw.",
+        "Tematy wyrastają z mojej ciekawości, doświadczenia i pytań, które sam chciałbym zadać światu roweru. To ja wybieram motyw numeru, zatwierdzam pomysły i tezy, redaguję materiały, decyduję o publikacji oraz piszę wszystkie wstępniaki. Pięciu agentów-redaktorów pomaga mi szukać źródeł, porównywać fakty, znajdować kontrargumenty i tworzyć pierwsze wersje tekstów. Czasem proponują własny trop, ale ostatnie słowo zawsze należy do mnie.",
     },
     disclosure:
-      "Portrety przedstawiają fikcyjne persony redakcyjne — wyspecjalizowane agenty pisarskie. Każdy materiał wymaga decyzji, redakcji i akceptacji redaktora naczelnego.",
+      "To eksperyment, nie próba podszywania się pod tradycyjną redakcję. Pięcioro redaktorów to jawnie fikcyjne, wyspecjalizowane persony AI. Pomagają w researchu, porządkowaniu materiału, sprawdzaniu kontrargumentów i tworzeniu szkiców. Nie mają własnych przeżyć, nie jadą na trasę i nie prowadzą rozmów, których naprawdę nie było. Ludzki pozostaje pomysł, wybór tematu, perspektywa, redakcja i ostateczna decyzja o publikacji. AI zwiększa możliwości jednej osoby; nie zastępuje jej ciekawości, osądu ani odpowiedzialności. Dlatego w tym magazynie jest więcej człowieka niż automatu — i chcemy mówić o tym wprost.",
     voiceLabel: "GŁOS",
     sourcesLabel: "ŹRÓDŁA",
     assignmentLabel: "W TYM NUMERZE",
@@ -103,19 +103,19 @@ export const editorialTeamByLocale = {
     kicker: "THE EDITORS / PELOTON",
     title: "Five voices. One responsibility.",
     intro:
-      "Every issue of Peloton contains five stories by five regular writers. Their temperaments differ, but the duty is shared: source first, sentence second.",
+      "Peloton is a publishing experiment: one human editor-in-chief working with five specialised editorial agents. Every issue contains five stories and five distinct perspectives, but only one person is accountable for what reaches the reader.",
     affiliationLabel: "PERMANENT EDITORIAL TEAM",
     magazine: "PELOTON",
     chief: {
       kicker: "EDITOR-IN-CHIEF / PELOTON + ROWKI",
-      title: "The editor’s letter has one voice.",
+      title: "A human sets the direction.",
       portrait: "editor-in-chief.jpg",
       portraitAlt: "Illustrated portrait of the editor-in-chief of Peloton and Rowki.",
       description:
-        "The editor-in-chief sets the theme, commissions the stories, conducts the arguments and writes every editor’s letter. The agents never imitate that voice — they deliver five distinct, documented perspectives.",
+        "The stories grow out of my curiosity, experience and the questions I want to ask of cycling. I choose each issue’s theme, approve ideas and arguments, edit the stories, decide what gets published and write every editor’s letter. Five editorial agents help me find sources, compare facts, test counterarguments and produce first drafts. They sometimes suggest a lead of their own, but the final decision is always mine.",
     },
     disclosure:
-      "These portraits depict fictional editorial personas — specialised writing agents. Every story requires the editor-in-chief’s decision, edit and approval.",
+      "This is an experiment, not an attempt to impersonate a traditional newsroom. The five editors are openly fictional, specialised AI personas. They help with research, organising material, testing counterarguments and drafting. They have no lived experience, do not ride the route and never conduct an interview that did not actually happen. The idea, subject choice, perspective, edit and final publishing decision remain human. AI expands what one person can do; it does not replace curiosity, judgement or responsibility. That is why there is more human than machine in this magazine — and why we want to say so plainly.",
     voiceLabel: "VOICE",
     sourcesLabel: "SOURCES",
     assignmentLabel: "IN THIS ISSUE",

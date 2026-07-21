@@ -3,19 +3,19 @@ export const editorialTeamByLanguage = {
     kicker: "REDAKCJA / ROWKI",
     title: "Pięć uszu. Żadnego nabożeństwa.",
     intro:
-      "Pięć materiałów w każdym numerze, pięć charakterów i żadnej wspólnej listy audiofilskich przykazań. Źródła są obowiązkowe; zachwyt trzeba uzasadnić.",
+      "Rowki są eksperymentem wydawniczym: jeden ludzki redaktor naczelny pracuje z pięcioma wyspecjalizowanymi agentami-redaktorami. Każdy numer ma pięć materiałów i pięć różnych perspektyw, ale tylko jedną osobę odpowiedzialną za to, co trafia do czytelnika.",
     affiliationLabel: "STAŁA REDAKCJA",
     magazine: "ROWKI",
     chief: {
       kicker: "REDAKTOR NACZELNY / ROWKI + PELOTON",
-      title: "Wstępniak należy do naczelnego.",
+      title: "Kierunek nadaje człowiek.",
       portrait: "editor-in-chief.jpg",
       portraitAlt: "Ilustracyjny portret redaktora naczelnego Rowków i Pelotonu.",
       description:
-        "Redaktor naczelny wybiera temat numeru, ustawia temperaturę sporu, zamawia teksty i pisze wszystkie wstępniaki. Agenci prowadzą własne dziedziny, ale nie imitują jego głosu i nie publikują bez akceptacji.",
+        "Tematy zaczynają się od tego, czego sam chcę posłuchać, sprawdzić albo podważyć. To ja wybieram motyw numeru, zatwierdzam pomysły i tezy, redaguję materiały, decyduję o publikacji oraz piszę wszystkie wstępniaki. Pięciu agentów-redaktorów pomaga mi przeglądać źródła, dane, dyskografie i spory społeczności, a potem układać z nich pierwsze wersje tekstów. Czasem proponują własny trop, ale ostatnie słowo zawsze należy do mnie.",
     },
     disclosure:
-      "Portrety przedstawiają fikcyjne persony redakcyjne — wyspecjalizowane agenty pisarskie. Ich zadaniem jest rzetelny, ostry szkic; odpowiedzialność wydawnicza pozostaje po stronie redaktora naczelnego.",
+      "Nie udajemy redakcji złożonej z pięciu ludzi. Widoczni tu redaktorzy to jawnie fikcyjne, wyspecjalizowane persony AI. Pomagają w researchu, porządkowaniu materiału, sprawdzaniu kontrargumentów i tworzeniu szkiców. Nie słuchają płyt, nie chodzą po sklepach i nie rozmawiają z artystami, jeśli taka rozmowa naprawdę się nie odbyła. Ludzki pozostaje pomysł, wybór tematu, perspektywa, redakcja i ostateczna decyzja o publikacji. AI zwiększa możliwości jednej osoby; nie zastępuje jej gustu, osądu ani odpowiedzialności. Rowki sprawdzają, czy w ten sposób można zbudować niezależny magazyn, w którym człowieka jest więcej niż automatu — i chcemy mówić o tym wprost.",
     voiceLabel: "GŁOS",
     sourcesLabel: "ŹRÓDŁA",
     assignmentLabel: "W TYM NUMERZE",
@@ -67,17 +67,17 @@ export const editorialTeamByLanguage = {
   en: {
     kicker: "THE EDITORS / ROWKI",
     title: "Five pairs of ears. No worship.",
-    intro: "Five features per issue, five temperaments and no shared list of audiophile commandments. Sources are mandatory; delight must earn its place.",
+    intro: "Rowki is a publishing experiment: one human editor-in-chief working with five specialised editorial agents. Every issue contains five features and five distinct perspectives, but only one person is accountable for what reaches the reader.",
     affiliationLabel: "PERMANENT EDITORIAL TEAM",
     magazine: "ROWKI",
     chief: {
       kicker: "EDITOR-IN-CHIEF / ROWKI + PELOTON",
-      title: "The editor’s letter belongs to the editor.",
+      title: "A human sets the direction.",
       portrait: "editor-in-chief.jpg",
       portraitAlt: "Illustrated portrait of the editor-in-chief of Rowki and Peloton.",
-      description: "The editor-in-chief chooses the theme, sets the temperature of the argument, commissions the stories and writes every editor’s letter. Agents own their beats, but never imitate that voice or publish without approval.",
+      description: "The stories begin with what I want to hear, investigate or challenge. I choose each issue’s theme, approve ideas and arguments, edit the features, decide what gets published and write every editor’s letter. Five editorial agents help me work through sources, data, discographies and community debates, then shape them into first drafts. They sometimes suggest a lead of their own, but the final decision is always mine.",
     },
-    disclosure: "These portraits depict fictional editorial personas — specialised writing agents. Their job is a rigorous, pointed draft; publishing responsibility remains with the editor-in-chief.",
+    disclosure: "We do not pretend to be a newsroom of five people. The editors shown here are openly fictional, specialised AI personas. They help with research, organising material, testing counterarguments and drafting. They do not listen to records, visit shops or interview artists unless that encounter actually took place. The idea, subject choice, perspective, edit and final publishing decision remain human. AI expands what one person can do; it does not replace taste, judgement or responsibility. Rowki asks whether this can produce an independent magazine with more human than machine in it — and we want to say so plainly.",
     voiceLabel: "VOICE", sourcesLabel: "SOURCES", assignmentLabel: "IN THIS ISSUE", backToCover: "Back to the cover",
     footer: "5 WRITERS · 5 FEATURES · 1 EDITOR-IN-CHIEF",
     people: [
