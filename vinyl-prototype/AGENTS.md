@@ -9,7 +9,7 @@
 - On desktop, treat article artwork as a framed editorial plate: preserve its intrinsic proportions and cap its display width so ultrawide browser windows do not inflate it into a billboard.
 - Every feature must have its own in-article illustration; never reuse the issue cover as generic story media.
 - Every Rowki issue contains exactly five editorial features, each assigned to one of the five specialist writing agents.
-- House ads for Igła i Rowek should read like restrained editorial classifieds, appear only once per issue, and never interrupt article prose.
+- House ads for Igła i Rowek belong in one restrained, bilingual “Od wydawcy” colophon after the next-issue preview, exactly once per issue; never place them in the contents screen or interrupt article prose.
 - Give every issue a distinct artist-led cover language while keeping the ROWKI masthead and editorial shell recognizable across the series.
 - Polish remains the default language, while the complete interface and every article must have an English counterpart available through one persistent, accessible PL/EN switch.
 - Editorial illustration combines Polish poster-school economy, Japanese hi-fi catalog precision, matte gouache, cut paper, and coarse screen-print grain.

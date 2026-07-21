@@ -3,6 +3,7 @@ import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import {
   ArrowLeft,
   ArrowRight,
+  ArrowUpRight,
   BookmarkSimple,
   Clock,
   Export,
@@ -242,6 +243,7 @@ function CoverScreen({
       </div>
 
       <UpcomingIssueTeaser issue={upcomingIssue} text={text} reduceMotion={reduceMotion} />
+      <MagazineHouseAd text={text} />
     </motion.section>
   );
 }
@@ -369,35 +371,52 @@ function EditorialScreen({ team, language, onLanguageChange, onBack, text, reduc
 }
 
 function MagazineHouseAd({ text }) {
+  const headingId = "publisher-app-title";
+
   return (
-    <aside className="house-ad" aria-labelledby="house-ad-label">
-      <a
-        className="house-ad__link"
-        href={IGLA_I_ROWEK_APP_STORE_URL}
-        target="_blank"
-        rel="noreferrer"
-        aria-label={text.houseAdAria}
-      >
-        <img
-          className="house-ad__icon"
-          src={assetPath("igla-i-rowek-app-icon.png")}
-          alt=""
-          width="256"
-          height="256"
-          loading="lazy"
-          decoding="async"
-        />
-        <span className="house-ad__copy">
-          <small id="house-ad-label">{text.houseAdEyebrow}</small>
-          <span className="house-ad__message">
-            <strong>{text.houseAdName}</strong> {text.houseAdBody}
-          </span>
-        </span>
-        <span className="house-ad__cta" aria-hidden="true">
-          <span>{text.houseAdCta}</span>
-          <ArrowRight size={16} />
-        </span>
-      </a>
+    <aside className="publisher-apps publisher-apps--single" aria-labelledby={headingId}>
+      <header className="publisher-apps__header">
+        <div>
+          <p className="publisher-apps__kicker">{text.houseAdKicker}</p>
+          <h2 id={headingId}>{text.houseAdHeading}</h2>
+        </div>
+        <p className="publisher-apps__dek">{text.houseAdDek}</p>
+      </header>
+
+      <ol className="publisher-apps__list">
+        <li className="publisher-apps__item">
+          <a
+            href={IGLA_I_ROWEK_APP_STORE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={text.houseAdAria}
+          >
+            <span className="publisher-apps__number" aria-hidden="true">01</span>
+            <img
+              src={assetPath("igla-i-rowek-app-icon.png")}
+              alt=""
+              width="256"
+              height="256"
+              loading="lazy"
+              decoding="async"
+            />
+            <span className="publisher-apps__copy">
+              <small>{text.houseAdEyebrow}</small>
+              <strong>{text.houseAdName}</strong>
+              <span>{text.houseAdBody}</span>
+            </span>
+            <span className="publisher-apps__store" aria-hidden="true">
+              {text.houseAdCta}
+              <ArrowUpRight size={15} weight="bold" />
+            </span>
+          </a>
+        </li>
+      </ol>
+
+      <footer className="publisher-apps__folio">
+        <span>ROWKI · PAPER</span>
+        <span>{text.houseAdFolio}</span>
+      </footer>
     </aside>
   );
 }
@@ -497,7 +516,6 @@ function ContentsScreen({
       </section>
 
       <div className="contents-footer">
-        <MagazineHouseAd text={text} />
         <button className="primary-action contents-action" type="button" onClick={() => onRead(stories[0])}>
           <span>{text.readFromBeginning}</span>
           <ArrowRight size={25} aria-hidden="true" />
