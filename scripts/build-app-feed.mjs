@@ -111,6 +111,53 @@ function mediaURL(value, mediaBase) {
   return url.href;
 }
 
+function requiredText(value, context) {
+  if (typeof value !== "string" || !value.trim()) {
+    throw new Error(`Missing ${context}.`);
+  }
+  return value;
+}
+
+function pairUpcomingIssue({ publicationID, polish, english, mediaBase }) {
+  if (!polish && !english) return null;
+  if (!polish || !english) {
+    throw new Error(`Upcoming issue for ${publicationID} must exist in both languages.`);
+  }
+
+  for (const field of ["number", "dateTime", "cover"]) {
+    requiredText(polish[field], `Polish upcoming issue ${field} for ${publicationID}`);
+    requiredText(english[field], `English upcoming issue ${field} for ${publicationID}`);
+    if (polish[field] !== english[field]) {
+      throw new Error(
+        `Upcoming issue ${field} mismatch for ${publicationID}: ${polish[field]} / ${english[field]}.`,
+      );
+    }
+  }
+
+  if (!/^\d{4}-(0[1-9]|1[0-2])$/.test(polish.dateTime)) {
+    throw new Error(
+      `Upcoming issue dateTime for ${publicationID} must use YYYY-MM: ${polish.dateTime}.`,
+    );
+  }
+
+  for (const [language, issue] of [["Polish", polish], ["English", english]]) {
+    for (const field of ["date", "title", "teaser", "coverAlt"]) {
+      requiredText(issue[field], `${language} upcoming issue ${field} for ${publicationID}`);
+    }
+  }
+
+  return {
+    id: `${publicationID}-${polish.number}`,
+    number: polish.number,
+    dateTime: polish.dateTime,
+    date: localized(polish.date, english.date),
+    title: localized(polish.title, english.title),
+    teaser: localized(polish.teaser, english.teaser),
+    coverImage: mediaURL(polish.cover, mediaBase),
+    coverAlt: localized(polish.coverAlt, english.coverAlt),
+  };
+}
+
 function normalizeCredit(value) {
   if (!value) return null;
   const credit = String(value).replace("PAPER STUDIO", "5×12 STUDIO / OPENAI");
@@ -266,9 +313,19 @@ function publication({
     mediaCredit: source.mediaCredit,
   });
   const issueID = `${id}-${source.pl.issue.number}`;
+  const upcomingIssue = pairUpcomingIssue({
+    publicationID: id,
+    polish: source.pl.upcomingIssue,
+    english: source.en.upcomingIssue,
+    mediaBase,
+  });
 
   if (source.pl.issue.number !== source.en.issue.number) {
     throw new Error(`Issue number mismatch for ${id}.`);
+  }
+
+  if (upcomingIssue?.id === issueID) {
+    throw new Error(`Upcoming issue for ${id} cannot be the current issue ${issueID}.`);
   }
 
   return {
@@ -282,6 +339,7 @@ function publication({
       pl: normalizeEditorial(source.editorial.pl, mediaBase),
       en: normalizeEditorial(source.editorial.en, mediaBase),
     },
+    ...(upcomingIssue ? { upcomingIssue } : {}),
     issues: [{
       id: issueID,
       number: source.pl.issue.number,
@@ -308,6 +366,27 @@ function validateFeed(feed) {
       throw new Error(`${currentIssue.id} must contain exactly five articles.`);
     }
 
+    if (item.upcomingIssue) {
+      const upcoming = item.upcomingIssue;
+      if (upcoming.id === currentIssue.id || upcoming.number === currentIssue.number) {
+        throw new Error(`Upcoming issue for ${item.id} duplicates the current issue.`);
+      }
+      if (!/^\d{4}-(0[1-9]|1[0-2])$/.test(upcoming.dateTime)) {
+        throw new Error(`Invalid upcoming issue dateTime for ${item.id}: ${upcoming.dateTime}.`);
+      }
+      if (!upcoming.coverImage) {
+        throw new Error(`Missing upcoming issue cover for ${item.id}.`);
+      }
+      for (const field of ["date", "title", "teaser", "coverAlt"]) {
+        for (const language of ["pl", "en"]) {
+          requiredText(
+            upcoming[field]?.[language],
+            `${language} upcoming issue ${field} for ${item.id}`,
+          );
+        }
+      }
+    }
+
     for (const article of currentIssue.articles) {
       if (!article.thumbnailImage || !article.heroImage) {
         throw new Error(`Missing primary media for ${currentIssue.id}/${article.id}.`);
@@ -332,6 +411,7 @@ function feedMediaURLs(feed) {
     item.editorial.en.chief.portrait,
     ...item.editorial.pl.people.map((person) => person.portrait),
     ...item.editorial.en.people.map((person) => person.portrait),
+    ...(item.upcomingIssue ? [item.upcomingIssue.coverImage] : []),
     ...item.issues.flatMap((issue) => [
       issue.coverImage,
       ...issue.articles.flatMap((article) => [
