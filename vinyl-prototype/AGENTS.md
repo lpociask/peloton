@@ -8,6 +8,7 @@
 - On phones, preserve the full composition of editorial illustrations instead of cropping them into fixed-height frames. A short viewport should scroll the contents naturally rather than compressing list rows below their readable height.
 - On desktop, treat article artwork as a framed editorial plate: preserve its intrinsic proportions and cap its display width so ultrawide browser windows do not inflate it into a billboard.
 - Every feature must have its own in-article illustration; never reuse the issue cover as generic story media.
+- Every Rowki issue contains exactly five editorial features, each assigned to one of the five specialist writing agents.
 - House ads for Igła i Rowek should read like restrained editorial classifieds, appear only once per issue, and never interrupt article prose.
 - Give every issue a distinct artist-led cover language while keeping the ROWKI masthead and editorial shell recognizable across the series.
 - Polish remains the default language, while the complete interface and every article must have an English counterpart available through one persistent, accessible PL/EN switch.
@@ -19,3 +20,5 @@
 - Issue #01 contains five features: Technics history and 2026 news, the vinyl revival, progressive music from Pink Floyd to TesseracT, the end of Riverside, and a guide to Warsaw record stores.
 - Riverside coverage treats Mariusz Duda's April 2026 departure as the end of Riverside as an artistic organism while clearly distinguishing that assessment from the formal legal status of the name.
 - Warsaw store details are time-sensitive. Verify current addresses and advise readers to check opening hours before visiting.
+- The owner is editor-in-chief of both Rowki and Peloton and is the sole author of every editor’s letter. Five fictional specialist writing agents produce the five issue stories under the editor-in-chief’s direction; they never write an editor’s letter, imitate the editor-in-chief’s voice, or publish without approval.
+- Keep the “Redaktorzy” destination visible as a persistent text tab in the cover masthead; it must not be discoverable only through the slide-out menu.

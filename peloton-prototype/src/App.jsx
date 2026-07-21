@@ -12,6 +12,7 @@ import {
 } from "@phosphor-icons/react";
 import { assetPath } from "./assetPath";
 import { cyclingAppsByLocale } from "./content/cycling-apps.js";
+import { editorialTeamByLocale } from "./content/editorial-team.js";
 import {
   issue as polishIssue,
   upcomingIssue as polishUpcomingIssue,
@@ -79,13 +80,16 @@ function LanguageSwitch({ locale, onChange, copy, className = "" }) {
   );
 }
 
-function Masthead({ onMenu, menuButtonRef, locale, onLocaleChange, copy }) {
+function Masthead({ onMenu, onEditorial, menuButtonRef, locale, onLocaleChange, copy }) {
   return (
     <header className="masthead">
       <div className="masthead__wordmark" aria-label="Peloton">
         PELOTON
       </div>
       <div className="masthead__actions">
+        <button className="masthead__editors" type="button" onClick={onEditorial}>
+          {copy.editorial}
+        </button>
         <LanguageSwitch locale={locale} onChange={onLocaleChange} copy={copy} />
         <IconButton
           label={copy.openMenu}
@@ -206,6 +210,7 @@ function CyclingAppsColophon({ apps, copy }) {
 function CoverScreen({
   onOpen,
   onMenu,
+  onEditorial,
   reduceMotion,
   menuButtonRef,
   locale,
@@ -228,6 +233,7 @@ function CoverScreen({
       <div className="cover-screen__current">
         <Masthead
           onMenu={onMenu}
+          onEditorial={onEditorial}
           menuButtonRef={menuButtonRef}
           locale={locale}
           onLocaleChange={onLocaleChange}
@@ -320,6 +326,109 @@ function ReaderBar({ onBack, locale, onLocaleChange, copy, issue }) {
         />
       </div>
     </header>
+  );
+}
+
+function EditorialScreen({ team, locale, onLocaleChange, onBack, copy, reduceMotion }) {
+  const headingRef = useRef(null);
+
+  useEffect(() => {
+    headingRef.current?.focus({ preventScroll: true });
+  }, []);
+
+  return (
+    <motion.section
+      className={`editorial-screen editorial-screen--${locale}`}
+      {...pageMotion}
+      transition={{ duration: reduceMotion ? 0 : 0.34, ease: [0.22, 1, 0.36, 1] }}
+    >
+      <header className="editorial-bar">
+        <IconButton label={team.backToCover} onClick={onBack}>
+          <ArrowLeft size={25} aria-hidden="true" />
+        </IconButton>
+        <span className="editorial-bar__brand">
+          PELOTON <small>{copy.editorial}</small>
+        </span>
+        <LanguageSwitch
+          locale={locale}
+          onChange={onLocaleChange}
+          copy={copy}
+          className="language-switch--compact"
+        />
+      </header>
+
+      <div className="editorial-scroll">
+        <section className="editorial-intro" aria-labelledby="editorial-title">
+          <p>{team.kicker}</p>
+          <h1 id="editorial-title" ref={headingRef} tabIndex="-1">{team.title}</h1>
+          <div aria-hidden="true" />
+          <p className="editorial-intro__dek">{team.intro}</p>
+        </section>
+
+        <aside className="editorial-chief" aria-labelledby="editorial-chief-title">
+          <p>{team.chief.kicker}</p>
+          <h2 id="editorial-chief-title">{team.chief.title}</h2>
+          <figure className="editorial-chief__portrait">
+            <img
+              src={assetPath(team.chief.portrait)}
+              alt={team.chief.portraitAlt}
+              width="720"
+              height="1125"
+              loading="eager"
+              decoding="async"
+            />
+          </figure>
+          <p>{team.chief.description}</p>
+        </aside>
+
+        <ol className="editorial-team">
+          {team.people.map((person) => (
+            <li className="editorial-card" key={person.id}>
+              <figure>
+                <img
+                  src={assetPath(person.portrait)}
+                  alt={person.portraitAlt}
+                  width="720"
+                  height="1125"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+              <div className="editorial-card__copy">
+                <p className="editorial-card__affiliation">
+                  <span>{team.affiliationLabel}</span>
+                  <strong>{team.magazine}</strong>
+                </p>
+                <p className="editorial-card__meta">
+                  <span>{person.number}</span>
+                  <span>{person.role}</span>
+                </p>
+                <h2>{person.name}</h2>
+                <p className="editorial-card__character">{person.character}</p>
+                <div className="editorial-card__notes">
+                  <p><span>{team.voiceLabel}</span>{person.voice}</p>
+                  <p><span>{team.sourcesLabel}</span>{person.sources}</p>
+                </div>
+                <p className="editorial-card__assignment">
+                  <span>{team.assignmentLabel}</span>
+                  <strong>{person.assignment}</strong>
+                </p>
+              </div>
+            </li>
+          ))}
+        </ol>
+
+        <aside className="editorial-disclosure">
+          <span aria-hidden="true">AI</span>
+          <p>{team.disclosure}</p>
+        </aside>
+
+        <footer className="editorial-folio">
+          <span>PELOTON · PAPER</span>
+          <span>{team.footer}</span>
+        </footer>
+      </div>
+    </motion.section>
   );
 }
 
@@ -769,7 +878,7 @@ function StoryScreen({
   );
 }
 
-function MenuSheet({ open, onClose, onOpenIssue, reduceMotion, copy }) {
+function MenuSheet({ open, onClose, onOpenIssue, onOpenEditorial, reduceMotion, copy }) {
   const sheetRef = useRef(null);
   const closeRef = useRef(null);
 
@@ -834,6 +943,7 @@ function MenuSheet({ open, onClose, onOpenIssue, reduceMotion, copy }) {
             </div>
             <nav aria-label={copy.mainNavigation}>
               <button type="button" onClick={onOpenIssue}>{copy.currentIssue}</button>
+              <button type="button" onClick={onOpenEditorial}>{copy.editorial}</button>
               <button type="button" disabled>{copy.archive} <small>{copy.soon}</small></button>
               <button type="button" disabled>{copy.about} <small>{copy.soon}</small></button>
             </nav>
@@ -854,6 +964,7 @@ export function App() {
   const [savedStories, setSavedStories] = useState(() => new Set());
   const menuButtonRef = useRef(null);
   const copy = copyByLocale[locale];
+  const editorialTeam = editorialTeamByLocale[locale];
   const { issue, upcomingIssue, stories, totalReadingMinutes } = editions[locale];
   const cyclingApps = cyclingAppsByLocale[locale];
   const story = stories.find((item) => item.id === storyId) ?? stories[0];
@@ -871,6 +982,11 @@ export function App() {
   const openIssue = () => {
     setMenuOpen(false);
     setScreen("contents");
+  };
+
+  const openEditorial = () => {
+    setMenuOpen(false);
+    setScreen("editorial");
   };
 
   const openStory = (nextStory) => {
@@ -906,6 +1022,7 @@ export function App() {
               key="cover"
               onOpen={openIssue}
               onMenu={() => setMenuOpen(true)}
+              onEditorial={openEditorial}
               reduceMotion={reduceMotion}
               menuButtonRef={menuButtonRef}
               locale={locale}
@@ -948,12 +1065,24 @@ export function App() {
               stories={stories}
             />
           ) : null}
+          {screen === "editorial" ? (
+            <EditorialScreen
+              key="editorial"
+              team={editorialTeam}
+              locale={locale}
+              onLocaleChange={setLocale}
+              onBack={() => setScreen("cover")}
+              copy={copy}
+              reduceMotion={reduceMotion}
+            />
+          ) : null}
         </AnimatePresence>
 
         <MenuSheet
           open={menuOpen}
           onClose={closeMenu}
           onOpenIssue={openIssue}
+          onOpenEditorial={openEditorial}
           reduceMotion={reduceMotion}
           copy={copy}
         />

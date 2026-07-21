@@ -14,7 +14,7 @@ export const kiedyZnikaAsfaltEn = {
   thumbPosition: "50% 50%",
   lead:
     "Gravel promises freedom, preferably aboard a bicycle with its own catalogue category. The Low Beskids quickly test that story: a GPX file grants no right of passage, roads are not scenery, and a ‘wild valley’ may stand where somebody once had a home.",
-  byline: "AN EDITORIAL ESSAY — PELOTON",
+  byline: "WORDS — NINA WIERZBICKA / PELOTON EDITORS",
   caption:
     "A road without a number. The Low Beskids begin where the surface stops making promises.",
   alt: "A cyclist stops in the Low Beskids exactly where cracked tarmac gives way to gravel.",

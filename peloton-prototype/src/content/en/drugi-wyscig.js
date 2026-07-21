@@ -6,7 +6,7 @@ export const drugiWyscigEn = {
   time: "13 min",
   description:
     "Szymon Gruchalski, twenty seconds to publish, and the line between bearing witness and feeding on pain.",
-  byline: "WORDS — PELOTON EDITORIAL TEAM",
+  byline: "WORDS — ZOFIA KUREK / PELOTON EDITORS",
   hero: "/assets/peloton-photographer-hero.png",
   heroWebp: "peloton-photographer-hero.webp",
   heroPosition: "50% 46%",

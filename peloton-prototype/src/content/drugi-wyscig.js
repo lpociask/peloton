@@ -6,7 +6,7 @@ export const drugiWyscig = {
   time: "13 min",
   description:
     "Szymon Gruchalski, 20 sekund na publikację i granica między świadectwem a żerowaniem.",
-  byline: "TEKST — REDAKCJA PELOTON",
+  byline: "TEKST — ZOFIA KUREK / REDAKCJA PELOTON",
   hero: "/assets/peloton-photographer-hero.png",
   heroWebp: "peloton-photographer-hero.webp",
   heroPosition: "50% 46%",

@@ -7,7 +7,7 @@ export const michalKwiatkowskiEn = {
   title: "Michał Kwiatkowski",
   time: "15 min",
   description: "World champion, super-domestique—and the question: could he have won more?",
-  byline: "WORDS — PELOTON EDITORIAL TEAM",
+  byline: "WORDS — KAROL GÓRSKI / PELOTON EDITORS",
   hero: assetPath("peloton-kwiatkowski-portrait.png"),
   heroWebp: "peloton-kwiatkowski-portrait.webp",
   heroPosition: "50% 32%",

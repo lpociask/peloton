@@ -7,6 +7,7 @@ export const ciszaNapedu = {
   title: "Cisza napędu",
   time: "13 min",
   description: "Wosk, olej i wojna religijna o kilka watów.",
+  byline: "TEKST — TOMASZ DĄBEK / REDAKCJA PELOTON",
   hero: assetPath("peloton-drivetrain-listening-hero-v2.jpg"),
   heroPosition: "50% 50%",
   thumb: assetPath("peloton-drivetrain-listening-hero-v2.jpg"),

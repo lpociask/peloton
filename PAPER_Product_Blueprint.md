@@ -221,7 +221,7 @@ Wspólne dla wszystkich tytułów są: zachowanie czytnika, dostępność, konta
 1. Czytelnik trafia do biblioteki PAPER.
 2. Widzi wyróżnioną okładkę i krótką obietnicę danego numeru.
 3. Wybiera magazyn albo bezpośrednio otwiera numer.
-4. Okładka przechodzi w spis treści; użytkownik poznaje skalę całości: 2–5 materiałów.
+4. Okładka przechodzi w spis treści; użytkownik poznaje stałą skalę całości: dokładnie 5 materiałów.
 5. Wybiera „Czytaj od początku” lub konkretny materiał.
 6. Podczas czytania interfejs wycofuje się, a postęp jest widoczny dopiero po dotknięciu, przewinięciu w górę albo przy końcu sekcji.
 7. Po materiale widzi spokojną kartę przejścia do następnego rozdziału.
@@ -261,7 +261,7 @@ Wspólne dla wszystkich tytułów są: zachowanie czytnika, dostępność, konta
 ## 3.6. Redakcja — stworzenie numeru
 
 1. Redaktor naczelny tworzy numer z tematem, datą i briefem artystycznym.
-2. Redaktor prowadzący ustawia kolejność 2–5 materiałów, odpowiedzialnych i terminy.
+2. Redaktor prowadzący ustawia kolejność 5 materiałów, odpowiedzialnych i terminy.
 3. Autorzy oraz fotoedytorzy pracują na wersjach materiałów i assetach.
 4. Art director składa okładkę i kontroluje rytm całego numeru w widoku „contact sheet”.
 5. Korekta, prawa i dostępność przechodzą osobne checklisty.
@@ -967,7 +967,7 @@ MVP nie jest „stroną z trzema przykładowymi kartami”. To zdolność redakc
 
 - PAPER Library dla jednego aktywnego tytułu i gotowość konfiguracji drugiego,
 - foyer magazynu, aktualny numer i archiwum,
-- okładka, spis treści, 3–5 materiałów i zakończenie,
+- okładka, spis treści, dokładnie 5 materiałów i zakończenie,
 - stabilny czytnik mobile/tablet/desktop,
 - 8–10 dopracowanych bloków,
 - udostępnianie materiału z zachowaniem kontekstu numeru,

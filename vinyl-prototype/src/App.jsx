@@ -10,6 +10,7 @@ import {
   X,
 } from "@phosphor-icons/react";
 import { assetPath } from "./assetPath";
+import { editorialTeamByLanguage } from "./content/editorial-team.js";
 import {
   issue as polishIssue,
   upcomingIssue as polishUpcomingIssue,
@@ -69,7 +70,7 @@ function LanguageToggle({ language, onLanguageChange, placement, textClassName =
   );
 }
 
-function Masthead({ onMenu, menuButtonRef, language, onLanguageChange, text }) {
+function Masthead({ onMenu, onEditorial, menuButtonRef, language, onLanguageChange, text }) {
   return (
     <header className="masthead">
       <div className="masthead__wordmark" aria-label={text.mastheadLabel}>
@@ -77,6 +78,9 @@ function Masthead({ onMenu, menuButtonRef, language, onLanguageChange, text }) {
         <small>{text.mastheadTagline}</small>
       </div>
       <div className="masthead__actions">
+        <button className="masthead__editors" type="button" onClick={onEditorial}>
+          {text.editorial}
+        </button>
         <LanguageToggle
           language={language}
           onLanguageChange={onLanguageChange}
@@ -159,6 +163,7 @@ function CoverScreen({
   text,
   onOpen,
   onMenu,
+  onEditorial,
   reduceMotion,
   menuButtonRef,
 }) {
@@ -171,6 +176,7 @@ function CoverScreen({
       <div className="cover-screen__current">
         <Masthead
           onMenu={onMenu}
+          onEditorial={onEditorial}
           menuButtonRef={menuButtonRef}
           language={language}
           onLanguageChange={onLanguageChange}
@@ -256,6 +262,109 @@ function ReaderBar({ issue, onBack, language, onLanguageChange, text }) {
         textClassName="reader-bar__issue"
       />
     </header>
+  );
+}
+
+function EditorialScreen({ team, language, onLanguageChange, onBack, text, reduceMotion }) {
+  const headingRef = useRef(null);
+
+  useEffect(() => {
+    headingRef.current?.focus({ preventScroll: true });
+  }, []);
+
+  return (
+    <motion.section
+      className={`editorial-screen editorial-screen--${language}`}
+      {...pageMotion}
+      transition={{ duration: reduceMotion ? 0 : 0.34, ease: [0.22, 1, 0.36, 1] }}
+    >
+      <header className="editorial-bar">
+        <IconButton label={team.backToCover} onClick={onBack}>
+          <ArrowLeft size={25} aria-hidden="true" />
+        </IconButton>
+        <span className="editorial-bar__brand">
+          ROWKI <small>{text.editorial}</small>
+        </span>
+        <LanguageToggle
+          language={language}
+          onLanguageChange={onLanguageChange}
+          placement="contents"
+          textClassName="reader-bar__issue"
+        />
+      </header>
+
+      <div className="editorial-scroll">
+        <section className="editorial-intro" aria-labelledby="editorial-title">
+          <p>{team.kicker}</p>
+          <h1 id="editorial-title" ref={headingRef} tabIndex="-1">{team.title}</h1>
+          <div aria-hidden="true" />
+          <p className="editorial-intro__dek">{team.intro}</p>
+        </section>
+
+        <aside className="editorial-chief" aria-labelledby="editorial-chief-title">
+          <p>{team.chief.kicker}</p>
+          <h2 id="editorial-chief-title">{team.chief.title}</h2>
+          <figure className="editorial-chief__portrait">
+            <img
+              src={assetPath(team.chief.portrait)}
+              alt={team.chief.portraitAlt}
+              width="720"
+              height="1125"
+              loading="eager"
+              decoding="async"
+            />
+          </figure>
+          <p>{team.chief.description}</p>
+        </aside>
+
+        <ol className="editorial-team">
+          {team.people.map((person) => (
+            <li className="editorial-card" key={person.id}>
+              <figure>
+                <img
+                  src={assetPath(person.portrait)}
+                  alt={person.portraitAlt}
+                  width="720"
+                  height="1125"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+              <div className="editorial-card__copy">
+                <p className="editorial-card__affiliation">
+                  <span>{team.affiliationLabel}</span>
+                  <strong>{team.magazine}</strong>
+                </p>
+                <p className="editorial-card__meta">
+                  <span>{person.number}</span>
+                  <span>{person.role}</span>
+                </p>
+                <h2>{person.name}</h2>
+                <p className="editorial-card__character">{person.character}</p>
+                <div className="editorial-card__notes">
+                  <p><span>{team.voiceLabel}</span>{person.voice}</p>
+                  <p><span>{team.sourcesLabel}</span>{person.sources}</p>
+                </div>
+                <p className="editorial-card__assignment">
+                  <span>{team.assignmentLabel}</span>
+                  <strong>{person.assignment}</strong>
+                </p>
+              </div>
+            </li>
+          ))}
+        </ol>
+
+        <aside className="editorial-disclosure">
+          <span aria-hidden="true">AI</span>
+          <p>{team.disclosure}</p>
+        </aside>
+
+        <footer className="editorial-folio">
+          <span>ROWKI · PAPER</span>
+          <span>{team.footer}</span>
+        </footer>
+      </div>
+    </motion.section>
   );
 }
 
@@ -738,6 +847,7 @@ function MenuSheet({
   text,
   onClose,
   onOpenIssue,
+  onOpenEditorial,
   reduceMotion,
 }) {
   const sheetRef = useRef(null);
@@ -804,6 +914,7 @@ function MenuSheet({
             </div>
             <nav aria-label={text.mainNavigation}>
               <button type="button" onClick={onOpenIssue}>{text.currentIssue}</button>
+              <button type="button" onClick={onOpenEditorial}>{text.editorial}</button>
               <button
                 className="language-switch language-switch--menu"
                 type="button"
@@ -832,6 +943,7 @@ export function App() {
   const menuButtonRef = useRef(null);
   const { issue, upcomingIssue, stories } = publications[language];
   const text = translations[language];
+  const editorialTeam = editorialTeamByLanguage[language];
   const totalReadingMinutes = stories.reduce(
     (total, item) => total + Number.parseInt(item.time, 10),
     0,
@@ -850,6 +962,11 @@ export function App() {
   const openIssue = () => {
     setMenuOpen(false);
     setScreen("contents");
+  };
+
+  const openEditorial = () => {
+    setMenuOpen(false);
+    setScreen("editorial");
   };
 
   const openStory = (nextStory) => {
@@ -892,6 +1009,7 @@ export function App() {
               text={text}
               onOpen={openIssue}
               onMenu={() => setMenuOpen(true)}
+              onEditorial={openEditorial}
               reduceMotion={reduceMotion}
               menuButtonRef={menuButtonRef}
             />
@@ -926,6 +1044,17 @@ export function App() {
               reduceMotion={reduceMotion}
             />
           ) : null}
+          {screen === "editorial" ? (
+            <EditorialScreen
+              key="editorial"
+              team={editorialTeam}
+              language={language}
+              onLanguageChange={setLanguage}
+              onBack={() => setScreen("cover")}
+              text={text}
+              reduceMotion={reduceMotion}
+            />
+          ) : null}
         </AnimatePresence>
 
         <MenuSheet
@@ -935,6 +1064,7 @@ export function App() {
           text={text}
           onClose={closeMenu}
           onOpenIssue={openIssue}
+          onOpenEditorial={openEditorial}
           reduceMotion={reduceMotion}
         />
       </div>

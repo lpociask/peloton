@@ -528,7 +528,7 @@ const warszawa = {
   time: "10 MIN",
   description: "Four addresses, four temperaments and a walk after which Discogs stops being an oracle.",
   lead: "The best record shop does not always have the most records. It has somebody who can say “do not buy this copy” — and point to a crate you never knew existed.",
-  byline: "WORDS — ROWKI EDITORIAL TEAM",
+  byline: "WORDS — ZOFIA LEWICKA / ROWKI EDITORIAL TEAM",
   hero: "rowki-warszawa.png",
   thumb: "rowki-warszawa.png",
   thumbMode: "standalone",

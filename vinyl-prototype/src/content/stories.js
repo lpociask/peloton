@@ -527,7 +527,7 @@ const warszawa = {
   time: "11 MIN",
   description: "Cztery adresy, cztery temperamenty i spacer, po którym Discogs przestaje być wyrocznią.",
   lead: "Najlepszy sklep płytowy nie zawsze ma najwięcej płyt. Ma człowieka, który potrafi powiedzieć „tego egzemplarza nie bierz” — i wskazać skrzynkę, o której istnieniu nie wiedziałeś.",
-  byline: "TEKST — REDAKCJA ROWKI",
+  byline: "TEKST — ZOFIA LEWICKA / REDAKCJA ROWKI",
   hero: "rowki-warszawa.png",
   thumb: "rowki-warszawa.png",
   thumbMode: "standalone",

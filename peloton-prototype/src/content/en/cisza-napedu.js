@@ -7,6 +7,7 @@ export const ciszaNapeduEn = {
   title: "The Quiet Drivetrain",
   time: "13 min",
   description: "Wax, oil and a holy war over a handful of watts.",
+  byline: "WORDS — TOMASZ DĄBEK / PELOTON EDITORS",
   hero: assetPath("peloton-drivetrain-listening-hero-v2.jpg"),
   heroPosition: "50% 50%",
   thumb: assetPath("peloton-drivetrain-listening-hero-v2.jpg"),

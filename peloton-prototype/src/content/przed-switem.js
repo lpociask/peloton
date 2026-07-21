@@ -7,7 +7,7 @@ export const przedSwitem = {
   title: "Przed świtem",
   time: "12 min",
   description: "Pobudka, sen i podejrzany kult wygrywania poranka.",
-  byline: "ESEJ REDAKCYJNY — PELOTON",
+  byline: "TEKST — MAJA ROSIŃSKA / REDAKCJA PELOTON",
   hero: assetPath("peloton-story-dawn.png"),
   heroWebp: "peloton-story-dawn.webp",
   heroPosition: "50% 7%",

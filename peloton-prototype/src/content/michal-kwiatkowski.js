@@ -7,7 +7,7 @@ export const michalKwiatkowski = {
   title: "Michał Kwiatkowski",
   time: "15 min",
   description: "Mistrz świata, superpomocnik i pytanie: czy mógł wygrać więcej?",
-  byline: "TEKST — REDAKCJA PELOTON",
+  byline: "TEKST — KAROL GÓRSKI / REDAKCJA PELOTON",
   hero: assetPath("peloton-kwiatkowski-portrait.png"),
   heroWebp: "peloton-kwiatkowski-portrait.webp",
   heroPosition: "50% 32%",

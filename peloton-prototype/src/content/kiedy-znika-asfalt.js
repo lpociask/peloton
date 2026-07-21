@@ -14,7 +14,7 @@ export const kiedyZnikaAsfalt = {
   thumbPosition: "50% 50%",
   lead:
     "Gravel obiecuje wolność, najlepiej na rowerze z osobną kategorią katalogową. Beskid Niski szybko weryfikuje tę opowieść: plik GPX nie daje prawa przejazdu, drogi nie są scenografią, a „dzika dolina” może być miejscem po czyimś domu.",
-  byline: "ESEJ REDAKCYJNY — PELOTON",
+  byline: "TEKST — NINA WIERZBICKA / REDAKCJA PELOTON",
   caption:
     "Droga bez numeru. Beskid Niski zaczyna się tam, gdzie nawierzchnia przestaje składać obietnice.",
   alt: "Kolarz zatrzymuje się w Beskidzie Niskim dokładnie tam, gdzie popękany asfalt przechodzi w szuter.",

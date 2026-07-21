@@ -16,6 +16,7 @@ When implementing from a selected generated mock, treat that image as the source
 - The chosen first-issue cover concept uses an oversized bicycle wheel as an eclipse, an orange sun at the hub, a cyclist viewed from above, and cropped chain links.
 - Avoid photorealism, glossy 3D, gradients, neon, glassmorphism, generic cards, ads, badges, and feed-like layouts.
 - The issue table of contents is a physical editorial sheet: ruled story rows, a narrow right-side illustration rail, orange folio accents, and an orange bottom reading CTA. It must not become a feed of rounded cards; issue #01 contains five rows.
+- Every Peloton issue contains exactly five editorial stories, each assigned to one of the five specialist writing agents.
 - Article openings are composed like a first magazine spread: sticky reader toolbar, slim progress line, metadata, oversized two-line serif title, short olive rule, editorial lead/byline, then a full-width illustration deliberately cut by the viewport fold.
 - Use `/public/assets/peloton-contents-triptych.png` for issue-section vignettes and `/public/assets/peloton-story-dawn.png` as the dedicated opening illustration for “Przed świtem.”
 - Every issue contains one longform cyclist portrait. The first profile is Michał Kwiatkowski, with a dated editorial forecast clearly separated from verified facts.
@@ -26,3 +27,5 @@ When implementing from a selected generated mock, treat that image as the source
 - Issue #02 uses the selected third August-cover concept at `/public/assets/peloton-cover-02-po-tourze-option-3.jpg`: a surreal pearl-white helmet as a gateway for riders leaving the Tour behind.
 - Until issue #02 has content, show it below the current issue as a static “coming soon” preview. It must not be a button, link, disabled control, or route into issue #01.
 - Promotions for the publisher’s cycling apps belong in one restrained “Od wydawcy” colophon after the issue #02 preview, never as banners, popups, cards, or repeated interruptions inside longform stories. Keep them clearly labeled, bilingual, App Store-only, and typographically integrated with the magazine.
+- The owner is editor-in-chief of both Peloton and Rowki and is the sole author of every editor’s letter. Five fictional specialist writing agents produce the five issue stories under the editor-in-chief’s direction; they never write an editor’s letter, imitate the editor-in-chief’s voice, or publish without approval.
+- Keep the “Redaktorzy” destination visible as a persistent text tab in the cover masthead; it must not be discoverable only through the slide-out menu.

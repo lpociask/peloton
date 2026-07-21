@@ -7,7 +7,7 @@ export const przedSwitemEn = {
   title: "Before Dawn",
   time: "12 min",
   description: "Early alarms, sleep and the dubious cult of winning the morning.",
-  byline: "AN EDITORIAL ESSAY — PELOTON",
+  byline: "WORDS — MAJA ROSIŃSKA / PELOTON EDITORS",
   hero: assetPath("peloton-story-dawn.png"),
   heroWebp: "peloton-story-dawn.webp",
   heroPosition: "50% 7%",
