@@ -45,6 +45,9 @@ jobs:
         working-directory: vinyl-prototype
         run: npm run build
 
+      - name: Generate iOS app content feed
+        run: node scripts/build-app-feed.mjs
+
       - name: Add Rowki to the Pages artifact
         run: |
           mkdir -p peloton-prototype/dist/rowki
