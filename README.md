@@ -7,12 +7,12 @@ Dwa cyfrowe magazyny zbudowane jako interaktywne, responsywne wydania:
 
 Każdy numer obu tytułów zawiera dokładnie pięć materiałów.
 
-Strony są zbudowane w React i Vite, a ich źródła znajdują się w prywatnym repozytorium. Wersje produkcyjne są publikowane przez Cloudflare Pages:
+Strony są zbudowane w React i Vite, a ich źródła znajdują się w prywatnym repozytorium. Wersje produkcyjne są publikowane przez GitHub Pages:
 
-- [Peloton](https://www.lpociask.dev/peloton/)
-- [Rowki](https://www.lpociask.dev/peloton/rowki/)
+- [Peloton](https://lpociask.github.io/peloton/)
+- [Rowki](https://lpociask.github.io/peloton/rowki/)
 
-Po każdym pushu do `main` GitHub Actions buduje oba magazyny i zapisuje gotowy do publikacji artefakt `magazines-cloudflare`.
+Po każdym pushu do `main` GitHub Actions buduje oba magazyny, łączy je w jeden artefakt i publikuje na GitHub Pages.
 
 ## Uruchomienie lokalne
 
